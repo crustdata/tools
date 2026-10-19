@@ -1,0 +1,7 @@
+.scratch
+.next
+.next-dev
+.env
+.env.local
+node_modules
+*.tsbuildinfo

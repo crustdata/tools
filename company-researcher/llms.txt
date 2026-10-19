@@ -1,0 +1,41 @@
+# Crustdata Company Researcher
+
+> Open source company research agent (MIT, TypeScript, Next.js). Enter a company domain or name and get a research brief: headcount by department and region with growth over 1, 3, 6, 12 and 24 months, job postings in the last 90 days against the 90 before, leadership with start dates, funding, web traffic, tech stack, employee ratings, competitors, news and recent posts. Built on the Crustdata API (1B+ profiles, 60M+ companies). Runs as a web app, a JSON API and a CLI. Needs only a Crustdata API key; an Anthropic or OpenAI key is optional and makes the model write the brief from the same data.
+
+## Live demo
+- https://crustdata-researcher.vercel.app
+
+## Quickstart
+- [README](https://github.com/crustdata/tools/blob/main/company-researcher/README.md): install, run `npx tsx scripts/research.ts vercel.com`, or `npm run dev` for the web app on port 3217
+- [.env.example](https://github.com/crustdata/tools/blob/main/company-researcher/.env.example): CRUSTDATA_API_KEY, DEMO_DOMAINS, ALLOW_SERVER_KEY, RESEARCH_LITE, CACHE_TTL_HOURS
+
+## Docs
+- [docs/how-it-works.md](https://github.com/crustdata/tools/blob/main/company-researcher/docs/how-it-works.md): every Crustdata request with its body and the fields read back
+- [docs/customize.md](https://github.com/crustdata/tools/blob/main/company-researcher/docs/customize.md): change the brief, add a section, change role types
+- [docs/deploy.md](https://github.com/crustdata/tools/blob/main/company-researcher/docs/deploy.md): Vercel, sub paths, keys
+- [AGENTS.md](https://github.com/crustdata/tools/blob/main/company-researcher/AGENTS.md): guide for coding agents
+
+## Use cases
+- Research a prospect before a sales call: what changed lately (new executives, layoffs, funding, acquisitions, hiring swings) and three questions to ask
+- An AI agent for prospecting and account research that runs on structured company data, not web search
+- Headcount by department over time, job postings against the previous quarter, executives with start dates for any company
+
+## Code
+- [lib/crustdata.ts](https://github.com/crustdata/tools/blob/main/company-researcher/lib/crustdata.ts): the Crustdata calls: /company/identify, /company/enrich, /job/search
+- [lib/shape.ts](https://github.com/crustdata/tools/blob/main/company-researcher/lib/shape.ts): raw API responses to typed sections, each block names the field it reads
+- [lib/research.ts](https://github.com/crustdata/tools/blob/main/company-researcher/lib/research.ts): the pipeline and the cache, research(domain)
+- [lib/brief.ts](https://github.com/crustdata/tools/blob/main/company-researcher/lib/brief.ts): the template brief: what the company is, what changed lately, three questions to ask
+- [lib/ai.ts](https://github.com/crustdata/tools/blob/main/company-researcher/lib/ai.ts): the optional AI brief from an Anthropic or OpenAI key
+- [lib/types.ts](https://github.com/crustdata/tools/blob/main/company-researcher/lib/types.ts): the JSON response schema
+
+## API
+- GET /api/research?domain=stripe.com: the full result as JSON; add &format=md for markdown, &lite=1 to skip the tech stack and posts add-ons
+- domain also accepts a company name
+- Headers: x-crustdata-key (a Crustdata key), x-ai-key (optional Anthropic or OpenAI key)
+- Cost: about 9.45 Crustdata credits per company, 2.45 in lite mode, free again within 24 hours
+
+## Crustdata docs
+- [Company Identify](https://docs.crustdata.com/company-docs/identify/introduction.md)
+- [Company Enrich reference](https://docs.crustdata.com/company-docs/enrichment/reference.md)
+- [Search Jobs](https://docs.crustdata.com/job-docs/search/introduction.md)
+- [Crustdata llms.txt](https://docs.crustdata.com/llms.txt)

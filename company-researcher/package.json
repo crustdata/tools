@@ -1,0 +1,71 @@
+{
+  "name": "company-researcher",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Crustdata Company Researcher: open source company research agent for sales and prospecting. Domain or name in, brief out: headcount by department and location, hiring, executives with start dates, funding, traffic, tech stack, news and questions to ask. Web app, JSON API and CLI on the Crustdata API.",
+  "keywords": [
+    "company-research",
+    "company-research-agent",
+    "research-agent",
+    "ai-agent",
+    "sales-intelligence",
+    "account-research",
+    "firmographics",
+    "company-data",
+    "company-enrichment",
+    "headcount",
+    "hiring-signals",
+    "job-postings",
+    "b2b-data",
+    "competitive-intelligence",
+    "crustdata",
+    "nextjs",
+    "cli",
+    "open-source",
+    "prospecting",
+    "sales-research",
+    "account-based-marketing",
+    "exa-alternative",
+    "lead-research"
+  ],
+  "homepage": "https://github.com/crustdata/tools/tree/main/company-researcher#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools",
+    "directory": "company-researcher"
+  },
+  "bugs": "https://github.com/crustdata/tools/issues",
+  "author": "Crustdata",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "next dev -p 3217",
+    "build": "next build",
+    "start": "next start -p 3217",
+    "research": "tsx scripts/research.ts",
+    "test": "tsx --tsconfig tsconfig.test.json --test test/*.test.ts test/*.test.tsx",
+    "typecheck": "tsc --noEmit",
+    "check": "tsx scripts/research.ts --check"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "next": "^15.5.0",
+    "openai": "^7.34.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}

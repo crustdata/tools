@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use or cite this software, please cite it as below."
+title: "Crustdata Company Researcher"
+abstract: "Open source company research agent: enter a company domain, get a research brief with headcount by department and region, hiring, leadership, funding, web traffic, tech stack and news, built on the Crustdata API."
+authors:
+  - name: "Crustdata"
+license: MIT
+repository-code: "https://github.com/crustdata/tools/tree/main/company-researcher"
+url: "https://crustdata.com"
+keywords:
+  - company research agent
+  - firmographics
+  - sales intelligence
+  - Crustdata

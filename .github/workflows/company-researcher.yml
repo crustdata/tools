@@ -1,0 +1,24 @@
+name: company-researcher
+
+on:
+  push:
+    paths: ["company-researcher/**", ".github/workflows/company-researcher.yml"]
+  pull_request:
+    paths: ["company-researcher/**", ".github/workflows/company-researcher.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: company-researcher
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: company-researcher/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test

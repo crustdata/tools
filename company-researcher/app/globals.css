@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #121118;
+  --color-ink-2: #45434f;
+  --color-ink-3: #5c5a69;
+  --color-rule: #dddce5;
+  --color-paper: #ffffff;
+  --color-frame: #f4f4f8;
+  --color-row: #f4f4f8;
+  --color-row-hover: #ebe9fb;
+  --color-wash: #ececf2;
+  --color-violet: #4f46d8;
+  --color-violet-soft: #e3e0fd;
+  --color-down: #c2410c;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
+}
+
+html { background: var(--color-paper); color: var(--color-ink); }
+body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; font-feature-settings: "cv11", "ss01"; }
+.num { font-variant-numeric: tabular-nums; }
+::selection { background: var(--color-violet-soft); }
+
+@keyframes rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 360ms cubic-bezier(.2,.7,.2,1) both; }
+@keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+.skeleton { background: linear-gradient(90deg, #e6e6ee 0, #f1f1f5 40%, #e6e6ee 80%) 0 0 / 800px 100%; animation: shimmer 1.4s linear infinite; border-radius: 4px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin { animation: spin .9s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .rise, .skeleton, .spin { animation: none; } }
+
+/* Soft rows instead of full-width rules (direction A, from coss.com/ui and Tremor): alternate rows get a faint wash,
+   the row under the pointer a faint violet, and every row has rounded ends. */
+.rows > * { border-radius: 10px; padding-left: 12px; padding-right: 12px; transition: background-color 150ms; }
+.rows > *:nth-child(odd) { background: var(--color-row); }
+.rows > *:hover { background: var(--color-row-hover); }
+.rows-table { border-collapse: separate; border-spacing: 0; }
+.rows-table td { transition: background-color 150ms; }
+.rows-table td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+.rows-table td:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+.rows-table tbody tr:nth-child(odd) td { background: var(--color-row); }
+.rows-table tbody tr:hover td { background: var(--color-row-hover); }
+/* The inset panel inside every frame card. */
+.panel { background: #fff; border-radius: 14px; box-shadow: 0 1px 2px rgba(18,17,24,.06), 0 0 0 1px rgba(18,17,24,.12); }
+.panel-ring { box-shadow: 0 0 0 1px rgba(18,17,24,.12); }
+
+/* API details (field names, endpoints, credits) show only when the visitor switches them on. */
+.dev-only { display: none; }
+.show-dev .dev-only { display: revert; }
+/* Scrollbars: thin and always shown. Styling the webkit scrollbar turns off the overlay scrollbar that macOS hides
+   until you scroll, in Chrome, Edge and Safari. Firefox gets the standard properties (set only there, because Chrome
+   ignores the webkit styles once scrollbar-width is set). */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #a9a8b6; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #7d7b8c; }
+@supports (-moz-appearance: none) {
+  * { scrollbar-width: thin; scrollbar-color: #a9a8b6 transparent; }
+}
+
+/* The phone section pills: a slimmer bar under the row. */
+.thin-x::-webkit-scrollbar { height: 3px; background: #fff; }
+.thin-x::-webkit-scrollbar-track { background: #fff; margin: 0 18px; }
+
+/* Horizontal pill rows on phones: no scrollbar line, and a fade on the right edge to show there is more. */
+.no-scrollbar { scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+.fade-right { mask-image: linear-gradient(to right, #000 85%, transparent); }

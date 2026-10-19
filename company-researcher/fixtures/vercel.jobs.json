@@ -1,0 +1,651 @@
+{
+ "recent": {
+  "job_listings": [],
+  "next_cursor": null,
+  "total_count": 84,
+  "aggregations": [
+   {
+    "type": "group_by",
+    "field": "job_details.title",
+    "buckets": [
+     {
+      "key": "AI Accelerator Lead",
+      "count": 3
+     },
+     {
+      "key": "Director of Forward Deployed Engineering",
+      "count": 3
+     },
+     {
+      "key": "Director, Solutions Architect",
+      "count": 3
+     },
+     {
+      "key": "DevRel Engineer, Agentic Infrastructure",
+      "count": 2
+     },
+     {
+      "key": "GRC Analyst",
+      "count": 2
+     },
+     {
+      "key": "GTM Acceleration Lead, Value Selling",
+      "count": 2
+     },
+     {
+      "key": "GTM Acceleration, Technical Solutions",
+      "count": 2
+     },
+     {
+      "key": "Global Benefits Lead",
+      "count": 2
+     },
+     {
+      "key": "Growth Marketing Manager, Discoverability",
+      "count": 2
+     },
+     {
+      "key": "IT Systems Engineer",
+      "count": 2
+     },
+     {
+      "key": "Machine Learning Engineer, Trust & Safety",
+      "count": 2
+     },
+     {
+      "key": "Manager of the Technical Staff - Next.js",
+      "count": 2
+     },
+     {
+      "key": "Member of the Technical Staff - Next.js",
+      "count": 2
+     },
+     {
+      "key": "People Operations Integrations Developer",
+      "count": 2
+     },
+     {
+      "key": "Presentation Designer",
+      "count": 2
+     },
+     {
+      "key": "Scaled Commercial Account Executive, Install base",
+      "count": 2
+     },
+     {
+      "key": "Senior Brand Designer",
+      "count": 2
+     },
+     {
+      "key": "Senior Data Engineer - Finance",
+      "count": 2
+     },
+     {
+      "key": "Senior Data Engineer - GTM",
+      "count": 2
+     },
+     {
+      "key": "Senior Integrated Campaigns Manager",
+      "count": 2
+     },
+     {
+      "key": "Senior Product Designer, Growth",
+      "count": 2
+     },
+     {
+      "key": "Software Engineer, Data Platform",
+      "count": 2
+     },
+     {
+      "key": "Software Engineer, Observability",
+      "count": 2
+     },
+     {
+      "key": "Software Engineer, Trust & Safety",
+      "count": 2
+     },
+     {
+      "key": "Staff Applied Scientist, Financial Forecasting",
+      "count": 2
+     },
+     {
+      "key": "Account Executive, Commercial",
+      "count": 1
+     },
+     {
+      "key": "Account Executive- Startups, Install Base",
+      "count": 1
+     },
+     {
+      "key": "Design Engineer",
+      "count": 1
+     },
+     {
+      "key": "Executive Marketing Program Lead",
+      "count": 1
+     },
+     {
+      "key": "FP&A Manager, Product",
+      "count": 1
+     },
+     {
+      "key": "Growth Marketing Manager, Discoverability ",
+      "count": 1
+     },
+     {
+      "key": "IT Ops Engineer",
+      "count": 1
+     },
+     {
+      "key": "Marketing Operations Manager",
+      "count": 1
+     },
+     {
+      "key": "Member of the Technical Staff, Financial Data Platform",
+      "count": 1
+     },
+     {
+      "key": "Member of the Technical Staff, Internal Agent",
+      "count": 1
+     },
+     {
+      "key": "Partner Solutions Engineer, EMEA",
+      "count": 1
+     },
+     {
+      "key": "Product Communications Manager",
+      "count": 1
+     },
+     {
+      "key": "Product Designer, Marketplace",
+      "count": 1
+     },
+     {
+      "key": "Product Manager, Observability",
+      "count": 1
+     },
+     {
+      "key": "SOX Manager",
+      "count": 1
+     },
+     {
+      "key": "Senior Accountant (India)",
+      "count": 1
+     },
+     {
+      "key": "Senior Customer Support Engineer",
+      "count": 1
+     },
+     {
+      "key": "Senior Deal Desk Analyst",
+      "count": 1
+     },
+     {
+      "key": "Senior Financial Systems Administrator",
+      "count": 1
+     },
+     {
+      "key": "Software Engineer - Data Platform",
+      "count": 1
+     },
+     {
+      "key": "Software Engineer, AI Gateway",
+      "count": 1
+     },
+     {
+      "key": "Software Engineer, AI SDK",
+      "count": 1
+     },
+     {
+      "key": "Software Engineer, Agentic Infrastructure",
+      "count": 1
+     },
+     {
+      "key": "Software Engineer, Platform",
+      "count": 1
+     },
+     {
+      "key": "Software Engineer, Scheduled Tasks",
+      "count": 1
+     },
+     {
+      "key": "Software Engineer, eve",
+      "count": 1
+     },
+     {
+      "key": "Sr. Manager, Accounting (India)",
+      "count": 1
+     },
+     {
+      "key": "Staff Data Platform Engineer - Finance",
+      "count": 1
+     },
+     {
+      "key": "Strategic Sourcing Manager",
+      "count": 1
+     },
+     {
+      "key": "Technical Account Manager",
+      "count": 1
+     },
+     {
+      "key": "Vercel Development Representative , Startups",
+      "count": 1
+     }
+    ]
+   }
+  ]
+ },
+ "previous": {
+  "job_listings": [],
+  "next_cursor": null,
+  "total_count": 96,
+  "aggregations": [
+   {
+    "type": "count",
+    "field": null,
+    "value": 96
+   }
+  ]
+ },
+ "newest": {
+  "job_listings": [
+   {
+    "crustdata_job_id": 3787254913052844,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 3787254913052844,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Machine Learning Engineer, Trust & Safety",
+     "url": "https://example.com/job/0",
+     "workplace_type": null
+    },
+    "location": {
+     "city": "San Francisco",
+     "country": "United States",
+     "district": "San Francisco County",
+     "pincode": null,
+     "raw": "San Francisco, California, United States",
+     "state": "California"
+    },
+    "metadata": {
+     "date_added": "2026-10-09T09:55:12",
+     "date_updated": "2026-10-13T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 6145656029926802,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 6145656029926802,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Machine Learning Engineer, Trust & Safety",
+     "url": "https://example.com/job/1",
+     "workplace_type": null
+    },
+    "location": {
+     "city": "New York",
+     "country": "United States",
+     "district": null,
+     "pincode": null,
+     "raw": "New York, United States",
+     "state": "New York"
+    },
+    "metadata": {
+     "date_added": "2026-10-09T09:55:11",
+     "date_updated": "2026-10-15T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 6637163424970679,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 6637163424970679,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Software Engineer, Scheduled Tasks",
+     "url": "https://example.com/job/2",
+     "workplace_type": "Hybrid"
+    },
+    "location": {
+     "city": "San Francisco",
+     "country": "United States",
+     "district": "San Francisco County",
+     "pincode": null,
+     "raw": "San Francisco, California, United States",
+     "state": "California"
+    },
+    "metadata": {
+     "date_added": "2026-09-24T21:55:20",
+     "date_updated": "2026-10-01T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 7027622091588083,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 7027622091588083,
+     "number_of_openings": null,
+     "reposted_job": true,
+     "source": "professional_network",
+     "title": "Software Engineer, eve",
+     "url": "https://example.com/job/3",
+     "workplace_type": "Hybrid"
+    },
+    "location": {
+     "city": "New York",
+     "country": "United States",
+     "district": null,
+     "pincode": null,
+     "raw": "New York, New York, United States",
+     "state": "New York"
+    },
+    "metadata": {
+     "date_added": "2026-09-23T15:55:10",
+     "date_updated": "2026-10-10T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 1774384148720236,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 1774384148720236,
+     "number_of_openings": null,
+     "reposted_job": true,
+     "source": "professional_network",
+     "title": "Software Engineer, AI SDK",
+     "url": "https://example.com/job/4",
+     "workplace_type": "Hybrid"
+    },
+    "location": {
+     "city": "New York",
+     "country": "United States",
+     "district": null,
+     "pincode": null,
+     "raw": "New York, New York, United States",
+     "state": "New York"
+    },
+    "metadata": {
+     "date_added": "2026-09-23T15:55:08",
+     "date_updated": "2026-09-30T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 1134843913166398,
+    "job_details": {
+     "category": "Others",
+     "employment_type": "full_time",
+     "job_id": 1134843913166398,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Account Executive- Startups, Install Base",
+     "url": "https://example.com/job/5",
+     "workplace_type": "Remote"
+    },
+    "location": {
+     "city": "San Francisco",
+     "country": "United States",
+     "district": "San Francisco County",
+     "pincode": null,
+     "raw": "San Francisco, California, United States",
+     "state": "California"
+    },
+    "metadata": {
+     "date_added": "2026-09-22T21:55:16",
+     "date_updated": "2026-09-29T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 8492067173471226,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 8492067173471226,
+     "number_of_openings": null,
+     "reposted_job": true,
+     "source": "professional_network",
+     "title": "Software Engineer, Agentic Infrastructure",
+     "url": "https://example.com/job/6",
+     "workplace_type": null
+    },
+    "location": {
+     "city": "New York",
+     "country": "United States",
+     "district": null,
+     "pincode": null,
+     "raw": "New York, United States",
+     "state": "New York"
+    },
+    "metadata": {
+     "date_added": "2026-09-18T03:55:25",
+     "date_updated": "2026-09-30T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 5866872032370608,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 5866872032370608,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Software Engineer, Platform",
+     "url": "https://example.com/job/7",
+     "workplace_type": "Remote"
+    },
+    "location": {
+     "city": "San Francisco",
+     "country": "United States",
+     "district": "San Francisco County",
+     "pincode": null,
+     "raw": "San Francisco, California, United States",
+     "state": "California"
+    },
+    "metadata": {
+     "date_added": "2026-09-16T21:55:29",
+     "date_updated": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 3688072415430340,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 3688072415430340,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Software Engineer - Data Platform",
+     "url": "https://example.com/job/8",
+     "workplace_type": "Remote"
+    },
+    "location": {
+     "city": null,
+     "country": "United States",
+     "district": null,
+     "pincode": null,
+     "raw": "United States",
+     "state": null
+    },
+    "metadata": {
+     "date_added": "2026-09-16T21:55:21",
+     "date_updated": "2026-09-23T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 3705467223311375,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 3705467223311375,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Design Engineer",
+     "url": "https://example.com/job/9",
+     "workplace_type": "Remote"
+    },
+    "location": {
+     "city": null,
+     "country": "United States",
+     "district": null,
+     "pincode": null,
+     "raw": "United States",
+     "state": null
+    },
+    "metadata": {
+     "date_added": "2026-09-16T03:55:13",
+     "date_updated": "2026-09-22T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 3724902807225589,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 3724902807225589,
+     "number_of_openings": null,
+     "reposted_job": true,
+     "source": "professional_network",
+     "title": "Software Engineer, AI Gateway",
+     "url": "https://example.com/job/10",
+     "workplace_type": "Hybrid"
+    },
+    "location": {
+     "city": "San Francisco",
+     "country": "United States",
+     "district": "San Francisco County",
+     "pincode": null,
+     "raw": "San Francisco, California, United States",
+     "state": "California"
+    },
+    "metadata": {
+     "date_added": "2026-09-09T21:55:21",
+     "date_updated": "2026-10-10T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 4806319051801701,
+    "job_details": {
+     "category": "Engineering",
+     "employment_type": "full_time",
+     "job_id": 4806319051801701,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "IT Ops Engineer",
+     "url": "https://example.com/job/11",
+     "workplace_type": "Hybrid"
+    },
+    "location": {
+     "city": "New York",
+     "country": "United States",
+     "district": null,
+     "pincode": null,
+     "raw": "New York, New York, United States",
+     "state": "New York"
+    },
+    "metadata": {
+     "date_added": "2026-09-08T21:55:06",
+     "date_updated": "2026-09-11T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 314520087572314,
+    "job_details": {
+     "category": "Product",
+     "employment_type": "full_time",
+     "job_id": 314520087572314,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "FP&A Manager, Product",
+     "url": "https://example.com/job/12",
+     "workplace_type": "Hybrid"
+    },
+    "location": {
+     "city": "San Francisco",
+     "country": "United States",
+     "district": "San Francisco County",
+     "pincode": null,
+     "raw": "San Francisco, California, United States",
+     "state": "California"
+    },
+    "metadata": {
+     "date_added": "2026-09-08T09:55:07",
+     "date_updated": "2026-09-09T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 8827350926836318,
+    "job_details": {
+     "category": "Others",
+     "employment_type": "full_time",
+     "job_id": 8827350926836318,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Member of the Technical Staff - Next.js",
+     "url": "https://example.com/job/13",
+     "workplace_type": null
+    },
+    "location": {
+     "city": "New York",
+     "country": "United States",
+     "district": null,
+     "pincode": null,
+     "raw": "New York, United States",
+     "state": "New York"
+    },
+    "metadata": {
+     "date_added": "2026-09-02T21:55:19",
+     "date_updated": "2026-09-09T00:00:00"
+    }
+   },
+   {
+    "crustdata_job_id": 409907369570287,
+    "job_details": {
+     "category": "Others",
+     "employment_type": "full_time",
+     "job_id": 409907369570287,
+     "number_of_openings": null,
+     "reposted_job": false,
+     "source": "professional_network",
+     "title": "Member of the Technical Staff - Next.js",
+     "url": "https://example.com/job/14",
+     "workplace_type": null
+    },
+    "location": {
+     "city": "San Francisco",
+     "country": "United States",
+     "district": "San Francisco County",
+     "pincode": null,
+     "raw": "San Francisco, California, United States",
+     "state": "California"
+    },
+    "metadata": {
+     "date_added": "2026-09-02T21:55:18",
+     "date_updated": "2026-09-09T00:00:00"
+    }
+   }
+  ],
+  "next_cursor": "H4sIAOUf0moC_xXMSQ7CMAxA0atEWXdh10NsroJQ1aaJukBEdFhUiLtT9v_9T3wfZT2HZdyWeAsxq7ByJuPUiwtCLjMUrcaOmrmAeYUZjVzFZxEuk9Sp4shEtRjFLsStrfv1umMyI1NEA4AuMLhDInVJ0Ft6XOXe9vE55Ha8_sBVvz8-qKGSkAAAAA==",
+  "total_count": 966
+ },
+ "window": {
+  "from90": "2026-07-18",
+  "from180": "2026-04-19"
+ }
+}
