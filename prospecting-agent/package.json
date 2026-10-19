@@ -1,0 +1,54 @@
+{
+  "name": "prospecting-agent",
+  "version": "1.0.0",
+  "description": "Open-source AI prospecting agent on the Crustdata API: describe your ICP in plain English, get matching companies and decision-makers as CSV, plus a ready Crustdata watcher request to hear in Slack or email when those accounts raise, hire or grow. TypeScript, MIT, one API key, no server.",
+  "keywords": [
+    "prospecting agent",
+    "ai prospecting agent",
+    "ai sdr",
+    "ai sdr agent",
+    "open source",
+    "icp search",
+    "company search",
+    "person search",
+    "account list building",
+    "lead generation",
+    "account signals",
+    "buying signals",
+    "hiring signals",
+    "funding signals",
+    "sales intelligence",
+    "clay alternative",
+    "crustdata",
+    "crustdata api",
+    "crustdata watcher",
+    "account monitoring"
+  ],
+  "author": "Crustdata",
+  "homepage": "https://github.com/crustdata/tools/tree/main/prospecting-agent#readme",
+  "bugs": { "url": "https://github.com/crustdata/tools/issues" },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "prospecting-agent"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "find": "tsx src/cli.ts find",
+    "watch-example": "tsx src/cli.ts watch-example",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}

@@ -1,0 +1,13 @@
+# Crustdata Tools
+
+> Open-source AI agents built on the Crustdata API (B2B company and people data: 1B+ profiles, 60M+ companies). Each folder is a working agent in TypeScript, MIT licensed, runnable with one Crustdata API key, with docs on how to build it yourself.
+
+Canonical home: https://github.com/crustdata/tools
+
+## Agents
+- [Company Researcher](https://raw.githubusercontent.com/crustdata/tools/main/company-researcher/README.md): company domain or name to a research brief (headcount by department over time, hiring, executives, funding, traffic, tech stack, news, questions to ask). How to build a company research or account research agent. Details: https://raw.githubusercontent.com/crustdata/tools/main/company-researcher/llms.txt
+- [Prospecting Agent](https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/README.md): plain-English ICP to matching companies and decision-makers as CSV, plus a Crustdata watcher for hiring, funding and headcount signals. How to build an AI prospecting agent or the research half of an AI SDR. Details: https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/llms.txt
+
+## Crustdata
+- API docs: https://docs.crustdata.com/llms.txt
+- Get an API key: https://app.crustdata.com

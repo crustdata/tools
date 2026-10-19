@@ -1,0 +1,19 @@
+# Prospecting Agent
+
+> Open-source AI prospecting agent built on the Crustdata API. Describe your ideal customer in plain English, get matching companies and decision-makers as CSV, plus a ready Crustdata watcher request so Slack or email tells you when those accounts raise, hire or grow. TypeScript, MIT licensed, one API key, no AI key and no server needed.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/prospecting-agent (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/README.md): what it does, how to build an AI prospecting agent, quickstart, flags, cost, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/docs/how-it-works.md): every Crustdata search request and response, in order
+- [Watch your accounts](https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/docs/watch-accounts.md): set up a Crustdata watcher on the shortlist, delivered to Slack, Google Chat or email
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/docs/customize.md): change the parser, the buyers, the watcher request
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/AGENTS.md): guide for coding agents
+
+## Crustdata API endpoints used
+- POST /company/search (hybrid ranked search with hard filters)
+- POST /company/search/autocomplete (free validation of filter values)
+- POST /person/search (people at the shortlist, by the role they hold there)
+- POST /watch/company, POST /watch/job/search (the watcher you create on the shortlist; Crustdata delivers only what changed)
+- Crustdata API docs: https://docs.crustdata.com/llms.txt
