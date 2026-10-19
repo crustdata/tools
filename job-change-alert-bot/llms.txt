@@ -1,0 +1,16 @@
+# Job Change Alert Bot
+
+> Open-source champion tracking and job change alert bot built on Crustdata. Give it a CSV or CRM export of contacts; it posts in Slack when one moves to a new company, gets a new title or leaves their job, with the account owner, per-rep routing and a daily digest. TypeScript, MIT licensed, runs with one Crustdata API key and no AI key. Self-hosted alternative to UserGems and Champify.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/job-change-alert-bot
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/job-change-alert-bot/README.md): how to build a job change alert bot, quickstart, Slack setup, cost, limits, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/job-change-alert-bot/docs/how-it-works.md): every Crustdata request and response, in order (Person Identify, Person Watcher, run history catch-up)
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/job-change-alert-bot/docs/customize.md): alert kinds, per-rep routing, tracking other profile changes
+- [Deploy](https://raw.githubusercontent.com/crustdata/tools/main/job-change-alert-bot/docs/deploy.md): Railway, Render, Fly.io, a plain server
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/job-change-alert-bot/AGENTS.md): guide for coding agents
+
+## Crustdata APIs used
+- Person Identify: https://docs.crustdata.com/api-reference/person-apis/identify-people-from-profile-urls-emails-or-google-scholar-profile-urls
+- Person Entity Watcher: https://docs.crustdata.com/watcher-docs/person/entity

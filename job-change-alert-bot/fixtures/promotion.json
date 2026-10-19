@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "watch_id": 50991,
+    "kind": "entity",
+    "dataset": "person",
+    "api_version": "2025-11-01",
+    "run_id": 64201,
+    "notification_id": "ntf_64201",
+    "delivered_at": "2026-10-15T07:40:00.000000Z",
+    "summary": {
+      "delivered": 1,
+      "total_count": 1,
+      "records_searched": 120,
+      "max_results_per_run": 1000,
+      "truncated": false,
+      "records_matched": 1
+    },
+    "payload_delivery": {
+      "type": "inline"
+    }
+  },
+  "results": [
+    {
+      "changes": [
+        {
+          "field": "experience.employment_details.current",
+          "type": "added",
+          "new_elements": [
+            {
+              "title": "Senior Account Executive",
+              "name": "Acme Corp",
+              "crustdata_company_id": 4004,
+              "company_website_domain": "acme.com",
+              "start_date": "2026-10-01T00:00:00+00:00",
+              "end_date": null,
+              "is_default": true,
+              "position_id": 22
+            }
+          ]
+        },
+        {
+          "field": "basic_profile.current_title",
+          "type": "changed",
+          "from": "Account Executive",
+          "to": "Senior Account Executive"
+        },
+        {
+          "field": "experience.employment_details.past",
+          "type": "added",
+          "new_elements": [
+            {
+              "title": "Account Executive",
+              "name": "Acme Corp",
+              "crustdata_company_id": 4004,
+              "company_website_domain": "acme.com",
+              "start_date": "2022-01-01T00:00:00+00:00",
+              "end_date": "2026-09-30T00:00:00+00:00",
+              "is_default": false,
+              "position_id": 21
+            }
+          ]
+        }
+      ],
+      "record": {
+        "crustdata_person_id": 7001,
+        "basic_profile": {
+          "name": "Priya Shah",
+          "current_title": "Senior Account Executive"
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Senior Account Executive",
+                "name": "Acme Corp",
+                "crustdata_company_id": 4004,
+                "company_website_domain": "acme.com",
+                "start_date": "2026-10-01T00:00:00+00:00",
+                "end_date": null,
+                "is_default": true,
+                "position_id": 22
+              }
+            ],
+            "past": [
+              {
+                "title": "Account Executive",
+                "name": "Acme Corp",
+                "crustdata_company_id": 4004,
+                "company_website_domain": "acme.com",
+                "start_date": "2022-01-01T00:00:00+00:00",
+                "end_date": "2026-09-30T00:00:00+00:00",
+                "is_default": false,
+                "position_id": 21
+              },
+              {
+                "title": "Account Executive",
+                "name": "Globex",
+                "crustdata_company_id": 5005,
+                "company_website_domain": "globex.com",
+                "start_date": "2019-01-01T00:00:00+00:00",
+                "end_date": "2021-12-31T00:00:00+00:00",
+                "is_default": false,
+                "position_id": 20
+              }
+            ]
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/example-priya-shah"
+          }
+        }
+      }
+    }
+  ]
+}

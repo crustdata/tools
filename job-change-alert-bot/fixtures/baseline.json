@@ -1,0 +1,57 @@
+{
+  "metadata": {
+    "watch_id": 50991,
+    "kind": "entity",
+    "dataset": "person",
+    "api_version": "2025-11-01",
+    "run_id": 64100,
+    "notification_id": "ntf_64100",
+    "delivered_at": "2026-10-14T07:40:00.000000Z",
+    "summary": {
+      "delivered": 1,
+      "total_count": 1,
+      "records_searched": 120,
+      "max_results_per_run": 1000,
+      "truncated": false,
+      "records_matched": 1
+    },
+    "payload_delivery": {
+      "type": "inline"
+    }
+  },
+  "results": [
+    {
+      "changes": [],
+      "record": {
+        "crustdata_person_id": 6324687,
+        "basic_profile": {
+          "name": "Sherry Robinson",
+          "current_title": "Director of Sales",
+          "headline": "Director of Sales at Contoso Cloud"
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Director of Sales",
+                "name": "Contoso Cloud",
+                "crustdata_company_id": 1001,
+                "company_website_domain": "contosocloud.com",
+                "start_date": "2023-03-01T00:00:00+00:00",
+                "end_date": null,
+                "is_default": true,
+                "position_id": 11
+              }
+            ],
+            "past": []
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/example-sherry-robinson"
+          }
+        }
+      }
+    }
+  ]
+}

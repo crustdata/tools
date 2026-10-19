@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "watch_id": 50991,
+    "kind": "entity",
+    "dataset": "person",
+    "api_version": "2025-11-01",
+    "run_id": 64202,
+    "notification_id": "ntf_64202",
+    "delivered_at": "2026-10-15T07:40:00.000000Z",
+    "summary": {
+      "delivered": 1,
+      "total_count": 1,
+      "records_searched": 120,
+      "max_results_per_run": 1000,
+      "truncated": false,
+      "records_matched": 1
+    },
+    "payload_delivery": {
+      "type": "inline"
+    }
+  },
+  "results": [
+    {
+      "changes": [
+        {
+          "field": "experience.employment_details.past",
+          "type": "added",
+          "new_elements": [
+            {
+              "title": "Head of RevOps",
+              "name": "Tailspin Toys",
+              "crustdata_company_id": 6006,
+              "company_website_domain": "tailspintoys.com",
+              "start_date": "2021-06-01T00:00:00+00:00",
+              "end_date": "2026-09-30T00:00:00+00:00",
+              "is_default": false,
+              "position_id": 31
+            }
+          ]
+        }
+      ],
+      "record": {
+        "crustdata_person_id": 7002,
+        "basic_profile": {
+          "name": "Marcus Chen",
+          "current_title": null
+        },
+        "experience": {
+          "employment_details": {
+            "current": [],
+            "past": [
+              {
+                "title": "Head of RevOps",
+                "name": "Tailspin Toys",
+                "crustdata_company_id": 6006,
+                "company_website_domain": "tailspintoys.com",
+                "start_date": "2021-06-01T00:00:00+00:00",
+                "end_date": "2026-09-30T00:00:00+00:00",
+                "is_default": false,
+                "position_id": 31
+              }
+            ]
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/example-marcus-chen"
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "watch_id": 50991,
+    "kind": "entity",
+    "dataset": "person",
+    "api_version": "2025-11-01",
+    "run_id": 70000,
+    "notification_id": "ntf_70000",
+    "delivered_at": "2026-10-15T07:40:00.000000Z",
+    "summary": {
+      "delivered": 1,
+      "total_count": 1,
+      "records_searched": 120,
+      "max_results_per_run": 1000,
+      "truncated": false,
+      "records_matched": 1
+    },
+    "payload_delivery": {
+      "type": "inline"
+    },
+    "test": true
+  },
+  "results": [
+    {
+      "changes": [
+        {
+          "field": "basic_profile.current_title",
+          "type": "changed",
+          "from": "sample_text",
+          "to": "sample_text"
+        }
+      ],
+      "record": {
+        "crustdata_person_id": 1234,
+        "basic_profile": {
+          "name": "sample_text",
+          "current_title": "sample_text"
+        }
+      }
+    }
+  ]
+}

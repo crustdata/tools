@@ -1,0 +1,83 @@
+{
+  "metadata": {
+    "watch_id": 50991,
+    "kind": "entity",
+    "dataset": "person",
+    "api_version": "2025-11-01",
+    "run_id": 64203,
+    "notification_id": "ntf_64203",
+    "delivered_at": "2026-10-15T07:40:00.000000Z",
+    "summary": {
+      "delivered": 1,
+      "total_count": 1,
+      "records_searched": 120,
+      "max_results_per_run": 1000,
+      "truncated": false,
+      "records_matched": 1
+    },
+    "payload_delivery": {
+      "type": "inline"
+    }
+  },
+  "results": [
+    {
+      "changes": [
+        {
+          "field": "experience.employment_details.current",
+          "type": "added",
+          "new_elements": [
+            {
+              "title": "Advisor",
+              "name": "TinyStartup",
+              "crustdata_company_id": 7007,
+              "company_website_domain": "tinystartup.io",
+              "start_date": "2026-10-01T00:00:00+00:00",
+              "end_date": null,
+              "is_default": false,
+              "position_id": 42
+            }
+          ]
+        }
+      ],
+      "record": {
+        "crustdata_person_id": 7003,
+        "basic_profile": {
+          "name": "Dana Ruiz",
+          "current_title": "VP Operations"
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "VP Operations",
+                "name": "Northwind Analytics",
+                "crustdata_company_id": 2002,
+                "company_website_domain": "northwindanalytics.com",
+                "start_date": "2020-02-01T00:00:00+00:00",
+                "end_date": null,
+                "is_default": true,
+                "position_id": 41
+              },
+              {
+                "title": "Advisor",
+                "name": "TinyStartup",
+                "crustdata_company_id": 7007,
+                "company_website_domain": "tinystartup.io",
+                "start_date": "2026-10-01T00:00:00+00:00",
+                "end_date": null,
+                "is_default": false,
+                "position_id": 42
+              }
+            ],
+            "past": []
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/example-dana-ruiz"
+          }
+        }
+      }
+    }
+  ]
+}

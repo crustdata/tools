@@ -1,0 +1,63 @@
+{
+  "metadata": {
+    "watch_id": 50991,
+    "kind": "entity",
+    "dataset": "person",
+    "api_version": "2025-11-01",
+    "run_id": 64204,
+    "notification_id": "ntf_64204",
+    "delivered_at": "2026-10-15T07:40:00.000000Z",
+    "summary": {
+      "delivered": 1,
+      "total_count": 1,
+      "records_searched": 120,
+      "max_results_per_run": 1000,
+      "truncated": false,
+      "records_matched": 1
+    },
+    "payload_delivery": {
+      "type": "inline"
+    }
+  },
+  "results": [
+    {
+      "changes": [
+        {
+          "field": "basic_profile.current_title",
+          "type": "changed",
+          "from": "VP Sales",
+          "to": "VP, Sales"
+        }
+      ],
+      "record": {
+        "crustdata_person_id": 7004,
+        "basic_profile": {
+          "name": "Rita Reyes",
+          "current_title": "VP, Sales"
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "VP, Sales",
+                "name": "Litware",
+                "crustdata_company_id": 8008,
+                "company_website_domain": "litware.com",
+                "start_date": "2024-01-01T00:00:00+00:00",
+                "end_date": null,
+                "is_default": true,
+                "position_id": 51
+              }
+            ],
+            "past": []
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/example-rita-reyes"
+          }
+        }
+      }
+    }
+  ]
+}

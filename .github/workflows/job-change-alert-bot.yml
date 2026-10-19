@@ -1,0 +1,24 @@
+name: job-change-alert-bot
+
+on:
+  push:
+    paths: ["job-change-alert-bot/**", ".github/workflows/job-change-alert-bot.yml"]
+  pull_request:
+    paths: ["job-change-alert-bot/**", ".github/workflows/job-change-alert-bot.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: job-change-alert-bot
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: job-change-alert-bot/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test

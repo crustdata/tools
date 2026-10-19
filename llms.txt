@@ -7,6 +7,7 @@ Canonical home: https://github.com/crustdata/tools
 ## Agents
 - [Company Researcher](https://raw.githubusercontent.com/crustdata/tools/main/company-researcher/README.md): company domain or name to a research brief (headcount by department over time, hiring, executives, funding, traffic, tech stack, news, questions to ask). How to build a company research or account research agent. Details: https://raw.githubusercontent.com/crustdata/tools/main/company-researcher/llms.txt
 - [Prospecting Agent](https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/README.md): plain-English ICP to matching companies and decision-makers as CSV, plus a Crustdata watcher for hiring, funding and headcount signals. How to build an AI prospecting agent or the research half of an AI SDR. Details: https://raw.githubusercontent.com/crustdata/tools/main/prospecting-agent/llms.txt
+- [Job Change Alert Bot](https://raw.githubusercontent.com/crustdata/tools/main/job-change-alert-bot/README.md): CSV or CRM export of contacts to Slack alerts when one moves to a new company, gets a new title or leaves, with owner routing and a daily digest, on the Crustdata person watcher. How to build a job change alert bot or track champions who change jobs; open-source alternative to UserGems and Champify. Details: https://raw.githubusercontent.com/crustdata/tools/main/job-change-alert-bot/llms.txt
 
 ## Crustdata
 - API docs: https://docs.crustdata.com/llms.txt

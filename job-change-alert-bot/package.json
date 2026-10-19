@@ -1,0 +1,64 @@
+{
+  "name": "job-change-alert-bot",
+  "version": "1.0.0",
+  "description": "Open-source champion tracking and job change alert bot for Slack, with a daily digest. Built on the Crustdata Watcher API. Self-hosted alternative to UserGems and Champify.",
+  "keywords": [
+    "job change alerts",
+    "job change tracking",
+    "champion tracking",
+    "slack bot",
+    "sales signals",
+    "usergems alternative",
+    "champify alternative",
+    "crustdata",
+    "watcher api",
+    "people data api",
+    "crm",
+    "hubspot",
+    "salesforce",
+    "webhook"
+  ],
+  "homepage": "https://github.com/crustdata/tools/tree/main/job-change-alert-bot#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "job-change-alert-bot"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/setup.ts",
+    "serve": "tsx src/server.ts",
+    "dev": "tsx watch src/server.ts",
+    "import": "tsx src/cli.ts import",
+    "sync": "tsx src/cli.ts sync",
+    "status": "tsx src/cli.ts status",
+    "test-webhook": "tsx src/cli.ts test-webhook",
+    "test-slack": "tsx src/cli.ts test-slack",
+    "digest": "tsx src/cli.ts digest",
+    "unresolved": "tsx src/cli.ts unresolved",
+    "changes": "tsx src/cli.ts changes",
+    "catch-up": "tsx src/cli.ts catch-up",
+    "adopt": "tsx src/cli.ts adopt",
+    "replay": "tsx src/replay.ts",
+    "pause": "tsx src/cli.ts pause",
+    "resume": "tsx src/cli.ts resume",
+    "delete-watch": "tsx src/cli.ts delete",
+    "purge": "tsx src/cli.ts purge",
+    "test": "tsx --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.14.0",
+    "hono": "^4.7.0",
+    "resend": "^4.5.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}

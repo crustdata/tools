@@ -1,0 +1,117 @@
+{
+  "metadata": {
+    "watch_id": 50991,
+    "kind": "entity",
+    "dataset": "person",
+    "api_version": "2025-11-01",
+    "run_id": 64200,
+    "notification_id": "ntf_64200",
+    "delivered_at": "2026-10-15T07:40:00.000000Z",
+    "summary": {
+      "delivered": 1,
+      "total_count": 1,
+      "records_searched": 120,
+      "max_results_per_run": 1000,
+      "truncated": false,
+      "records_matched": 1
+    },
+    "payload_delivery": {
+      "type": "inline"
+    }
+  },
+  "results": [
+    {
+      "changes": [
+        {
+          "field": "experience.employment_details.current",
+          "type": "added",
+          "new_elements": [
+            {
+              "title": "VP of Sales",
+              "name": "Northwind Analytics",
+              "crustdata_company_id": 2002,
+              "company_website_domain": "northwindanalytics.com",
+              "start_date": "2026-10-01T00:00:00+00:00",
+              "end_date": null,
+              "is_default": true,
+              "position_id": 12
+            }
+          ]
+        },
+        {
+          "field": "basic_profile.current_title",
+          "type": "changed",
+          "from": "Director of Sales",
+          "to": "VP of Sales"
+        },
+        {
+          "field": "experience.employment_details.past",
+          "type": "added",
+          "new_elements": [
+            {
+              "title": "Director of Sales",
+              "name": "Contoso Cloud",
+              "crustdata_company_id": 1001,
+              "company_website_domain": "contosocloud.com",
+              "start_date": "2023-03-01T00:00:00+00:00",
+              "end_date": "2026-09-30T00:00:00+00:00",
+              "is_default": false,
+              "position_id": 11
+            }
+          ]
+        }
+      ],
+      "record": {
+        "crustdata_person_id": 6324687,
+        "basic_profile": {
+          "name": "Sherry Robinson",
+          "current_title": "VP of Sales",
+          "headline": "VP of Sales at Northwind Analytics"
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "VP of Sales",
+                "name": "Northwind Analytics",
+                "crustdata_company_id": 2002,
+                "company_website_domain": "northwindanalytics.com",
+                "start_date": "2026-10-01T00:00:00+00:00",
+                "end_date": null,
+                "is_default": true,
+                "position_id": 12
+              }
+            ],
+            "past": [
+              {
+                "title": "Director of Sales",
+                "name": "Contoso Cloud",
+                "crustdata_company_id": 1001,
+                "company_website_domain": "contosocloud.com",
+                "start_date": "2023-03-01T00:00:00+00:00",
+                "end_date": "2026-09-30T00:00:00+00:00",
+                "is_default": false,
+                "position_id": 11
+              },
+              {
+                "title": "Account Executive",
+                "name": "Fabrikam",
+                "crustdata_company_id": 3003,
+                "company_website_domain": "fabrikam.com",
+                "start_date": "2019-01-01T00:00:00+00:00",
+                "end_date": "2023-02-28T00:00:00+00:00",
+                "is_default": false,
+                "position_id": 10
+              }
+            ]
+          }
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://www.linkedin.com/in/example-sherry-robinson"
+          }
+        }
+      }
+    }
+  ]
+}
