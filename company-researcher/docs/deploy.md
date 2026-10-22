@@ -4,7 +4,7 @@
 
 1. Import the repository and set the Root Directory to `company-researcher` (the app lives in that folder of `crustdata/tools`).
 2. Set `CRUSTDATA_API_KEY`. Leave `ALLOW_OPEN_DEMO` unset to keep the demo to the three example companies, or set `DEMO_DOMAINS`.
-3. Set `SITE_URL` to the public URL for link previews.
+3. Set `SITE_URL` to the public origin (for example `https://crustdata.com`) for link previews, the canonical URL and `sitemap.xml`.
 4. Deploy. The API routes run on the Node runtime.
 
 The cache, the daily credit cap and the rate limits live in memory, per instance. That is fine for a demo. For a busy public deployment, move them to a shared store such as Upstash Redis (`cached()`, `checkBudget()` and `record()` in `lib/research.ts`, `rateLimit()` in `lib/http.ts`).

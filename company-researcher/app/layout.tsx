@@ -10,6 +10,7 @@ const TITLE = "Crustdata Company Researcher: open source company research agent"
 const DESCRIPTION =
   "Enter a company domain, get a research brief: headcount by department and region over 24 months, hiring, new executives, funding, web traffic, tech stack and news. Open source, built on the Crustdata API.";
 const REPO = "https://github.com/crustdata/tools/tree/main/company-researcher";
+const HOME = process.env.NEXT_PUBLIC_BASE_PATH || "/";
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.SITE_URL || "http://localhost:3217"),
@@ -17,7 +18,9 @@ export const metadata: Metadata = {
   description: DESCRIPTION,
   applicationName: "Crustdata Company Researcher",
   keywords: ["company research agent", "open source", "company research tool", "headcount by department", "hiring signals", "firmographics", "Crustdata API", "Exa company researcher alternative"],
-  openGraph: { title: TITLE, description: DESCRIPTION, type: "website", siteName: "Crustdata Company Researcher" },
+  // The canonical URL is the public one: SITE_URL (origin) + BASE_PATH, e.g. https://crustdata.com/tools/company-researcher.
+  alternates: { canonical: HOME },
+  openGraph: { title: TITLE, description: DESCRIPTION, url: HOME, type: "website", siteName: "Crustdata Company Researcher" },
   twitter: { card: "summary_large_image", title: TITLE, description: DESCRIPTION },
 };
 

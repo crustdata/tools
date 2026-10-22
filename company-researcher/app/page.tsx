@@ -239,8 +239,10 @@ function briefText(r: Research): string {
   return [`${r.company.name} (${r.company.domain})`, "", b.summary, "", "What changed lately:", ...b.changes.map(c => `- ${c}`), "", "Questions to ask:", ...b.questions.map((q, i) => `${i + 1}. ${q}`)].join("\n");
 }
 
-function Researcher() {
-  const params = useSearchParams();
+// `params` is the URL query. The first HTML (what search engines read) renders this same component with an empty
+// query as the Suspense fallback, so the heading, intro, "What one research returns" and "How we count" are in the
+// server HTML. In the browser the real query takes over, and ?domain= still runs the research.
+function Researcher({ params }: { params: Pick<URLSearchParams, "get"> }) {
   const router = useRouter();
   const [input, setInput] = useState(params.get("domain") ?? "");
   const [lite, setLite] = useState(truthy(params.get("lite")));
@@ -615,10 +617,17 @@ function Returns() {
   );
 }
 
+const NO_QUERY = new URLSearchParams();
+
+function WithQuery() {
+  const params = useSearchParams();
+  return <Researcher params={params} />;
+}
+
 export default function Page() {
   return (
-    <Suspense>
-      <Researcher />
+    <Suspense fallback={<Researcher params={NO_QUERY} />}>
+      <WithQuery />
     </Suspense>
   );
 }

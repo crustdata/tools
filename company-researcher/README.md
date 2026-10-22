@@ -213,7 +213,7 @@ Keys stay in the visitor's browser (in memory, or in local storage if they tick 
 | `RESEARCH_LITE` | `false` | Skip the tech stack and posts add-ons |
 | `CACHE_TTL_HOURS` | `24` | How long a company stays cached |
 | `BASE_PATH` | empty | Serve under a sub path, for example `/tools/company-researcher` |
-| `SITE_URL` | empty | The public URL, for link previews |
+| `SITE_URL` | empty | The public origin, for example `https://crustdata.com`: link previews, the canonical URL and the sitemap |
 | `LOG_CREDITS` | `false` | Print credits per call to stderr |
 
 ## Deploy
