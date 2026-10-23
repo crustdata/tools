@@ -1,0 +1,614 @@
+{
+  "name": "first-run",
+  "description": "The first digest right after npm run init: website sections save a starting point; posts, jobs, funding and headcount for the last 7 days come from direct searches and the stored company record.",
+  "competitors": {
+    "competitors": [
+      {
+        "name": "Northwind",
+        "domain": "northwind.example",
+        "crustdata_company_id": 101,
+        "about": "CRM",
+        "pages": [
+          "https://northwind.example/",
+          "https://northwind.example/pricing",
+          "https://northwind.example/changelog",
+          "https://northwind.example/customers"
+        ]
+      },
+      {
+        "name": "Contoso",
+        "domain": "contoso.example",
+        "crustdata_company_id": 102,
+        "about": "CRM",
+        "pages": [
+          "https://contoso.example/",
+          "https://contoso.example/pricing"
+        ]
+      },
+      {
+        "name": "Fabrikam",
+        "domain": "fabrikam.example",
+        "pages": [
+          "https://fabrikam.example/"
+        ]
+      }
+    ],
+    "cities": [
+      "London",
+      "New York"
+    ]
+  },
+  "now": "2026-10-19T08:00:00Z",
+  "state": {
+    "initializedAt": "2026-10-19T07:50:00Z",
+    "pages": [
+      {
+        "url": "https://northwind.example/",
+        "domain": "northwind.example",
+        "title": "Northwind CRM",
+        "html": "<!doctype html><html><head><title>Northwind CRM</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>The CRM for modern teams</h1><p>Northwind keeps every deal in one place &amp; moves it forward.</p><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/globex.svg\" alt=\"Globex\"><img src=\"/logos/initech.svg\" alt=\"Initech\"><img src=\"/logos/umbrella.svg\" alt=\"Umbrella\"></section><ul><li>Pipeline</li><li>Reports</li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://northwind.example/pricing",
+        "domain": "northwind.example",
+        "title": "Pricing",
+        "html": "<!doctype html><html><head><title>Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Plans</h1><div><h3>Free</h3><p>$0 per user / month</p><p>1k credits included</p></div><div><h3>Pro</h3><p>$49 per user / month</p><p>10k credits included</p></div></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://northwind.example/changelog",
+        "domain": "northwind.example",
+        "title": "Changelog",
+        "html": "<!doctype html><html><head><title>Changelog</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Changelog</h1><ul><li><a href=\"/changelog/sso\">SSO for all plans</a></li><li><a href=\"/changelog/api-v2\">API v2</a></li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://northwind.example/customers",
+        "domain": "northwind.example",
+        "title": "Customers",
+        "html": "<!doctype html><html><head><title>Customers</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Customer stories</h1><ul><li><a href=\"/customers/globex\">How Globex runs outbound on Northwind</a></li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://contoso.example/",
+        "domain": "contoso.example",
+        "title": "Contoso Sales",
+        "html": "<!doctype html><html><head><title>Contoso Sales</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Sales software for small teams</h1><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/wonka.svg\" alt=\"Wonka\"><img src=\"/logos/acme.svg\" alt=\"Acme\"></section></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Contoso</footer></body></html>"
+      },
+      {
+        "url": "https://contoso.example/pricing",
+        "domain": "contoso.example",
+        "title": "Contoso Pricing",
+        "html": "<!doctype html><html><head><title>Contoso Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Pricing</h1><p>$19 per user / month</p></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Contoso</footer></body></html>"
+      },
+      {
+        "url": "https://fabrikam.example/",
+        "domain": "fabrikam.example",
+        "title": "Fabrikam",
+        "html": "<!doctype html><html><head><title>Fabrikam</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Fabrikam</h1></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      }
+    ],
+    "companyRecords": {
+      "northwind.example": {
+        "crustdata_company_id": 101,
+        "basic_info": {
+          "name": "Northwind",
+          "primary_domain": "northwind.example",
+          "professional_network_url": "https://profiles.example/company/northwind-example"
+        },
+        "headcount": {
+          "total": 200,
+          "growth_percent": {
+            "mom": 6,
+            "qoq": 12,
+            "six_months": 30
+          },
+          "by_function_timeseries": {
+            "CURRENT_FUNCTION": {}
+          }
+        },
+        "funding": {
+          "last_round_type": "series_b",
+          "last_round_amount_usd": 40000000,
+          "last_fundraise_date": "2026-10-15",
+          "acquisitions": [
+            {
+              "acquiree_company_name": "Tailspin Toys",
+              "announced_on_date": "2026-10-14",
+              "transaction_text": "Tailspin Toys acquired by Northwind"
+            }
+          ],
+          "investors": []
+        },
+        "news": [
+          {
+            "article_title": "Northwind opens Berlin office",
+            "article_url": "https://techpress.example/northwind-berlin",
+            "article_publish_date": "2026-08-02",
+            "article_publisher_name": "TechPress"
+          }
+        ]
+      },
+      "contoso.example": {
+        "crustdata_company_id": 102,
+        "basic_info": {
+          "name": "Contoso",
+          "primary_domain": "contoso.example",
+          "professional_network_url": "https://profiles.example/company/contoso-example"
+        },
+        "headcount": {
+          "total": 40,
+          "growth_percent": {
+            "mom": 0,
+            "qoq": 2,
+            "six_months": 5
+          },
+          "by_function_timeseries": {
+            "CURRENT_FUNCTION": {
+              "Sales": [
+                {
+                  "date": "2026-10-01 00:00:00",
+                  "employee_count": 20
+                }
+              ]
+            }
+          }
+        },
+        "funding": {
+          "last_round_type": "seed",
+          "last_fundraise_date": "2024-01-05",
+          "acquisitions": [],
+          "investors": []
+        },
+        "news": []
+      }
+    },
+    "watches": {
+      "company": 1,
+      "job": 2,
+      "social_post": 3
+    },
+    "recordedAt_unused": "2026-10-19T07:50:00Z"
+  },
+  "api": {
+    "pages": {
+      "https://northwind.example/": {
+        "title": "Northwind CRM",
+        "content": "<!doctype html><html><head><title>Northwind CRM</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>The CRM for modern teams</h1><p>Northwind keeps every deal in one place &amp; moves it forward.</p><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/globex.svg\" alt=\"Globex\"><img src=\"/logos/initech.svg\" alt=\"Initech\"><img src=\"/logos/umbrella.svg\" alt=\"Umbrella\"></section><ul><li>Pipeline</li><li>Reports</li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://northwind.example/pricing": {
+        "title": "Pricing",
+        "content": "<!doctype html><html><head><title>Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Plans</h1><div><h3>Free</h3><p>$0 per user / month</p><p>1k credits included</p></div><div><h3>Pro</h3><p>$49 per user / month</p><p>10k credits included</p></div></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://northwind.example/changelog": {
+        "title": "Changelog",
+        "content": "<!doctype html><html><head><title>Changelog</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Changelog</h1><ul><li><a href=\"/changelog/sso\">SSO for all plans</a></li><li><a href=\"/changelog/api-v2\">API v2</a></li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://northwind.example/customers": {
+        "title": "Customers",
+        "content": "<!doctype html><html><head><title>Customers</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Customer stories</h1><ul><li><a href=\"/customers/globex\">How Globex runs outbound on Northwind</a></li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://contoso.example/": {
+        "title": "Contoso Sales",
+        "content": "<!doctype html><html><head><title>Contoso Sales</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Sales software for small teams</h1><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/wonka.svg\" alt=\"Wonka\"><img src=\"/logos/acme.svg\" alt=\"Acme\"></section></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Contoso</footer></body></html>"
+      },
+      "https://contoso.example/pricing": {
+        "title": "Contoso Pricing",
+        "content": "<!doctype html><html><head><title>Contoso Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Pricing</h1><p>$19 per user / month</p></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Contoso</footer></body></html>"
+      },
+      "https://fabrikam.example/": {
+        "title": "Fabrikam",
+        "content": "<!doctype html><html><head><title>Fabrikam</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Fabrikam</h1></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      }
+    },
+    "news": {
+      "northwind.example": [
+        {
+          "title": "Northwind acquires Tailspin Toys to add forecasting",
+          "url": "https://techpress.example/northwind-tailspin",
+          "snippet": "The CRM maker Northwind said the acquisition closed this week."
+        }
+      ],
+      "contoso.example": [],
+      "fabrikam.example": []
+    },
+    "runs": {
+      "company": [
+        {
+          "run": {
+            "id": 500,
+            "started_at": "2026-10-19T07:50:10Z",
+            "completed_at": "2026-10-19T07:50:10Z",
+            "status": "SUCCESS",
+            "new_records_count": 1,
+            "credits_deducted": 0
+          },
+          "records": [
+            {
+              "changes": [],
+              "record": {
+                "crustdata_company_id": 101,
+                "basic_info": {
+                  "name": "Northwind",
+                  "primary_domain": "northwind.example",
+                  "professional_network_url": "https://profiles.example/company/northwind-example"
+                },
+                "headcount": {
+                  "total": 200,
+                  "growth_percent": {
+                    "mom": 7.5,
+                    "qoq": 12,
+                    "six_months": 30
+                  },
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "Engineering": [
+                        {
+                          "date": "2026-09-01 00:00:00",
+                          "employee_count": 60
+                        },
+                        {
+                          "date": "2026-10-01 00:00:00",
+                          "employee_count": 60
+                        }
+                      ],
+                      "Sales": [
+                        {
+                          "date": "2026-10-01 00:00:00",
+                          "employee_count": 38
+                        }
+                      ],
+                      "Legal": [
+                        {
+                          "date": "2026-10-01 00:00:00",
+                          "employee_count": 2
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "series_a",
+                  "last_round_amount_usd": 12000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "acquisitions": [],
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": [
+                  {
+                    "article_title": "Northwind opens Berlin office",
+                    "article_url": "https://techpress.example/northwind-berlin",
+                    "article_publish_date": "2026-08-02",
+                    "article_publisher_name": "TechPress"
+                  }
+                ]
+              }
+            }
+          ],
+          "baseline": true
+        }
+      ],
+      "job": [
+        {
+          "run": {
+            "id": 600,
+            "started_at": "2026-10-19T07:50:12Z",
+            "completed_at": "2026-10-19T07:50:12Z",
+            "status": "SUCCESS",
+            "new_records_count": 5,
+            "credits_deducted": 0
+          },
+          "records": [
+            {
+              "crustdata_job_id": 1000,
+              "job_details": {
+                "title": "Head of Sales, EMEA",
+                "category": "Sales",
+                "url": "https://jobs.example/1000",
+                "number_of_openings": 1
+              },
+              "location": {
+                "city": "London",
+                "country": "United Kingdom",
+                "raw": "London, United Kingdom"
+              },
+              "metadata": {
+                "date_added": "2026-10-20T10:00:00"
+              },
+              "company": {
+                "basic_info": {
+                  "primary_domain": "northwind.example",
+                  "crustdata_company_id": 101
+                }
+              }
+            },
+            {
+              "crustdata_job_id": 1001,
+              "job_details": {
+                "title": "Account Executive",
+                "category": "Sales",
+                "url": "https://jobs.example/1001",
+                "number_of_openings": 1
+              },
+              "location": {
+                "city": "London",
+                "country": "United Kingdom",
+                "raw": "London, United Kingdom"
+              },
+              "metadata": {
+                "date_added": "2026-10-21T10:00:00"
+              },
+              "company": {
+                "basic_info": {
+                  "primary_domain": "northwind.example",
+                  "crustdata_company_id": 101
+                }
+              }
+            },
+            {
+              "crustdata_job_id": 1002,
+              "job_details": {
+                "title": "Account Executive",
+                "category": "Sales",
+                "url": "https://jobs.example/1002",
+                "number_of_openings": 1
+              },
+              "location": {
+                "city": "London",
+                "country": "United Kingdom",
+                "raw": "London, United Kingdom"
+              },
+              "metadata": {
+                "date_added": "2026-10-22T10:00:00"
+              },
+              "company": {
+                "basic_info": {
+                  "primary_domain": "northwind.example",
+                  "crustdata_company_id": 101
+                }
+              }
+            },
+            {
+              "crustdata_job_id": 1003,
+              "job_details": {
+                "title": "Account Executive",
+                "category": "Sales",
+                "url": "https://jobs.example/1003",
+                "number_of_openings": 1
+              },
+              "location": {
+                "city": "London",
+                "country": "United Kingdom",
+                "raw": "London, United Kingdom"
+              },
+              "metadata": {
+                "date_added": "2026-10-23T10:00:00"
+              },
+              "company": {
+                "basic_info": {
+                  "primary_domain": "northwind.example",
+                  "crustdata_company_id": 101
+                }
+              }
+            },
+            {
+              "crustdata_job_id": 1004,
+              "job_details": {
+                "title": "Account Executive",
+                "category": "Sales",
+                "url": "https://jobs.example/1004",
+                "number_of_openings": 1
+              },
+              "location": {
+                "city": "London",
+                "country": "United Kingdom",
+                "raw": "London, United Kingdom"
+              },
+              "metadata": {
+                "date_added": "2026-10-24T10:00:00"
+              },
+              "company": {
+                "basic_info": {
+                  "primary_domain": "northwind.example",
+                  "crustdata_company_id": 101
+                }
+              }
+            }
+          ],
+          "baseline": true
+        }
+      ],
+      "social_post": [
+        {
+          "run": {
+            "id": 700,
+            "started_at": "2026-10-19T07:50:14Z",
+            "completed_at": "2026-10-19T07:50:14Z",
+            "status": "SUCCESS",
+            "new_records_count": 5,
+            "credits_deducted": 0
+          },
+          "records": [
+            {
+              "backend_urn": "urn:li:activity:1",
+              "share_url": "https://social.example/posts/example-1",
+              "date_posted": "2026-10-22T09:00:00Z",
+              "text": "Introducing Northwind Agents. The Agents API is now available to every Pro customer. Automate follow-ups, hand-offs and renewals.",
+              "post_type": "post",
+              "reposter": null,
+              "actor": {
+                "actor_type": "company",
+                "name": "Northwind",
+                "crustdata_entity_id": 101
+              }
+            },
+            {
+              "backend_urn": "urn:li:activity:2",
+              "share_url": "https://social.example/posts/example-2",
+              "date_posted": "2026-10-23T09:00:00Z",
+              "text": "Big week for us. We just crossed $10M ARR, with 1,200 customers on Northwind. Thank you to the team and to everyone who bet on us early.",
+              "post_type": "post",
+              "reposter": null,
+              "actor": {
+                "actor_type": "person",
+                "name": "Jane Doe",
+                "title": "CEO",
+                "company_name": "Northwind",
+                "crustdata_entity_id": 5001
+              }
+            },
+            {
+              "backend_urn": "urn:li:activity:3",
+              "share_url": "https://social.example/posts/example-3",
+              "date_posted": "2026-10-23T12:00:00Z",
+              "text": "Join us for a webinar on Thursday: launching your first agent in 20 minutes. Register below.",
+              "post_type": "post",
+              "reposter": null,
+              "actor": {
+                "actor_type": "person",
+                "name": "Jane Doe",
+                "title": "CEO",
+                "company_name": "Northwind",
+                "crustdata_entity_id": 5001
+              }
+            },
+            {
+              "backend_urn": "urn:li:activity:4",
+              "share_url": "https://social.example/posts/example-4",
+              "date_posted": "2026-10-22T10:00:00Z",
+              "text": "Introducing Northwind Agents. The Agents API is now available to every Pro customer.",
+              "post_type": "post",
+              "reposter": {
+                "name": "Someone"
+              },
+              "actor": {
+                "actor_type": "company",
+                "name": "Northwind",
+                "crustdata_entity_id": 101
+              }
+            },
+            {
+              "backend_urn": "urn:li:activity:5",
+              "share_url": "https://social.example/posts/example-5",
+              "date_posted": "2026-10-24T09:00:00Z",
+              "text": "Should CRMs have launched agents earlier? Curious what revenue leaders think.",
+              "post_type": "post",
+              "reposter": null,
+              "actor": {
+                "actor_type": "person",
+                "name": "Jane Doe",
+                "title": "CEO",
+                "company_name": "Northwind",
+                "crustdata_entity_id": 5001
+              }
+            }
+          ],
+          "baseline": true
+        }
+      ]
+    },
+    "jobSearch": {
+      "northwind.example": {
+        "total_count": 30,
+        "job_listings": [
+          {
+            "crustdata_job_id": 1000,
+            "job_details": {
+              "title": "Head of Sales, EMEA",
+              "category": "Sales",
+              "url": "https://jobs.example/1000",
+              "number_of_openings": 1
+            },
+            "location": {
+              "city": "London",
+              "country": "United Kingdom",
+              "raw": "London, United Kingdom"
+            },
+            "metadata": {
+              "date_added": "2026-10-16T10:00:00"
+            },
+            "company": {
+              "basic_info": {
+                "primary_domain": "northwind.example",
+                "crustdata_company_id": 101
+              }
+            }
+          },
+          {
+            "crustdata_job_id": 1001,
+            "job_details": {
+              "title": "Account Executive",
+              "category": "Sales",
+              "url": "https://jobs.example/1001",
+              "number_of_openings": 1
+            },
+            "location": {
+              "city": "London",
+              "country": "United Kingdom",
+              "raw": "London, United Kingdom"
+            },
+            "metadata": {
+              "date_added": "2026-10-16T10:00:00"
+            },
+            "company": {
+              "basic_info": {
+                "primary_domain": "northwind.example",
+                "crustdata_company_id": 101
+              }
+            }
+          },
+          {
+            "crustdata_job_id": 1002,
+            "job_details": {
+              "title": "Account Executive",
+              "category": "Sales",
+              "url": "https://jobs.example/1002",
+              "number_of_openings": 1
+            },
+            "location": {
+              "city": "London",
+              "country": "United Kingdom",
+              "raw": "London, United Kingdom"
+            },
+            "metadata": {
+              "date_added": "2026-10-16T10:00:00"
+            },
+            "company": {
+              "basic_info": {
+                "primary_domain": "northwind.example",
+                "crustdata_company_id": 101
+              }
+            }
+          }
+        ]
+      },
+      "contoso.example": {
+        "total_count": 12,
+        "job_listings": []
+      }
+    },
+    "postSearch": {
+      "northwind.example": {
+        "posts": [
+          {
+            "backend_urn": "urn:li:activity:2",
+            "share_url": "https://social.example/posts/example-2",
+            "date_posted": "2026-10-17T09:00:00Z",
+            "text": "Big week for us. We just crossed $10M ARR, with 1,200 customers on Northwind. Thank you to the team and to everyone who bet on us early.",
+            "post_type": "post",
+            "reposter": null,
+            "actor": {
+              "actor_type": "person",
+              "name": "Jane Doe",
+              "title": "CEO",
+              "company_name": "Northwind",
+              "crustdata_entity_id": 5001
+            }
+          }
+        ]
+      },
+      "contoso.example": {
+        "posts": []
+      }
+    }
+  }
+}

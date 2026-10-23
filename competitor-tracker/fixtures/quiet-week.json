@@ -1,0 +1,267 @@
+{
+  "name": "quiet-week",
+  "description": "Week three: nothing changed anywhere. Every section says so in one line.",
+  "competitors": {
+    "competitors": [
+      {
+        "name": "Northwind",
+        "domain": "northwind.example",
+        "crustdata_company_id": 101,
+        "about": "CRM",
+        "pages": [
+          "https://northwind.example/",
+          "https://northwind.example/pricing",
+          "https://northwind.example/changelog",
+          "https://northwind.example/customers"
+        ]
+      },
+      {
+        "name": "Contoso",
+        "domain": "contoso.example",
+        "crustdata_company_id": 102,
+        "about": "CRM",
+        "pages": [
+          "https://contoso.example/",
+          "https://contoso.example/pricing"
+        ]
+      }
+    ],
+    "cities": [
+      "London",
+      "New York"
+    ]
+  },
+  "now": "2026-11-02T08:00:00Z",
+  "state": {
+    "initializedAt": "2026-09-28T08:00:00Z",
+    "lastDigestAt": "2026-10-26T08:00:00Z",
+    "recordedAt": "2026-09-28T08:00:00Z",
+    "pages": [
+      {
+        "url": "https://northwind.example/",
+        "domain": "northwind.example",
+        "title": "Northwind CRM",
+        "html": "<!doctype html><html><head><title>Northwind CRM</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/agents\">Agents</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>The CRM for modern teams</h1><p>Northwind keeps every deal in one place &amp; moves it forward.</p><p>Introducing Northwind Agents: automate follow-ups, now available on Pro.</p><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/globex.svg\" alt=\"Globex\"><img src=\"/logos/initech.svg\" alt=\"Initech\"><img src=\"/logos/umbrella.svg\" alt=\"Umbrella\"><img src=\"/logos/hooli.svg\" alt=\"Hooli\"><img src=\"/logos/stark-industries.svg\" alt=\"Stark Industries\"></section><ul><li>Pipeline</li><li>Reports</li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://northwind.example/pricing",
+        "domain": "northwind.example",
+        "title": "Pricing",
+        "html": "<!doctype html><html><head><title>Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Plans</h1><div><h3>Free</h3><p>$0 per user / month</p><p>1k credits included</p></div><div><h3>Pro</h3><p>$49 per user / month</p><p>20k credits included</p></div><div><h3>Enterprise</h3><p>Unlimited seats, from $2,000 per month</p></div></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://northwind.example/changelog",
+        "domain": "northwind.example",
+        "title": "Changelog",
+        "html": "<!doctype html><html><head><title>Changelog</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Changelog</h1><ul><li><a href=\"/changelog/agents-api\">Agents API in beta</a></li><li><a href=\"/changelog/sso\">SSO for all plans</a></li><li><a href=\"/changelog/api-v2\">API v2</a></li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://northwind.example/customers",
+        "domain": "northwind.example",
+        "title": "Customers",
+        "html": "<!doctype html><html><head><title>Customers</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Customer stories</h1><ul><li><a href=\"/customers/hooli\">How Hooli closes deals 2x faster with Northwind</a></li><li><a href=\"/customers/globex\">How Globex runs outbound on Northwind</a></li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://contoso.example/",
+        "domain": "contoso.example",
+        "title": "Contoso Sales",
+        "html": "<!doctype html><html><head><title>Contoso Sales</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Sales software for small teams</h1><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/wonka.svg\" alt=\"Wonka\"><img src=\"/logos/acme.svg\" alt=\"Acme\"></section></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Contoso</footer></body></html>"
+      },
+      {
+        "url": "https://contoso.example/pricing",
+        "domain": "contoso.example",
+        "title": "Contoso Pricing",
+        "html": "<!doctype html><html><head><title>Contoso Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Pricing</h1><p>$19 per user / month</p></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Contoso</footer></body></html>"
+      }
+    ],
+    "companyRecords": {
+      "northwind.example": {
+        "crustdata_company_id": 101,
+        "basic_info": {
+          "name": "Northwind",
+          "primary_domain": "northwind.example",
+          "professional_network_url": "https://profiles.example/company/northwind-example"
+        },
+        "headcount": {
+          "total": 215,
+          "growth_percent": {
+            "mom": 7.5,
+            "qoq": 12,
+            "six_months": 30
+          },
+          "by_function_timeseries": {
+            "CURRENT_FUNCTION": {
+              "Engineering": [
+                {
+                  "date": "2026-09-01 00:00:00",
+                  "employee_count": 60
+                },
+                {
+                  "date": "2026-10-01 00:00:00",
+                  "employee_count": 75
+                }
+              ],
+              "Sales": [
+                {
+                  "date": "2026-10-01 00:00:00",
+                  "employee_count": 40
+                }
+              ],
+              "Legal": [
+                {
+                  "date": "2026-10-01 00:00:00",
+                  "employee_count": 2
+                }
+              ]
+            }
+          }
+        },
+        "funding": {
+          "last_round_type": "series_b",
+          "last_round_amount_usd": 40000000,
+          "last_fundraise_date": "2026-10-21",
+          "acquisitions": [],
+          "investors": [
+            "Example Ventures",
+            "Sample Capital"
+          ]
+        },
+        "news": [
+          {
+            "article_title": "Northwind raises $40M Series B",
+            "article_url": "https://news.example/northwind-series-b",
+            "article_publish_date": "2026-10-22",
+            "article_publisher_name": "Example News"
+          }
+        ]
+      },
+      "contoso.example": {
+        "crustdata_company_id": 102,
+        "basic_info": {
+          "name": "Contoso",
+          "primary_domain": "contoso.example",
+          "professional_network_url": "https://profiles.example/company/contoso-example"
+        },
+        "headcount": {
+          "total": 40,
+          "growth_percent": {
+            "mom": 0,
+            "qoq": 2,
+            "six_months": 5
+          },
+          "by_function_timeseries": {
+            "CURRENT_FUNCTION": {
+              "Sales": [
+                {
+                  "date": "2026-10-01 00:00:00",
+                  "employee_count": 20
+                }
+              ]
+            }
+          }
+        },
+        "funding": {
+          "last_round_type": "seed",
+          "last_fundraise_date": "2024-01-05",
+          "acquisitions": [],
+          "investors": []
+        },
+        "news": []
+      }
+    },
+    "weeklyJobs": [
+      {
+        "domain": "northwind.example",
+        "week": "2026-W41",
+        "newJobs": 3,
+        "recentJobs": 30
+      },
+      {
+        "domain": "northwind.example",
+        "week": "2026-W42",
+        "newJobs": 2,
+        "recentJobs": 31
+      },
+      {
+        "domain": "northwind.example",
+        "week": "2026-W40",
+        "newJobs": 4,
+        "recentJobs": 29
+      },
+      {
+        "domain": "contoso.example",
+        "week": "2026-W42",
+        "newJobs": 0,
+        "recentJobs": 12
+      },
+      {
+        "domain": "contoso.example",
+        "week": "2026-W41",
+        "newJobs": 1,
+        "recentJobs": 12
+      }
+    ],
+    "watches": {
+      "company": 1,
+      "job": 2,
+      "social_post": 3
+    }
+  },
+  "api": {
+    "pages": {
+      "https://northwind.example/": {
+        "title": "Northwind CRM",
+        "content": "<!doctype html><html><head><title>Northwind CRM</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/agents\">Agents</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>The CRM for modern teams</h1><p>Northwind keeps every deal in one place &amp; moves it forward.</p><p>Introducing Northwind Agents: automate follow-ups, now available on Pro.</p><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/globex.svg\" alt=\"Globex\"><img src=\"/logos/initech.svg\" alt=\"Initech\"><img src=\"/logos/umbrella.svg\" alt=\"Umbrella\"><img src=\"/logos/hooli.svg\" alt=\"Hooli\"><img src=\"/logos/stark-industries.svg\" alt=\"Stark Industries\"></section><ul><li>Pipeline</li><li>Reports</li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://northwind.example/pricing": {
+        "title": "Pricing",
+        "content": "<!doctype html><html><head><title>Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Plans</h1><div><h3>Free</h3><p>$0 per user / month</p><p>1k credits included</p></div><div><h3>Pro</h3><p>$49 per user / month</p><p>20k credits included</p></div><div><h3>Enterprise</h3><p>Unlimited seats, from $2,000 per month</p></div></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://northwind.example/changelog": {
+        "title": "Changelog",
+        "content": "<!doctype html><html><head><title>Changelog</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Changelog</h1><ul><li><a href=\"/changelog/agents-api\">Agents API in beta</a></li><li><a href=\"/changelog/sso\">SSO for all plans</a></li><li><a href=\"/changelog/api-v2\">API v2</a></li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://northwind.example/customers": {
+        "title": "Customers",
+        "content": "<!doctype html><html><head><title>Customers</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Customer stories</h1><ul><li><a href=\"/customers/hooli\">How Hooli closes deals 2x faster with Northwind</a></li><li><a href=\"/customers/globex\">How Globex runs outbound on Northwind</a></li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://contoso.example/": {
+        "title": "Contoso Sales",
+        "content": "<!doctype html><html><head><title>Contoso Sales</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Sales software for small teams</h1><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/wonka.svg\" alt=\"Wonka\"><img src=\"/logos/acme.svg\" alt=\"Acme\"></section></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Contoso</footer></body></html>"
+      },
+      "https://contoso.example/pricing": {
+        "title": "Contoso Pricing",
+        "content": "<!doctype html><html><head><title>Contoso Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Pricing</h1><p>$19 per user / month</p></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Contoso</footer></body></html>"
+      }
+    },
+    "news": {
+      "northwind.example": [],
+      "contoso.example": []
+    },
+    "runs": {
+      "company": [
+        {
+          "run": {
+            "id": 502,
+            "started_at": "2026-11-01T03:00:00Z",
+            "completed_at": "2026-11-01T03:00:00Z",
+            "status": "SUCCESS",
+            "new_records_count": 0,
+            "credits_deducted": 0
+          },
+          "records": []
+        }
+      ],
+      "job": [],
+      "social_post": []
+    },
+    "jobSearch": {
+      "northwind.example": {
+        "total_count": 44
+      },
+      "contoso.example": {
+        "total_count": 12
+      }
+    }
+  }
+}

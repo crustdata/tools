@@ -1,0 +1,67 @@
+{
+  "name": "competitor-tracker",
+  "version": "1.0.0",
+  "description": "Open-source competitor tracking agent on the Crustdata API: one weekly digest in Slack, email or markdown of your competitors' website and pricing changes, new customers, funding and news, hiring by department, headcount moves and announcement posts. No LLM, no server. Self-hosted alternative to Klue, Crayon and Kompyte.",
+  "keywords": [
+    "competitor-tracking",
+    "competitive-intelligence",
+    "competitor-monitoring",
+    "competitor-analysis",
+    "website-change-monitoring",
+    "pricing-monitoring",
+    "change-detection",
+    "job-postings",
+    "hiring-signals",
+    "headcount",
+    "funding-alerts",
+    "competitor-alerts",
+    "slack-digest",
+    "market-intelligence",
+    "klue-alternative",
+    "crayon-alternative",
+    "kompyte-alternative",
+    "crustdata",
+    "crustdata-api",
+    "open-source",
+    "ai-agent"
+  ],
+  "homepage": "https://github.com/crustdata/tools/tree/main/competitor-tracker#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "competitor-tracker"
+  },
+  "bugs": {
+    "url": "https://github.com/crustdata/tools/issues"
+  },
+  "author": "Crustdata",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/setup.ts",
+    "init": "tsx src/cli.ts init",
+    "digest": "tsx src/cli.ts digest",
+    "status": "tsx src/cli.ts status",
+    "resend": "tsx src/cli.ts resend",
+    "add": "tsx src/cli.ts add",
+    "remove": "tsx src/cli.ts remove",
+    "pause": "tsx src/cli.ts pause",
+    "resume": "tsx src/cli.ts resume",
+    "delete-watches": "tsx src/cli.ts delete-watches",
+    "test-slack": "tsx src/cli.ts test-slack",
+    "replay": "tsx src/replay.ts",
+    "test": "tsx --test \"test/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "resend": "^4.5.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "name": "edge-cases",
+  "description": "Awkward inputs: a page too large to compare, a page that failed to fetch, a competitor outside the company index, a translation link and a legal link that must not count as new pages, HTML entities, a post that pings a channel, a job watch deleted outside the tool.",
+  "competitors": {
+    "competitors": [
+      {
+        "name": "Northwind",
+        "domain": "northwind.example",
+        "crustdata_company_id": 101,
+        "pages": [
+          "https://northwind.example/",
+          "https://northwind.example/pricing",
+          "https://northwind.example/directory"
+        ]
+      },
+      {
+        "name": "Fabrikam",
+        "domain": "fabrikam.example",
+        "pages": [
+          "https://fabrikam.example/"
+        ]
+      }
+    ],
+    "cities": []
+  },
+  "now": "2026-10-26T08:00:00Z",
+  "state": {
+    "initializedAt": "2026-10-12T08:00:00Z",
+    "lastDigestAt": "2026-10-19T08:00:00Z",
+    "pages": [
+      {
+        "url": "https://northwind.example/",
+        "domain": "northwind.example",
+        "title": "Northwind CRM",
+        "html": "<!doctype html><html><head><title>Northwind CRM</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>The CRM for modern teams</h1><p>Northwind keeps every deal in one place &amp; moves it forward.</p><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/globex.svg\" alt=\"Globex\"><img src=\"/logos/initech.svg\" alt=\"Initech\"><img src=\"/logos/umbrella.svg\" alt=\"Umbrella\"></section><ul><li>Pipeline</li><li>Reports</li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://northwind.example/pricing",
+        "domain": "northwind.example",
+        "title": "Pricing",
+        "html": "<!doctype html><html><head><title>Pricing</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Plans</h1><div><h3>Free</h3><p>$0 per user / month</p><p>1k credits included</p></div><div><h3>Pro</h3><p>$49 per user / month</p><p>10k credits included</p></div></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      {
+        "url": "https://northwind.example/directory",
+        "domain": "northwind.example",
+        "title": "Directory",
+        "repeat": {
+          "before": "<html><head><title>Directory</title></head><body><h1>Directory</h1><p>First entry, previous week</p>",
+          "block": "<p>Company {i} in the directory listing with a long description that pads the text out to a large size.</p>",
+          "times": 4500,
+          "after": "</body></html>"
+        }
+      }
+    ],
+    "companyRecords": {
+      "northwind.example": {
+        "crustdata_company_id": 101,
+        "basic_info": {
+          "name": "Northwind",
+          "primary_domain": "northwind.example",
+          "professional_network_url": "https://profiles.example/company/northwind-example"
+        },
+        "headcount": {
+          "total": 200,
+          "growth_percent": {
+            "mom": 7.5,
+            "qoq": 12,
+            "six_months": 30
+          },
+          "by_function_timeseries": {
+            "CURRENT_FUNCTION": {
+              "Engineering": [
+                {
+                  "date": "2026-09-01 00:00:00",
+                  "employee_count": 60
+                },
+                {
+                  "date": "2026-10-01 00:00:00",
+                  "employee_count": 60
+                }
+              ],
+              "Sales": [
+                {
+                  "date": "2026-10-01 00:00:00",
+                  "employee_count": 38
+                }
+              ],
+              "Legal": [
+                {
+                  "date": "2026-10-01 00:00:00",
+                  "employee_count": 2
+                }
+              ]
+            }
+          }
+        },
+        "funding": {
+          "last_round_type": "series_a",
+          "last_round_amount_usd": 12000000,
+          "last_fundraise_date": "2025-03-10",
+          "acquisitions": [],
+          "investors": [
+            "Example Ventures"
+          ]
+        },
+        "news": [
+          {
+            "article_title": "Northwind opens Berlin office",
+            "article_url": "https://techpress.example/northwind-berlin",
+            "article_publish_date": "2026-08-02",
+            "article_publisher_name": "TechPress"
+          }
+        ]
+      }
+    },
+    "watches": {
+      "company": 1,
+      "job": 2,
+      "social_post": 3
+    }
+  },
+  "api": {
+    "pages": {
+      "https://northwind.example/": {
+        "title": "Northwind CRM &amp; more",
+        "content": "<!doctype html><html><head><title>Northwind CRM</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/de/\">Fr</a><a href=\"/legal/cookies\">Privacy</a></nav></header>\n<main><h1>The CRM for modern teams</h1><p>Northwind keeps every deal in one place &amp; moves &lt;everything&gt; it forward.</p><section class=\"customers\"><h2>Trusted by teams at</h2><img src=\"/logos/globex.svg\" alt=\"Globex\"><img src=\"/logos/initech.svg\" alt=\"Initech\"><img src=\"/logos/umbrella.svg\" alt=\"Umbrella\"></section><ul><li>Pipeline</li><li>Reports</li></ul></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      },
+      "https://northwind.example/pricing": {
+        "success": false,
+        "http_status": 503
+      },
+      "https://northwind.example/directory": {
+        "title": "Directory",
+        "repeat": {
+          "before": "<html><head><title>Directory</title></head><body><h1>Directory</h1><p>First entry, this week</p>",
+          "block": "<p>Company {i} in the directory listing with a long description that pads the text out to a large size.</p>",
+          "times": 4500,
+          "after": "</body></html>"
+        }
+      },
+      "https://fabrikam.example/": {
+        "title": "Fabrikam",
+        "content": "<!doctype html><html><head><title>Fabrikam</title><script>window.x=1</script><style>.a{}</style></head><body>\n<header><nav><a href=\"/\">Home</a><a href=\"/pricing\">Pricing</a><a href=\"/changelog\">Changelog</a><a href=\"/customers\">Customers</a><a href=\"/blog\">Blog</a><a href=\"/fr/\">Fr</a><a href=\"/legal/privacy\">Privacy</a></nav></header>\n<main><h1>Fabrikam</h1><p>Introducing Fabrikam Flow, now available.</p></main>\n<footer><a href=\"/legal/terms\">Terms</a> &copy; 2026 Northwind</footer></body></html>"
+      }
+    },
+    "news": {
+      "northwind.example": [],
+      "fabrikam.example": []
+    },
+    "runs": {
+      "company": [
+        {
+          "run": {
+            "id": 503,
+            "started_at": "2026-10-26T07:59:00Z",
+            "completed_at": null,
+            "status": "RUNNING",
+            "new_records_count": 0,
+            "credits_deducted": 0
+          },
+          "records": []
+        }
+      ],
+      "social_post": [
+        {
+          "run": {
+            "id": 702,
+            "started_at": "2026-10-25T03:10:00Z",
+            "completed_at": "2026-10-25T03:10:00Z",
+            "status": "SUCCESS",
+            "new_records_count": 1,
+            "credits_deducted": 0
+          },
+          "records": [
+            {
+              "backend_urn": "urn:li:activity:9",
+              "share_url": "https://social.example/posts/example-9",
+              "date_posted": "2026-10-24T09:00:00Z",
+              "text": "Introducing <!channel> *bold* <https://evil.example|click>. The new Northwind Mobile app is now available on iOS & Android.",
+              "post_type": "post",
+              "reposter": null,
+              "actor": {
+                "actor_type": "company",
+                "name": "Northwind",
+                "crustdata_entity_id": 101
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "jobSearch": {
+      "northwind.example": {
+        "total_count": 20
+      }
+    },
+    "deletedWatches": [
+      "job"
+    ]
+  }
+}

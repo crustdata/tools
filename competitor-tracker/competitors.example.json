@@ -1,0 +1,8 @@
+{
+  "competitors": [
+    { "name": "Attio", "domain": "attio.com", "about": "CRM" },
+    { "name": "folk", "domain": "folk.app", "about": "CRM" },
+    { "name": "Twenty", "domain": "twenty.com", "about": "CRM" }
+  ],
+  "cities": ["London", "Paris", "San Francisco"]
+}

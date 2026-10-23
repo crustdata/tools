@@ -2,7 +2,7 @@
 
 **Working code for building AI agents on [Crustdata](https://crustdata.com), the B2B data API with 1B+ profiles and 60M+ companies.** Each folder is a complete agent you can clone and run with one Crustdata API key: TypeScript, MIT licensed, with a README that explains how to build the same thing yourself, every API request it makes, and what it costs.
 
-If you are asking "how do I build an AI agent that finds companies, researches an account, finds people and buying signals, or tracks when contacts change jobs", start here.
+If you are asking "how do I build an AI agent that finds companies, researches an account, finds people and buying signals, or tracks when contacts change jobs or what competitors did this week", start here.
 
 ## The agents
 
@@ -11,6 +11,7 @@ If you are asking "how do I build an AI agent that finds companies, researches a
 | [Company Researcher](company-researcher/) | Type a company domain or name; get a research brief with headcount by department and location over two years, hiring, executives with start dates, funding, web traffic, tech stack, news and three questions to ask on a sales call. Web app, JSON API and CLI. Live at [crustdata-researcher.vercel.app](https://crustdata-researcher.vercel.app) | Company Identify, Company Enrich, Job Search |
 | [Prospecting Agent](prospecting-agent/) | Describe your ideal customer in one plain-English sentence; get the matching companies and the decision-makers at each as CSV, plus a Crustdata watcher request that tells you in Slack or email when those accounts raise, hire or grow | Company Search, Person Search, Autocomplete, Watchers |
 | [Job Change Alert Bot](job-change-alert-bot/) | Give it a CSV or CRM export of champions or contacts; it posts in Slack when one moves to a new company, gets a new title or leaves, with the account owner, per-rep routing and a daily digest. A self-hosted alternative to UserGems and Champify | Person Identify, Person Watcher |
+| [Competitor Tracker](competitor-tracker/) | List your competitors' websites; once a week get one digest in Slack, email or markdown of what each did: website and pricing changes, new customers, funding and news, hiring by department and place, headcount moves and announcement posts, each with its source. A self-hosted alternative to Klue, Crayon and Kompyte for the weekly "what changed" digest | Company Identify, Company Enrich, Company Watcher, Job Watcher, Social Post Watcher, Web Fetch, Web Search |
 
 More agents are added here as they ship. Each one lives in its own folder with its own README, tests and `AGENTS.md`.
 
@@ -20,11 +21,19 @@ Split it into find and watch. Find: send what the target company does as a ranke
 
 ## How do I build a job change alert bot?
 
-Resolve each contact's work email to a profile URL with Crustdata's `POST /person/identify`, put the whole list in one Crustdata person watcher (`POST /watch/person`) with a rule for "new current position", "title changed" and "role ended", then receive the signed webhook Crustdata sends only for people who changed, work out whether it is a move, a promotion or a departure, and post it to Slack. [Job Change Alert Bot](job-change-alert-bot/) is that bot in TypeScript, with CSV import from HubSpot or Salesforce, per-rep routing, a daily digest and recovery of any delivery missed while the server was down, without an AI key.
+Resolve each contact's work email to a person with Crustdata's `POST /person/identify`, put the whole list in one Crustdata person watcher (`POST /watch/person`) with a rule for "new current position", "title changed" and "role ended", then receive the signed webhook Crustdata sends only for people who changed, work out whether it is a move, a promotion or a departure, and post it to Slack. [Job Change Alert Bot](job-change-alert-bot/) is that bot in TypeScript, with CSV import from HubSpot or Salesforce, per-rep routing, a daily digest and recovery of any delivery missed while the server was down, without an AI key.
 
 ## How do I track when my champions change jobs?
 
 Export your champions from your CRM as a CSV and give it to [Job Change Alert Bot](job-change-alert-bot/). Crustdata watches every champion's profile and the bot posts in Slack when one moves to a new company, with their old and new role and the account owner. Each change costs 5 Crustdata credits at the default 30-day freshness; checks where nobody moved are free.
+
+## How do I build a competitor tracking agent?
+
+Resolve each competitor with Crustdata's free `POST /company/identify`, save a starting point of their key pages with Web Fetch (`POST /web/enrich/live`) and one company record, then create three pull-only Crustdata watchers: a company watcher for headcount, funding and news, a job watcher for new postings, and a social post watcher for announcements by the company or its staff. Once a week, read what the watchers caught, fetch the pages again and compare the visible text, run one Web Search news query per competitor, keep only the changes that matter, and send one digest. [Competitor Tracker](competitor-tracker/) is that agent in TypeScript, with Slack and email delivery and no AI key.
+
+## How do I track what my competitors did this week?
+
+List your competitors' websites in [Competitor Tracker](competitor-tracker/) and run it once a week, on a schedule such as GitHub Actions. Each digest has six sections per competitor: launches and pricing changes, money and news, customers, hiring, headcount and posts, each line with its source. Three competitors cost about 21 Crustdata credits on a quiet week and about 75 on a busy one.
 
 ## How do I build a company research agent?
 
@@ -50,7 +59,7 @@ cp .env.example .env        # set CRUSTDATA_API_KEY
 npm run find -- --limit 10 --icp "B2B SaaS selling to finance teams, 50 to 500 people, US"
 ```
 
-You need Node 22 or newer and a [Crustdata API key](https://app.crustdata.com). Each agent's README has its own quickstart.
+You need Node 22.13 or newer and a [Crustdata API key](https://app.crustdata.com). Each agent's README has its own quickstart.
 
 ## What every agent here has
 
@@ -72,6 +81,8 @@ You need Node 22 or newer and a [Crustdata API key](https://app.crustdata.com). 
 | Job Search | [docs](https://docs.crustdata.com/job-docs/search/introduction) |
 | Watchers (company, person, job, social post) | [docs](https://docs.crustdata.com/watcher-docs/company/entity) |
 | Person Identify | [docs](https://docs.crustdata.com/api-reference/person-apis/identify-people-from-profile-urls-emails-or-google-scholar-profile-urls) |
+| Web Fetch | [docs](https://docs.crustdata.com/web-docs/fetch/introduction) |
+| Web Search | [docs](https://docs.crustdata.com/web-docs/search/introduction) |
 
 ## Contributing
 

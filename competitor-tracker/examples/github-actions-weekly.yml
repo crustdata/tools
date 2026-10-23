@@ -1,0 +1,72 @@
+# Runs the competitor digest every Monday on GitHub Actions, with nothing to host.
+# Step by step (creating the repo, secrets, the first run): docs/deploy.md
+#
+# 1. Put the tracker at the root of your own PRIVATE repo:  npx degit crustdata/tools/competitor-tracker my-tracker
+# 2. Run `npm run setup` once on your laptop (it writes competitors.json) and commit competitors.json.
+#    If you already ran `npm run init` on the laptop, the next run reuses those watchers; it never makes duplicates.
+# 3. Copy this file to .github/workflows/weekly-digest.yml
+# 4. Settings > Secrets and variables > Actions:
+#    Secrets: CRUSTDATA_API_KEY, and if you want them SLACK_WEBHOOK_URL, RESEND_API_KEY, DIGEST_EMAIL_FROM, DIGEST_EMAIL_TO.
+#    Variables (optional): PAGES_PER_COMPETITOR, MAX_POSTS_PER_WEEK, MAX_JOBS_PER_WEEK, SHOW_POSTER_NAMES.
+# 5. Actions tab > Weekly competitor digest > Run workflow, to get the first digest now.
+#
+# Every run first runs `npm run init -- --yes`: it sets up anything missing (new competitors, a deleted watcher) and
+# costs nothing when everything is in place. Then it commits data/ (last week's pages, watcher ids) and digests/ back
+# to the repo, which is how next week knows what changed.
+name: Weekly competitor digest
+
+on:
+  schedule:
+    - cron: "0 8 * * 1" # Mondays 08:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: competitor-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60 # about 30 seconds per competitor, more on the first run
+    env:
+      CRUSTDATA_API_KEY: ${{ secrets.CRUSTDATA_API_KEY }}
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      DIGEST_EMAIL_FROM: ${{ secrets.DIGEST_EMAIL_FROM }}
+      DIGEST_EMAIL_TO: ${{ secrets.DIGEST_EMAIL_TO }}
+      PAGES_PER_COMPETITOR: ${{ vars.PAGES_PER_COMPETITOR }}
+      MAX_POSTS_PER_WEEK: ${{ vars.MAX_POSTS_PER_WEEK }}
+      MAX_JOBS_PER_WEEK: ${{ vars.MAX_JOBS_PER_WEEK }}
+      SHOW_POSTER_NAMES: ${{ vars.SHOW_POSTER_NAMES }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Set up anything missing (free when nothing changed)
+        run: npm run init -- --yes
+      - name: Build and send the digest
+        run: npm run digest
+      - name: Save state for next week
+        if: always()
+        run: |
+          git config user.name "competitor-tracker"
+          git config user.email "competitor-tracker@users.noreply.github.com"
+          git add -f competitors.json
+          if [ -f data/tracker.sqlite ]; then git add -f data/tracker.sqlite; fi
+          if [ -d digests ]; then git add -f digests; fi
+          git commit -m "Competitor digest $(date -u +%Y-%m-%d)" || { echo "Nothing to save"; exit 0; }
+          # Someone may have pushed (for example an edit to competitors.json) while this ran. If the two cannot be
+          # combined, this run's state goes to its own branch, so neither side is lost.
+          if ! git pull --rebase; then
+            git rebase --abort || true
+            git push origin "HEAD:refs/heads/tracker-state-$(date -u +%Y%m%d-%H%M)"
+            echo "Could not combine this run's state with new commits; it was pushed to a tracker-state branch. Merge it into main." >&2
+            exit 1
+          fi
+          git push

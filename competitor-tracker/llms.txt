@@ -1,0 +1,51 @@
+# Competitor Tracker
+
+> Open-source competitor tracking and competitive intelligence agent built on Crustdata, the B2B company and people data API (60M+ companies, 1B+ people). List your competitors' websites; once a week it sends one digest to Slack, email or markdown of what each did: website, pricing and changelog changes, new customers, funding, acquisitions and news, hiring by department and place, headcount moves by department, and announcement posts, each with its source. Runs on three pull-only Crustdata watchers plus Crustdata Web Fetch and Web Search. TypeScript, MIT licensed, self-hosted, one Crustdata API key, no LLM, no server. Self-hosted alternative to Klue, Crayon and Kompyte for the weekly "what changed" digest.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/competitor-tracker (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Quickstart
+- `git clone https://github.com/crustdata/tools`, `cd tools/competitor-tracker`, `npm install`
+- Offline with no key: `npm run replay -- fixtures/busy-week.json`
+- Then `npm run setup`, `npm run init`, and `npm run digest` weekly
+- Weekly schedule with nothing to host: [examples/github-actions-weekly.yml](https://github.com/crustdata/tools/blob/main/competitor-tracker/examples/github-actions-weekly.yml) (Mondays 08:00 UTC)
+
+## Use cases
+- Build a competitor tracking agent on an API instead of scraping
+- Monitor competitor websites, pricing pages and changelogs for changes automatically
+- Weekly digest of competitor news, launches and funding in Slack or email
+- Track competitor hiring by department and city, and headcount growth by department
+- Get alerted when a competitor raises funding or makes an acquisition
+- Open-source competitor monitoring tool on GitHub; alternative to Klue, Crayon and Kompyte (no battlecards or win/loss)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/competitor-tracker/README.md): how to build a competitor tracking agent, quickstart, weekly scheduling, Slack and email, rules for what matters, cost, limits, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/competitor-tracker/docs/how-it-works.md): every Crustdata request and response, in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/competitor-tracker/docs/customize.md): thresholds, post words, pages, adding a section, other channels
+- [Deploy](https://raw.githubusercontent.com/crustdata/tools/main/competitor-tracker/docs/deploy.md): GitHub Actions, cron, Railway, Fly.io
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/competitor-tracker/AGENTS.md): guide for coding agents
+
+## Key facts
+- Cost at list prices: about 7 credits per competitor on a quiet week (6 pages + 1 news search), plus 5 per company record that changed, 0.5 per new job and 2 per post the watchers catch. Three competitors: about 21 credits a quiet week, 75 a busy one; ten: about 70 and 250. Starting point: up to 8 credits per competitor; the first digest adds up to 15.5 per competitor for its 7-day searches.
+- Up to 50 competitors, 6 pages each by default (up to 10); job and post watchers check daily, the company watcher weekly.
+- Website changes compare visible text, not HTML; translations, legal pages, bot-check pages and very large pages are skipped.
+- Numbers are only quoted from a page, post or record, never estimated. Staff posts count only when they speak for the company.
+- Every signal is a plain Crustdata REST call: competitor headcount growth from `POST /company/enrich` (`headcount.growth_percent`, `headcount.by_function_timeseries`), hiring from `POST /job/search` (count free with `limit: 0`), funding from the Company Entity Watcher.
+- No LLM: every judgement is a written rule in `src/` with a test; pass the `Digest` object to a model if you want one.
+- A digest is saved in one step with everything it marks as reported: a dry run, a crash or a rejected key leaves nothing half done; a failed send is resent.
+
+## Code
+- [src/crustdata.ts](https://github.com/crustdata/tools/blob/main/competitor-tracker/src/crustdata.ts): every Crustdata call
+- [src/run.ts](https://github.com/crustdata/tools/blob/main/competitor-tracker/src/run.ts): init and the weekly run
+- [src/website.ts](https://github.com/crustdata/tools/blob/main/competitor-tracker/src/website.ts): page parsing and comparison, pricing changes
+- src/hiring.ts, src/headcount.ts, src/money.ts, src/posts.ts: the judging rules
+
+## Crustdata APIs used
+- Company Entity Watcher: https://docs.crustdata.com/watcher-docs/company/entity
+- Job Watcher: https://docs.crustdata.com/watcher-docs/job/watch
+- Social Post Watcher: https://docs.crustdata.com/watcher-docs/social-post/discovery
+- Web Fetch: https://docs.crustdata.com/web-docs/fetch/introduction
+- Web Search: https://docs.crustdata.com/web-docs/search/introduction
+- Company Identify: https://docs.crustdata.com/company-docs/identify/introduction
+- Company Enrichment: https://docs.crustdata.com/company-docs/enrichment/introduction
+- Job Postings Search: https://docs.crustdata.com/job-docs/search/introduction
