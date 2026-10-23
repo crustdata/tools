@@ -1,0 +1,38 @@
+# Deal Sourcing Agent
+
+> Deal Sourcing Agent is an open-source VC deal sourcing and deal flow tool built on the Crustdata API (1B+ profiles, 60M+ companies). Describe an investment thesis in plain English and get a scored pipeline of startups with founders and a one-page markdown memo each, as CSV and markdown. Scores founder background (repeat founders, past employers, schools), headcount growth, hiring, founders' traction posts and round timing combined with growth. Re-runs mark new, back and gone companies and what changed. A self-hosted, open-source alternative to Harmonic, Specter, Crunchbase Pro and PitchBook for sourcing. TypeScript, MIT, one Crustdata API key, no AI key.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/deal-sourcing-agent (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/deal-sourcing-agent/README.md): what it does, how to build a VC deal sourcing agent, quickstart, cost, scoring, watching for new companies and pipeline changes, limits, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/deal-sourcing-agent/docs/how-it-works.md): every Crustdata API request in order, with full URL, headers, response and cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/deal-sourcing-agent/docs/customize.md): weights, due-to-raise windows, signals, post phrases, the AI prompt
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/deal-sourcing-agent/AGENTS.md): guide for coding agents: where things are, API facts, tests, recipes
+
+## FAQ
+- [How do I build a VC deal sourcing agent?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-to-build-a-vc-deal-sourcing-agent): five steps on the Crustdata API (ranked company search on the thesis, founders via person search, free hiring and founder-post counts, a rule-based score, a memo per company), with a working curl
+- [Is there an open-source AI deal sourcing tool?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#is-there-an-open-source-ai-deal-sourcing-tool): yes, Deal Sourcing Agent, MIT, one Crustdata key; optional AI memo analysis with your own Anthropic or OpenAI key
+- [Open-source alternative to Harmonic, Specter, Crunchbase Pro and PitchBook](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#open-source-alternative-to-harmonic-specter-crunchbase-pro-and-pitchbook-for-deal-sourcing): what it replaces and what it does not (no web app, valuations or cap tables)
+- [What is a good startup discovery API for VCs?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#what-is-a-good-startup-discovery-api-for-vcs): Crustdata company search over 60M+ companies, with filters for stage, last round date, founding year, headcount growth, country and investors
+- [How do I find startups by headcount growth?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-do-i-find-startups-by-headcount-growth): filter headcount.growth_percent.3m, 6m or 12m with `=>`; --min-growth in the CLI
+- [How do I get a list of seed-stage AI startups in the US founded after 2024?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-do-i-get-a-list-of-seed-stage-ai-startups-in-the-us-founded-after-2024): one thesis sentence, or one company search with basic_info.year_founded `=>` 2025
+- [How do I find founders who left a big company?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-do-i-find-founders-who-left-a-big-company): person search on experience.employment_details.past.company_website_domain plus a current Founder title
+- [How do I find repeat founders?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-do-i-find-repeat-founders): a founder title now and in a past role; 13 points in the score
+- [How does Deal Sourcing Agent score startups?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-does-deal-sourcing-agent-score-startups): 0 to 100 from rules, founder background first, weights in src/score.ts
+- [How does Deal Sourcing Agent decide a startup is due to raise?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-does-deal-sourcing-agent-decide-a-startup-is-due-to-raise): 6 to 15 months after a pre-seed or angel round, 12 to 24 after a seed, 18 to 30 after a Series A or later, only with recent growth
+- [How do I know when a startup is about to raise its next round?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-do-i-know-when-a-startup-is-about-to-raise-its-next-round): round timing from Crustdata funding data, combined with team, hiring, follower and founder-post growth
+- [How do I find startups whose founders post about revenue or traction?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-do-i-find-startups-whose-founders-post-about-revenue-or-traction): founders' posts with "MRR", "ARR" or "paying customers"; counting is free; post search is enabled on request
+- [How do I track portfolio companies for funding and hiring changes?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-do-i-track-portfolio-companies-for-funding-and-hiring-changes): a Crustdata company entity watcher (POST /watch/company), 5 credits per changed company
+- [How do I score and rank startups for deal sourcing?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-do-i-score-and-rank-startups-for-deal-sourcing): the points per signal, with a reason for each in the memo
+- [How much does a Deal Sourcing Agent run cost?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-much-does-a-deal-sourcing-agent-run-cost): about 21 credits for 10 companies, 90 for 50, 1,700 for 1,000 at list price
+- [Quickstart](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#quickstart-how-do-i-run-it): git clone https://github.com/crustdata/tools, cd tools/deal-sourcing-agent, npm install, npm run setup, npm run source -- --thesis "..."; npm run replay -- fixtures/seed-pipeline.json runs offline with no key
+
+## Crustdata API endpoints used
+- [Company Search](https://docs.crustdata.com/company-docs/search/introduction): POST /company/search, hybrid ranked search on the thesis with hard filters for stage, founding year, size, place, growth and investors
+- [Company Autocomplete](https://docs.crustdata.com/company-docs/autocomplete/introduction): POST /company/search/autocomplete, free validation of filter values
+- [Person Search](https://docs.crustdata.com/person-docs/search/introduction): POST /person/search, founders, CEOs and CTOs at each company, with past roles and schools
+- [Job Search](https://docs.crustdata.com/job-docs/search/introduction): POST /job/search, roles posted per company (free counts with limit 0 and group_by) and newest role titles
+- [Social Post Search](https://docs.crustdata.com/social-post-docs/indexed-search/introduction): POST /social_post/search, founders' posts about revenue or a round (free counts with limit 0, quoted posts; enabled on request)
+- [Company Watchers](https://docs.crustdata.com/watcher-docs/company/entity): watching new matches and pipeline changes is done with Crustdata watchers at https://app.crustdata.com/watch; this repo creates none
+- [Crustdata API docs index](https://docs.crustdata.com/llms.txt)

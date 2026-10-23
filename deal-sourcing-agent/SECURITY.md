@@ -1,0 +1,5 @@
+# Security
+
+To report a vulnerability in this repository, open a private security advisory on GitHub ("Security" tab, "Report a vulnerability") or email support@crustdata.com with "deal-sourcing-agent" in the subject. Please do not open a public issue for it.
+
+The code runs on your machine and talks only to `api.crustdata.com`, plus `api.anthropic.com` or `api.openai.com` when you pass `--ai` with your own key. Keys are read from the environment or from `.env` (which `npm run setup` writes readable by you only) and are never logged or written anywhere else. The outputs in `out/` hold names, titles, past roles, schools and profile URLs of founders; `out/` is in `.gitignore`. The tool never reads, saves or prints contact fields the API returns. Text from the API is escaped before it goes into a memo, so a company description cannot inject links or HTML, and the optional AI analysis is stripped of HTML and non-https links before it is written. With `--ai`, each memo's facts (founders' names, profile URLs, past roles, schools, quoted posts) are sent to Anthropic or OpenAI under your own key.

@@ -1,0 +1,1072 @@
+{
+  "description": "--timing fresh: the same companies scored for a follow-on investor, where a round in the last 6 months scores highest.",
+  "today": "2026-10-21",
+  "thesis": "AI infrastructure, pre-seed, seed or unfunded, US, founded 2024 or later",
+  "flags": [
+    "--timing",
+    "fresh"
+  ],
+  "inputs": {
+    "companies": [
+      {
+        "crustdata_company_id": 900101,
+        "basic_info": {
+          "name": "Relaywise",
+          "crustdata_company_id": 900101,
+          "primary_domain": "relaywise.example",
+          "website": "https://relaywise.example",
+          "professional_network_url": "https://profiles.example/company/example-relaywise",
+          "description": "Relaywise is a runtime for AI agents: it runs long tasks, keeps their state and lets teams replay and debug every step in production.",
+          "year_founded": 2024,
+          "employee_count_range": "11-50",
+          "company_type": "Privately Held"
+        },
+        "headcount": {
+          "total": 14,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0,
+            "3m": 16.7,
+            "6m": 55.6,
+            "12m": 55.6
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": 2,
+            "6m": 5,
+            "12m": 5
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "team@relaywise.example",
+          "phone_number": "+1 555 0100",
+          "total_investment_usd": 4700000,
+          "last_round_amount_usd": 4200000,
+          "last_fundraise_date": "2025-03-10",
+          "last_round_type": "seed",
+          "investors": [
+            "Lindenfield Ventures",
+            "Copperline Capital"
+          ]
+        },
+        "hiring": null,
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California"
+        },
+        "followers": {
+          "count": 2900,
+          "mom_percent": 1,
+          "qoq_percent": 19,
+          "six_months_growth_percent": 38,
+          "yoy_percent": 76
+        }
+      },
+      {
+        "crustdata_company_id": 900102,
+        "basic_info": {
+          "name": "Quietlayer",
+          "crustdata_company_id": 900102,
+          "primary_domain": "quietlayer.example",
+          "website": "https://quietlayer.example",
+          "professional_network_url": "https://profiles.example/company/example-quietlayer",
+          "description": "Quietlayer gives AI agents a permissions layer, so a company can decide which tools and data each agent may use.",
+          "year_founded": 2024,
+          "employee_count_range": "2-10",
+          "company_type": "Privately Held"
+        },
+        "headcount": {
+          "total": 8,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0,
+            "3m": -20,
+            "6m": -27.3,
+            "12m": -27.3
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": -2,
+            "6m": -3,
+            "12m": -3
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "team@quietlayer.example",
+          "phone_number": "+1 555 0100",
+          "total_investment_usd": 2500000,
+          "last_round_amount_usd": 2500000,
+          "last_fundraise_date": "2025-01-15",
+          "last_round_type": "seed",
+          "investors": [
+            "Harbor Lane Partners"
+          ]
+        },
+        "hiring": null,
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California"
+        },
+        "followers": {
+          "count": 610,
+          "mom_percent": 1,
+          "qoq_percent": 2,
+          "six_months_growth_percent": 4,
+          "yoy_percent": 8
+        }
+      },
+      {
+        "crustdata_company_id": 900103,
+        "basic_info": {
+          "name": "Fernbridge",
+          "crustdata_company_id": 900103,
+          "primary_domain": "fernbridge.example",
+          "website": "https://fernbridge.example",
+          "professional_network_url": "https://profiles.example/company/example-fernbridge",
+          "description": "Fernbridge is an evaluation and monitoring platform for teams shipping AI agents.",
+          "year_founded": 2025,
+          "employee_count_range": "2-10",
+          "company_type": "Privately Held"
+        },
+        "headcount": {
+          "total": 4,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0,
+            "3m": 0,
+            "6m": 33.3,
+            "12m": 33.3
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": 0,
+            "6m": 1,
+            "12m": 1
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "team@fernbridge.example",
+          "phone_number": "+1 555 0100",
+          "total_investment_usd": 0,
+          "last_round_amount_usd": null,
+          "last_fundraise_date": null,
+          "last_round_type": "",
+          "investors": []
+        },
+        "hiring": null,
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California"
+        },
+        "followers": {
+          "count": 380,
+          "mom_percent": 1,
+          "qoq_percent": 30,
+          "six_months_growth_percent": 60,
+          "yoy_percent": 120
+        }
+      },
+      {
+        "crustdata_company_id": 900104,
+        "basic_info": {
+          "name": "Mosswire",
+          "crustdata_company_id": 900104,
+          "primary_domain": "mosswire.example",
+          "website": "https://mosswire.example",
+          "professional_network_url": "https://profiles.example/company/example-mosswire",
+          "description": "Mosswire builds vector storage tuned for agent memory.",
+          "year_founded": 2025,
+          "employee_count_range": "2-10",
+          "company_type": "Privately Held"
+        },
+        "headcount": {
+          "total": 5,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": null,
+            "3m": null,
+            "6m": null,
+            "12m": null
+          },
+          "growth_absolute": {
+            "1m": null,
+            "3m": null,
+            "6m": null,
+            "12m": null
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "team@mosswire.example",
+          "phone_number": "+1 555 0100",
+          "total_investment_usd": 500000,
+          "last_round_amount_usd": 500000,
+          "last_fundraise_date": "2026-02-01",
+          "last_round_type": "pre_seed",
+          "investors": null
+        },
+        "hiring": null,
+        "locations": {
+          "country": "USA",
+          "headquarters": "New York, New York, United States",
+          "city": "San Francisco",
+          "state": "California"
+        },
+        "followers": {
+          "count": 150,
+          "mom_percent": 1,
+          "qoq_percent": 0,
+          "six_months_growth_percent": null,
+          "yoy_percent": 0
+        }
+      },
+      {
+        "crustdata_company_id": 900105,
+        "basic_info": {
+          "name": "Kitebase",
+          "crustdata_company_id": 900105,
+          "primary_domain": "kitebase.example",
+          "website": "https://kitebase.example",
+          "professional_network_url": "https://profiles.example/company/example-kitebase",
+          "description": "Kitebase is a data pipeline service that feeds fresh company data to AI agents.",
+          "year_founded": 2024,
+          "employee_count_range": "11-50",
+          "company_type": "Privately Held"
+        },
+        "headcount": {
+          "total": 22,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0,
+            "3m": 10,
+            "6m": 22.2,
+            "12m": 22.2
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": 2,
+            "6m": 4,
+            "12m": 4
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "team@kitebase.example",
+          "phone_number": "+1 555 0100",
+          "total_investment_usd": 3600000,
+          "last_round_amount_usd": 3000000,
+          "last_fundraise_date": "2024-06-01",
+          "last_round_type": "seed",
+          "investors": [
+            "Copperline Capital"
+          ]
+        },
+        "hiring": null,
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California"
+        },
+        "followers": {
+          "count": 1700,
+          "mom_percent": 1,
+          "qoq_percent": 9,
+          "six_months_growth_percent": 18,
+          "yoy_percent": 36
+        }
+      },
+      {
+        "crustdata_company_id": 900106,
+        "basic_info": {
+          "name": "Junoplane",
+          "crustdata_company_id": 900106,
+          "primary_domain": "junoplane.example",
+          "website": "https://junoplane.example",
+          "professional_network_url": "https://profiles.example/company/example-junoplane",
+          "description": "Junoplane is an API gateway for AI agents with usage metering and billing.",
+          "year_founded": 2024,
+          "employee_count_range": "11-50",
+          "company_type": "Privately Held"
+        },
+        "headcount": {
+          "total": 30,
+          "largest_headcount_country": "USA",
+          "growth_percent": {
+            "1m": 0,
+            "3m": 3.4,
+            "6m": 11.1,
+            "12m": 11.1
+          },
+          "growth_absolute": {
+            "1m": 0,
+            "3m": 1,
+            "6m": 3,
+            "12m": 3
+          }
+        },
+        "funding": {
+          "is_investor": false,
+          "contact_email": "team@junoplane.example",
+          "phone_number": "+1 555 0100",
+          "total_investment_usd": 6500000,
+          "last_round_amount_usd": 6000000,
+          "last_fundraise_date": "2025-09-01",
+          "last_round_type": "seed",
+          "investors": [
+            "Lindenfield Ventures",
+            "Northgate Seed Fund"
+          ]
+        },
+        "hiring": null,
+        "locations": {
+          "country": "USA",
+          "headquarters": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California"
+        },
+        "followers": {
+          "count": 2200,
+          "mom_percent": 1,
+          "qoq_percent": 5,
+          "six_months_growth_percent": 10,
+          "yoy_percent": 20
+        }
+      }
+    ],
+    "profiles": [
+      {
+        "crustdata_person_id": 800001,
+        "basic_profile": {
+          "name": "Jane Doe",
+          "headline": "Building Relaywise. Before: founded Tidewell Data.",
+          "current_title": "Co-Founder & CEO",
+          "location": {
+            "full_location": "San Francisco Bay Area",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Co-Founder & CEO",
+                "name": "Relaywise",
+                "crustdata_company_id": 900101,
+                "company_website": "https://relaywise.example",
+                "start_date": "2024-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": [
+              {
+                "title": "Founder",
+                "name": "Tidewell Data",
+                "crustdata_company_id": 700001,
+                "company_website": "https://tidewell.example",
+                "start_date": "2018-04-01T00:00:00",
+                "end_date": "2022-06-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 35
+              },
+              {
+                "title": "Staff Engineer",
+                "name": "Ledgerpine",
+                "crustdata_company_id": 700002,
+                "company_website": "https://ledgerpine.example",
+                "start_date": "2015-01-01T00:00:00",
+                "end_date": "2018-03-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 4000
+              }
+            ]
+          }
+        },
+        "education": {
+          "schools": [
+            {
+              "school": "Stanford University",
+              "degree": "MS",
+              "field_of_study": "Computer Science",
+              "end_year": 2014
+            }
+          ]
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-jane-doe"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800002,
+        "basic_profile": {
+          "name": "Omar Example",
+          "headline": "CTO at Relaywise",
+          "current_title": "Co-Founder & CTO",
+          "location": {
+            "full_location": "San Francisco Bay Area",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Co-Founder & CTO",
+                "name": "Relaywise",
+                "crustdata_company_id": 900101,
+                "company_website": "https://relaywise.example",
+                "start_date": "2024-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": [
+              {
+                "title": "Senior Software Engineer",
+                "name": "Cloudmere",
+                "crustdata_company_id": 700003,
+                "company_website": "https://cloudmere.example",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": "2024-01-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 9000
+              }
+            ]
+          }
+        },
+        "education": {
+          "schools": [
+            {
+              "school": "University of Michigan",
+              "degree": "BS",
+              "field_of_study": "Computer Engineering",
+              "end_year": 2016
+            }
+          ]
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-omar-example"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800003,
+        "basic_profile": {
+          "name": "Riley Sample",
+          "headline": "Advisor to early-stage AI companies",
+          "current_title": "Advisor",
+          "location": {
+            "full_location": "Seattle, Washington",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Advisor",
+                "name": "Relaywise",
+                "crustdata_company_id": 900101,
+                "company_website": "https://relaywise.example",
+                "start_date": "2024-06-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              },
+              {
+                "title": "Founder",
+                "name": "Riley Sample Advisory",
+                "crustdata_company_id": 700004,
+                "start_date": "2020-01-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": []
+          }
+        },
+        "education": {
+          "schools": []
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-riley-sample"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800004,
+        "basic_profile": {
+          "name": "Casey Sample",
+          "headline": "Founders Associate at Relaywise",
+          "current_title": "Founders Associate",
+          "location": {
+            "full_location": "San Francisco Bay Area",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Founders Associate",
+                "name": "Relaywise",
+                "crustdata_company_id": 900101,
+                "company_website": "https://relaywise.example",
+                "start_date": "2025-05-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": []
+          }
+        },
+        "education": {
+          "schools": []
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-casey-sample"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800005,
+        "basic_profile": {
+          "name": "Private Member",
+          "headline": "",
+          "current_title": "Founder",
+          "location": {
+            "full_location": "",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Founder",
+                "name": "Relaywise",
+                "crustdata_company_id": 900101,
+                "company_website": "https://relaywise.example",
+                "start_date": "2024-02-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": []
+          }
+        },
+        "education": {
+          "schools": []
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-private-member"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800006,
+        "basic_profile": {
+          "name": "Sam Placeholder",
+          "headline": "CEO at Quietlayer",
+          "current_title": "Founder & CEO",
+          "location": {
+            "full_location": "Austin, Texas",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Founder & CEO",
+                "name": "Quietlayer",
+                "crustdata_company_id": 900102,
+                "company_website": "https://quietlayer.example",
+                "start_date": "2024-03-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": [
+              {
+                "title": "Product Manager",
+                "name": "Brightdesk",
+                "crustdata_company_id": 700005,
+                "company_website": "https://brightdesk.example",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": "2024-02-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 800
+              }
+            ]
+          }
+        },
+        "education": {
+          "schools": [
+            {
+              "school": "University of Texas at Austin",
+              "degree": "BBA",
+              "field_of_study": "",
+              "end_year": 2018
+            }
+          ]
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-sam-placeholder"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800007,
+        "basic_profile": {
+          "name": "Priya Sample",
+          "headline": "Co-founder at Fernbridge",
+          "current_title": "Co-Founder",
+          "location": {
+            "full_location": "San Francisco Bay Area",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Co-Founder",
+                "name": "Fernbridge",
+                "crustdata_company_id": 900103,
+                "company_website": "https://fernbridge.example",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": [
+              {
+                "title": "Machine Learning Engineer",
+                "name": "Ledgerpine",
+                "crustdata_company_id": 700002,
+                "company_website": "https://ledgerpine.example",
+                "start_date": "2020-06-01T00:00:00",
+                "end_date": "2024-12-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 4000
+              }
+            ]
+          }
+        },
+        "education": {
+          "schools": [
+            {
+              "school": "Massachusetts Institute of Technology",
+              "degree": "SB",
+              "field_of_study": "Computer Science",
+              "end_year": 2020
+            }
+          ]
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-priya-sample"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800008,
+        "basic_profile": {
+          "name": "Lee Sample",
+          "headline": "CTO at Fernbridge",
+          "current_title": "Co-Founder & CTO",
+          "location": {
+            "full_location": "Oakland, California",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Co-Founder & CTO",
+                "name": "Fernbridge",
+                "crustdata_company_id": 900103,
+                "company_website": "https://fernbridge.example",
+                "start_date": "2025-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": [
+              {
+                "title": "Research Engineer",
+                "name": "Cloudmere",
+                "crustdata_company_id": 700003,
+                "company_website": "https://cloudmere.example",
+                "start_date": "2021-01-01T00:00:00",
+                "end_date": "2024-12-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 9000
+              }
+            ]
+          }
+        },
+        "education": {
+          "schools": [
+            {
+              "school": "University of California, Berkeley",
+              "degree": "PhD",
+              "field_of_study": "EECS",
+              "end_year": 2021
+            }
+          ]
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-lee-sample"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800009,
+        "basic_profile": {
+          "name": "Alex Testperson",
+          "headline": "Founder of Mosswire. Venture partner at Brightfund.",
+          "current_title": "Venture Partner",
+          "location": {
+            "full_location": "New York, New York",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Venture Partner",
+                "name": "Brightfund Ventures",
+                "crustdata_company_id": 700006,
+                "company_website": "https://brightfund.example",
+                "start_date": "2023-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              },
+              {
+                "title": "Founder & CEO",
+                "name": "Mosswire",
+                "crustdata_company_id": 900104,
+                "company_website": "https://mosswire.example",
+                "start_date": "2025-06-01T00:00:00",
+                "end_date": null,
+                "is_default": false,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": [
+              {
+                "title": "Engineering Manager",
+                "name": "Cloudmere",
+                "crustdata_company_id": 700003,
+                "company_website": "https://cloudmere.example",
+                "start_date": "2017-01-01T00:00:00",
+                "end_date": "2022-12-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 9000
+              }
+            ]
+          }
+        },
+        "education": {
+          "schools": [
+            {
+              "school": "Cornell University",
+              "degree": "BS",
+              "field_of_study": "Computer Science",
+              "end_year": 2012
+            }
+          ]
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-alex-testperson"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800010,
+        "basic_profile": {
+          "name": "Maria Placeholder",
+          "headline": "CEO at Kitebase",
+          "current_title": "CEO",
+          "location": {
+            "full_location": "Denver, Colorado",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "CEO",
+                "name": "Kitebase",
+                "crustdata_company_id": 900105,
+                "company_website": "https://kitebase.example",
+                "start_date": "2024-01-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": [
+              {
+                "title": "CEO",
+                "name": "Streamfold",
+                "crustdata_company_id": 700007,
+                "company_website": "https://streamfold.example",
+                "start_date": "2019-01-01T00:00:00",
+                "end_date": "2023-08-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 40
+              },
+              {
+                "title": "Director of Data",
+                "name": "Brightdesk",
+                "crustdata_company_id": 700005,
+                "company_website": "https://brightdesk.example",
+                "start_date": "2014-01-01T00:00:00",
+                "end_date": "2018-12-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 800
+              }
+            ]
+          }
+        },
+        "education": {
+          "schools": [
+            {
+              "school": "University of Colorado Boulder",
+              "degree": "BS",
+              "field_of_study": "Mathematics",
+              "end_year": 2010
+            }
+          ]
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-maria-placeholder"
+          }
+        }
+      },
+      {
+        "crustdata_person_id": 800011,
+        "basic_profile": {
+          "name": "Noah Example",
+          "headline": "Co-founder & CEO at Junoplane",
+          "current_title": "Co-founder and CEO",
+          "location": {
+            "full_location": "San Francisco Bay Area",
+            "country": "United States"
+          }
+        },
+        "experience": {
+          "employment_details": {
+            "current": [
+              {
+                "title": "Co-founder and CEO",
+                "name": "Junoplane",
+                "crustdata_company_id": 900106,
+                "company_website": "https://junoplane.example",
+                "start_date": "2024-04-01T00:00:00",
+                "end_date": null,
+                "is_default": true,
+                "company_headcount_latest": null
+              }
+            ],
+            "past": [
+              {
+                "title": "Engineering Lead, Payments API",
+                "name": "Ledgerpine",
+                "crustdata_company_id": 700002,
+                "company_website": "https://ledgerpine.example",
+                "start_date": "2018-01-01T00:00:00",
+                "end_date": "2024-03-01T00:00:00",
+                "is_default": false,
+                "company_headcount_latest": 4000
+              }
+            ]
+          }
+        },
+        "education": {
+          "schools": [
+            {
+              "school": "Stanford University",
+              "degree": "BS",
+              "field_of_study": "Symbolic Systems",
+              "end_year": 2017
+            }
+          ]
+        },
+        "social_handles": {
+          "professional_network_identifier": {
+            "profile_url": "https://profiles.example/in/example-noah-example"
+          }
+        }
+      }
+    ],
+    "jobs": {
+      "900101": {
+        "last90": 7,
+        "last30": 3,
+        "newest": [
+          {
+            "title": "Founding Solutions Engineer",
+            "date": "2026-10-14T09:00:00",
+            "url": "https://relaywise.example/careers/1"
+          },
+          {
+            "title": "Senior Backend Engineer, Runtime",
+            "date": "2026-10-02T09:00:00",
+            "url": "https://relaywise.example/careers/2"
+          },
+          {
+            "title": "Developer Advocate",
+            "date": "2026-09-20T09:00:00"
+          }
+        ]
+      },
+      "900102": {
+        "last90": 0,
+        "last30": 0,
+        "newest": []
+      },
+      "900103": {
+        "last90": 1,
+        "last30": 1,
+        "newest": [
+          {
+            "title": "Founding Engineer",
+            "date": "2026-10-10T09:00:00"
+          }
+        ]
+      },
+      "900104": {
+        "last90": 0,
+        "last30": 0,
+        "newest": []
+      },
+      "900105": {
+        "last90": 4,
+        "last30": 1,
+        "newest": [
+          {
+            "title": "Data Engineer",
+            "date": "2026-10-01T09:00:00"
+          },
+          {
+            "title": "Account Executive",
+            "date": "2026-09-12T09:00:00"
+          }
+        ]
+      },
+      "900106": {
+        "last90": 1,
+        "last30": 0,
+        "newest": [
+          {
+            "title": "Product Designer",
+            "date": "2026-08-30T09:00:00"
+          }
+        ]
+      }
+    },
+    "posts": {
+      "900101": {
+        "traction": 2,
+        "raise": 0,
+        "quotes": [
+          {
+            "date": "2026-09-28",
+            "author": "Jane Doe",
+            "text": "Six months after launch we're at $85K MRR, up 30% month over month, and every customer came from a referral.",
+            "url": "https://profiles.example/posts/example-jane-doe-1",
+            "phrase": "MRR",
+            "kind": "traction"
+          },
+          {
+            "date": "2026-07-11",
+            "author": "Jane Doe",
+            "text": "We crossed 40 paying customers this week, from two-person teams to a public company.",
+            "url": "https://profiles.example/posts/example-jane-doe-2",
+            "phrase": "paying customers",
+            "kind": "traction"
+          }
+        ]
+      },
+      "900102": {
+        "traction": 0,
+        "raise": 0,
+        "quotes": []
+      },
+      "900103": {
+        "traction": 1,
+        "raise": 0,
+        "quotes": [
+          {
+            "date": "2026-08-19",
+            "author": "Priya Sample",
+            "text": "Our first 10 paying customers, all without a sales team.",
+            "url": "https://profiles.example/posts/example-priya-sample-1",
+            "phrase": "paying customers",
+            "kind": "traction"
+          }
+        ]
+      },
+      "900104": {
+        "traction": 0,
+        "raise": 0,
+        "quotes": []
+      },
+      "900105": {
+        "traction": 0,
+        "raise": 1,
+        "quotes": [
+          {
+            "date": "2026-10-06",
+            "author": "Maria Placeholder",
+            "text": "Excited to share that we closed our seed extension, led by a fund that knows data infrastructure.",
+            "url": "https://profiles.example/posts/example-maria-placeholder-1",
+            "phrase": "closed our seed",
+            "kind": "raise"
+          }
+        ]
+      },
+      "900106": {
+        "traction": 0,
+        "raise": 0,
+        "quotes": []
+      }
+    }
+  }
+}

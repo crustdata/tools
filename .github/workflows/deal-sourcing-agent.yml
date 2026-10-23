@@ -1,0 +1,25 @@
+name: deal-sourcing-agent
+
+on:
+  push:
+    paths: ["deal-sourcing-agent/**", ".github/workflows/deal-sourcing-agent.yml"]
+  pull_request:
+    paths: ["deal-sourcing-agent/**", ".github/workflows/deal-sourcing-agent.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: deal-sourcing-agent
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: deal-sourcing-agent/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run replay -- fixtures/seed-pipeline.json

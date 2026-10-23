@@ -1,0 +1,61 @@
+{
+  "name": "deal-sourcing-agent",
+  "version": "1.0.0",
+  "description": "Open-source VC deal sourcing agent on the Crustdata API (1B+ profiles, 60M+ companies): turn an investment thesis in plain English into a scored startup pipeline with founders and a one-page memo each, as CSV and markdown. Scores founder background, headcount growth, hiring, founders' posts and round timing. TypeScript, MIT, no AI key.",
+  "keywords": [
+    "deal sourcing",
+    "vc deal sourcing",
+    "deal sourcing agent",
+    "ai deal sourcing",
+    "venture capital",
+    "startup discovery",
+    "startup sourcing",
+    "investment thesis",
+    "founder search",
+    "repeat founders",
+    "headcount growth",
+    "hiring signals",
+    "investment memo",
+    "pitchbook alternative",
+    "harmonic alternative",
+    "specter alternative",
+    "crunchbase alternative",
+    "crustdata",
+    "crustdata api",
+    "startup discovery api",
+    "deal flow",
+    "dealflow",
+    "portfolio monitoring",
+    "founder data"
+  ],
+  "author": "Crustdata",
+  "homepage": "https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#readme",
+  "bugs": {
+    "url": "https://github.com/crustdata/tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "deal-sourcing-agent"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/cli.ts setup",
+    "source": "tsx src/cli.ts source",
+    "memo": "tsx src/cli.ts memo",
+    "replay": "tsx src/cli.ts replay",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}

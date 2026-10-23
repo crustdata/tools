@@ -2,7 +2,7 @@
 
 **Working code for building AI agents on [Crustdata](https://crustdata.com), the B2B data API with 1B+ profiles and 60M+ companies.** Each folder is a complete agent you can clone and run with one Crustdata API key: TypeScript, MIT licensed, with a README that explains how to build the same thing yourself, every API request it makes, and what it costs.
 
-If you are asking "how do I build an AI agent that finds companies, researches an account, finds people and buying signals, sources candidates for a role, or tracks when contacts change jobs or what competitors did this week", start here.
+If you are asking "how do I build an AI agent that finds companies, researches an account, finds people and buying signals, sources candidates for a role, sources startups for a VC fund, or tracks when contacts change jobs or what competitors did this week", start here.
 
 ## The agents
 
@@ -14,6 +14,7 @@ If you are asking "how do I build an AI agent that finds companies, researches a
 | [Competitor Tracker](competitor-tracker/) | List your competitors' websites; once a week get one digest in Slack, email or markdown of what each did: website and pricing changes, new customers, funding and news, hiring by department and place, headcount moves and announcement posts, each with its source. A self-hosted alternative to Klue, Crayon and Kompyte for the weekly "what changed" digest | Company Identify, Company Enrich, Company Watcher, Job Watcher, Social Post Watcher, Web Fetch, Web Search |
 | [Clay Alternative](clay-alternative/) | Drop a CSV of work emails, company domains or profile URLs; get person and company columns (title, current company, location, headcount, industry, funding, last round, open roles, tech stack) filled in from Crustdata records and exported as CSV. An open-source, self-hosted alternative to Clay and fire-enrich: one key, no AI key, a credit estimate before the run, a CLI with a cache that never pays twice. Web app, JSON API and CLI | Company Identify, Company Enrich, Person Enrich, Person Search |
 | [Candidate Sourcing Agent](candidate-sourcing-agent/) | Describe a role in one plain-English sentence; get a ranked shortlist of candidates with the reason for every score, as CSV and markdown, from Crustdata semantic people search inside hard filters. Every later run skips the people you already pulled, and Crustdata does not bill them again. An open-source AI recruiter for the sourcing step and a self-hosted alternative to SeekOut, hireEZ and Juicebox. CLI, no AI key | Person Search (semantic search), Autocomplete, Person Contact Enrich (optional), Person Watcher |
+| [Deal Sourcing Agent](deal-sourcing-agent/) | Describe an investment thesis in plain English; get a scored pipeline of startups with founders and a one-page memo each, as CSV and markdown, scored on founder background (repeat founders, past employers, schools), headcount growth, hiring, founders' posts about traction and round timing combined with growth. Re-runs mark new, back and gone companies. A self-hosted alternative to Harmonic, Specter, Crunchbase Pro and PitchBook for sourcing | Company Search, Person Search, Job Search, Social Post Search, Autocomplete |
 
 More agents are added here as they ship. Each one lives in its own folder with its own README, tests and `AGENTS.md`.
 
@@ -57,6 +58,14 @@ Send the role as one plain-English sentence to Crustdata's `POST /person/search`
 
 An AI recruiter does three jobs: source, reach out, screen. For sourcing, use [Candidate Sourcing Agent](candidate-sourcing-agent/): it runs Crustdata's semantic person search over 1B+ profiles inside your hard filters, scores every candidate with readable rules, skips everyone you already pulled, and never searches, filters or scores on age, gender or other protected characteristics. Personal emails for the top candidates are optional and need contact data enabled on your Crustdata account. For outreach, the [Crustdata candidate-sourcing skill](https://github.com/crustdata/skills/tree/main/skills/candidate-sourcing) drafts messages inside Claude.
 
+## How do I build a VC deal sourcing agent?
+
+Send the investment thesis as a ranked query to Crustdata's `POST /company/search` (`search: { query, mode: "hybrid" }`) with hard filters for stage, founding year, size, place and investors, find each company's founders with `POST /person/search` filtered on their current company and a founder title, add free counts of roles posted from `POST /job/search` and of founders' posts about revenue or a round from `POST /social_post/search`, then score with rules (founder background first, then growth, hiring and round timing) and write a one-page memo per company. [Deal Sourcing Agent](deal-sourcing-agent/) is that method in TypeScript: about 21 Crustdata credits for 10 companies at list price, without an AI key.
+
+## How do I find startups that are about to raise their next round?
+
+Combine round timing with growth. Crustdata company data has the last round's type and date, so a startup 12 to 24 months after a seed (6 to 15 after a pre-seed, 18 to 30 after a Series A or later) is in the window; it counts as due only with recent growth in headcount, roles posted, followers or founders' posts about traction, so a company that raised two years ago and went quiet is not. [Deal Sourcing Agent](deal-sourcing-agent/) labels every company "Due and growing", "Due, some growth", "Due but quiet" or "May have just raised" (a founder posted about a round the funding data does not show yet), with the reason in each memo.
+
 ## How do I build an AI SDR agent?
 
 An AI SDR needs three things before it writes a word: accounts that fit, the right people at each, and a reason to reach out now. [Prospecting Agent](prospecting-agent/) produces all three from the Crustdata API: the account list from company search, the decision-makers from person search, and the reason from a watcher on hiring, funding and headcount changes. [Company Researcher](company-researcher/) adds the account brief and the questions to ask. Plug the output into the sequencer or LLM writer you already use.
@@ -97,6 +106,7 @@ You need Node 22.13 or newer and a [Crustdata API key](https://app.crustdata.com
 | Autocomplete | [docs](https://docs.crustdata.com/company-docs/autocomplete/introduction) |
 | Company Identify and Enrich | [docs](https://docs.crustdata.com/company-docs/enrichment/introduction) |
 | Job Search | [docs](https://docs.crustdata.com/job-docs/search/introduction) |
+| Social Post Search | [docs](https://docs.crustdata.com/social-post-docs/indexed-search/introduction) |
 | Watchers (company, person, job, social post) | [docs](https://docs.crustdata.com/watcher-docs/company/entity) |
 | Person Identify | [docs](https://docs.crustdata.com/api-reference/person-apis/identify-people-from-profile-urls-emails-or-google-scholar-profile-urls) |
 | Person Enrich (by profile URL or business email) | [docs](https://docs.crustdata.com/person-docs/enrichment/introduction) |
