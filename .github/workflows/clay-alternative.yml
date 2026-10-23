@@ -1,0 +1,25 @@
+name: clay-alternative
+
+on:
+  push:
+    paths: ["clay-alternative/**", ".github/workflows/clay-alternative.yml"]
+  pull_request:
+    paths: ["clay-alternative/**", ".github/workflows/clay-alternative.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: clay-alternative
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: clay-alternative/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run replay -- fixtures/emails.json

@@ -1,0 +1,13 @@
+{
+ "name": "names",
+ "csv": "Account Name\nAcme Analytics\nNorthwind Robotics\nZzqx Widgets\n",
+ "columns": [
+  "company.name",
+  "company.domain",
+  "company.headcount"
+ ],
+ "responses": "responses.json",
+ "invalidEmails": [
+  "not-an-email"
+ ]
+}

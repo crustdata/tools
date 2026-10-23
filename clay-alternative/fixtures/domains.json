@@ -1,0 +1,17 @@
+{
+ "name": "domains",
+ "csv": "Company,Website\nAcme Analytics,acme.example\nNorthwind Robotics,https://northwind.example/about\nLookalike,platform.example\nUnknown Co,nothing.example\n",
+ "columns": [
+  "company.name",
+  "company.headcount",
+  "company.industry",
+  "company.hq",
+  "company.funding_total",
+  "company.last_round_type",
+  "company.tech_stack"
+ ],
+ "responses": "responses.json",
+ "invalidEmails": [
+  "not-an-email"
+ ]
+}

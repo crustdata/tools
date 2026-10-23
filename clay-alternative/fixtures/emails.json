@@ -1,0 +1,9 @@
+{
+ "name": "emails",
+ "csv": "\ufeffFirst Name;Last Name;Email Address;Company;Website\nJane;Doe;jane@acme.example;Acme Analytics;\nSam;Example;SAM@acme.example ;Acme Analytics;https://www.acme.example/\nRita;Sample;rita@northwind.example;Northwind Robotics;\nLee;Nodomain;lee.nodomain@gmail.com;;\nBroken;Row;not-an-email;Acme Analytics;\nNo;Match;nobody@acme.example;Acme Analytics;\nJane;Doe;jane@acme.example;Acme Analytics;\n;;;Zzqx Widgets;\nHidden;Person;hidden@northwind.example;;\n\"Quoted, Name\";\"Says \"\"hi\"\"\";;;platform.example\n",
+ "columns": null,
+ "responses": "responses.json",
+ "invalidEmails": [
+  "not-an-email"
+ ]
+}

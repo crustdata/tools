@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #121118;
+  --color-ink-2: #45434f;
+  --color-ink-3: #6b6977;
+  --color-rule: #e3e2ea;
+  --color-paper: #ffffff;
+  --color-frame: #f4f4f8;
+  --color-row: #f6f6f9;
+  --color-row-hover: #efeff5;
+  --color-wash: #ececf2;
+  --color-violet: #5644ed;
+  --color-violet-deep: #4435c9;
+  --color-amber: #b45309;
+  --color-amber-soft: #fff4e0;
+  --color-down: #c2410c;
+  --color-green: #15803d;
+  --color-green-soft: #e6f6ea;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains), ui-monospace, SFMono-Regular, monospace;
+}
+
+html { background: var(--color-paper); color: var(--color-ink); }
+body { font-family: var(--font-sans); -webkit-font-smoothing: antialiased; font-feature-settings: "cv11", "ss01"; }
+.num { font-variant-numeric: tabular-nums; }
+::selection { background: #e9e6fb; }
+
+/* A soft, barely-there grid behind the empty state. */
+.grid-bg {
+  background-image: linear-gradient(to right, #efeff3 1px, transparent 1px), linear-gradient(to bottom, #efeff3 1px, transparent 1px);
+  background-size: 32px 32px;
+  mask-image: linear-gradient(to bottom, #000 0%, transparent 100%);
+}
+
+@keyframes rise { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.rise { animation: rise 320ms cubic-bezier(.2,.7,.2,1) both; }
+@keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+.skeleton { background: linear-gradient(90deg, #e9e9ef 0, #f3f3f7 40%, #e9e9ef 80%) 0 0 / 800px 100%; animation: shimmer 1.4s linear infinite; border-radius: 4px; }
+@keyframes spin { to { transform: rotate(360deg); } }
+.spin { animation: spin .9s linear infinite; }
+@media (prefers-reduced-motion: reduce) { .rise, .skeleton, .spin { animation: none; } }
+
+/* Frame (outer wash) and inset panel (white, double bezel): the card style picked for every Crustdata tool. */
+.frame { background: var(--color-frame); border-radius: 20px; padding: 6px; box-shadow: inset 0 0 0 1px rgba(18,17,24,.10); }
+.panel { background: #fff; border-radius: 14px; box-shadow: 0 1px 2px rgba(18,17,24,.06), 0 0 0 1px rgba(18,17,24,.12); }
+
+/* Soft rows: alternate rows get a faint wash, rounded ends, no rules. */
+.rows > * { border-radius: 10px; transition: background-color 150ms; }
+.rows > *:nth-child(odd) { background: var(--color-row); }
+.rows > *:hover { background: var(--color-row-hover); }
+
+/* The results table: sticky header, sticky first column, soft rows, no rules. */
+.grid-table { border-collapse: separate; border-spacing: 0; }
+.grid-table th { position: sticky; top: 0; z-index: 2; background: #fff; }
+.grid-table th:first-child, .grid-table td:first-child { position: sticky; left: 0; z-index: 1; background: #fff; }
+.grid-table th:first-child { z-index: 3; }
+.grid-table tbody tr:nth-child(odd) td { background: var(--color-row); }
+.grid-table tbody tr:hover td { background: var(--color-row-hover); }
+.grid-table td:first-child { border-top-left-radius: 10px; border-bottom-left-radius: 10px; }
+.grid-table td:last-child { border-top-right-radius: 10px; border-bottom-right-radius: 10px; }
+
+/* Scrollbars: thin and always shown. */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #a9a8b6; border-radius: 999px; }
+::-webkit-scrollbar-thumb:hover { background: #7d7b8c; }
+@supports (-moz-appearance: none) { * { scrollbar-width: thin; scrollbar-color: #a9a8b6 transparent; } }
+
+.btn { display: inline-flex; align-items: center; gap: 8px; border-radius: 999px; padding: 9px 18px; font-size: 14px; font-weight: 500; transition: background-color 150ms, color 150ms, box-shadow 150ms; white-space: nowrap; }
+.btn-dark { background: var(--color-ink); color: #fff; }
+.btn-dark:hover { background: var(--color-violet); }
+.btn-dark:disabled { background: var(--color-wash); color: var(--color-ink-3); cursor: not-allowed; }
+.btn-ghost { background: #fff; color: var(--color-ink); box-shadow: inset 0 0 0 1px rgba(18,17,24,.14); }
+.btn-ghost:hover { background: var(--color-wash); }
+.btn-ghost:disabled { color: var(--color-ink-3); cursor: not-allowed; }
+.btn-violet { background: var(--color-violet); color: #fff; }
+.btn-violet:hover { background: var(--color-violet-deep); }
+
+.tag { display: inline-flex; align-items: center; gap: 4px; border-radius: 999px; padding: 2px 8px; font-size: 12px; font-weight: 500; line-height: 18px; white-space: nowrap; }
+.tag-muted { background: var(--color-wash); color: var(--color-ink-2); }
+.tag-amber { background: var(--color-amber-soft); color: var(--color-amber); }
+.tag-green { background: var(--color-green-soft); color: var(--color-green); }
+.tag-ink { background: var(--color-ink); color: #fff; }
+
+input[type="checkbox"].box { appearance: none; width: 16px; height: 16px; border-radius: 5px; box-shadow: inset 0 0 0 1.5px #b8b7c4; background: #fff; display: inline-grid; place-content: center; cursor: pointer; transition: background-color 120ms, box-shadow 120ms; }
+input[type="checkbox"].box::before { content: ""; width: 9px; height: 9px; transform: scale(0); transition: transform 120ms; clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%); background: #fff; }
+input[type="checkbox"].box:checked { background: var(--color-ink); box-shadow: inset 0 0 0 1.5px var(--color-ink); }
+input[type="checkbox"].box:checked::before { transform: scale(1); }
+input[type="checkbox"].box:disabled { box-shadow: inset 0 0 0 1.5px #d8d7e0; background: var(--color-frame); cursor: not-allowed; }

@@ -1,0 +1,9 @@
+{
+ "name": "profile-urls",
+ "csv": "Name,Profile URL\nJane Doe,https://www.linkedin.com/in/example-jane-doe/\nSam Example,linkedin.com/in/Example-Sam-Example\nLee Nodomain,https://www.linkedin.com/in/example-lee-nodomain\nNobody,https://www.linkedin.com/in/example-nobody-404\n",
+ "columns": null,
+ "responses": "responses.json",
+ "invalidEmails": [
+  "not-an-email"
+ ]
+}

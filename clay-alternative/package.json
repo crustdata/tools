@@ -1,0 +1,78 @@
+{
+  "name": "clay-alternative",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Clay Alternative: open-source CSV enrichment tool built on the Crustdata API. Drop a CSV of work emails, company domains or profile URLs, pick person and company columns (title, company, location, headcount, funding, industry, tech stack), watch the table fill in, export. Web app, JSON API and CLI. One API key, no AI key, every cell traceable to a field.",
+  "keywords": [
+    "clay-alternative",
+    "open-source-clay-alternative",
+    "fire-enrich-alternative",
+    "csv-enrichment",
+    "lead-enrichment",
+    "data-enrichment",
+    "email-enrichment",
+    "company-enrichment",
+    "person-enrichment",
+    "self-hosted",
+    "self-hosted-clay-alternative",
+    "csv",
+    "enrichment",
+    "enrichment-api",
+    "lead-enrichment-api",
+    "b2b-data-api",
+    "typescript",
+    "b2b-data",
+    "firmographics",
+    "headcount",
+    "funding-data",
+    "crustdata",
+    "nextjs",
+    "cli",
+    "open-source",
+    "sales-ops",
+    "revops",
+    "go-to-market"
+  ],
+  "homepage": "https://github.com/crustdata/tools/tree/main/clay-alternative#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools",
+    "directory": "clay-alternative"
+  },
+  "bugs": "https://github.com/crustdata/tools/issues",
+  "author": "Crustdata",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "dev": "next dev -p 3218",
+    "build": "next build",
+    "start": "next start -p 3218",
+    "enrich": "tsx scripts/enrich.ts",
+    "columns": "tsx scripts/columns.ts",
+    "find-people": "tsx scripts/find-people.ts",
+    "status": "tsx scripts/status.ts",
+    "replay": "tsx scripts/replay.ts",
+    "samples": "tsx scripts/samples.ts",
+    "test": "tsx --tsconfig tsconfig.test.json --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "next": "^15.5.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.0",
+    "@types/node": "^22.15.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "postcss": "^8.5.0",
+    "tailwindcss": "^4.1.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.8.0"
+  }
+}

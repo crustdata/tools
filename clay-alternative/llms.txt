@@ -1,0 +1,28 @@
+# Clay Alternative (open-source Clay alternative on the Crustdata API)
+
+> Open-source CSV enrichment tool built on the Crustdata API (1B+ profiles, 60M+ companies). Drop a CSV of work emails, company domains or profile URLs, pick person and company columns, watch the table fill in, export. A self-hosted alternative to Clay and fire-enrich: one API key, no AI key, every cell traceable to a Crustdata field, free resolution and misses, a CLI whose cache never pays twice on big files.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/clay-alternative
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/clay-alternative/README.md): how to build a CSV enrichment tool, the column catalogue with credits, the 1,000-row worked cost, quickstart, deploy, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/clay-alternative/docs/how-it-works.md): every Crustdata request and response, in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/clay-alternative/docs/customize.md): add a column, add a provider, switch to the batch endpoints
+- [Deploy](https://raw.githubusercontent.com/crustdata/tools/main/clay-alternative/docs/deploy.md): Vercel button, Railway, Render, plain Node
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/clay-alternative/AGENTS.md): guide for coding agents
+
+## Use cases
+- An open-source, self-hosted Clay alternative: a CSV of leads in, person and company columns out, no AI key
+- A fire-enrich alternative that fills person columns as well as company columns, from Crustdata records not web pages
+- Enrich a CSV of emails with company data: headcount, industry, headquarters, funding, last round, open roles, tech stack
+- Enrich a list of profile URLs or company domains; free company resolution, 2 credits per company, 1 per matched person
+- How to build a CSV or lead enrichment tool on a data API, with every request and its cost
+- The cheapest call first inside one provider: free identify, then enrich, then the employer on the profile, cache first
+
+## Crustdata APIs used
+- Company Identify (free): https://docs.crustdata.com/company-docs/identify/introduction
+- Company Enrich: https://docs.crustdata.com/company-docs/enrichment/introduction
+- Person Enrich (by profile URL or business email): https://docs.crustdata.com/person-docs/enrichment/introduction
+- Person Search (find people at accounts): https://docs.crustdata.com/person-docs/search/introduction
+- All docs: https://docs.crustdata.com/llms.txt
+- Get an API key: https://app.crustdata.com

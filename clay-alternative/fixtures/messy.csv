@@ -1,0 +1,11 @@
+﻿First Name;Last Name;Email Address;Company;Website
+Jane;Doe;jane@acme.example;Acme Analytics;
+Sam;Example;SAM@acme.example ;Acme Analytics;https://www.acme.example/
+Rita;Sample;rita@northwind.example;Northwind Robotics;
+Lee;Nodomain;lee.nodomain@gmail.com;;
+Broken;Row;not-an-email;Acme Analytics;
+No;Match;nobody@acme.example;Acme Analytics;
+Jane;Doe;jane@acme.example;Acme Analytics;
+;;;Zzqx Widgets;
+Hidden;Person;hidden@northwind.example;;
+"Quoted, Name";"Says ""hi""";;;platform.example

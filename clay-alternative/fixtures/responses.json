@@ -1,0 +1,1559 @@
+{
+ "identify": [
+  {
+   "matched_on": "acme.example",
+   "match_type": "domain",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "company_data": {
+      "crustdata_company_id": 100001,
+      "basic_info": {
+       "name": "Acme Analytics",
+       "crustdata_company_id": 100001,
+       "primary_domain": "acme.example",
+       "all_domains": [
+        "acme.example"
+       ],
+       "website": "https://acme.example",
+       "professional_network_url": "https://www.linkedin.com/company/acme-example",
+       "professional_network_id": "100001",
+       "profile_name": "Acme Analytics",
+       "logo_permalink": null,
+       "description": "Acme Analytics builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2018,
+       "employee_count_range": "201-500",
+       "markets": [
+        "PRIVATE"
+       ],
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet"
+       ]
+      },
+      "headcount": {
+       "total": 240
+      },
+      "locations": {
+       "country": "USA",
+       "headquarters": "San Francisco, California, United States"
+      },
+      "social_profiles": null
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "northwind.example",
+   "match_type": "domain",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "company_data": {
+      "crustdata_company_id": 100002,
+      "basic_info": {
+       "name": "Northwind Robotics",
+       "crustdata_company_id": 100002,
+       "primary_domain": "northwind.example",
+       "all_domains": [
+        "northwind.example"
+       ],
+       "website": "https://northwind.example",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-example",
+       "professional_network_id": "100002",
+       "profile_name": "Northwind Robotics",
+       "logo_permalink": null,
+       "description": "Northwind Robotics builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2020,
+       "employee_count_range": "51-200",
+       "markets": [
+        "PRIVATE"
+       ],
+       "industries": [
+        "Robotics Engineering"
+       ]
+      },
+      "headcount": {
+       "total": 85
+      },
+      "locations": {
+       "country": "DEU",
+       "headquarters": "Berlin, Germany"
+      },
+      "social_profiles": null
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "platform.example",
+   "match_type": "domain",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "company_data": {
+      "crustdata_company_id": 100004,
+      "basic_info": {
+       "name": "Hosted Lookalike",
+       "crustdata_company_id": 100004,
+       "primary_domain": null,
+       "all_domains": [],
+       "website": "https://lookalike.platform.example/site",
+       "professional_network_url": "https://www.linkedin.com/company/hosted-lookalike-example",
+       "professional_network_id": "100004",
+       "profile_name": "Hosted Lookalike",
+       "logo_permalink": null,
+       "description": "Hosted Lookalike builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2017,
+       "employee_count_range": "51-200",
+       "markets": [
+        "PRIVATE"
+       ],
+       "industries": [
+        "Advertising Services"
+       ]
+      },
+      "headcount": {
+       "total": 26
+      },
+      "locations": {
+       "country": "CZE",
+       "headquarters": "Prague, Czechia"
+      },
+      "social_profiles": null
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "Acme Analytics",
+   "match_type": "name",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "company_data": {
+      "crustdata_company_id": 100001,
+      "basic_info": {
+       "name": "Acme Analytics",
+       "crustdata_company_id": 100001,
+       "primary_domain": "acme.example",
+       "all_domains": [
+        "acme.example"
+       ],
+       "website": "https://acme.example",
+       "professional_network_url": "https://www.linkedin.com/company/acme-example",
+       "professional_network_id": "100001",
+       "profile_name": "Acme Analytics",
+       "logo_permalink": null,
+       "description": "Acme Analytics builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2018,
+       "employee_count_range": "201-500",
+       "markets": [
+        "PRIVATE"
+       ],
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet"
+       ]
+      },
+      "headcount": {
+       "total": 240
+      },
+      "locations": {
+       "country": "USA",
+       "headquarters": "San Francisco, California, United States"
+      },
+      "social_profiles": null
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "Northwind Robotics",
+   "match_type": "name",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "company_data": {
+      "crustdata_company_id": 100002,
+      "basic_info": {
+       "name": "Northwind Robotics",
+       "crustdata_company_id": 100002,
+       "primary_domain": "northwind.example",
+       "all_domains": [
+        "northwind.example"
+       ],
+       "website": "https://northwind.example",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-example",
+       "professional_network_id": "100002",
+       "profile_name": "Northwind Robotics",
+       "logo_permalink": null,
+       "description": "Northwind Robotics builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2020,
+       "employee_count_range": "51-200",
+       "markets": [
+        "PRIVATE"
+       ],
+       "industries": [
+        "Robotics Engineering"
+       ]
+      },
+      "headcount": {
+       "total": 85
+      },
+      "locations": {
+       "country": "DEU",
+       "headquarters": "Berlin, Germany"
+      },
+      "social_profiles": null
+     }
+    },
+    {
+     "confidence_score": 1.0,
+     "company_data": {
+      "crustdata_company_id": 100003,
+      "basic_info": {
+       "name": "Northwind Robotics",
+       "crustdata_company_id": 100003,
+       "primary_domain": "northwind-robotics.example",
+       "all_domains": [
+        "northwind-robotics.example"
+       ],
+       "website": "https://northwind-robotics.example",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-robotics-example",
+       "professional_network_id": "100003",
+       "profile_name": "Northwind Robotics",
+       "logo_permalink": null,
+       "description": "Northwind Robotics builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2021,
+       "employee_count_range": "51-200",
+       "markets": [
+        "PRIVATE"
+       ],
+       "industries": [
+        "Robotics Engineering"
+       ]
+      },
+      "headcount": {
+       "total": 60
+      },
+      "locations": {
+       "country": "USA",
+       "headquarters": "Austin, Texas, United States"
+      },
+      "social_profiles": null
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "Zzqx Widgets",
+   "match_type": "name",
+   "matches": [
+    {
+     "confidence_score": 0.6,
+     "company_data": {
+      "crustdata_company_id": 100004,
+      "basic_info": {
+       "name": "Hosted Lookalike",
+       "crustdata_company_id": 100004,
+       "primary_domain": null,
+       "all_domains": [],
+       "website": "https://lookalike.platform.example/site",
+       "professional_network_url": "https://www.linkedin.com/company/hosted-lookalike-example",
+       "professional_network_id": "100004",
+       "profile_name": "Hosted Lookalike",
+       "logo_permalink": null,
+       "description": "Hosted Lookalike builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2017,
+       "employee_count_range": "51-200",
+       "markets": [
+        "PRIVATE"
+       ],
+       "industries": [
+        "Advertising Services"
+       ]
+      },
+      "headcount": {
+       "total": 26
+      },
+      "locations": {
+       "country": "CZE",
+       "headquarters": "Prague, Czechia"
+      },
+      "social_profiles": null
+     }
+    },
+    {
+     "confidence_score": 0.6,
+     "company_data": {
+      "crustdata_company_id": 100002,
+      "basic_info": {
+       "name": "Northwind Robotics",
+       "crustdata_company_id": 100002,
+       "primary_domain": "northwind.example",
+       "all_domains": [
+        "northwind.example"
+       ],
+       "website": "https://northwind.example",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-example",
+       "professional_network_id": "100002",
+       "profile_name": "Northwind Robotics",
+       "logo_permalink": null,
+       "description": "Northwind Robotics builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2020,
+       "employee_count_range": "51-200",
+       "markets": [
+        "PRIVATE"
+       ],
+       "industries": [
+        "Robotics Engineering"
+       ]
+      },
+      "headcount": {
+       "total": 85
+      },
+      "locations": {
+       "country": "DEU",
+       "headquarters": "Berlin, Germany"
+      },
+      "social_profiles": null
+     }
+    }
+   ]
+  }
+ ],
+ "enrich": [
+  {
+   "matched_on": "100001",
+   "match_type": "crustdata_company_id",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "company_data": {
+      "crustdata_company_id": 100001,
+      "funding": {
+       "acquired_by": [],
+       "acquisitions": [],
+       "investors_detailed": [],
+       "milestones": [],
+       "contact_email": null,
+       "is_investor": false,
+       "phone_number": null,
+       "funds_total_usd": null,
+       "last_fund_date": null,
+       "num_funding_rounds": 3,
+       "num_funds": 0,
+       "total_investment_usd": 48000000.0,
+       "last_round_amount_usd": 30000000.0,
+       "last_round_type": "series_b",
+       "investors": [
+        "Example Ventures",
+        "Northbridge Capital",
+        "Harbor Growth"
+       ],
+       "last_fundraise_date": "2025-06-12",
+       "funds": []
+      },
+      "headcount": {
+       "by_function_timeseries": {},
+       "largest_headcount_country": "USA",
+       "total": 240,
+       "growth_percent": {
+        "mom": -1.336104513064133,
+        "qoq": -1.3712453995013651,
+        "six_months": 10.164434425142554,
+        "yoy": 21.7483696050414,
+        "two_years": 51.14163558628218
+       },
+       "growth_absolute": {
+        "mom": -225,
+        "qoq": -231,
+        "six_months": 1533,
+        "yoy": 2968,
+        "two_years": 5622
+       },
+       "by_role_absolute": {
+        "Business Development": 663,
+        "Arts and Design": 338,
+        "Operations": 1150,
+        "Sales": 1830,
+        "Legal": 263,
+        "Human Resources": 508,
+        "Accounting": 339,
+        "Support": 436,
+        "Finance": 716
+       },
+       "by_region_absolute": {
+        "San Francisco, California, United States": 240
+       },
+       "timeseries": [
+        {
+         "date": "2026-09-28",
+         "employee_count": 16622
+        },
+        {
+         "date": "2026-10-06",
+         "employee_count": 16622
+        },
+        {
+         "date": "2026-10-09",
+         "employee_count": 16609
+        }
+       ]
+      },
+      "hiring": {
+       "recent_openings": [
+        {
+         "title": "Senior Backend Engineer",
+         "category": "Engineering",
+         "date_added": "2026-10-01T00:00:00Z",
+         "url": null
+        },
+        {
+         "title": "Account Executive",
+         "category": "Engineering",
+         "date_added": "2026-10-01T00:00:00Z",
+         "url": null
+        },
+        {
+         "title": "Product Designer",
+         "category": "Engineering",
+         "date_added": "2026-10-01T00:00:00Z",
+         "url": null
+        }
+       ],
+       "recent_titles_csv": "Senior Backend Engineer, Account Executive, Product Designer",
+       "openings_count": 14,
+       "openings_growth_percent": {
+        "mom": 0.1,
+        "qoq": 0.25,
+        "yoy": 0.4
+       },
+       "by_function_qoq_pct": {},
+       "by_function_6m_pct": {},
+       "open_jobs_timeseries": []
+      },
+      "locations": {
+       "city": "San Francisco",
+       "country": "USA",
+       "state": null,
+       "street_address": null,
+       "headquarters": "San Francisco, California, United States",
+       "all_office_addresses": [
+        "San Francisco, California, United States"
+       ]
+      },
+      "people": {
+       "founders": [
+        {
+         "crustdata_person_id": 900001,
+         "basic_profile": {
+          "name": "Jane Doe",
+          "current_title": "Co-Founder & CEO"
+         }
+        }
+       ],
+       "cxos": [
+        {
+         "crustdata_person_id": 900001,
+         "basic_profile": {
+          "name": "Jane Doe",
+          "current_title": "Co-Founder & CEO"
+         }
+        },
+        {
+         "crustdata_person_id": 900002,
+         "basic_profile": {
+          "name": "Sam Example",
+          "current_title": "Chief Revenue Officer"
+         }
+        }
+       ],
+       "decision_makers": []
+      },
+      "technographics": {
+       "top_technologies": [
+        "Python",
+        "PostgreSQL",
+        "React",
+        "Kubernetes",
+        "Salesforce"
+       ],
+       "technologies": [],
+       "total_technologies": 5,
+       "updated_at": "2026-10-01"
+      },
+      "basic_info": {
+       "status": "active",
+       "name": "Acme Analytics",
+       "primary_domain": "acme.example",
+       "all_domains": [
+        "acme.example"
+       ],
+       "website": "https://acme.example",
+       "logo_permalink": null,
+       "description": "Acme Analytics builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2018,
+       "employee_count_range": "201-500",
+       "markets": [
+        "PRIVATE"
+       ],
+       "crustdata_company_id": 100001,
+       "professional_network_id": "100001",
+       "professional_network_url": "https://www.linkedin.com/company/acme-example",
+       "profile_name": "Acme Analytics",
+       "industries": [
+        "Software Development",
+        "Technology, Information and Internet"
+       ]
+      },
+      "web_traffic": {
+       "domain_traffic": {
+        "acme.example": {
+         "domain": "acme.example",
+         "monthly_visitors": 240000.0,
+         "mom_pct": 1.2,
+         "qoq_pct": 4.5,
+         "monthly_visitors_timeseries": []
+        }
+       }
+      },
+      "taxonomy": {
+       "categories": [
+        "B2B",
+        "SaaS",
+        "Analytics"
+       ],
+       "professional_network_industries": [
+        "Software Development",
+        "Technology, Information and Internet"
+       ],
+       "professional_network_industry": "Software Development",
+       "professional_network_specialities": [],
+       "primary_naics_detail": null,
+       "sic_detail_list": []
+      },
+      "followers": {
+       "count": 12000,
+       "mom_percent": 2.0,
+       "qoq_percent": 5.0,
+       "six_months_growth_percent": 9.0,
+       "yoy_percent": 20.0,
+       "timeseries": []
+      }
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "100002",
+   "match_type": "crustdata_company_id",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "company_data": {
+      "crustdata_company_id": 100002,
+      "funding": {
+       "acquired_by": [],
+       "acquisitions": [],
+       "investors_detailed": [],
+       "milestones": [],
+       "contact_email": null,
+       "is_investor": false,
+       "phone_number": null,
+       "funds_total_usd": null,
+       "last_fund_date": null,
+       "num_funding_rounds": 3,
+       "num_funds": 0,
+       "total_investment_usd": 14400000.0,
+       "last_round_amount_usd": 9000000.0,
+       "last_round_type": "series_b",
+       "investors": [
+        "Example Ventures",
+        "Northbridge Capital",
+        "Harbor Growth"
+       ],
+       "last_fundraise_date": "2025-06-12",
+       "funds": []
+      },
+      "headcount": {
+       "by_function_timeseries": {},
+       "largest_headcount_country": "DEU",
+       "total": 85,
+       "growth_percent": {
+        "mom": -1.336104513064133,
+        "qoq": -1.3712453995013651,
+        "six_months": 10.164434425142554,
+        "yoy": 21.7483696050414,
+        "two_years": 51.14163558628218
+       },
+       "growth_absolute": {
+        "mom": -225,
+        "qoq": -231,
+        "six_months": 1533,
+        "yoy": 2968,
+        "two_years": 5622
+       },
+       "by_role_absolute": {
+        "Business Development": 198,
+        "Arts and Design": 101,
+        "Operations": 345,
+        "Sales": 549,
+        "Legal": 78,
+        "Human Resources": 152,
+        "Accounting": 101,
+        "Support": 130,
+        "Finance": 214
+       },
+       "by_region_absolute": {
+        "Berlin, Germany": 85
+       },
+       "timeseries": [
+        {
+         "date": "2026-09-28",
+         "employee_count": 16622
+        },
+        {
+         "date": "2026-10-06",
+         "employee_count": 16622
+        },
+        {
+         "date": "2026-10-09",
+         "employee_count": 16609
+        }
+       ]
+      },
+      "hiring": {
+       "recent_openings": [
+        {
+         "title": "Senior Backend Engineer",
+         "category": "Engineering",
+         "date_added": "2026-10-01T00:00:00Z",
+         "url": null
+        },
+        {
+         "title": "Account Executive",
+         "category": "Engineering",
+         "date_added": "2026-10-01T00:00:00Z",
+         "url": null
+        },
+        {
+         "title": "Product Designer",
+         "category": "Engineering",
+         "date_added": "2026-10-01T00:00:00Z",
+         "url": null
+        }
+       ],
+       "recent_titles_csv": "Senior Backend Engineer, Account Executive, Product Designer",
+       "openings_count": 14,
+       "openings_growth_percent": {
+        "mom": 0.1,
+        "qoq": 0.25,
+        "yoy": 0.4
+       },
+       "by_function_qoq_pct": {},
+       "by_function_6m_pct": {},
+       "open_jobs_timeseries": []
+      },
+      "locations": {
+       "city": "Berlin",
+       "country": "DEU",
+       "state": null,
+       "street_address": null,
+       "headquarters": "Berlin, Germany",
+       "all_office_addresses": [
+        "Berlin, Germany"
+       ]
+      },
+      "people": {
+       "founders": [
+        {
+         "crustdata_person_id": 900001,
+         "basic_profile": {
+          "name": "Jane Doe",
+          "current_title": "Co-Founder & CEO"
+         }
+        }
+       ],
+       "cxos": [
+        {
+         "crustdata_person_id": 900001,
+         "basic_profile": {
+          "name": "Jane Doe",
+          "current_title": "Co-Founder & CEO"
+         }
+        },
+        {
+         "crustdata_person_id": 900002,
+         "basic_profile": {
+          "name": "Sam Example",
+          "current_title": "Chief Revenue Officer"
+         }
+        }
+       ],
+       "decision_makers": []
+      },
+      "basic_info": {
+       "status": "active",
+       "name": "Northwind Robotics",
+       "primary_domain": "northwind.example",
+       "all_domains": [
+        "northwind.example"
+       ],
+       "website": "https://northwind.example",
+       "logo_permalink": null,
+       "description": "Northwind Robotics builds software for teams that run on data.",
+       "company_type": "Privately Held",
+       "year_founded": 2020,
+       "employee_count_range": "51-200",
+       "markets": [
+        "PRIVATE"
+       ],
+       "crustdata_company_id": 100002,
+       "professional_network_id": "100002",
+       "professional_network_url": "https://www.linkedin.com/company/northwind-example",
+       "profile_name": "Northwind Robotics",
+       "industries": [
+        "Robotics Engineering"
+       ]
+      },
+      "web_traffic": {
+       "domain_traffic": {
+        "northwind.example": {
+         "domain": "northwind.example",
+         "monthly_visitors": 72000.0,
+         "mom_pct": 1.2,
+         "qoq_pct": 4.5,
+         "monthly_visitors_timeseries": []
+        }
+       }
+      },
+      "taxonomy": {
+       "categories": [
+        "B2B",
+        "SaaS",
+        "Analytics"
+       ],
+       "professional_network_industries": [
+        "Robotics Engineering"
+       ],
+       "professional_network_industry": "Robotics Engineering",
+       "professional_network_specialities": [],
+       "primary_naics_detail": null,
+       "sic_detail_list": []
+      },
+      "followers": {
+       "count": 12000,
+       "mom_percent": 2.0,
+       "qoq_percent": 5.0,
+       "six_months_growth_percent": 9.0,
+       "yoy_percent": 20.0,
+       "timeseries": []
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "person": [
+  {
+   "matched_on": "jane@acme.example",
+   "match_type": "business_email",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "person_data": {
+      "basic_profile": {
+       "current_title": "Co-Founder & CEO",
+       "first_name": "Jane",
+       "headline": "Co-Founder & CEO at Acme Analytics",
+       "languages": [
+        "English"
+       ],
+       "last_name": "Doe",
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "location": {
+        "city": "San Francisco",
+        "country": "United States",
+        "state": null,
+        "continent": null,
+        "full_location": null,
+        "raw": "San Francisco, United States"
+       },
+       "name": "Jane Doe",
+       "normalized_title": {
+        "confident": true,
+        "department": "Executive Leadership",
+        "matched_title": "Co-Founder & CEO",
+        "similarity": 0.99,
+        "sub_department": null
+       },
+       "professional_network_name": "Jane Doe",
+       "profile_picture_permalink": "",
+       "summary": ""
+      },
+      "contact": {
+       "business_emails": [
+        {
+         "email": "jane@acme.example",
+         "crustdata_company_id": 100001,
+         "status": "deliverable",
+         "last_updated": null
+        }
+       ]
+      },
+      "education": {
+       "schools": [
+        {
+         "school": "Example University",
+         "degree": "MS",
+         "field_of_study": "Computer Science",
+         "start_year": 2012,
+         "end_year": 2016
+        }
+       ],
+       "last_updated": null
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "name": "Acme Analytics",
+          "title": "Co-Founder & CEO",
+          "company_website_domain": "acme.example",
+          "crustdata_company_id": 100001,
+          "is_default": true,
+          "start_date": "2023-03-01T00:00:00+00:00",
+          "end_date": null,
+          "location": {
+           "raw": "San Francisco"
+          },
+          "employment_type": "Full-time",
+          "seniority_level": "CXO",
+          "company_headcount_latest": 240,
+          "description": "",
+          "function_category": null,
+          "position_id": 9000010,
+          "years_at_company": 3,
+          "years_at_company_raw": 3.6
+         }
+        ],
+        "past": [
+         {
+          "name": "Northwind Robotics",
+          "title": "Engineer",
+          "start_date": "2019-01-01T00:00:00+00:00",
+          "end_date": "2023-02-01T00:00:00+00:00",
+          "company_website_domain": null,
+          "crustdata_company_id": null
+         },
+         {
+          "name": "Example Labs",
+          "title": "Engineer",
+          "start_date": "2019-01-01T00:00:00+00:00",
+          "end_date": "2023-02-01T00:00:00+00:00",
+          "company_website_domain": null,
+          "crustdata_company_id": null
+         }
+        ]
+       },
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "months_of_experience_raw": 90,
+       "years_of_experience": "7 years",
+       "years_of_experience_raw": 7.5
+      },
+      "skills": {
+       "professional_network_skills": [
+        "Python",
+        "Leadership",
+        "Data"
+       ]
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-jane-doe",
+        "urn_url": null
+       },
+       "twitter_identifier": {
+        "slug": ""
+       },
+       "dev_platform_identifier": {
+        "profile_url": null
+       }
+      },
+      "crustdata_person_id": 900001
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "sam@acme.example",
+   "match_type": "business_email",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "person_data": {
+      "basic_profile": {
+       "current_title": "VP Sales",
+       "first_name": "Sam",
+       "headline": "VP Sales at Acme Analytics",
+       "languages": [
+        "English"
+       ],
+       "last_name": "Example",
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "location": {
+        "city": "New York",
+        "country": "United States",
+        "state": null,
+        "continent": null,
+        "full_location": null,
+        "raw": "New York, United States"
+       },
+       "name": "Sam Example",
+       "normalized_title": {
+        "confident": true,
+        "department": "Sales",
+        "matched_title": "VP Sales",
+        "similarity": 0.99,
+        "sub_department": null
+       },
+       "professional_network_name": "Sam Example",
+       "profile_picture_permalink": "",
+       "summary": ""
+      },
+      "contact": {
+       "business_emails": [
+        {
+         "email": "sam@acme.example",
+         "crustdata_company_id": 100001,
+         "status": "deliverable",
+         "last_updated": null
+        }
+       ]
+      },
+      "education": {
+       "schools": [],
+       "last_updated": null
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "name": "Acme Analytics",
+          "title": "VP Sales",
+          "company_website_domain": "acme.example",
+          "crustdata_company_id": 100001,
+          "is_default": true,
+          "start_date": "2023-03-01T00:00:00+00:00",
+          "end_date": null,
+          "location": {
+           "raw": "New York"
+          },
+          "employment_type": "Full-time",
+          "seniority_level": "Vice President",
+          "company_headcount_latest": 240,
+          "description": "",
+          "function_category": null,
+          "position_id": 9000020,
+          "years_at_company": 3,
+          "years_at_company_raw": 3.6
+         }
+        ],
+        "past": []
+       },
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "months_of_experience_raw": 90,
+       "years_of_experience": "7 years",
+       "years_of_experience_raw": 7.5
+      },
+      "skills": {
+       "professional_network_skills": [
+        "Sales",
+        "SaaS",
+        "Negotiation"
+       ]
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-sam-example",
+        "urn_url": null
+       },
+       "twitter_identifier": {
+        "slug": ""
+       },
+       "dev_platform_identifier": {
+        "profile_url": null
+       }
+      },
+      "crustdata_person_id": 900002
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "rita@northwind.example",
+   "match_type": "business_email",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "person_data": {
+      "basic_profile": {
+       "current_title": "Engineer",
+       "first_name": "Rita",
+       "headline": "Engineer at Northwind Robotics",
+       "languages": [
+        "English"
+       ],
+       "last_name": "Sample",
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "location": {
+        "city": "Berlin",
+        "country": "Germany",
+        "state": null,
+        "continent": null,
+        "full_location": null,
+        "raw": "Berlin, Germany"
+       },
+       "name": "Rita Sample",
+       "normalized_title": {
+        "confident": true,
+        "department": "Engineering",
+        "matched_title": "Engineer",
+        "similarity": 0.99,
+        "sub_department": null
+       },
+       "professional_network_name": "Rita Sample",
+       "profile_picture_permalink": "",
+       "summary": ""
+      },
+      "contact": {
+       "business_emails": []
+      },
+      "education": {
+       "schools": [],
+       "last_updated": null
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "name": "Northwind Robotics",
+          "title": "Engineer",
+          "company_website_domain": "northwind.example",
+          "crustdata_company_id": 100002,
+          "is_default": true,
+          "start_date": "2023-03-01T00:00:00+00:00",
+          "end_date": null,
+          "location": {
+           "raw": "Berlin"
+          },
+          "employment_type": "Full-time",
+          "seniority_level": "Senior",
+          "company_headcount_latest": 240,
+          "description": "",
+          "function_category": null,
+          "position_id": 9000030,
+          "years_at_company": 3,
+          "years_at_company_raw": 3.6
+         }
+        ],
+        "past": []
+       },
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "months_of_experience_raw": 90,
+       "years_of_experience": "7 years",
+       "years_of_experience_raw": 7.5
+      },
+      "skills": {
+       "professional_network_skills": [
+        "Sales",
+        "SaaS",
+        "Negotiation"
+       ]
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-rita-sample",
+        "urn_url": null
+       },
+       "twitter_identifier": {
+        "slug": ""
+       },
+       "dev_platform_identifier": {
+        "profile_url": null
+       }
+      },
+      "crustdata_person_id": 900003
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "lee.nodomain@gmail.com",
+   "match_type": "business_email",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "person_data": {
+      "basic_profile": {
+       "current_title": "Advisor",
+       "first_name": "Lee",
+       "headline": "Advisor at Independent",
+       "languages": [
+        "English"
+       ],
+       "last_name": "Nodomain",
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "location": {
+        "city": "Lisbon",
+        "country": "Portugal",
+        "state": null,
+        "continent": null,
+        "full_location": null,
+        "raw": "Lisbon, Portugal"
+       },
+       "name": "Lee Nodomain",
+       "normalized_title": {
+        "confident": true,
+        "department": "Engineering",
+        "matched_title": "Advisor",
+        "similarity": 0.99,
+        "sub_department": null
+       },
+       "professional_network_name": "Lee Nodomain",
+       "profile_picture_permalink": "",
+       "summary": ""
+      },
+      "contact": {
+       "business_emails": []
+      },
+      "education": {
+       "schools": [],
+       "last_updated": null
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "name": "Independent",
+          "title": "Advisor",
+          "company_website_domain": null,
+          "crustdata_company_id": null,
+          "is_default": true,
+          "start_date": "2023-03-01T00:00:00+00:00",
+          "end_date": null,
+          "location": {
+           "raw": "Lisbon"
+          },
+          "employment_type": "Full-time",
+          "seniority_level": "Senior",
+          "company_headcount_latest": 240,
+          "description": "",
+          "function_category": null,
+          "position_id": 9000040,
+          "years_at_company": 3,
+          "years_at_company_raw": 3.6
+         }
+        ],
+        "past": []
+       },
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "months_of_experience_raw": 90,
+       "years_of_experience": "7 years",
+       "years_of_experience_raw": 7.5
+      },
+      "skills": {
+       "professional_network_skills": [
+        "Sales",
+        "SaaS",
+        "Negotiation"
+       ]
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-lee-nodomain",
+        "urn_url": null
+       },
+       "twitter_identifier": {
+        "slug": ""
+       },
+       "dev_platform_identifier": {
+        "profile_url": null
+       }
+      },
+      "crustdata_person_id": 900004
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "nobody@acme.example",
+   "match_type": "business_email",
+   "match_status": "not_found",
+   "matches": []
+  },
+  {
+   "matched_on": "hidden@northwind.example",
+   "match_type": "business_email",
+   "match_status": "redacted",
+   "matches": []
+  },
+  {
+   "matched_on": "https://www.linkedin.com/in/example-jane-doe",
+   "match_type": "professional_network_profile_url",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "person_data": {
+      "basic_profile": {
+       "current_title": "Co-Founder & CEO",
+       "first_name": "Jane",
+       "headline": "Co-Founder & CEO at Acme Analytics",
+       "languages": [
+        "English"
+       ],
+       "last_name": "Doe",
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "location": {
+        "city": "San Francisco",
+        "country": "United States",
+        "state": null,
+        "continent": null,
+        "full_location": null,
+        "raw": "San Francisco, United States"
+       },
+       "name": "Jane Doe",
+       "normalized_title": {
+        "confident": true,
+        "department": "Executive Leadership",
+        "matched_title": "Co-Founder & CEO",
+        "similarity": 0.99,
+        "sub_department": null
+       },
+       "professional_network_name": "Jane Doe",
+       "profile_picture_permalink": "",
+       "summary": ""
+      },
+      "contact": {
+       "business_emails": [
+        {
+         "email": "jane@acme.example",
+         "crustdata_company_id": 100001,
+         "status": "deliverable",
+         "last_updated": null
+        }
+       ]
+      },
+      "education": {
+       "schools": [
+        {
+         "school": "Example University",
+         "degree": "MS",
+         "field_of_study": "Computer Science",
+         "start_year": 2012,
+         "end_year": 2016
+        }
+       ],
+       "last_updated": null
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "name": "Acme Analytics",
+          "title": "Co-Founder & CEO",
+          "company_website_domain": "acme.example",
+          "crustdata_company_id": 100001,
+          "is_default": true,
+          "start_date": "2023-03-01T00:00:00+00:00",
+          "end_date": null,
+          "location": {
+           "raw": "San Francisco"
+          },
+          "employment_type": "Full-time",
+          "seniority_level": "CXO",
+          "company_headcount_latest": 240,
+          "description": "",
+          "function_category": null,
+          "position_id": 9000010,
+          "years_at_company": 3,
+          "years_at_company_raw": 3.6
+         }
+        ],
+        "past": [
+         {
+          "name": "Northwind Robotics",
+          "title": "Engineer",
+          "start_date": "2019-01-01T00:00:00+00:00",
+          "end_date": "2023-02-01T00:00:00+00:00",
+          "company_website_domain": null,
+          "crustdata_company_id": null
+         },
+         {
+          "name": "Example Labs",
+          "title": "Engineer",
+          "start_date": "2019-01-01T00:00:00+00:00",
+          "end_date": "2023-02-01T00:00:00+00:00",
+          "company_website_domain": null,
+          "crustdata_company_id": null
+         }
+        ]
+       },
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "months_of_experience_raw": 90,
+       "years_of_experience": "7 years",
+       "years_of_experience_raw": 7.5
+      },
+      "skills": {
+       "professional_network_skills": [
+        "Python",
+        "Leadership",
+        "Data"
+       ]
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-jane-doe",
+        "urn_url": null
+       },
+       "twitter_identifier": {
+        "slug": ""
+       },
+       "dev_platform_identifier": {
+        "profile_url": null
+       }
+      },
+      "crustdata_person_id": 900001
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "https://www.linkedin.com/in/example-sam-example",
+   "match_type": "professional_network_profile_url",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "person_data": {
+      "basic_profile": {
+       "current_title": "VP Sales",
+       "first_name": "Sam",
+       "headline": "VP Sales at Acme Analytics",
+       "languages": [
+        "English"
+       ],
+       "last_name": "Example",
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "location": {
+        "city": "New York",
+        "country": "United States",
+        "state": null,
+        "continent": null,
+        "full_location": null,
+        "raw": "New York, United States"
+       },
+       "name": "Sam Example",
+       "normalized_title": {
+        "confident": true,
+        "department": "Sales",
+        "matched_title": "VP Sales",
+        "similarity": 0.99,
+        "sub_department": null
+       },
+       "professional_network_name": "Sam Example",
+       "profile_picture_permalink": "",
+       "summary": ""
+      },
+      "contact": {
+       "business_emails": [
+        {
+         "email": "sam@acme.example",
+         "crustdata_company_id": 100001,
+         "status": "deliverable",
+         "last_updated": null
+        }
+       ]
+      },
+      "education": {
+       "schools": [],
+       "last_updated": null
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "name": "Acme Analytics",
+          "title": "VP Sales",
+          "company_website_domain": "acme.example",
+          "crustdata_company_id": 100001,
+          "is_default": true,
+          "start_date": "2023-03-01T00:00:00+00:00",
+          "end_date": null,
+          "location": {
+           "raw": "New York"
+          },
+          "employment_type": "Full-time",
+          "seniority_level": "Vice President",
+          "company_headcount_latest": 240,
+          "description": "",
+          "function_category": null,
+          "position_id": 9000020,
+          "years_at_company": 3,
+          "years_at_company_raw": 3.6
+         }
+        ],
+        "past": []
+       },
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "months_of_experience_raw": 90,
+       "years_of_experience": "7 years",
+       "years_of_experience_raw": 7.5
+      },
+      "skills": {
+       "professional_network_skills": [
+        "Sales",
+        "SaaS",
+        "Negotiation"
+       ]
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-sam-example",
+        "urn_url": null
+       },
+       "twitter_identifier": {
+        "slug": ""
+       },
+       "dev_platform_identifier": {
+        "profile_url": null
+       }
+      },
+      "crustdata_person_id": 900002
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "https://www.linkedin.com/in/example-lee-nodomain",
+   "match_type": "professional_network_profile_url",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "person_data": {
+      "basic_profile": {
+       "current_title": "Advisor",
+       "first_name": "Lee",
+       "headline": "Advisor at Independent",
+       "languages": [
+        "English"
+       ],
+       "last_name": "Nodomain",
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "location": {
+        "city": "Lisbon",
+        "country": "Portugal",
+        "state": null,
+        "continent": null,
+        "full_location": null,
+        "raw": "Lisbon, Portugal"
+       },
+       "name": "Lee Nodomain",
+       "normalized_title": {
+        "confident": true,
+        "department": "Engineering",
+        "matched_title": "Advisor",
+        "similarity": 0.99,
+        "sub_department": null
+       },
+       "professional_network_name": "Lee Nodomain",
+       "profile_picture_permalink": "",
+       "summary": ""
+      },
+      "contact": {
+       "business_emails": []
+      },
+      "education": {
+       "schools": [],
+       "last_updated": null
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "name": "Independent",
+          "title": "Advisor",
+          "company_website_domain": null,
+          "crustdata_company_id": null,
+          "is_default": true,
+          "start_date": "2023-03-01T00:00:00+00:00",
+          "end_date": null,
+          "location": {
+           "raw": "Lisbon"
+          },
+          "employment_type": "Full-time",
+          "seniority_level": "Senior",
+          "company_headcount_latest": 240,
+          "description": "",
+          "function_category": null,
+          "position_id": 9000040,
+          "years_at_company": 3,
+          "years_at_company_raw": 3.6
+         }
+        ],
+        "past": []
+       },
+       "last_updated": "2026-10-21T00:16:24.787875Z",
+       "months_of_experience_raw": 90,
+       "years_of_experience": "7 years",
+       "years_of_experience_raw": 7.5
+      },
+      "skills": {
+       "professional_network_skills": [
+        "Sales",
+        "SaaS",
+        "Negotiation"
+       ]
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-lee-nodomain",
+        "urn_url": null
+       },
+       "twitter_identifier": {
+        "slug": ""
+       },
+       "dev_platform_identifier": {
+        "profile_url": null
+       }
+      },
+      "crustdata_person_id": 900004
+     }
+    }
+   ]
+  },
+  {
+   "matched_on": "https://www.linkedin.com/in/example-nobody-404",
+   "match_type": "professional_network_profile_url",
+   "match_status": "not_found",
+   "matches": []
+  }
+ ]
+}
