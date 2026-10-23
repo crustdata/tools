@@ -1,0 +1,62 @@
+{
+  "name": "candidate-sourcing-agent",
+  "version": "1.0.0",
+  "description": "Open-source AI recruiter on the Crustdata people search API: describe a role in plain English, get a ranked candidate shortlist with a reason for every score, never billed twice for the same person. TypeScript, MIT.",
+  "keywords": [
+    "candidate sourcing agent",
+    "ai candidate sourcing",
+    "ai recruiter",
+    "ai recruiting agent",
+    "ai sourcing tool",
+    "talent sourcing",
+    "recruiting automation",
+    "people search api",
+    "technical recruiting",
+    "find engineers by skill",
+    "semantic people search",
+    "linkedin recruiter alternative",
+    "seekout alternative",
+    "hireez alternative",
+    "juicebox alternative",
+    "crustdata",
+    "crustdata api",
+    "semantic search api",
+    "candidate sourcing",
+    "recruiting api",
+    "people data api"
+  ],
+  "author": "Crustdata",
+  "homepage": "https://github.com/crustdata/tools/tree/main/candidate-sourcing-agent#readme",
+  "bugs": {
+    "url": "https://github.com/crustdata/tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "candidate-sourcing-agent"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/setup.ts",
+    "source": "tsx src/cli.ts source",
+    "rescore": "tsx src/cli.ts rescore",
+    "contacts": "tsx src/cli.ts contacts",
+    "watch-example": "tsx src/cli.ts watch-example",
+    "forget": "tsx src/cli.ts forget",
+    "replay": "tsx src/replay.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}

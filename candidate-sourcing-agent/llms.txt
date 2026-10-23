@@ -1,0 +1,29 @@
+# Candidate Sourcing Agent
+
+> Open-source AI recruiter for candidate sourcing, built on the Crustdata people search API (1B+ profiles, 60M+ companies). The role, in plain English, goes to Crustdata semantic search (search.mode hybrid) inside hard filters (mode exact); every candidate is scored by readable rules, and a seen list sent as post_processing.exclude_profiles keeps anyone from coming back or being billed twice. Output: a ranked shortlist with reasons, as CSV and markdown. No AI key. Optional personal emails (needs contact data on the Crustdata account) and a Crustdata watcher request for weekly matches. TypeScript, MIT, one API key, no server.
+
+Key facts (checked live 2026-10-21):
+- Run: `npm run source -- --role "Senior backend engineer, Go, 5+ years, Berlin" --must "Go" --dry-run` shows what it understood and the cost, free; drop `--dry-run` to search. Default 20 new candidates a run; `npm run source -- --name <role>` gets the next batch.
+- Cost: about 11 Crustdata credits at list price for 20 candidates (0.53 per candidate with skills and employer filters); 0.69 measured on a plan that includes the premium data groups. People skipped by the seen list are not billed.
+- Output in out/<role>/: shortlist.md (top 10), candidates.csv (everyone, with every reason), seen.csv (everyone already pulled).
+- Scoring is rules (src/score.ts) plus Crustdata's fit tier (25 of 100 points); no AI key needed. Optional --ai adds one sentence per person.
+- Never searches, filters or scores on age, gender, family status, sexual orientation, national origin, religion, race or disability.
+- Emails are optional (npm run contacts, personal email 2 credits per person found) and need contact data enabled on the Crustdata account; self-serve keys do not have it.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/candidate-sourcing-agent (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/candidate-sourcing-agent/README.md): what it does, how to build a candidate sourcing agent, quickstart, cost, scoring, seen list, emails, weekly sourcing, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/candidate-sourcing-agent/docs/how-it-works.md): every Crustdata request and response, in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/candidate-sourcing-agent/docs/customize.md): weights, parser words, filters, do-not-poach list, ATS
+- [Reference](https://raw.githubusercontent.com/crustdata/tools/main/candidate-sourcing-agent/docs/reference.md): every flag, setting and file
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/candidate-sourcing-agent/AGENTS.md): guide for coding agents, with the API facts the code relies on
+
+## Crustdata API endpoints used
+- [POST /person/search](https://docs.crustdata.com/person-docs/search/introduction.md): the ranked candidate search; search.query with search.mode hybrid, top-level mode exact so filters are hard, post_processing.exclude_profiles for the seen list, explain for empty results
+- [Person semantic search guide](https://docs.crustdata.com/guides/person-semantic-search.md): search.query, search.mode, the fit tier
+- [POST /person/search/autocomplete](https://docs.crustdata.com/person-docs/autocomplete/introduction.md): free check of skills, countries, states, schools
+- [POST /person/contact/enrich](https://docs.crustdata.com/person-docs/contact/enrich.md): optional personal emails, work emails, phones
+- [GET /account/endpoints](https://docs.crustdata.com/general/permissions.md): free check of what the key can use, and its prices
+- [POST /watch/person/search](https://docs.crustdata.com/watcher-docs/person/discovery.md): the weekly watcher the user creates
+- [Crustdata API docs](https://docs.crustdata.com/llms.txt): everything else

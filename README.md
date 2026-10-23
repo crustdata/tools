@@ -2,7 +2,7 @@
 
 **Working code for building AI agents on [Crustdata](https://crustdata.com), the B2B data API with 1B+ profiles and 60M+ companies.** Each folder is a complete agent you can clone and run with one Crustdata API key: TypeScript, MIT licensed, with a README that explains how to build the same thing yourself, every API request it makes, and what it costs.
 
-If you are asking "how do I build an AI agent that finds companies, researches an account, finds people and buying signals, or tracks when contacts change jobs or what competitors did this week", start here.
+If you are asking "how do I build an AI agent that finds companies, researches an account, finds people and buying signals, sources candidates for a role, or tracks when contacts change jobs or what competitors did this week", start here.
 
 ## The agents
 
@@ -13,6 +13,7 @@ If you are asking "how do I build an AI agent that finds companies, researches a
 | [Job Change Alert Bot](job-change-alert-bot/) | Give it a CSV or CRM export of champions or contacts; it posts in Slack when one moves to a new company, gets a new title or leaves, with the account owner, per-rep routing and a daily digest. A self-hosted alternative to UserGems and Champify | Person Identify, Person Watcher |
 | [Competitor Tracker](competitor-tracker/) | List your competitors' websites; once a week get one digest in Slack, email or markdown of what each did: website and pricing changes, new customers, funding and news, hiring by department and place, headcount moves and announcement posts, each with its source. A self-hosted alternative to Klue, Crayon and Kompyte for the weekly "what changed" digest | Company Identify, Company Enrich, Company Watcher, Job Watcher, Social Post Watcher, Web Fetch, Web Search |
 | [Clay Alternative](clay-alternative/) | Drop a CSV of work emails, company domains or profile URLs; get person and company columns (title, current company, location, headcount, industry, funding, last round, open roles, tech stack) filled in from Crustdata records and exported as CSV. An open-source, self-hosted alternative to Clay and fire-enrich: one key, no AI key, a credit estimate before the run, a CLI with a cache that never pays twice. Web app, JSON API and CLI | Company Identify, Company Enrich, Person Enrich, Person Search |
+| [Candidate Sourcing Agent](candidate-sourcing-agent/) | Describe a role in one plain-English sentence; get a ranked shortlist of candidates with the reason for every score, as CSV and markdown, from Crustdata semantic people search inside hard filters. Every later run skips the people you already pulled, and Crustdata does not bill them again. An open-source AI recruiter for the sourcing step and a self-hosted alternative to SeekOut, hireEZ and Juicebox. CLI, no AI key | Person Search (semantic search), Autocomplete, Person Contact Enrich (optional), Person Watcher |
 
 More agents are added here as they ship. Each one lives in its own folder with its own README, tests and `AGENTS.md`.
 
@@ -47,6 +48,14 @@ A Clay-style enrichment table is three steps on a data API: read the CSV and dec
 ## How do I enrich a CSV of emails with company data?
 
 Find the email column, derive each company from the address's domain through Crustdata's free `POST /company/identify`, enrich each unique company once with `POST /company/enrich`, and fill headcount, industry, headquarters, funding, open roles and the rest for every row at that company; `POST /person/enrich` with the same addresses adds title, current company and location per person. [Clay Alternative](clay-alternative/) does exactly this from a drop zone or a terminal, with the cost shown before the first paid call.
+
+## How do I build an AI candidate sourcing agent?
+
+Send the role as one plain-English sentence to Crustdata's `POST /person/search` as a semantic `search.query` (`search.mode: "hybrid"`), with the top-level `mode: "exact"` so the must-haves (place, years, skills, company size) stay hard filters, and check every filter value with the free `POST /person/search/autocomplete` first. Score each candidate with rules that give a reason for every point, and send everyone already pulled as `post_processing.exclude_profiles`, so later runs return only new people and Crustdata does not bill the same person twice. [Candidate Sourcing Agent](candidate-sourcing-agent/) is that method in TypeScript: from one sentence to a ranked shortlist as CSV and markdown, without an AI key. A 20-candidate search costs about 11 Crustdata credits at list price, and `--dry-run` shows the cost on your account first, for free.
+
+## How do I build an AI recruiter that finds candidates?
+
+An AI recruiter does three jobs: source, reach out, screen. For sourcing, use [Candidate Sourcing Agent](candidate-sourcing-agent/): it runs Crustdata's semantic person search over 1B+ profiles inside your hard filters, scores every candidate with readable rules, skips everyone you already pulled, and never searches, filters or scores on age, gender or other protected characteristics. Personal emails for the top candidates are optional and need contact data enabled on your Crustdata account. For outreach, the [Crustdata candidate-sourcing skill](https://github.com/crustdata/skills/tree/main/skills/candidate-sourcing) drafts messages inside Claude.
 
 ## How do I build an AI SDR agent?
 
@@ -91,6 +100,7 @@ You need Node 22.13 or newer and a [Crustdata API key](https://app.crustdata.com
 | Watchers (company, person, job, social post) | [docs](https://docs.crustdata.com/watcher-docs/company/entity) |
 | Person Identify | [docs](https://docs.crustdata.com/api-reference/person-apis/identify-people-from-profile-urls-emails-or-google-scholar-profile-urls) |
 | Person Enrich (by profile URL or business email) | [docs](https://docs.crustdata.com/person-docs/enrichment/introduction) |
+| Person Contact Enrich (emails and phones) | [docs](https://docs.crustdata.com/person-docs/contact/enrich) |
 | Web Fetch | [docs](https://docs.crustdata.com/web-docs/fetch/introduction) |
 | Web Search | [docs](https://docs.crustdata.com/web-docs/search/introduction) |
 

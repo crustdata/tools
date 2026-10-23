@@ -1,0 +1,211 @@
+{
+ "description": "a non-engineering role (enterprise account executive in New York) with fewer matches than asked for",
+ "argv": [
+  "--role",
+  "Enterprise account executive, 5+ years, SaaS, New York, at a scale-up",
+  "--limit",
+  "20"
+ ],
+ "autocomplete": {
+  "skills.professional_network_skills": [
+   "PyTorch",
+   "PyTorch Lightning",
+   "Kubernetes",
+   "Azure Kubernetes Service (AKS)",
+   "LLM Fine-Tuning",
+   "Machine Learning",
+   "Python",
+   "Rust",
+   "SaaS",
+   "Salesforce.com",
+   "Golang",
+   "Go (Programming Language)",
+   "Google Analytics",
+   "Go-to-Market Strategy"
+  ],
+  "basic_profile.location.country": [
+   "United States",
+   "United States of America"
+  ]
+ },
+ "counts": [
+  412000,
+  18950
+ ],
+ "search": {
+  "total_count": 3,
+  "profiles": [
+   {
+    "crustdata_person_id": 9101,
+    "fit": "strong",
+    "basic_profile": {
+     "name": "Dana Example",
+     "headline": "Enterprise Account Executive",
+     "current_title": "Enterprise Account Executive",
+     "location": {
+      "full_location": "New York, New York, United States",
+      "raw": "New York, New York, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Enterprise Account Executive",
+        "name": "Example Robotics",
+        "company_website": "https://www.examplerobotics.example/",
+        "company_headcount_latest": 410,
+        "company_headcount_range": "201-500",
+        "start_date": "2022-09-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       }
+      ],
+      "past": [
+       {
+        "title": "Account Executive",
+        "name": "Example Data",
+        "company_website": "https://www.exampledata.example/",
+        "company_headcount_latest": 48,
+        "company_headcount_range": "11-50",
+        "start_date": "2018-02-01T00:00:00",
+        "end_date": "2022-08-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "SaaS",
+      "Salesforce.com",
+      "Negotiation"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-dana-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9102,
+    "fit": "possible",
+    "basic_profile": {
+     "name": "Lee Example",
+     "headline": "Senior Account Executive",
+     "current_title": "Senior Account Executive",
+     "location": {
+      "full_location": "New York, New York, United States",
+      "raw": "New York, New York, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Senior Account Executive",
+        "name": "Example AI",
+        "company_website": "https://www.exampleai.example/",
+        "company_headcount_latest": 340,
+        "company_headcount_range": "201-500",
+        "start_date": "2025-07-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       }
+      ],
+      "past": [
+       {
+        "title": "Account Executive",
+        "name": "Megacorp Example",
+        "company_website": "https://www.megacorp.example/",
+        "company_headcount_latest": 52000,
+        "company_headcount_range": "10001+",
+        "start_date": "2017-01-01T00:00:00",
+        "end_date": "2025-06-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "SaaS"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-lee-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9103,
+    "fit": "strong",
+    "basic_profile": {
+     "name": "Noor Example",
+     "headline": "Enterprise Account Executive",
+     "current_title": "Enterprise Account Executive",
+     "location": {
+      "full_location": "New York, New York, United States",
+      "raw": "New York, New York, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Enterprise Account Executive",
+        "name": "Example AI",
+        "company_website": "https://www.exampleai.example/",
+        "company_headcount_latest": 340,
+        "company_headcount_range": "201-500",
+        "start_date": "2020-11-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       }
+      ],
+      "past": [
+       {
+        "title": "Sales Development Representative",
+        "name": "Example Freight",
+        "company_website": "https://www.examplefreight.example/",
+        "company_headcount_latest": 190,
+        "company_headcount_range": "51-200",
+        "start_date": "2018-03-01T00:00:00",
+        "end_date": "2020-10-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "SaaS",
+      "Enterprise Sales"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-noor-example"
+     }
+    }
+   }
+  ]
+ },
+ "open": [
+  9102
+ ]
+}

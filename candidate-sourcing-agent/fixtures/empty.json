@@ -1,0 +1,47 @@
+{
+ "description": "filters that match nobody: the free explain step names the one to drop",
+ "argv": [
+  "--role",
+  "Machine learning engineer, 4+ years, United States",
+  "--must",
+  "PyTorch, Rust"
+ ],
+ "autocomplete": {
+  "skills.professional_network_skills": [
+   "PyTorch",
+   "PyTorch Lightning",
+   "Kubernetes",
+   "Azure Kubernetes Service (AKS)",
+   "LLM Fine-Tuning",
+   "Machine Learning",
+   "Python",
+   "Rust",
+   "SaaS",
+   "Salesforce.com",
+   "Golang",
+   "Go (Programming Language)",
+   "Google Analytics",
+   "Go-to-Market Strategy"
+  ],
+  "basic_profile.location.country": [
+   "United States",
+   "United States of America"
+  ]
+ },
+ "counts": [
+  167270316,
+  0
+ ],
+ "remarks": [
+  {
+   "code": "condition_eliminates_all",
+   "path": "filters.conditions[3]",
+   "matches_without": 9120,
+   "message": "skills.professional_network_skills = 'Rust' removes every result"
+  }
+ ],
+ "search": {
+  "total_count": 0,
+  "profiles": []
+ }
+}

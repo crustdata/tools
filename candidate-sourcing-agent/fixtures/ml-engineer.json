@@ -1,0 +1,633 @@
+{
+ "description": "the README example: machine learning engineers in the US (4 a run, so --again shows the next batch)",
+ "argv": [
+  "--role",
+  "Machine learning engineer, 4+ years, PyTorch, shipped models in production, United States, at a company under 500 people",
+  "--must",
+  "PyTorch",
+  "--nice",
+  "Kubernetes, LLM fine-tuning",
+  "--exclude",
+  "yourcompany.example",
+  "--limit",
+  "4"
+ ],
+ "autocomplete": {
+  "skills.professional_network_skills": [
+   "PyTorch",
+   "PyTorch Lightning",
+   "Kubernetes",
+   "Azure Kubernetes Service (AKS)",
+   "LLM Fine-Tuning",
+   "Machine Learning",
+   "Python",
+   "Rust",
+   "SaaS",
+   "Salesforce.com",
+   "Golang",
+   "Go (Programming Language)",
+   "Google Analytics",
+   "Go-to-Market Strategy"
+  ],
+  "basic_profile.location.country": [
+   "United States",
+   "United States of America"
+  ]
+ },
+ "counts": [
+  167270316,
+  55766,
+  167270316,
+  55766
+ ],
+ "search": {
+  "total_count": 15934,
+  "profiles": [
+   {
+    "crustdata_person_id": 9001,
+    "fit": "strong",
+    "basic_profile": {
+     "name": "Jane Doe",
+     "headline": "Senior ML Engineer, recommender systems in production",
+     "current_title": "Senior Machine Learning Engineer",
+     "location": {
+      "full_location": "San Francisco, California, United States",
+      "raw": "San Francisco, California, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Senior Machine Learning Engineer",
+        "name": "Example Labs",
+        "company_website": "https://www.examplelabs.example/",
+        "company_headcount_latest": 120,
+        "company_headcount_range": "51-200",
+        "start_date": "2023-03-01T00:00:00",
+        "end_date": null,
+        "is_default": true,
+        "description": "Ship ranking models to production with PyTorch on Kubernetes."
+       }
+      ],
+      "past": [
+       {
+        "title": "Machine Learning Engineer",
+        "name": "Example AI",
+        "company_website": "https://www.exampleai.example/",
+        "company_headcount_latest": 340,
+        "company_headcount_range": "201-500",
+        "start_date": "2019-06-01T00:00:00",
+        "end_date": "2023-02-01T00:00:00",
+        "is_default": false
+       },
+       {
+        "title": "Machine Learning Intern",
+        "name": "Megacorp Example",
+        "company_website": "https://www.megacorp.example/",
+        "company_headcount_latest": 52000,
+        "company_headcount_range": "10001+",
+        "start_date": "2018-06-01T00:00:00",
+        "end_date": "2018-09-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": [
+      {
+       "school": "Example State University",
+       "degree": "Master of Science",
+       "field_of_study": "Computer Science",
+       "end_year": 2018
+      }
+     ]
+    },
+    "skills": {
+     "professional_network_skills": [
+      "PyTorch",
+      "Machine Learning",
+      "Kubernetes",
+      "Python"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-jane-doe"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9002,
+    "fit": "strong",
+    "basic_profile": {
+     "name": "Rahul Example",
+     "headline": "Machine learning engineer and startup advisor",
+     "current_title": "Advisor",
+     "location": {
+      "full_location": "Austin, Texas, United States",
+      "raw": "Austin, Texas, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Advisor",
+        "name": "Example Ventures",
+        "company_website": "https://www.exampleventures.example/",
+        "company_headcount_latest": 12,
+        "company_headcount_range": "11-50",
+        "start_date": "2025-01-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       },
+       {
+        "title": "Machine Learning Engineer",
+        "name": "Example Health",
+        "company_website": "https://www.examplehealth.example/",
+        "company_headcount_latest": 85,
+        "company_headcount_range": "51-200",
+        "start_date": "2022-04-01T00:00:00",
+        "end_date": null,
+        "is_default": false,
+        "description": "Trains and serves clinical NLP models; LLM fine-tuning with LoRA."
+       }
+      ],
+      "past": [
+       {
+        "title": "Data Scientist",
+        "name": "Example Freight",
+        "company_website": "https://www.examplefreight.example/",
+        "company_headcount_latest": 190,
+        "company_headcount_range": "51-200",
+        "start_date": "2019-01-01T00:00:00",
+        "end_date": "2022-03-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "PyTorch",
+      "NLP",
+      "Python"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-rahul-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9007,
+    "fit": "strong",
+    "basic_profile": {
+     "name": "Alex Example",
+     "headline": "ML engineer",
+     "current_title": "Machine Learning Engineer",
+     "location": {
+      "full_location": "Boston, Massachusetts, United States",
+      "raw": "Boston, Massachusetts, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Machine Learning Engineer",
+        "name": "Example Labs",
+        "company_website": "https://www.examplelabs.example/",
+        "company_headcount_latest": 120,
+        "company_headcount_range": "51-200",
+        "start_date": "2021-05-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       },
+       {
+        "title": "Part-time Machine Learning Consultant",
+        "name": "Your Company",
+        "company_website": "https://www.yourcompany.example/",
+        "company_headcount_latest": 260,
+        "company_headcount_range": "201-500",
+        "start_date": "2024-02-01T00:00:00",
+        "end_date": null,
+        "is_default": false
+       }
+      ],
+      "past": []
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "PyTorch",
+      "Kubernetes"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-alex-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9003,
+    "fit": "possible",
+    "basic_profile": {
+     "name": "Maria Example",
+     "headline": "ML engineer, robotics perception",
+     "current_title": "Machine Learning Engineer",
+     "location": {
+      "full_location": "Pittsburgh, Pennsylvania, United States",
+      "raw": "Pittsburgh, Pennsylvania, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Machine Learning Engineer",
+        "name": "Example Robotics",
+        "company_website": "https://www.examplerobotics.example/",
+        "company_headcount_latest": 410,
+        "company_headcount_range": "201-500",
+        "start_date": "2024-06-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       }
+      ],
+      "past": [
+       {
+        "title": "Perception Engineer",
+        "name": "Example Data",
+        "company_website": "https://www.exampledata.example/",
+        "company_headcount_latest": 48,
+        "company_headcount_range": "11-50",
+        "start_date": "2020-09-01T00:00:00",
+        "end_date": "2024-05-01T00:00:00",
+        "is_default": false
+       },
+       {
+        "title": "Software Engineer",
+        "name": "Example Robotics",
+        "company_website": "https://www.examplerobotics.example/",
+        "company_headcount_latest": 410,
+        "company_headcount_range": "201-500",
+        "start_date": "2017-08-01T00:00:00",
+        "end_date": "2020-08-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "PyTorch",
+      "Computer Vision",
+      "C++"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-maria-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9004,
+    "fit": "strong",
+    "basic_profile": {
+     "name": "王小明",
+     "headline": "机器学习工程师 | Machine Learning Engineer",
+     "current_title": "Machine Learning Engineer",
+     "location": {
+      "full_location": "Seattle, Washington, United States",
+      "raw": "Seattle, Washington, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Machine Learning Engineer",
+        "name": "Example AI",
+        "company_website": "https://www.exampleai.example/",
+        "company_headcount_latest": 340,
+        "company_headcount_range": "201-500",
+        "start_date": "2021-02-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       }
+      ],
+      "past": [
+       {
+        "title": "Software Engineer",
+        "name": "Example Freight",
+        "company_website": "https://www.examplefreight.example/",
+        "company_headcount_latest": 190,
+        "company_headcount_range": "51-200",
+        "start_date": "2018-07-01T00:00:00",
+        "end_date": "2021-01-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "PyTorch",
+      "Kubernetes",
+      "Machine Learning"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/%E7%8E%8B%E5%B0%8F%E6%98%8E-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9005,
+    "fit": "possible",
+    "basic_profile": {
+     "name": "Sam Example",
+     "headline": "Applied scientist",
+     "current_title": "Applied Scientist",
+     "location": {
+      "full_location": "United States",
+      "raw": "United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Applied Scientist",
+        "name": "Example Data",
+        "company_website": "https://www.exampledata.example/",
+        "company_headcount_latest": 48,
+        "company_headcount_range": "11-50",
+        "start_date": null,
+        "end_date": null,
+        "is_default": true
+       }
+      ],
+      "past": [
+       {
+        "title": "Research Engineer",
+        "name": "Example Freight",
+        "company_website": "https://www.examplefreight.example/",
+        "company_headcount_latest": 190,
+        "company_headcount_range": "51-200",
+        "start_date": null,
+        "end_date": null,
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "PyTorch",
+      "Statistics"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-sam-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9006,
+    "fit": "weak",
+    "basic_profile": {
+     "name": "Priya Example",
+     "headline": "Lists every tool there is",
+     "current_title": "Data Engineer",
+     "location": {
+      "full_location": "New York, New York, United States",
+      "raw": "New York, New York, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Data Engineer",
+        "name": "Example Freight",
+        "company_website": "https://www.examplefreight.example/",
+        "company_headcount_latest": 190,
+        "company_headcount_range": "51-200",
+        "start_date": "2022-01-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       }
+      ],
+      "past": [
+       {
+        "title": "Analyst",
+        "name": "Megacorp Example",
+        "company_website": "https://www.megacorp.example/",
+        "company_headcount_latest": 52000,
+        "company_headcount_range": "10001+",
+        "start_date": "2017-05-01T00:00:00",
+        "end_date": "2021-12-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "PyTorch",
+      "Kubernetes",
+      "LLM Fine-Tuning",
+      "Machine Learning",
+      "Python",
+      "TensorFlow",
+      "Deep Learning",
+      "Computer Vision",
+      "NLP",
+      "Docker",
+      "AWS",
+      "GCP",
+      "SQL",
+      "Spark",
+      "Airflow",
+      "MLOps",
+      "Scikit-Learn",
+      "Pandas",
+      "NumPy",
+      "Go",
+      "Rust",
+      "C++",
+      "CUDA",
+      "Triton",
+      "Ray",
+      "Kafka",
+      "Redis",
+      "PostgreSQL",
+      "Terraform",
+      "Git",
+      "Linux",
+      "Statistics",
+      "A/B Testing",
+      "Recommender Systems",
+      "Data Pipelines",
+      "FastAPI",
+      "gRPC",
+      "Hugging Face",
+      "ONNX",
+      "Leadership"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-priya-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 9008,
+    "fit": null,
+    "basic_profile": {
+     "name": "Chris Example",
+     "headline": "Machine learning engineer",
+     "current_title": "Machine Learning Engineer",
+     "location": {
+      "full_location": "Denver, Colorado, United States",
+      "raw": "Denver, Colorado, United States",
+      "country": "United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Machine Learning Engineer",
+        "name": "Example Freight",
+        "company_website": "https://www.examplefreight.example/",
+        "company_headcount_latest": 190,
+        "company_headcount_range": "51-200",
+        "start_date": "2026-08-01T00:00:00",
+        "end_date": null,
+        "is_default": true
+       }
+      ],
+      "past": [
+       {
+        "title": "Machine Learning Engineer",
+        "name": "Megacorp Example",
+        "company_website": "https://www.megacorp.example/",
+        "company_headcount_latest": 52000,
+        "company_headcount_range": "10001+",
+        "start_date": "2019-03-01T00:00:00",
+        "end_date": "2026-07-01T00:00:00",
+        "is_default": false
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "skills": {
+     "professional_network_skills": [
+      "PyTorch",
+      "MLOps"
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.example.com/in/example-chris-example"
+     }
+    }
+   }
+  ]
+ },
+ "open": [
+  9001,
+  9004
+ ],
+ "endpoints": [
+  {
+   "path": "/person/search",
+   "status": "enabled",
+   "fields": {
+    "enabled": [
+     "fit",
+     "basic_profile",
+     "experience",
+     "education",
+     "skills",
+     "social_handles"
+    ],
+    "disabled": []
+   }
+  },
+  {
+   "path": "/person/contact/enrich",
+   "status": "enabled",
+   "fields": {
+    "enabled": [
+     "contact",
+     "contact.personal_emails",
+     "contact.business_emails",
+     "contact.phone_numbers"
+    ],
+    "disabled": []
+   }
+  }
+ ],
+ "contacts": [
+  {
+   "matched_on": "https://www.example.com/in/example-jane-doe",
+   "match_type": "professional_network_profile_url",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1,
+     "person_data": {
+      "contact": {
+       "personal_emails": [
+        {
+         "email": "jane.doe@example.com",
+         "status": "deliverable"
+        }
+       ]
+      }
+     }
+    }
+   ]
+  }
+ ]
+}
