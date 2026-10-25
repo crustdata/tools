@@ -1,0 +1,36 @@
+# Person Researcher
+
+> Open-source person research agent (meeting prep, candidate and founder background) built on the Crustdata people data API (1B+ profiles, 60M+ companies), for briefs before a sales call, an interview or an investor meeting. Input: a profile URL, a work email, any email, or a name and company; a whole meeting or a CSV export at once. Output: a one-page markdown and JSON brief per person: who they are, what changed in the last 6 months (new company, new title, added role, left), their newest posts, news and web pages about them, their company, career with dates and education, with the Crustdata endpoint behind each section. No AI key, no server, TypeScript, MIT.
+
+Key facts (checked live 2026-10-23):
+- Run: `npm run research -- jane@acme.com`, or `--name "Jane Doe" --company acme.com`, or `--file attendees.csv --skip-domain mycompany.com`. `--dry-run` shows the cost and spends nothing. `npm run -s research -- ... --json` prints a JSON array.
+- Cost: 5.5 Crustdata credits a person at list price (Person Enrich 1, five posts 2.5, web search 1, news search 1); an email that needs Person Identify adds 1 (6.5) and a name search up to 0.65, which `--dry-run` budgets; 4.5 measured on a real profile whose news search found nothing. Misses are free; the same person again within 24 hours is free (cache).
+- A work email goes straight to POST /person/enrich as business_emails (lookup and profile in one call); misses go to POST /person/identify, which also matches personal emails.
+- Posts: POST /social_post/search on actor.crustdata_entity_id with post_type = original, newest first, 0.5 credits a post; off by default, enabled by Crustdata on request; the index trails the live feed and the brief says when the newest post is over 30 days old.
+- "What changed lately" is computed from role start and end months (rules in src/brief.ts), not generated.
+- Contact details are optional (--contact) and need contact data enabled on the Crustdata account; self-serve keys do not have it.
+- Not a background check or a consumer report under the US FCRA; not for hiring, credit, insurance or housing decisions.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/person-researcher (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/person-researcher/README.md): what a brief contains, how to build a person research agent, an example brief, quickstart, meetings, email lookup, change rules, cost, limits, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/person-researcher/docs/how-it-works.md): every Crustdata request and response, in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/person-researcher/docs/customize.md): sections, change rules, ignored sites, queries, posts, live profiles, Slack and CRM
+- [Reference](https://raw.githubusercontent.com/crustdata/tools/main/person-researcher/docs/reference.md): every input form, flag, setting, file and the JSON brief
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/person-researcher/AGENTS.md): guide for coding agents, with the API facts the code relies on
+
+## Related agents
+- [Company Researcher](https://raw.githubusercontent.com/crustdata/tools/main/company-researcher/README.md): the company behind the person
+- [Job Change Alert Bot](https://raw.githubusercontent.com/crustdata/tools/main/job-change-alert-bot/README.md): be told when the person changes jobs
+- [Deal Sourcing Agent](https://raw.githubusercontent.com/crustdata/tools/main/deal-sourcing-agent/README.md): find startups and score founders
+- [Candidate Sourcing Agent](https://raw.githubusercontent.com/crustdata/tools/main/candidate-sourcing-agent/README.md): find candidates for a role
+
+## Crustdata API endpoints used
+- [POST /person/enrich](https://docs.crustdata.com/person-docs/enrichment/introduction.md): profile, career, education, skills by profile URL or work email
+- [POST /person/identify](https://docs.crustdata.com/person-docs/identify/introduction.md): any email to a person
+- [POST /person/search](https://docs.crustdata.com/person-docs/search/introduction.md): a name, optionally at a company, to a short list
+- [POST /social_post/search](https://docs.crustdata.com/social-post-docs/indexed-search/introduction.md): a person's newest original posts
+- [POST /web/search/live](https://docs.crustdata.com/web-docs/search/introduction.md): web pages and news about the person
+- [POST /person/contact/enrich](https://docs.crustdata.com/person-docs/contact/enrich.md): optional work email, personal email, phone
+- [Crustdata API docs](https://docs.crustdata.com/llms.txt): everything else

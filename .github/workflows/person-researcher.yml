@@ -1,0 +1,24 @@
+name: person-researcher
+
+on:
+  push:
+    paths: ["person-researcher/**", ".github/workflows/person-researcher.yml"]
+  pull_request:
+    paths: ["person-researcher/**", ".github/workflows/person-researcher.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: person-researcher
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.13"
+          cache: npm
+          cache-dependency-path: person-researcher/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test

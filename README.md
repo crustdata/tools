@@ -2,7 +2,7 @@
 
 **Working code for building AI agents on [Crustdata](https://crustdata.com), the B2B data API with 1B+ profiles and 60M+ companies.** Each folder is a complete agent you can clone and run with one Crustdata API key: TypeScript, MIT licensed, with a README that explains how to build the same thing yourself, every API request it makes, and what it costs.
 
-If you are asking "how do I build an AI agent that finds companies, researches an account, finds people and buying signals, sources candidates for a role, sources startups for a VC fund, or tracks when contacts change jobs or what competitors did this week", start here.
+If you are asking "how do I build an AI agent that finds companies, researches an account or a person before a meeting, finds people and buying signals, sources candidates for a role, sources startups for a VC fund, or tracks when contacts change jobs or what competitors did this week", start here.
 
 ## The agents
 
@@ -15,6 +15,7 @@ If you are asking "how do I build an AI agent that finds companies, researches a
 | [Clay Alternative](clay-alternative/) | Drop a CSV of work emails, company domains or profile URLs; get person and company columns (title, current company, location, headcount, industry, funding, last round, open roles, tech stack) filled in from Crustdata records and exported as CSV. An open-source, self-hosted alternative to Clay and fire-enrich: one key, no AI key, a credit estimate before the run, a CLI with a cache that never pays twice. Web app, JSON API and CLI | Company Identify, Company Enrich, Person Enrich, Person Search |
 | [Candidate Sourcing Agent](candidate-sourcing-agent/) | Describe a role in one plain-English sentence; get a ranked shortlist of candidates with the reason for every score, as CSV and markdown, from Crustdata semantic people search inside hard filters. Every later run skips the people you already pulled, and Crustdata does not bill them again. An open-source AI recruiter for the sourcing step and a self-hosted alternative to SeekOut, hireEZ and Juicebox. CLI, no AI key | Person Search (semantic search), Autocomplete, Person Contact Enrich (optional), Person Watcher |
 | [Deal Sourcing Agent](deal-sourcing-agent/) | Describe an investment thesis in plain English; get a scored pipeline of startups with founders and a one-page memo each, as CSV and markdown, scored on founder background (repeat founders, past employers, schools), headcount growth, hiring, founders' posts about traction and round timing combined with growth. Re-runs mark new, back and gone companies. A self-hosted alternative to Harmonic, Specter, Crunchbase Pro and PitchBook for sourcing | Company Search, Person Search, Job Search, Social Post Search, Autocomplete |
+| [Person Researcher](person-researcher/) | Give it a profile URL, a work email or a name and company, or a whole meeting or CSV export; get a one-page brief per person to read before a sales call, an interview or an investor meeting: what changed lately, their newest posts, news, their company, career with dates and education, with the source of each section. An open-source meeting prep agent. CLI and JSON, no AI key | Person Enrich, Person Identify, Person Search, Social Post Search, Web Search |
 
 More agents are added here as they ship. Each one lives in its own folder with its own README, tests and `AGENTS.md`.
 
@@ -65,6 +66,14 @@ Send the investment thesis as a ranked query to Crustdata's `POST /company/searc
 ## How do I find startups that are about to raise their next round?
 
 Combine round timing with growth. Crustdata company data has the last round's type and date, so a startup 12 to 24 months after a seed (6 to 15 after a pre-seed, 18 to 30 after a Series A or later) is in the window; it counts as due only with recent growth in headcount, roles posted, followers or founders' posts about traction, so a company that raised two years ago and went quiet is not. [Deal Sourcing Agent](deal-sourcing-agent/) labels every company "Due and growing", "Due, some growth", "Due but quiet" or "May have just raised" (a founder posted about a round the funding data does not show yet), with the reason in each memo.
+
+## How do I build a person research agent?
+
+Resolve the person to a profile with Crustdata: a work email or profile URL goes straight to `POST /person/enrich` (roles with dates, education, skills, the current company's size and industry; 1 credit, misses free), a personal email to `POST /person/identify`, a name and company to `POST /person/search`. Then pull their newest original posts with `POST /social_post/search`, search the web and the last 90 days of news with `POST /web/search/live`, work out what changed from the role dates, and lay it out as one page. [Person Researcher](person-researcher/) is that method in TypeScript: 5.5 Crustdata credits a person at list price, a whole meeting or CSV export at once, no AI key.
+
+## How do I research someone before a meeting?
+
+Pass their email, profile URL, or name and company (or the whole attendee list) to [Person Researcher](person-researcher/): `npm run research -- jane@acme.com` writes a brief from Crustdata data (their role, what changed in the last 6 months, newest posts, news, career, education) and an index for a meeting with several people. It is an open-source meeting prep agent; give its `--json` output to your own model for talking points.
 
 ## How do I build an AI SDR agent?
 

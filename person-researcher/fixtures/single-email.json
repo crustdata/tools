@@ -1,0 +1,916 @@
+{
+  "now": "2026-10-23T12:00:00Z",
+  "people": [
+    {
+      "crustdata_person_id": 9100001,
+      "updated_at": "2026-10-20T04:11:00Z",
+      "basic_profile": {
+        "name": "Maya Okafor",
+        "headline": "VP of Sales at Northwind Analytics | Building a team that sells forecasting to CFOs",
+        "current_title": "VP of Sales",
+        "languages": [
+          "English"
+        ],
+        "normalized_title": {
+          "department": "Sales",
+          "confident": true
+        },
+        "location": {
+          "raw": "Austin, Texas, United States",
+          "city": "Austin",
+          "state": "Texas",
+          "country": "United States"
+        }
+      },
+      "professional_network": {
+        "followers": 4120,
+        "connections": 2890
+      },
+      "social_handles": {
+        "professional_network_identifier": {
+          "profile_url": "https://www.linkedin.com/in/example-maya-okafor"
+        },
+        "twitter_identifier": {
+          "slug": "example_maya"
+        },
+        "dev_platform_identifier": {
+          "profile_url": null
+        }
+      },
+      "experience": {
+        "years_of_experience": "6 to 10 years",
+        "employment_details": {
+          "current": [
+            {
+              "name": "Northwind Analytics",
+              "crustdata_company_id": 7700001,
+              "company_website_domain": "northwind-analytics.example",
+              "company_website": "https://northwind-analytics.example",
+              "title": "VP of Sales",
+              "start_date": "2026-08-01T00:00:00+00:00",
+              "end_date": null,
+              "is_default": true,
+              "employment_type": "Full-time",
+              "seniority_level": "Vice President",
+              "location": {
+                "raw": "Austin, Texas, United States"
+              },
+              "description": "Leading sales for North America: 14 account executives and 6 sales development reps.",
+              "position_id": "7700001202608",
+              "company_status": "active",
+              "company_headcount_latest": 212,
+              "company_headcount_range": "201-500",
+              "company_professional_network_industry": "Software Development",
+              "company_industries": [
+                "Software Development"
+              ],
+              "company_description": "Northwind Analytics builds revenue forecasting software for mid-market sales teams.It connects to the CRM and predicts which deals close this quarter."
+            }
+          ],
+          "past": [
+            {
+              "name": "Northwind Analytics",
+              "crustdata_company_id": 7700001,
+              "company_website_domain": "northwind-analytics.example",
+              "company_website": "https://northwind-analytics.example",
+              "title": "Director of Sales",
+              "start_date": "2023-03-01T00:00:00+00:00",
+              "end_date": "2026-08-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "Director",
+              "location": {
+                "raw": "Austin, Texas, United States"
+              },
+              "description": "",
+              "position_id": "7700001202303",
+              "company_status": "active",
+              "company_headcount_latest": 212,
+              "company_headcount_range": "201-500",
+              "company_professional_network_industry": "Software Development",
+              "company_industries": [
+                "Software Development"
+              ],
+              "company_description": "Northwind Analytics builds revenue forecasting software for mid-market sales teams.It connects to the CRM and predicts which deals close this quarter."
+            },
+            {
+              "name": "Globex Software",
+              "crustdata_company_id": 7700002,
+              "company_website_domain": "globex-software.example",
+              "company_website": "https://globex-software.example",
+              "title": "Senior Account Executive",
+              "start_date": "2020-06-01T00:00:00+00:00",
+              "end_date": "2023-03-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "Senior",
+              "location": {
+                "raw": "Dallas, Texas, United States"
+              },
+              "description": "",
+              "position_id": "7700002202006",
+              "company_status": "active"
+            },
+            {
+              "name": "Globex Software",
+              "crustdata_company_id": 7700002,
+              "company_website_domain": "globex-software.example",
+              "company_website": "https://globex-software.example",
+              "title": "Account Executive",
+              "start_date": "2018-09-01T00:00:00+00:00",
+              "end_date": "2020-06-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "Entry Level",
+              "location": {
+                "raw": "Dallas, Texas, United States"
+              },
+              "description": "",
+              "position_id": "7700002201809",
+              "company_status": "active"
+            }
+          ]
+        }
+      },
+      "education": {
+        "schools": [
+          {
+            "school": "University of Texas at Austin",
+            "degree": "Bachelor of Business Administration",
+            "field_of_study": "Marketing",
+            "start_year": 2012,
+            "end_year": 2016
+          }
+        ]
+      },
+      "skills": {
+        "professional_network_skills": [
+          "Enterprise Sales",
+          "Sales Management",
+          "Forecasting",
+          "SaaS"
+        ]
+      },
+      "certifications": [],
+      "honors": []
+    },
+    {
+      "crustdata_person_id": 9100002,
+      "updated_at": "2026-10-20T04:11:00Z",
+      "basic_profile": {
+        "name": "Diego Alvarez",
+        "headline": "Head of Data at Initech",
+        "current_title": "Head of Data",
+        "languages": [
+          "English"
+        ],
+        "normalized_title": {
+          "department": "Data",
+          "confident": true
+        },
+        "location": {
+          "raw": "Chicago, Illinois, United States",
+          "city": "Chicago",
+          "state": "Illinois",
+          "country": "United States"
+        }
+      },
+      "professional_network": {
+        "followers": 880,
+        "connections": null
+      },
+      "social_handles": {
+        "professional_network_identifier": {
+          "profile_url": "https://www.linkedin.com/in/example-diego-alvarez"
+        },
+        "twitter_identifier": {
+          "slug": ""
+        },
+        "dev_platform_identifier": {
+          "profile_url": "https://github.com/example-diego"
+        }
+      },
+      "experience": {
+        "years_of_experience": "6 to 10 years",
+        "employment_details": {
+          "current": [
+            {
+              "name": "Initech",
+              "crustdata_company_id": 7700003,
+              "company_website_domain": "initech.example",
+              "company_website": "https://initech.example",
+              "title": "Head of Data",
+              "start_date": "2026-07-01T00:00:00+00:00",
+              "end_date": null,
+              "is_default": true,
+              "employment_type": "Full-time",
+              "seniority_level": "Director",
+              "location": {
+                "raw": "Chicago, Illinois, United States"
+              },
+              "description": "",
+              "position_id": "7700003202607",
+              "company_status": "active",
+              "company_headcount_latest": 96,
+              "company_headcount_range": "51-200",
+              "company_professional_network_industry": "Financial Services",
+              "company_industries": [
+                "Financial Services"
+              ],
+              "company_description": "Initech makes payroll software for restaurants. Founded in 2019."
+            }
+          ],
+          "past": [
+            {
+              "name": "Umbrella Insurance",
+              "crustdata_company_id": 7700004,
+              "company_website_domain": "umbrella-insurance.example",
+              "company_website": "https://umbrella-insurance.example",
+              "title": "Senior Data Scientist",
+              "start_date": "2021-01-01T00:00:00+00:00",
+              "end_date": "2026-06-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "Senior",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "7700004202101",
+              "company_status": "active",
+              "company_headcount_latest": 1840,
+              "company_headcount_range": "1001-5000",
+              "company_professional_network_industry": "Insurance",
+              "company_industries": [
+                "Insurance"
+              ]
+            },
+            {
+              "name": "Umbrella Insurance",
+              "crustdata_company_id": 7700004,
+              "company_website_domain": "umbrella-insurance.example",
+              "company_website": "https://umbrella-insurance.example",
+              "title": "Senior Data Scientist",
+              "start_date": "2021-01-01T00:00:00+00:00",
+              "end_date": "2026-06-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "Senior",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "dup-of-above",
+              "company_status": "active",
+              "company_headcount_latest": 1840,
+              "company_headcount_range": "1001-5000",
+              "company_professional_network_industry": "Insurance",
+              "company_industries": [
+                "Insurance"
+              ]
+            },
+            {
+              "name": "Vandelay Labs",
+              "crustdata_company_id": null,
+              "company_website_domain": null,
+              "company_website": null,
+              "title": "Data Analyst",
+              "start_date": "2018-07-01T00:00:00+00:00",
+              "end_date": "2020-12-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Contract",
+              "seniority_level": "",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "None201807",
+              "company_status": "active"
+            }
+          ]
+        }
+      },
+      "education": {
+        "schools": [
+          {
+            "school": "Universidad de Buenos Aires",
+            "degree": "Licenciatura",
+            "field_of_study": "Mathematics",
+            "start_year": null,
+            "end_year": null
+          }
+        ]
+      },
+      "skills": {
+        "professional_network_skills": [
+          "Python",
+          "SQL",
+          "Machine Learning"
+        ]
+      },
+      "certifications": [],
+      "honors": []
+    },
+    {
+      "crustdata_person_id": 9100003,
+      "updated_at": "2026-10-20T04:11:00Z",
+      "basic_profile": {
+        "name": "Priya Raman",
+        "headline": "CTO at Hooli. Advisor to early-stage infra startups.",
+        "current_title": "CTO",
+        "languages": [
+          "English"
+        ],
+        "normalized_title": {
+          "department": "Engineering",
+          "confident": true
+        },
+        "location": {
+          "raw": "San Francisco, California, United States",
+          "city": "San Francisco",
+          "state": "California",
+          "country": "United States"
+        }
+      },
+      "professional_network": {
+        "followers": 15300,
+        "connections": 500
+      },
+      "social_handles": {
+        "professional_network_identifier": {
+          "profile_url": "https://www.linkedin.com/in/example-priya-raman"
+        },
+        "twitter_identifier": {
+          "slug": ""
+        },
+        "dev_platform_identifier": {
+          "profile_url": null
+        }
+      },
+      "experience": {
+        "years_of_experience": "More than 10 years",
+        "employment_details": {
+          "current": [
+            {
+              "name": "Hooli",
+              "crustdata_company_id": 7700005,
+              "company_website_domain": "hooli.example",
+              "company_website": "https://hooli.example",
+              "title": "Chief Technology Officer",
+              "start_date": "2022-02-01T00:00:00+00:00",
+              "end_date": null,
+              "is_default": true,
+              "employment_type": "Full-time",
+              "seniority_level": "CXO",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "7700005202202",
+              "company_status": "active",
+              "company_headcount_latest": 3400,
+              "company_headcount_range": "1001-5000",
+              "company_professional_network_industry": "Technology, Information and Internet",
+              "company_industries": [
+                "Technology, Information and Internet"
+              ],
+              "company_description": "Hooli runs search and cloud storage for consumers and small businesses."
+            },
+            {
+              "name": "Vandelay Ventures",
+              "crustdata_company_id": 7700006,
+              "company_website_domain": "vandelay-ventures.example",
+              "company_website": "https://vandelay-ventures.example",
+              "title": "Technical Advisor",
+              "start_date": "2026-09-01T00:00:00+00:00",
+              "end_date": null,
+              "is_default": false,
+              "employment_type": "Part-time",
+              "seniority_level": "",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "7700006202609",
+              "company_status": "active"
+            }
+          ],
+          "past": [
+            {
+              "name": "Massive Dynamic",
+              "crustdata_company_id": 7700007,
+              "company_website_domain": "massive-dynamic.example",
+              "company_website": "https://massive-dynamic.example",
+              "title": "VP of Engineering",
+              "start_date": "2017-05-01T00:00:00+00:00",
+              "end_date": "2022-01-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "Vice President",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "7700007201705",
+              "company_status": "active"
+            }
+          ]
+        }
+      },
+      "education": {
+        "schools": [
+          {
+            "school": "Indian Institute of Technology Madras",
+            "degree": "B.Tech",
+            "field_of_study": "Computer Science",
+            "start_year": 2005,
+            "end_year": 2009
+          },
+          {
+            "school": "Stanford University",
+            "degree": "MS",
+            "field_of_study": "Computer Science",
+            "start_year": 2009,
+            "end_year": 2011
+          }
+        ]
+      },
+      "skills": {
+        "professional_network_skills": [
+          "Distributed Systems",
+          "Engineering Leadership"
+        ]
+      },
+      "certifications": [],
+      "honors": []
+    },
+    {
+      "crustdata_person_id": 9100004,
+      "updated_at": "2026-10-20T04:11:00Z",
+      "basic_profile": {
+        "name": "Wei Chen",
+        "headline": "Product leader, between roles",
+        "current_title": "",
+        "languages": [
+          "English"
+        ],
+        "normalized_title": {
+          "department": "Product",
+          "confident": true
+        },
+        "location": {
+          "raw": "Seattle, Washington, United States",
+          "city": "Seattle",
+          "state": "Washington",
+          "country": "United States"
+        }
+      },
+      "professional_network": {
+        "followers": null,
+        "connections": null
+      },
+      "social_handles": {
+        "professional_network_identifier": {
+          "profile_url": "https://www.linkedin.com/in/example-wei-chen"
+        },
+        "twitter_identifier": {
+          "slug": ""
+        },
+        "dev_platform_identifier": {
+          "profile_url": null
+        }
+      },
+      "experience": {
+        "years_of_experience": "6 to 10 years",
+        "employment_details": {
+          "current": [],
+          "past": [
+            {
+              "name": "Massive Dynamic",
+              "crustdata_company_id": 7700007,
+              "company_website_domain": "massive-dynamic.example",
+              "company_website": "https://massive-dynamic.example",
+              "title": "Director of Product",
+              "start_date": "2021-04-01T00:00:00+00:00",
+              "end_date": "2026-09-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "Director",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "7700007202104",
+              "company_status": "active"
+            },
+            {
+              "name": "Soylent Corp",
+              "crustdata_company_id": 7700008,
+              "company_website_domain": "soylent-corp.example",
+              "company_website": "https://soylent-corp.example",
+              "title": "Product Manager",
+              "start_date": "2017-01-01T00:00:00+00:00",
+              "end_date": "2021-03-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "7700008201701",
+              "company_status": "active"
+            }
+          ]
+        }
+      },
+      "education": {
+        "schools": [
+          {
+            "school": "University of Washington",
+            "degree": "BS",
+            "field_of_study": "Informatics",
+            "start_year": 2011,
+            "end_year": 2015
+          }
+        ]
+      },
+      "skills": {
+        "professional_network_skills": []
+      },
+      "certifications": [],
+      "honors": []
+    },
+    {
+      "crustdata_person_id": 9100012,
+      "updated_at": "2026-10-20T04:11:00Z",
+      "basic_profile": {
+        "name": "Sam Lee",
+        "headline": "Founder, Sam Lee Design",
+        "current_title": "Founder",
+        "languages": [
+          "English"
+        ],
+        "normalized_title": {
+          "department": "Design",
+          "confident": true
+        },
+        "location": {
+          "raw": "Toronto, Ontario, Canada",
+          "city": "Toronto",
+          "state": "Ontario",
+          "country": "Canada"
+        }
+      },
+      "professional_network": {
+        "followers": null,
+        "connections": null
+      },
+      "social_handles": {
+        "professional_network_identifier": {
+          "profile_url": "https://www.linkedin.com/in/example-sam-lee-2"
+        },
+        "twitter_identifier": {
+          "slug": ""
+        },
+        "dev_platform_identifier": {
+          "profile_url": null
+        }
+      },
+      "experience": {
+        "years_of_experience": "6 to 10 years",
+        "employment_details": {
+          "current": [
+            {
+              "name": "Sam Lee Design",
+              "crustdata_company_id": 7700009,
+              "company_website_domain": "samleedesign.example",
+              "company_website": "https://samleedesign.example",
+              "title": "Founder",
+              "start_date": "2019-04-01T00:00:00+00:00",
+              "end_date": null,
+              "is_default": true,
+              "employment_type": "Self-employed",
+              "seniority_level": "",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "7700009201904",
+              "company_status": "active"
+            }
+          ],
+          "past": [
+            {
+              "name": "Initech",
+              "crustdata_company_id": 7700003,
+              "company_website_domain": "initech.example",
+              "company_website": "https://initech.example",
+              "title": "Product Designer",
+              "start_date": "2015-06-01T00:00:00+00:00",
+              "end_date": "2019-03-01T00:00:00+00:00",
+              "is_default": false,
+              "employment_type": "Full-time",
+              "seniority_level": "",
+              "location": {
+                "raw": ""
+              },
+              "description": "",
+              "position_id": "7700003201506",
+              "company_status": "active"
+            }
+          ]
+        }
+      },
+      "education": {
+        "schools": [
+          {
+            "school": "OCAD University",
+            "degree": "BDes",
+            "field_of_study": "Graphic Design",
+            "start_year": 2011,
+            "end_year": 2015
+          }
+        ]
+      },
+      "skills": {
+        "professional_network_skills": [
+          "Brand Identity",
+          "Product Design"
+        ]
+      },
+      "certifications": [],
+      "honors": []
+    }
+  ],
+  "workEmails": {
+    "maya@northwind-analytics.example": "https://www.linkedin.com/in/example-maya-okafor"
+  },
+  "emails": {
+    "wei.chen.home@mail.example": "https://www.linkedin.com/in/example-wei-chen"
+  },
+  "invalidEmails": [
+    "typo@nowhere.invalid"
+  ],
+  "names": {
+    "priya raman|hooli": {
+      "people": [
+        {
+          "crustdata_person_id": 9100003,
+          "basic_profile": {
+            "name": "Priya Raman",
+            "headline": "CTO at Hooli. Advisor to early-stage infra startups.",
+            "location": {
+              "raw": "San Francisco, California, United States"
+            }
+          },
+          "social_handles": {
+            "professional_network_identifier": {
+              "profile_url": "https://www.linkedin.com/in/example-priya-raman"
+            }
+          }
+        }
+      ]
+    },
+    "sam lee|": {
+      "total": 412,
+      "people": [
+        {
+          "crustdata_person_id": 9100011,
+          "basic_profile": {
+            "name": "Sam Lee",
+            "headline": "Account Executive at Globex Software",
+            "location": {
+              "raw": "Dallas, Texas, United States"
+            }
+          },
+          "social_handles": {
+            "professional_network_identifier": {
+              "profile_url": "https://www.linkedin.com/in/example-sam-lee-1"
+            }
+          }
+        },
+        {
+          "crustdata_person_id": 9100012,
+          "basic_profile": {
+            "name": "Sam Lee",
+            "headline": "Founder, Sam Lee Design",
+            "location": {
+              "raw": "Toronto, Ontario, Canada"
+            }
+          },
+          "social_handles": {
+            "professional_network_identifier": {
+              "profile_url": "https://www.linkedin.com/in/example-sam-lee-2"
+            }
+          }
+        },
+        {
+          "crustdata_person_id": 9100013,
+          "basic_profile": {
+            "name": "Sam Lee",
+            "headline": "Student at University of Sydney",
+            "location": {
+              "raw": "Sydney, New South Wales, Australia"
+            }
+          },
+          "social_handles": {
+            "professional_network_identifier": {
+              "profile_url": "https://www.linkedin.com/in/example-sam-lee-3"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "posts": {
+    "9100001": {
+      "total": 64,
+      "items": [
+        {
+          "share_url": "https://www.linkedin.com/posts/example-post-1",
+          "text": "We are hiring 4 account executives in Austin. If you have sold to finance teams before and want to build the playbook with us, my inbox is open.",
+          "post_type": "original",
+          "date_posted": "2026-10-15T14:02:11Z",
+          "engagement": {
+            "total_reactions": 212,
+            "total_comments": 31,
+            "num_shares": 9,
+            "reactions_by_type": {
+              "LIKE": 212
+            }
+          }
+        },
+        {
+          "share_url": "https://www.linkedin.com/posts/example-post-2",
+          "text": "Our Q3 forecast was within 3% of what closed. Here is the one review ritual that got us there: every Monday, each rep says which deal they would bet their own money on, and why.",
+          "post_type": "original",
+          "date_posted": "2026-10-02T14:02:11Z",
+          "engagement": {
+            "total_reactions": 480,
+            "total_comments": 57,
+            "num_shares": 22,
+            "reactions_by_type": {
+              "LIKE": 480
+            }
+          }
+        },
+        {
+          "share_url": "https://www.linkedin.com/posts/example-post-3",
+          "text": "Two months as VP of Sales. Three things I got wrong in week one and what I changed.",
+          "post_type": "original",
+          "date_posted": "2026-09-18T14:02:11Z",
+          "engagement": {
+            "total_reactions": 356,
+            "total_comments": 44,
+            "num_shares": 6,
+            "reactions_by_type": {
+              "LIKE": 356
+            }
+          }
+        },
+        {
+          "share_url": "https://www.linkedin.com/posts/example-post-4",
+          "text": "Some news: I am stepping into the VP of Sales role at Northwind Analytics. Grateful to the team that built this with me.",
+          "post_type": "original",
+          "date_posted": "2026-08-11T14:02:11Z",
+          "engagement": {
+            "total_reactions": 1290,
+            "total_comments": 210,
+            "num_shares": 14,
+            "reactions_by_type": {
+              "LIKE": 1290
+            }
+          }
+        },
+        {
+          "share_url": "https://www.linkedin.com/posts/example-post-5",
+          "text": "Speaking at RevOps Summit in Denver next month on pipeline reviews that do not waste anyone's time.",
+          "post_type": "original",
+          "date_posted": "2026-07-21T14:02:11Z",
+          "engagement": {
+            "total_reactions": 98,
+            "total_comments": 12,
+            "num_shares": 3,
+            "reactions_by_type": {
+              "LIKE": 98
+            }
+          }
+        }
+      ]
+    },
+    "9100002": {
+      "total": 12,
+      "items": [
+        {
+          "share_url": "https://www.linkedin.com/posts/example-post-6",
+          "text": "First week at Initech. Restaurants run on thin margins and late data; we are going to fix the second part.",
+          "post_type": "original",
+          "date_posted": "2026-07-08T14:02:11Z",
+          "engagement": {
+            "total_reactions": 340,
+            "total_comments": 41,
+            "num_shares": 5,
+            "reactions_by_type": {
+              "LIKE": 340
+            }
+          }
+        },
+        {
+          "share_url": "https://www.linkedin.com/posts/example-post-7",
+          "text": "Notes from a talk on survival models for insurance churn, slides inside.",
+          "post_type": "original",
+          "date_posted": "2026-05-30T14:02:11Z",
+          "engagement": {
+            "total_reactions": 77,
+            "total_comments": 8,
+            "num_shares": 2,
+            "reactions_by_type": {
+              "LIKE": 77
+            }
+          }
+        }
+      ]
+    },
+    "9100003": {
+      "total": 0,
+      "items": []
+    },
+    "9100004": {
+      "total": 0,
+      "items": []
+    }
+  },
+  "web": {
+    "\"Maya Okafor\" Northwind Analytics": [
+      {
+        "source": "web",
+        "title": "Maya Okafor - VP of Sales - Northwind Analytics",
+        "url": "https://www.linkedin.com/in/example-maya-okafor",
+        "snippet": "profile",
+        "position": 1
+      },
+      {
+        "source": "web",
+        "title": "Maya Okafor Email & Phone Number",
+        "url": "https://rocketreach.co/maya-okafor-email_000",
+        "snippet": "contact lookup",
+        "position": 2
+      },
+      {
+        "source": "web",
+        "title": "Episode 41: Forecasts CFOs believe, with Maya Okafor",
+        "url": "https://revenue-podcast.example/episodes/41-maya-okafor",
+        "snippet": "Maya Okafor of Northwind Analytics on pipeline reviews.",
+        "position": 3
+      },
+      {
+        "source": "web",
+        "title": "Our leadership team | Northwind Analytics",
+        "url": "https://northwind-analytics.example/about",
+        "snippet": "Maya Okafor, VP of Sales",
+        "position": 4
+      },
+      {
+        "source": "web",
+        "title": "RevOps Summit 2026 speakers",
+        "url": "https://revops-summit.example/speakers",
+        "snippet": "Maya Okafor, Northwind Analytics",
+        "position": 5
+      }
+    ],
+    "\"Priya Raman\" Hooli": [
+      {
+        "source": "web",
+        "title": "Priya Raman on scaling storage at Hooli",
+        "url": "https://infra-weekly.example/priya-raman",
+        "position": 1
+      }
+    ]
+  },
+  "news": {
+    "\"Maya Okafor\" Northwind Analytics": [
+      {
+        "source": "news",
+        "title": "Northwind Analytics names Maya Okafor VP of Sales",
+        "url": "https://saas-news.example/2026/08/northwind-names-okafor",
+        "snippet": "The forecasting startup promoted its sales director.",
+        "position": 1
+      }
+    ]
+  },
+  "contacts": {
+    "https://www.linkedin.com/in/example-maya-okafor": {
+      "business_emails": [
+        {
+          "email": "maya@northwind-analytics.example",
+          "status": "deliverable"
+        }
+      ]
+    }
+  },
+  "description": "one work email: Maya Okafor, promoted to VP of Sales two months ago (made-up person)",
+  "argv": [
+    "maya@northwind-analytics.example"
+  ]
+}

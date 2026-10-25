@@ -1,0 +1,63 @@
+{
+  "name": "person-researcher",
+  "version": "1.0.0",
+  "description": "Open-source person research and meeting prep agent on the Crustdata people data API: a profile URL, an email or a name and company in, a one-page brief out for a sales call, interview or investor meeting (what changed lately, recent posts, news, career, education). 5.5 credits a person at list price, no AI key. TypeScript, MIT.",
+  "keywords": [
+    "person research agent",
+    "person researcher",
+    "meeting prep agent",
+    "meeting prep agent open source",
+    "meeting prep",
+    "sales call prep",
+    "pre-call research",
+    "people research api",
+    "person enrichment api",
+    "email to profile",
+    "reverse email lookup",
+    "work history api",
+    "social posts api",
+    "meeting attendee enrichment",
+    "founder research",
+    "investor due diligence",
+    "candidate research",
+    "interview prep",
+    "ai agent",
+    "crustdata",
+    "crustdata api",
+    "people data api",
+    "apollo alternative",
+    "open source",
+    "people enrichment api for ai agents",
+    "csv enrichment",
+    "calendar attendees"
+  ],
+  "author": "Crustdata",
+  "homepage": "https://github.com/crustdata/tools/tree/main/person-researcher#readme",
+  "bugs": {
+    "url": "https://github.com/crustdata/tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "person-researcher"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/setup.ts",
+    "research": "tsx src/cli.ts",
+    "replay": "tsx src/replay.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}
