@@ -44,8 +44,22 @@ export function params(req: Request) {
 // ---------- rate limits ----------
 // A small in-memory sliding window per client IP. Requests that run on the visitor's own key are not limited.
 const hits = new Map<string, number[]>();
+/**
+ * The visitor's address. Behind crustdata.com every request arrives from CloudFront, so Vercel sees an edge address;
+ * the visitor's is in CloudFront-Viewer-Address ("ip:port"), trusted only when CloudFront's x-origin-secret header
+ * matches ORIGIN_SECRET (anyone can send that header straight to the vercel.app host).
+ */
+export function clientIp(req: Request): string {
+  const secret = process.env.ORIGIN_SECRET;
+  if (secret && req.headers.get("x-origin-secret") === secret) {
+    const viewer = req.headers.get("cloudfront-viewer-address");
+    if (viewer) return viewer.replace(/^\[|\]?:\d+$/g, "");
+  }
+  return (req.headers.get("x-real-ip") ?? req.headers.get("x-forwarded-for") ?? "local").split(",")[0].trim();
+}
+
 export function rateLimit(req: Request, bucket: string, limit: number, windowMs: number) {
-  const ip = (req.headers.get("x-forwarded-for") ?? req.headers.get("x-real-ip") ?? "local").split(",")[0].trim();
+  const ip = clientIp(req);
   const key = `${bucket}:${ip}`;
   const now = Date.now();
   const recent = (hits.get(key) ?? []).filter(t => now - t < windowMs);
