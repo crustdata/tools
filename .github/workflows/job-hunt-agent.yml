@@ -1,0 +1,24 @@
+name: job-hunt-agent
+
+on:
+  push:
+    paths: ["job-hunt-agent/**", ".github/workflows/job-hunt-agent.yml"]
+  pull_request:
+    paths: ["job-hunt-agent/**", ".github/workflows/job-hunt-agent.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: job-hunt-agent
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.13"
+          cache: npm
+          cache-dependency-path: job-hunt-agent/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test

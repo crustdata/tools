@@ -1,0 +1,985 @@
+{
+ "description": "Software engineer near San Francisco, sample CV, six made-up companies (a duplicate listing, a staffing agency, a closed job, a visa and a clearance flag, a shrinking team, a startup with nobody in the US)",
+ "argv": [
+  "hunt",
+  "--title",
+  "software engineer",
+  "--location",
+  "San Francisco",
+  "--cv",
+  "examples/cv-example.md",
+  "--top",
+  "5"
+ ],
+ "now": "2026-10-28T12:00:00Z",
+ "matching": 1284,
+ "jobs": [
+  {
+   "crustdata_job_id": 7100001,
+   "job_details": {
+    "title": "Senior Software Engineer, Platform",
+    "url": "https://boards.greenhouse.io/northwind/jobs/7000001",
+    "category": "Engineering",
+    "workplace_type": "On-site",
+    "employment_type": "full_time",
+    "source": "greenhouse"
+   },
+   "location": {
+    "raw": "San Francisco, California, United States",
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States"
+   },
+   "metadata": {
+    "date_added": "2026-10-27T09:00:00"
+   },
+   "content": {
+    "description": "About Northwind\nWe build warehouse robots.\n\nWhat you will do\n- Build the fleet control plane in Go on Kubernetes.\n\nRequirements\n- 5+ years of software engineering experience\n- Go, Kubernetes, PostgreSQL and Kafka in production\n- Distributed systems you have run on call\n\nNice to have\n- Rust\n- Terraform"
+   },
+   "company": {
+    "basic_info": {
+     "crustdata_company_id": 900101,
+     "name": "Northwind Robotics",
+     "primary_domain": "northwind.example",
+     "industries": [
+      "Software Development"
+     ]
+    },
+    "headcount": {
+     "total": 240
+    },
+    "funding": {
+     "last_fundraise_date": "2026-08-12T00:00:00",
+     "last_round_type": "series_b",
+     "total_investment_usd": 61000000.0
+    }
+   }
+  },
+  {
+   "crustdata_job_id": 7100002,
+   "job_details": {
+    "title": "Sr. Software Engineer - Platform",
+    "url": "https://jobs.example.com/view/111",
+    "category": "Engineering",
+    "workplace_type": "On-site",
+    "employment_type": "full_time",
+    "source": "professional_network"
+   },
+   "location": {
+    "raw": "San Francisco, California, United States",
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States"
+   },
+   "metadata": {
+    "date_added": "2026-10-26T09:00:00"
+   },
+   "content": {
+    "description": "We build warehouse robots. Go, Kubernetes, PostgreSQL, Kafka."
+   },
+   "company": {
+    "basic_info": {
+     "crustdata_company_id": 900101,
+     "name": "Northwind Robotics",
+     "primary_domain": "northwind.example",
+     "industries": [
+      "Software Development"
+     ]
+    },
+    "headcount": {
+     "total": 240
+    },
+    "funding": {
+     "last_fundraise_date": "2026-08-12T00:00:00",
+     "last_round_type": "series_b",
+     "total_investment_usd": 61000000.0
+    }
+   }
+  },
+  {
+   "crustdata_job_id": 7100003,
+   "job_details": {
+    "title": "Backend Engineer (Payments)",
+    "url": "https://jobs.lever.co/fabrikam/0b5e7a52-1111-4c4c-9a9a-000000000001",
+    "category": "Engineering",
+    "workplace_type": "On-site",
+    "employment_type": "full_time",
+    "source": "lever"
+   },
+   "location": {
+    "raw": "San Francisco, California, United States",
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States"
+   },
+   "metadata": {
+    "date_added": "2026-10-20T10:00:00"
+   },
+   "content": {
+    "description": "Requirements\n- 3+ years building backend services\n- Python or Go, Redis, AWS\n- REST APIs\n\nWe are unable to sponsor visas for this role."
+   },
+   "company": {
+    "basic_info": {
+     "crustdata_company_id": 900102,
+     "name": "Fabrikam Payments",
+     "primary_domain": "fabrikam.example",
+     "industries": [
+      "Software Development"
+     ]
+    },
+    "headcount": {
+     "total": 1310
+    },
+    "funding": {
+     "last_fundraise_date": "2024-05-02T00:00:00",
+     "last_round_type": "series_c",
+     "total_investment_usd": 190000000.0
+    }
+   }
+  },
+  {
+   "crustdata_job_id": 7100004,
+   "job_details": {
+    "title": "Software Engineer II",
+    "url": "https://jobs.ashbyhq.com/contoso/2a1d0c7e-2222-4d4d-8b8b-000000000002",
+    "category": "Engineering",
+    "workplace_type": "On-site",
+    "employment_type": "full_time",
+    "source": "ashby"
+   },
+   "location": {
+    "raw": "Oakland, CA",
+    "city": "Oakland",
+    "state": "California",
+    "country": "United States"
+   },
+   "metadata": {
+    "date_added": "2026-10-10T08:00:00"
+   },
+   "content": {
+    "description": "Requirements\n- Java and Spring Boot\n- React\n- 2+ years of experience"
+   },
+   "company": {
+    "basic_info": {
+     "crustdata_company_id": 900103,
+     "name": "Contoso Health",
+     "primary_domain": "contoso.example",
+     "industries": [
+      "Software Development"
+     ]
+    },
+    "headcount": {
+     "total": 820
+    },
+    "funding": {
+     "last_fundraise_date": "2023-11-20T00:00:00",
+     "last_round_type": "series_d",
+     "total_investment_usd": 240000000.0
+    }
+   }
+  },
+  {
+   "crustdata_job_id": 7100005,
+   "job_details": {
+    "title": "Founding Software Engineer",
+    "url": "https://jobs.example.com/view/222",
+    "category": "Engineering",
+    "workplace_type": "Hybrid",
+    "employment_type": "full_time",
+    "source": "professional_network"
+   },
+   "location": {
+    "raw": "San Francisco, California, United States",
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States"
+   },
+   "metadata": {
+    "date_added": "2026-10-26T15:00:00"
+   },
+   "content": {
+    "description": "Requirements\n- 5+ years of experience with TypeScript, React and Node.js\n- PostgreSQL\n\nRemote friendly, San Francisco office."
+   },
+   "company": {
+    "basic_info": {
+     "crustdata_company_id": 900104,
+     "name": "Tailspin Data",
+     "primary_domain": "tailspin.example",
+     "industries": [
+      "Software Development"
+     ]
+    },
+    "headcount": {
+     "total": 14
+    },
+    "funding": {
+     "last_fundraise_date": "2026-03-01T00:00:00",
+     "last_round_type": "seed",
+     "total_investment_usd": 4200000.0
+    }
+   }
+  },
+  {
+   "crustdata_job_id": 7100006,
+   "job_details": {
+    "title": "Software Engineer (Contract)",
+    "url": "https://jobs.example.com/view/333",
+    "category": "Engineering",
+    "workplace_type": "On-site",
+    "employment_type": "full_time",
+    "source": "professional_network"
+   },
+   "location": {
+    "raw": "San Francisco, California, United States",
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States"
+   },
+   "metadata": {
+    "date_added": "2026-10-27T11:00:00"
+   },
+   "content": {
+    "description": "Python, AWS. 6 month contract for a client."
+   },
+   "company": {
+    "basic_info": {
+     "crustdata_company_id": 900105,
+     "name": "Bridgepoint Talent Partners",
+     "primary_domain": "bridgepoint.example",
+     "industries": [
+      "Staffing and Recruiting"
+     ]
+    },
+    "headcount": {
+     "total": 60
+    },
+    "funding": {
+     "last_fundraise_date": null,
+     "last_round_type": null,
+     "total_investment_usd": null
+    }
+   }
+  },
+  {
+   "crustdata_job_id": 7100007,
+   "job_details": {
+    "title": "Software Engineer, Embedded",
+    "url": "https://jobs.smartrecruiters.com/Litware/7440000001-software-engineer-embedded",
+    "category": "Engineering",
+    "workplace_type": "On-site",
+    "employment_type": "full_time",
+    "source": "smartrecruiters"
+   },
+   "location": {
+    "raw": "Sunnyvale, CA",
+    "city": "Sunnyvale",
+    "state": "California",
+    "country": "United States"
+   },
+   "metadata": {
+    "date_added": "2026-10-15T08:00:00"
+   },
+   "content": {
+    "description": "Requirements\n- C++ and embedded systems\n- Active security clearance required\n- Must be a U.S. citizen"
+   },
+   "company": {
+    "basic_info": {
+     "crustdata_company_id": 900106,
+     "name": "Litware Systems",
+     "primary_domain": "litware.example",
+     "industries": [
+      "Defense and Space Manufacturing"
+     ]
+    },
+    "headcount": {
+     "total": 3100
+    },
+    "funding": {
+     "last_fundraise_date": null,
+     "last_round_type": null,
+     "total_investment_usd": null
+    }
+   }
+  },
+  {
+   "crustdata_job_id": 7100008,
+   "job_details": {
+    "title": "Staff Software Engineer, Infrastructure",
+    "url": "https://boards.greenhouse.io/northwind/jobs/7000009",
+    "category": "Engineering",
+    "workplace_type": "On-site",
+    "employment_type": "full_time",
+    "source": "greenhouse"
+   },
+   "location": {
+    "raw": "San Francisco, California, United States",
+    "city": "San Francisco",
+    "state": "California",
+    "country": "United States"
+   },
+   "metadata": {
+    "date_added": "2026-10-25T09:00:00"
+   },
+   "content": {
+    "description": "Requirements\n- 10+ years of experience\n- Go, Kubernetes"
+   },
+   "company": {
+    "basic_info": {
+     "crustdata_company_id": 900101,
+     "name": "Northwind Robotics",
+     "primary_domain": "northwind.example",
+     "industries": [
+      "Software Development"
+     ]
+    },
+    "headcount": {
+     "total": 240
+    },
+    "funding": {
+     "last_fundraise_date": "2026-08-12T00:00:00",
+     "last_round_type": "series_b",
+     "total_investment_usd": 61000000.0
+    }
+   }
+  }
+ ],
+ "companies": [
+  {
+   "crustdata_company_id": 900101,
+   "basic_info": {
+    "name": "Northwind Robotics",
+    "primary_domain": "northwind.example"
+   },
+   "headcount": {
+    "total": 240,
+    "growth_percent": {
+     "1m": 3.0,
+     "3m": 9.0,
+     "6m": 24.0,
+     "12m": 51.0
+    }
+   },
+   "funding": {
+    "last_round_type": "series_b",
+    "last_fundraise_date": "2026-08-12",
+    "last_round_amount_usd": 45000000.0,
+    "total_investment_usd": 61000000.0
+   }
+  },
+  {
+   "crustdata_company_id": 900102,
+   "basic_info": {
+    "name": "Fabrikam Payments",
+    "primary_domain": "fabrikam.example"
+   },
+   "headcount": {
+    "total": 1310,
+    "growth_percent": {
+     "1m": 0.13333333333333333,
+     "3m": 0.4,
+     "6m": 1.2,
+     "12m": 6.0
+    }
+   },
+   "funding": {
+    "last_round_type": "series_c",
+    "last_fundraise_date": "2024-05-02",
+    "last_round_amount_usd": 120000000.0,
+    "total_investment_usd": 190000000.0
+   }
+  },
+  {
+   "crustdata_company_id": 900103,
+   "basic_info": {
+    "name": "Contoso Health",
+    "primary_domain": "contoso.example"
+   },
+   "headcount": {
+    "total": 820,
+    "growth_percent": {
+     "1m": -1.3666666666666665,
+     "3m": -4.1,
+     "6m": -9.4,
+     "12m": -12.0
+    }
+   },
+   "funding": {
+    "last_round_type": "series_d",
+    "last_fundraise_date": "2023-11-20",
+    "last_round_amount_usd": null,
+    "total_investment_usd": 240000000.0
+   }
+  },
+  {
+   "crustdata_company_id": 900104,
+   "basic_info": {
+    "name": "Tailspin Data",
+    "primary_domain": "tailspin.example"
+   },
+   "headcount": {
+    "total": 14,
+    "growth_percent": {
+     "1m": 5.333333333333333,
+     "3m": 16.0,
+     "6m": 40.0,
+     "12m": 75.0
+    }
+   },
+   "funding": {
+    "last_round_type": "seed",
+    "last_fundraise_date": "2026-03-01",
+    "last_round_amount_usd": 4200000.0,
+    "total_investment_usd": 4200000.0
+   }
+  },
+  {
+   "crustdata_company_id": 900106,
+   "basic_info": {
+    "name": "Litware Systems",
+    "primary_domain": "litware.example"
+   },
+   "headcount": {
+    "total": 3100,
+    "growth_percent": {
+     "1m": 0.3333333333333333,
+     "3m": 1.0,
+     "6m": 2.0,
+     "12m": 3.0
+    }
+   },
+   "funding": {
+    "last_round_type": null,
+    "last_fundraise_date": null,
+    "last_round_amount_usd": null,
+    "total_investment_usd": null
+   }
+  }
+ ],
+ "people": {
+  "900101": [
+   {
+    "crustdata_person_id": 500001,
+    "basic_profile": {
+     "name": "Avery Example",
+     "location": {
+      "full_location": "San Francisco, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Senior Technical Recruiter",
+        "crustdata_company_id": 900101,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-avery-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500002,
+    "basic_profile": {
+     "name": "Blake Sample",
+     "location": {
+      "full_location": "New York, New York, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Talent Acquisition Partner",
+        "crustdata_company_id": 900101,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-blake-sample"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500003,
+    "basic_profile": {
+     "name": "Casey Placeholder",
+     "location": {
+      "full_location": "San Francisco Bay Area"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Engineering Manager, Platform",
+        "crustdata_company_id": 900101,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-casey-placeholder"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500004,
+    "basic_profile": {
+     "name": "Devon Testcase",
+     "location": {
+      "full_location": "San Francisco, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Senior Software Engineer",
+        "crustdata_company_id": 900101,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": [
+      {
+       "school": "University of California, Berkeley",
+       "end_year": 2016
+      }
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-devon-testcase"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500005,
+    "basic_profile": {
+     "name": "Emery Mock",
+     "location": {
+      "full_location": "Oakland, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Software Engineer",
+        "crustdata_company_id": 900101,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-emery-mock"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500006,
+    "basic_profile": {
+     "name": "Finley Stub",
+     "location": {
+      "full_location": "San Francisco, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Staff Software Engineer",
+        "crustdata_company_id": 900101,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-finley-stub"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500007,
+    "basic_profile": {
+     "name": "Gray Fixture",
+     "location": {
+      "full_location": "San Francisco, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Technical Advisor",
+        "crustdata_company_id": 900101,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-gray-fixture"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500008,
+    "basic_profile": {
+     "name": "Harper Demo",
+     "location": {
+      "full_location": "San Francisco Bay Area"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Software Engineer, Fleet",
+        "crustdata_company_id": 900101,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": [
+      {
+       "school": "UC Berkeley College of Engineering",
+       "end_year": 2021
+      }
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-harper-demo"
+     }
+    }
+   }
+  ],
+  "900102": [
+   {
+    "crustdata_person_id": 500009,
+    "basic_profile": {
+     "name": "Indigo Example",
+     "location": {
+      "full_location": "New York, New York, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Recruiter",
+        "crustdata_company_id": 900102,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-indigo-example"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500010,
+    "basic_profile": {
+     "name": "Jules Sample",
+     "location": {
+      "full_location": "San Francisco, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Head of Engineering, Payments",
+        "crustdata_company_id": 900102,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-jules-sample"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500011,
+    "basic_profile": {
+     "name": "Kai Placeholder",
+     "location": {
+      "full_location": "San Francisco, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Backend Engineer",
+        "crustdata_company_id": 900102,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-kai-placeholder"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500012,
+    "basic_profile": {
+     "name": "Lane Testcase",
+     "location": {
+      "full_location": "London, England, United Kingdom"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Senior Backend Engineer",
+        "crustdata_company_id": 900102,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-lane-testcase"
+     }
+    }
+   }
+  ],
+  "900103": [
+   {
+    "crustdata_person_id": 500013,
+    "basic_profile": {
+     "name": "Morgan Mock",
+     "location": {
+      "full_location": "Oakland, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Engineering Manager",
+        "crustdata_company_id": 900103,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-morgan-mock"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500014,
+    "basic_profile": {
+     "name": "Noel Stub",
+     "location": {
+      "full_location": "San Francisco Bay Area"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Software Engineer",
+        "crustdata_company_id": 900103,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": [
+      {
+       "school": "University of California, Berkeley",
+       "end_year": 2019
+      }
+     ]
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-noel-stub"
+     }
+    }
+   }
+  ],
+  "900104": [
+   {
+    "crustdata_person_id": 500015,
+    "basic_profile": {
+     "name": "Oakley Fixture",
+     "location": {
+      "full_location": "Toronto, Ontario, Canada"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Co-founder and CTO",
+        "crustdata_company_id": 900104,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-oakley-fixture"
+     }
+    }
+   },
+   {
+    "crustdata_person_id": 500016,
+    "basic_profile": {
+     "name": "Parker Demo",
+     "location": {
+      "full_location": "Toronto, Ontario, Canada"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Software Engineer",
+        "crustdata_company_id": 900104,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-parker-demo"
+     }
+    }
+   }
+  ],
+  "900106": [
+   {
+    "crustdata_person_id": 500017,
+    "basic_profile": {
+     "name": "Quinn Example",
+     "location": {
+      "full_location": "Sunnyvale, California, United States"
+     }
+    },
+    "experience": {
+     "employment_details": {
+      "current": [
+       {
+        "title": "Technical Recruiter",
+        "crustdata_company_id": 900106,
+        "start_date": "2024-02-01T00:00:00"
+       }
+      ]
+     }
+    },
+    "education": {
+     "schools": []
+    },
+    "social_handles": {
+     "professional_network_identifier": {
+      "profile_url": "https://www.linkedin.com/in/example-quinn-example"
+     }
+    }
+   }
+  ]
+ },
+ "schools": {
+  "University of California, Berkeley": [
+   "University of California, Berkeley",
+   "University of California, Berkeley, Haas School of Business",
+   "University of California, Los Angeles"
+  ]
+ },
+ "closed": [
+  "7000009"
+ ],
+ "emails": {
+  "https://www.linkedin.com/in/example-avery-example": [
+   {
+    "email": "avery@northwind.example",
+    "crustdata_company_id": 900101
+   }
+  ],
+  "https://www.linkedin.com/in/example-casey-placeholder": [
+   {
+    "email": "casey@previous-employer.example",
+    "crustdata_company_id": 1
+   }
+  ]
+ }
+}

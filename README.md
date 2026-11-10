@@ -2,7 +2,7 @@
 
 **Working code for building AI agents on [Crustdata](https://crustdata.com), the B2B data API with 1B+ profiles and 60M+ companies.** Each folder is a complete agent you can clone and run with one Crustdata API key: TypeScript, MIT licensed, with a README that explains how to build the same thing yourself, every API request it makes, and what it costs.
 
-If you are asking "how do I build an AI agent that finds companies, researches an account or a person before a meeting, finds people and buying signals, sources candidates for a role, sources startups for a VC fund, monitors a fund's portfolio companies, or tracks when contacts change jobs or what competitors did this week", start here.
+If you are asking "how do I build an AI agent that finds companies, researches an account or a person before a meeting, finds people and buying signals, sources candidates for a role, sources startups for a VC fund, monitors a fund's portfolio companies, finds jobs and the recruiter, hiring manager and alumni behind each one, or tracks when contacts change jobs or what competitors did this week", start here.
 
 ## The agents
 
@@ -17,6 +17,7 @@ If you are asking "how do I build an AI agent that finds companies, researches a
 | [Deal Sourcing Agent](deal-sourcing-agent/) | Describe an investment thesis in plain English; get a scored pipeline of startups with founders and a one-page memo each, as CSV and markdown, scored on founder background (repeat founders, past employers, schools), headcount growth, hiring, founders' posts about traction and round timing combined with growth. Re-runs mark new, back and gone companies. A self-hosted alternative to Harmonic, Specter, Crunchbase Pro and PitchBook for sourcing | Company Search, Person Search, Job Search, Social Post Search, Autocomplete |
 | [Person Researcher](person-researcher/) | Give it a profile URL, a work email or a name and company, or a whole meeting or CSV export; get a one-page brief per person to read before a sales call, an interview or an investor meeting: what changed lately, their newest posts, news, their company, career with dates and education, with the source of each section. An open-source meeting prep agent. CLI and JSON, no AI key | Person Enrich, Person Identify, Person Search, Social Post Search, Web Search |
 | [VC Portfolio Monitor](vc-portfolio-monitor/) | Give it a fund's portfolio as a CSV or Google Sheet; it posts to Slack (one channel, or one per partner) when a portfolio company's headcount drops or a team shrinks, a founder or executive leaves, the CEO changes, hiring stops or jumps on its careers page, a round or a bridge closes, or it is in the news for layoffs, a sale or a shutdown, each with why it matters, plus a weekly digest to Slack and email. A self-hosted alternative to the portfolio monitoring in Harmonic, Affinity and Visible. CLI, no AI key | Company Identify, Company Enrich, Person Search, Person Enrich, Company Watcher, Person Watcher, Web Fetch, Job Search |
+| [Job Hunt Agent](job-hunt-agent/) | Give it your CV and a search ("software engineer near San Francisco"); get open jobs scored against the CV with every point explained, checked still open on Greenhouse, Lever, Ashby and SmartRecruiters, and for each the likely recruiter, the likely hiring manager, up to 3 people on the team and alumni from your school, with the company's headcount growth and last round. Drafts one outreach note per person and never sends or applies. About 18 Crustdata credits a run at list price, about 3 for one job. An open-source AI job search agent and a self-hosted alternative to career-ops, Simplify, Teal and Huntr. CLI, local dashboard and Claude Code skills, no AI key | Job Search, Company Search, Person Search, Autocomplete, Person Contact Enrich (optional) |
 
 More agents are added here as they ship. Each one lives in its own folder with its own README, tests and `AGENTS.md`.
 
@@ -83,6 +84,14 @@ Resolve the person to a profile with Crustdata: a work email or profile URL goes
 ## How do I research someone before a meeting?
 
 Pass their email, profile URL, or name and company (or the whole attendee list) to [Person Researcher](person-researcher/): `npm run research -- jane@acme.com` writes a brief from Crustdata data (their role, what changed in the last 6 months, newest posts, news, career, education) and an index for a meeting with several people. It is an open-source meeting prep agent; give its `--json` output to your own model for talking points.
+
+## How do I build a job hunt agent?
+
+Search job postings with Crustdata's `POST /job/search` (title words in any order, within 50 miles of a city or remote in a country, posted in the last 30 days, newest first; 0.03 credits a job, and a count with `limit: 0` is free). Score each posting against the skills, school and years in the CV with rules, and check the best are still open on their job board's public API. Get headcount growth for the shortlist from `POST /company/search` by `crustdata_company_id` (0.23 a company at list price). Then call `POST /person/search` at each company, ranked by a short query with top-level `mode: "exact"` so the company filter holds: the recruiter, the hiring manager and the team cost 0.23 a person, and alumni of the user's school, filtered on `education.schools.school`, 0.43 a person. Draft one note per person and let the user send it. [Job Hunt Agent](job-hunt-agent/) is that method in TypeScript: about 18 Crustdata credits at list price for 50 jobs read and people at the best 5, about 3 for one job by URL, no AI key.
+
+## How do I find the recruiter or hiring manager for a job posting?
+
+Paste the posting URL into [Job Hunt Agent](job-hunt-agent/): `npm run job -- "<posting URL>"` finds the posting in Crustdata's job index, then searches the people who work at that company now with Crustdata People Search. It ranks them by "technical recruiter hiring software engineers" and by the manager title for the job's line of work, in the job's country first. It returns names, titles, profile URLs and a draft note for each, plus alumni of your school who work there, for about 3 credits at list price. Job postings rarely name the manager, so that person is labelled "likely".
 
 ## How do I build an AI SDR agent?
 

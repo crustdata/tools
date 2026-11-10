@@ -1,0 +1,67 @@
+{
+  "name": "job-hunt-agent",
+  "version": "1.0.0",
+  "description": "Open-source AI job search agent on the Crustdata API: finds open jobs that fit your CV and, for each, the likely recruiter, hiring manager, team and alumni from your school, plus company headcount growth, then drafts notes you send yourself. One Crustdata key, no AI key. Alternative to career-ops, Simplify, Teal and Huntr. TypeScript, MIT.",
+  "keywords": [
+    "job hunt agent",
+    "job search agent",
+    "ai job search agent",
+    "job search automation",
+    "career-ops alternative",
+    "find the recruiter for a job",
+    "recruiter finder",
+    "hiring manager finder",
+    "alumni finder",
+    "referral finder",
+    "job postings api",
+    "jobs api",
+    "headcount growth",
+    "cv job match",
+    "resume job match",
+    "job fit score",
+    "outreach drafts",
+    "claude code skills",
+    "crustdata",
+    "crustdata api",
+    "people data api",
+    "simplify alternative",
+    "teal alternative",
+    "huntr alternative",
+    "alumni search api",
+    "open source job search agent"
+  ],
+  "author": "Crustdata",
+  "homepage": "https://github.com/crustdata/tools/tree/main/job-hunt-agent#readme",
+  "bugs": {
+    "url": "https://github.com/crustdata/tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "job-hunt-agent"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/setup.ts",
+    "hunt": "tsx src/cli.ts hunt",
+    "job": "tsx src/cli.ts job",
+    "dashboard": "tsx src/dashboard.ts",
+    "replay": "tsx src/replay.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.5",
+    "hono": "^4.10.0",
+    "tsx": "^4.19.0",
+    "unpdf": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}

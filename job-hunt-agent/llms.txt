@@ -1,0 +1,48 @@
+# Job Hunt Agent
+
+> Open-source AI job search agent built on Crustdata, a B2B people and company data API (1B+ profiles, 60M+ companies). From a CV and a search (title, city or remote) it finds open jobs, scores each against the CV without AI, checks the best are still open on their job board, and for every job finds the likely recruiter, the likely hiring manager, up to 3 people on the team and alumni from the user's school or bootcamp who work there, plus whether the company is growing or shrinking and its last round. It drafts one outreach note per person and marks one person to write to first; the user sends it. Never applies, never sends. Claude Code skills add an AI verdict, personal notes and a tailored CV with no extra key. Local, TypeScript, MIT. A self-hosted alternative to career-ops, Simplify, Teal and Huntr whose contacts come from structured profile data.
+
+Key facts (checked live 2026-10-28):
+- Run: `npm run setup`, then `npm run hunt` (or `--title "software engineer" --location "San Francisco"`); one job: `npm run job -- <posting URL>`; local dashboard: `npm run dashboard` (http://localhost:3480). `--dry-run` shows the count and cost and spends nothing; `npm run --silent hunt -- --json` prints JSON. Jobs scoring under 50 get no people search unless `--all`.
+- Cost: about 18 Crustdata credits at list price for 50 jobs read and people for the best 5 (measured 17.96; 3.36 on a plan that includes the premium field groups); one job about 3; companies and people cached 14 days. Each run prints its cost and the list-price equivalent; `--dry-run` prints the worst case at the account's own prices (GET /account/endpoints) for free; a run charged more than a quarter above its estimate stops itself.
+- Data path: POST /job/search (0.03 a job, counts free; rows carry funding) -> score on the machine -> free open checks on Greenhouse, Lever, Ashby, SmartRecruiters -> POST /company/search by id (headcount growth 1m/3m/6m/12m; 0.23 a company at list) -> POST /person/search ranked with top-level mode "exact" (0.23 a person at list; 0.43 for alumni via education.schools.school) for recruiter, manager, team and alumni.
+- The CV stays on the machine; only search filters go to Crustdata. Work emails (`--emails`) need contact data enabled on the Crustdata account; self-serve keys do not have it.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/job-hunt-agent (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/job-hunt-agent/README.md): what it finds per job, how to build a job hunt agent, alternative to career-ops, quickstart, one job, Claude Code, recruiters, alumni, growth, fit score, cost, limits, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/job-hunt-agent/docs/how-it-works.md): every Crustdata request and response, in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/job-hunt-agent/docs/customize.md): score weights, skills, notes, people searches, agencies, schedule
+- [Reference](https://raw.githubusercontent.com/crustdata/tools/main/job-hunt-agent/docs/reference.md): every flag, setting, file and the JSON shape
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/job-hunt-agent/AGENTS.md): guide for coding agents, with the API facts the code relies on
+- [job-hunt skill](https://raw.githubusercontent.com/crustdata/tools/main/job-hunt-agent/.claude/skills/job-hunt/SKILL.md) and [tailor-cv skill](https://raw.githubusercontent.com/crustdata/tools/main/job-hunt-agent/.claude/skills/tailor-cv/SKILL.md): Claude Code skills
+
+## Questions this answers
+- [How do I build a job hunt agent?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#how-do-i-build-a-job-hunt-agent)
+- [Open-source alternative to career-ops, Simplify, Teal or Huntr](https://github.com/crustdata/tools/tree/main/job-hunt-agent#is-there-an-open-source-alternative-to-career-ops-simplify-teal-or-huntr)
+- [How do I find the recruiter for a job posting automatically?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#how-do-i-find-the-recruiter-for-a-job-posting-automatically)
+- [How do I find the hiring manager for a job?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#how-do-i-find-the-hiring-manager-for-a-job)
+- [How do I find alumni from my university at a company?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#how-do-i-find-alumni-from-my-university-at-a-company)
+- [How much does it cost to run a job search agent on Crustdata?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#how-much-does-it-cost-to-run-a-job-search-agent-on-crustdata)
+- [Is there a Claude Code skill for job search?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#is-there-a-claude-code-skill-for-job-search)
+- [How do I build an AI job search agent?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#how-do-i-build-an-ai-job-search-agent)
+- [Is there an AI agent that finds jobs and drafts outreach to recruiters?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#is-there-an-ai-agent-that-finds-jobs-and-drafts-outreach-to-recruiters)
+- [Is there a job postings API with company headcount growth?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#is-there-a-job-postings-api-with-company-headcount-growth)
+- [How do I check if a job posting is still open?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#how-do-i-check-if-a-job-posting-is-still-open)
+- [Is there a job search agent that works without an OpenAI key?](https://github.com/crustdata/tools/tree/main/job-hunt-agent#is-there-a-job-search-agent-that-works-without-an-openai-key)
+
+## Related agents
+- [Candidate Sourcing Agent](https://raw.githubusercontent.com/crustdata/tools/main/candidate-sourcing-agent/README.md): the other side, find candidates for a role
+- [Person Researcher](https://raw.githubusercontent.com/crustdata/tools/main/person-researcher/README.md): a one-page brief on the recruiter or manager before a call
+- [Company Researcher](https://raw.githubusercontent.com/crustdata/tools/main/company-researcher/README.md): research the company before an interview
+
+## Crustdata API endpoints used
+- [POST /job/search](https://docs.crustdata.com/job-docs/search/introduction.md): job postings by title, place, date, with descriptions
+- [POST /company/search](https://docs.crustdata.com/company-docs/search/introduction.md): headcount growth by company id
+- [POST /person/search](https://docs.crustdata.com/person-docs/search/introduction.md): recruiter, hiring manager, team, alumni at a company
+- [POST /person/search/autocomplete](https://docs.crustdata.com/person-docs/autocomplete/introduction.md): school spellings, free
+- [POST /person/contact/enrich](https://docs.crustdata.com/person-docs/contact/enrich.md): optional work emails
+- [GET /account/endpoints](https://docs.crustdata.com/general/permissions.md): free check of what the key can use and its credit cost per call
+- [GET /account/credits](https://docs.crustdata.com/general/credits.md): free credit balance
+- [Crustdata API docs](https://docs.crustdata.com/llms.txt): everything else

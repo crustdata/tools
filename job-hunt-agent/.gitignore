@@ -1,0 +1,11 @@
+node_modules/
+.env
+out/
+data/
+profile.json
+cv.*
+resume.*
+Resume*
+*.docx
+*.log
+.DS_Store
