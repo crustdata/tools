@@ -1,0 +1,303 @@
+{
+  "about": "The teams the team map knows, the words that point at each, and phrases that never count (not). Matching is on whole words, any case. Edit freely, then run npm run rescore (free). When a text names two teams, the one named first wins; then the longer word; then the order of this list.",
+  "teams": [
+    {
+      "team": "Pretraining",
+      "words": [
+        "pretraining",
+        "pre training",
+        "pretrain",
+        "scaling laws",
+        "large scale training",
+        "foundation model training",
+        "data mixture"
+      ]
+    },
+    {
+      "team": "Post-training and RL",
+      "words": [
+        "post training",
+        "posttraining",
+        "rlhf",
+        "rlaif",
+        "reinforcement learning",
+        "rl",
+        "reward model",
+        "reward modeling",
+        "reward models",
+        "preference learning",
+        "fine tuning",
+        "finetuning",
+        "instruction tuning"
+      ]
+    },
+    {
+      "team": "Inference",
+      "words": [
+        "inference",
+        "serving",
+        "model serving",
+        "speculative decoding",
+        "kv cache",
+        "quantization",
+        "llm performance",
+        "efficient inference"
+      ],
+      "not": [
+        "causal inference",
+        "bayesian inference",
+        "variational inference",
+        "statistical inference",
+        "approximate inference",
+        "inference attack",
+        "inference attacks",
+        "membership inference"
+      ]
+    },
+    {
+      "team": "Infrastructure and scaling",
+      "words": [
+        "infrastructure",
+        "infra",
+        "distributed training",
+        "distributed systems",
+        "cuda",
+        "triton",
+        "tpu",
+        "tpus",
+        "gpu",
+        "gpus",
+        "compiler",
+        "compilers",
+        "xla",
+        "mlir",
+        "hpc",
+        "supercomputing",
+        "ml systems",
+        "performance engineering",
+        "hardware accelerators",
+        "accelerators",
+        "gpu kernels",
+        "cuda kernels",
+        "kernel optimization",
+        "kernel engineering"
+      ]
+    },
+    {
+      "team": "Alignment and safety",
+      "words": [
+        "alignment",
+        "safety",
+        "safeguards",
+        "red teaming",
+        "red team",
+        "scalable oversight",
+        "ai safety",
+        "model welfare",
+        "jailbreak",
+        "jailbreaks",
+        "harmlessness",
+        "preparedness",
+        "trustworthy ai",
+        "superalignment",
+        "model safety",
+        "safety research"
+      ],
+      "not": [
+        "trust and safety",
+        "trust & safety",
+        "patient safety",
+        "food safety",
+        "workplace safety",
+        "road safety",
+        "functional safety",
+        "safety critical",
+        "safety-critical"
+      ]
+    },
+    {
+      "team": "Interpretability",
+      "words": [
+        "interpretability",
+        "mechanistic interpretability",
+        "explainability",
+        "sparse autoencoders",
+        "sparse autoencoder",
+        "circuit discovery",
+        "circuits research"
+      ]
+    },
+    {
+      "team": "Evaluations",
+      "words": [
+        "evals",
+        "eval",
+        "evaluations",
+        "benchmark",
+        "benchmarks",
+        "model evaluation"
+      ]
+    },
+    {
+      "team": "Multimodal",
+      "words": [
+        "multimodal",
+        "multi modal",
+        "vision",
+        "computer vision",
+        "vision language",
+        "image generation",
+        "video",
+        "video generation",
+        "audio",
+        "speech",
+        "voice",
+        "text to speech",
+        "diffusion"
+      ],
+      "not": [
+        "vision and strategy",
+        "product vision",
+        "company vision",
+        "video games",
+        "video game",
+        "voice of the customer",
+        "diffusion of innovations",
+        "free speech",
+        "hate speech",
+        "speech writer",
+        "speechwriter"
+      ]
+    },
+    {
+      "team": "Reasoning",
+      "words": [
+        "reasoning",
+        "mathematical reasoning",
+        "theorem proving",
+        "chain of thought",
+        "math reasoning",
+        "olympiad"
+      ]
+    },
+    {
+      "team": "Agents",
+      "words": [
+        "agents",
+        "agentic",
+        "tool use",
+        "computer use",
+        "browser use",
+        "agent research",
+        "autonomous agents"
+      ],
+      "not": [
+        "agent based",
+        "agent-based",
+        "multi agent systems"
+      ]
+    },
+    {
+      "team": "Code",
+      "words": [
+        "code generation",
+        "coding",
+        "program synthesis",
+        "code models",
+        "code rl",
+        "software engineering agents",
+        "code llms",
+        "coding agents",
+        "claude code",
+        "code agents"
+      ],
+      "not": [
+        "code of conduct"
+      ]
+    },
+    {
+      "team": "Data",
+      "words": [
+        "synthetic data",
+        "pretraining data",
+        "data quality",
+        "datasets",
+        "data curation",
+        "human data",
+        "data engine"
+      ]
+    },
+    {
+      "team": "Robotics",
+      "words": [
+        "robotics",
+        "robot",
+        "robots",
+        "embodied",
+        "robot learning",
+        "manipulation"
+      ]
+    },
+    {
+      "team": "Science",
+      "words": [
+        "ai for science",
+        "biology",
+        "protein",
+        "proteins",
+        "drug discovery",
+        "chemistry",
+        "materials science",
+        "genomics",
+        "virology",
+        "physics"
+      ]
+    },
+    {
+      "team": "Security",
+      "words": [
+        "security",
+        "cybersecurity",
+        "cyber"
+      ],
+      "not": [
+        "social security",
+        "national security",
+        "security policy",
+        "homeland security",
+        "job security",
+        "security clearance"
+      ]
+    },
+    {
+      "team": "Model behavior",
+      "words": [
+        "model behavior",
+        "model behaviour",
+        "character training",
+        "personality"
+      ]
+    },
+    {
+      "team": "Long context and retrieval",
+      "words": [
+        "long context",
+        "long-context",
+        "retrieval",
+        "retrieval augmented",
+        "rag",
+        "search quality"
+      ]
+    },
+    {
+      "team": "Applied AI",
+      "words": [
+        "applied ai",
+        "forward deployed",
+        "solutions architect",
+        "ai architect",
+        "customer engineering"
+      ]
+    }
+  ]
+}

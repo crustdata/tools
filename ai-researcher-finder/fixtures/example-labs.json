@@ -1,0 +1,1121 @@
+{
+ "description": "made-up labs and people: ML researchers and engineers at three AI labs, plus a Google Scholar profile, a GitHub profile and a paper title as seeds",
+ "argv": [
+  "--role",
+  "ML researchers and engineers",
+  "--labs",
+  "examplelabs.example,northwind.example,sampleintelligence.example",
+  "--topic",
+  "speculative decoding",
+  "--limit",
+  "12",
+  "--scholar",
+  "https://scholar.google.com/citations?user=EXKOFI00AAAJ",
+  "--github",
+  "https://github.com/example-ravi,https://github.com/example-unlinked",
+  "--paper",
+  "Speculative decoding for example models"
+ ],
+ "endpoints": [
+  {
+   "path": "/person/search",
+   "status": "enabled",
+   "base_credits": 0.03,
+   "fields": {
+    "enabled": [
+     "basic_profile",
+     "experience",
+     "education",
+     "skills",
+     "social_handles",
+     "research_profiles"
+    ],
+    "disabled": []
+   },
+   "premium_fields": [
+    {
+     "field": "experience",
+     "credits": 0.1
+    },
+    {
+     "field": "education",
+     "credits": 0.1
+    },
+    {
+     "field": "skills",
+     "credits": 0.1
+    },
+    {
+     "field": "research_profiles",
+     "credits": 0.4
+    }
+   ],
+   "premium_filters": [
+    {
+     "field": "experience",
+     "credits": 0.1
+    },
+    {
+     "field": "research_profiles",
+     "credits": 0.4
+    }
+   ]
+  },
+  {
+   "path": "/dev_platform/enrich",
+   "status": "enabled",
+   "base_credits": 1.0
+  }
+ ],
+ "companies": [
+  {
+   "id": 9001,
+   "name": "Example Labs",
+   "domain": "examplelabs.example"
+  },
+  {
+   "id": 9002,
+   "name": "Northwind AI",
+   "domain": "northwind.example"
+  },
+  {
+   "id": 9003,
+   "name": "Sample Intelligence",
+   "domain": "sampleintelligence.example"
+  }
+ ],
+ "totals": [
+  1843,
+  962,
+  410
+ ],
+ "identify": {
+  "https://scholar.google.com/citations?user=EXKOFI00AAAJ": 70012
+ },
+ "github": {
+  "https://github.com/example-ravi": 70013,
+  "https://github.com/example-unlinked": null
+ },
+ "people": [
+  {
+   "crustdata_person_id": 70001,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Jane Doe",
+    "headline": "Member of Technical Staff at Example Labs",
+    "current_title": "Member of Technical Staff",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Member of Technical Staff",
+       "name": "Example Labs",
+       "crustdata_company_id": 9001,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "Inference: speculative decoding and KV cache efficiency for large models",
+       "is_default": true
+      }
+     ],
+     "past": [
+      {
+       "title": "Research Engineer",
+       "name": "Example Cloud",
+       "crustdata_company_id": 9200,
+       "start_date": "2021-06-01",
+       "end_date": "2024-02-01",
+       "description": "Model serving"
+      },
+      {
+       "title": "Research Engineer",
+       "name": "DeepMind",
+       "crustdata_company_id": null,
+       "start_date": "2018-06-01",
+       "end_date": "2021-05-01",
+       "description": "Efficient inference"
+      }
+     ]
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": [
+     "PyTorch",
+     "CUDA"
+    ]
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-jane-doe"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXJANE00AAAJ",
+     "name": "Jane Doe",
+     "profile_url": "https://scholar.google.com/citations?user=EXJANE00AAAJ",
+     "research_interests": [
+      "Machine Learning",
+      "Efficient Inference"
+     ],
+     "article_count": 3,
+     "articles": [
+      {
+       "title": "Speculative decoding for example models",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXJANE00AAAJ&a=0",
+       "publication_year": "2025"
+      },
+      {
+       "title": "Paged attention at example scale",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXJANE00AAAJ&a=1",
+       "publication_year": "2024"
+      },
+      {
+       "title": "Quantization of example transformers",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXJANE00AAAJ&a=2",
+       "publication_year": "2022"
+      }
+     ],
+     "co_authors": [
+      {
+       "id": "EXSAM000AAAJ",
+       "name": "Sam Example"
+      }
+     ],
+     "citations_count": {
+      "all": 2310,
+      "recent": 1386,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 8,
+      "recent": 4
+     }
+    }
+   ]
+  },
+  {
+   "crustdata_person_id": 70002,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Rahul Example",
+    "headline": "Member of Technical Staff",
+    "current_title": "Member of Technical Staff",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Member of Technical Staff",
+       "name": "Example Labs",
+       "crustdata_company_id": 9001,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-rahul-example"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXRAHUL0AAAJ",
+     "name": "Rahul Example",
+     "profile_url": "https://scholar.google.com/citations?user=EXRAHUL0AAAJ",
+     "research_interests": [
+      "Large Language Models"
+     ],
+     "article_count": 2,
+     "articles": [
+      {
+       "title": "Scaling laws for example pretraining runs",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXRAHUL0AAAJ&a=0",
+       "publication_year": "2025"
+      },
+      {
+       "title": "Data mixtures for pretraining small example models",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXRAHUL0AAAJ&a=1",
+       "publication_year": "2024"
+      }
+     ],
+     "co_authors": [],
+     "citations_count": {
+      "all": 880,
+      "recent": 528,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 9,
+      "recent": 5
+     }
+    }
+   ]
+  },
+  {
+   "crustdata_person_id": 70003,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Mei Example",
+    "headline": "Post-training @ Example Labs, previously vision research at Example Vision",
+    "current_title": "Research Engineer",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Research Engineer",
+       "name": "Example Labs",
+       "crustdata_company_id": 9001,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": [
+      {
+       "title": "Research Scientist",
+       "name": "Example Vision",
+       "crustdata_company_id": 9201,
+       "start_date": "2020-01-01",
+       "end_date": "2024-01-01",
+       "description": "Computer vision"
+      }
+     ]
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-mei-example"
+    }
+   },
+   "research_profiles": null
+  },
+  {
+   "crustdata_person_id": 70004,
+   "fit": "possible",
+   "basic_profile": {
+    "name": "Alex Example",
+    "headline": "Building things",
+    "current_title": "Member of Technical Staff",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Member of Technical Staff",
+       "name": "Example Labs",
+       "crustdata_company_id": 9001,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": [
+      {
+       "title": "Software Engineer",
+       "name": "Example Payments",
+       "crustdata_company_id": 9202,
+       "start_date": "2018-01-01",
+       "end_date": "2023-12-01",
+       "description": ""
+      }
+     ]
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-alex-example"
+    }
+   },
+   "research_profiles": null
+  },
+  {
+   "crustdata_person_id": 70005,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Sam Example",
+    "headline": "Member of Technical Staff at Example Labs",
+    "current_title": "Member of Technical Staff",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Member of Technical Staff",
+       "name": "Example Labs",
+       "crustdata_company_id": 9001,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-sam-example"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXSAM000AAAJ",
+     "name": "Sam Example",
+     "profile_url": "https://scholar.google.com/citations?user=EXSAM000AAAJ",
+     "research_interests": [
+      "Systems"
+     ],
+     "article_count": 1,
+     "articles": [
+      {
+       "title": "Efficient serving of example language models",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXSAM000AAAJ&a=0",
+       "publication_year": "2025"
+      }
+     ],
+     "co_authors": [
+      {
+       "id": "EXJANE00AAAJ",
+       "name": "Jane Doe"
+      }
+     ],
+     "citations_count": {
+      "all": 210,
+      "recent": 126,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 5,
+      "recent": 1
+     }
+    }
+   ]
+  },
+  {
+   "crustdata_person_id": 70006,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Priya Example",
+    "headline": "Research Scientist, Alignment at Northwind AI",
+    "current_title": "Research Scientist, Alignment",
+    "location": {
+     "full_location": "London, England, United Kingdom",
+     "raw": "London, England, United Kingdom",
+     "country": "United Kingdom"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Research Scientist, Alignment",
+       "name": "Northwind AI",
+       "crustdata_company_id": 9002,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-priya-example"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXPRIYA0AAAJ",
+     "name": "Priya Example",
+     "profile_url": "https://scholar.google.com/citations?user=EXPRIYA0AAAJ",
+     "research_interests": [
+      "AI Safety",
+      "Machine Learning"
+     ],
+     "article_count": 2,
+     "articles": [
+      {
+       "title": "Scalable oversight with example debates",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXPRIYA0AAAJ&a=0",
+       "publication_year": "2025"
+      },
+      {
+       "title": "Red teaming example assistants",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXPRIYA0AAAJ&a=1",
+       "publication_year": "2024"
+      }
+     ],
+     "co_authors": [],
+     "citations_count": {
+      "all": 4100,
+      "recent": 2460,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 18,
+      "recent": 14
+     }
+    }
+   ]
+  },
+  {
+   "crustdata_person_id": 70007,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Tom Example",
+    "headline": "Research Engineer at Northwind AI",
+    "current_title": "Research Engineer",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Research Engineer",
+       "name": "Northwind AI",
+       "crustdata_company_id": 9002,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "Distributed training infrastructure and TPU kernels",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": [
+     "JAX",
+     "C++"
+    ]
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-tom-example"
+    }
+   },
+   "research_profiles": null
+  },
+  {
+   "crustdata_person_id": 70008,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Lena Example",
+    "headline": "Machine Learning Engineer at Northwind AI",
+    "current_title": "Machine Learning Engineer",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Machine Learning Engineer",
+       "name": "Northwind AI",
+       "crustdata_company_id": 9002,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-lena-example"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXLENA00AAAJ",
+     "name": "Lena Example",
+     "profile_url": "https://scholar.google.com/citations?user=EXLENA00AAAJ",
+     "research_interests": [
+      "Reinforcement Learning",
+      "Large Language Models"
+     ],
+     "article_count": 2,
+     "articles": [
+      {
+       "title": "RLHF with example reward models",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXLENA00AAAJ&a=0",
+       "publication_year": "2025"
+      },
+      {
+       "title": "Reward model overoptimization in example settings",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXLENA00AAAJ&a=1",
+       "publication_year": "2024"
+      }
+     ],
+     "co_authors": [],
+     "citations_count": {
+      "all": 640,
+      "recent": 384,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 7,
+      "recent": 3
+     }
+    }
+   ]
+  },
+  {
+   "crustdata_person_id": 70009,
+   "fit": "possible",
+   "basic_profile": {
+    "name": "Omar Example",
+    "headline": "-",
+    "current_title": "Member of Technical Staff",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Member of Technical Staff",
+       "name": "Northwind AI",
+       "crustdata_company_id": 9002,
+       "start_date": "2026-07-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-omar-example"
+    }
+   },
+   "research_profiles": null
+  },
+  {
+   "crustdata_person_id": 70010,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Wang Xiaoming (王小明)",
+    "headline": "Researcher, Multimodal at Sample Intelligence",
+    "current_title": "Researcher, Multimodal",
+    "location": {
+     "full_location": "Singapore",
+     "raw": "Singapore",
+     "country": "Singapore"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Researcher, Multimodal",
+       "name": "Sample Intelligence",
+       "crustdata_company_id": 9003,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-wang-xiaoming"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXWANG00AAAJ",
+     "name": "Wang Xiaoming",
+     "profile_url": "https://scholar.google.com/citations?user=EXWANG00AAAJ",
+     "research_interests": [
+      "Computer Vision",
+      "Multimodal Learning"
+     ],
+     "article_count": 1,
+     "articles": [
+      {
+       "title": "Example vision language models",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXWANG00AAAJ&a=0",
+       "publication_year": "2025"
+      }
+     ],
+     "co_authors": [],
+     "citations_count": {
+      "all": 1500,
+      "recent": 900,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 11,
+      "recent": 7
+     }
+    }
+   ]
+  },
+  {
+   "crustdata_person_id": 70011,
+   "fit": "strong",
+   "basic_profile": {
+    "name": "Ana Example",
+    "headline": "Research Scientist at Sample Intelligence",
+    "current_title": "Research Scientist",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Research Scientist",
+       "name": "Sample Intelligence",
+       "crustdata_company_id": 9003,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "Evaluations for reasoning models",
+       "is_default": true
+      },
+      {
+       "title": "Advisor",
+       "name": "Example Health",
+       "crustdata_company_id": 9203,
+       "start_date": "2023-01-01",
+       "end_date": null,
+       "description": "",
+       "is_default": false
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-ana-example"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXANA000AAAJ",
+     "name": "Ana Example",
+     "profile_url": "https://scholar.google.com/citations?user=EXANA000AAAJ",
+     "research_interests": [
+      "Reasoning"
+     ],
+     "article_count": 1,
+     "articles": [
+      {
+       "title": "An example benchmark for mathematical reasoning",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXANA000AAAJ&a=0",
+       "publication_year": "2025"
+      }
+     ],
+     "co_authors": [],
+     "citations_count": {
+      "all": 300,
+      "recent": 180,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 6,
+      "recent": 2
+     }
+    }
+   ]
+  },
+  {
+   "crustdata_person_id": 70012,
+   "fit": null,
+   "basic_profile": {
+    "name": "Kofi Example",
+    "headline": "PhD Researcher at Example University",
+    "current_title": "PhD Researcher",
+    "location": {
+     "full_location": "Toronto, Ontario, Canada",
+     "raw": "Toronto, Ontario, Canada",
+     "country": "Canada"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "PhD Researcher",
+       "name": "Example University",
+       "crustdata_company_id": 9100,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-kofi-example"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXKOFI00AAAJ",
+     "name": "Kofi Example",
+     "profile_url": "https://scholar.google.com/citations?user=EXKOFI00AAAJ",
+     "research_interests": [
+      "Efficient Inference",
+      "Machine Learning"
+     ],
+     "article_count": 3,
+     "articles": [
+      {
+       "title": "Speculative decoding for example models",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXKOFI00AAAJ&a=0",
+       "publication_year": "2025"
+      },
+      {
+       "title": "Early exit decoding for example models",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXKOFI00AAAJ&a=1",
+       "publication_year": "2024"
+      },
+      {
+       "title": "Cascades for efficient example inference",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXKOFI00AAAJ&a=2",
+       "publication_year": "2023"
+      }
+     ],
+     "co_authors": [
+      {
+       "id": "EXJANE00AAAJ",
+       "name": "Jane Doe"
+      }
+     ],
+     "citations_count": {
+      "all": 1900,
+      "recent": 1140,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 12,
+      "recent": 8
+     }
+    }
+   ]
+  },
+  {
+   "crustdata_person_id": 70013,
+   "fit": null,
+   "basic_profile": {
+    "name": "Ravi Example",
+    "headline": "Software Engineer at Northwind AI",
+    "current_title": "Software Engineer",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Software Engineer",
+       "name": "Northwind AI",
+       "crustdata_company_id": 9002,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "Kernels for example accelerators",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-ravi-example"
+    }
+   },
+   "research_profiles": null
+  },
+  {
+   "crustdata_person_id": 70014,
+   "fit": null,
+   "basic_profile": {
+    "name": "Dana Example",
+    "headline": "Research Scientist at Example Speech Co",
+    "current_title": "Research Scientist",
+    "location": {
+     "full_location": "San Francisco, California, United States",
+     "raw": "San Francisco, California, United States",
+     "country": "United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Research Scientist",
+       "name": "Example Speech Co",
+       "crustdata_company_id": 9204,
+       "start_date": "2024-03-01",
+       "end_date": null,
+       "description": "",
+       "is_default": true
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example State University",
+      "degree": "PhD",
+      "field_of_study": "Computer Science"
+     }
+    ]
+   },
+   "skills": {
+    "professional_network_skills": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://profiles.example/in/example-dana-example"
+    }
+   },
+   "research_profiles": [
+    {
+     "id": "EXDANA00AAAJ",
+     "name": "Dana Example",
+     "profile_url": "https://scholar.google.com/citations?user=EXDANA00AAAJ",
+     "research_interests": [
+      "Speech"
+     ],
+     "article_count": 1,
+     "articles": [
+      {
+       "title": "Speculative decoding for example models of speech recognition at scale",
+       "url": "https://scholar.google.com/citations?view_op=view_citation&user=EXDANA00AAAJ&a=0",
+       "publication_year": "2025"
+      }
+     ],
+     "co_authors": [],
+     "citations_count": {
+      "all": 120,
+      "recent": 72,
+      "recent_since_year": 2021
+     },
+     "h_index": {
+      "all": 4,
+      "recent": 1
+     }
+    }
+   ]
+  }
+ ]
+}

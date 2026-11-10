@@ -1,0 +1,27 @@
+name: ai-researcher-finder
+
+permissions:
+  contents: read
+
+on:
+  push:
+    paths: ["ai-researcher-finder/**", ".github/workflows/ai-researcher-finder.yml"]
+  pull_request:
+    paths: ["ai-researcher-finder/**", ".github/workflows/ai-researcher-finder.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ai-researcher-finder
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.13"
+          cache: npm
+          cache-dependency-path: ai-researcher-finder/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test

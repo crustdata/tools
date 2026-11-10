@@ -1,0 +1,105 @@
+{
+  "about": "Your scoring rules. Each rule: points, the kind of check (if), what to look for (value), and a label for the report. Change anything, then run npm run rescore (free). Every kind is explained in docs/customize.md. no_data_share: the share of its points a rule counts for when the profile has no data for it (0.25 = a quarter).",
+  "no_data_share": 0.25,
+  "rules": [
+    {
+      "points": 15,
+      "if": "worked_at",
+      "value": [
+        "frontier"
+      ],
+      "when": "ever",
+      "label": "At a frontier lab, now or before"
+    },
+    {
+      "points": 15,
+      "if": "team",
+      "value": [
+        "Pretraining",
+        "Post-training and RL",
+        "Inference",
+        "Infrastructure and scaling",
+        "Alignment and safety",
+        "Interpretability",
+        "Evaluations",
+        "Reasoning",
+        "Multimodal",
+        "Agents",
+        "Code",
+        "Model behavior",
+        "Long context and retrieval",
+        "Data"
+      ],
+      "label": "On a model research team"
+    },
+    {
+      "points": 10,
+      "if": "title",
+      "value": [
+        "research scientist",
+        "research engineer",
+        "member of technical staff",
+        "machine learning engineer",
+        "ml engineer",
+        "applied scientist",
+        "researcher",
+        "ai engineer"
+      ],
+      "label": "Research or ML title"
+    },
+    {
+      "points": 10,
+      "if": "fit",
+      "label": "Crustdata's match to the search (strong full, possible half)"
+    },
+    {
+      "points": 10,
+      "if": "papers_about",
+      "value": [
+        "$topic"
+      ],
+      "since_years": 3,
+      "label": "Recent papers on the topic (--topic)"
+    },
+    {
+      "points": 10,
+      "if": "recent_papers",
+      "value": 2,
+      "since_years": 3,
+      "label": "Two or more papers in the last 3 years"
+    },
+    {
+      "points": 10,
+      "if": "h_index",
+      "value": 10,
+      "label": "h-index 10 or more"
+    },
+    {
+      "points": 5,
+      "if": "citations",
+      "value": 1000,
+      "label": "1,000 or more citations"
+    },
+    {
+      "points": 5,
+      "if": "years",
+      "value": 3,
+      "label": "3 or more years worked"
+    },
+    {
+      "points": 5,
+      "if": "found_from_work",
+      "label": "Found from their work (Scholar, GitHub or a paper)"
+    }
+  ],
+  "ask": [
+    {
+      "points": 10,
+      "question": "Have they led or owned a large training, inference or evaluation effort, by their own description?"
+    },
+    {
+      "points": 5,
+      "question": "Does their recent work (papers, roles) look like hands-on work on large language models?"
+    }
+  ]
+}

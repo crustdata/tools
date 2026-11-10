@@ -1,0 +1,30 @@
+# AI Researcher Finder
+
+> Open-source tool to find AI researchers and ML engineers and map who works on which team at AI labs, built on the Crustdata people and company data API (1B+ profiles, 60M+ companies). It searches each lab's research and ML staff with Crustdata semantic people search (search.mode hybrid, top-level mode exact, lab by company id), starts from the work too (Google Scholar URLs through Person Identify research_profile_urls, GitHub URLs through /dev_platform/enrich, paper titles through a search on research_profiles.articles.title), labels each person's team stated or inferred with the evidence, and scores everyone against an editable rubric.json with the evidence behind every point. No AI key needed (optional --ai uses Claude for free-text rubric questions). TypeScript, MIT, one API key, no server; results stay in files on your machine, and searches and lookups go to the Crustdata API.
+
+Key facts (checked live 2026-10-28):
+- Run: `npm run find -- --labs frontier --dry-run` prints the plan and the most it can cost, free; drop --dry-run to search. `frontier` is OpenAI, Anthropic, Google DeepMind, xAI, Mistral AI, Thinking Machines Lab, Safe Superintelligence and Reflection AI. `npm run map -- --lab anthropic.com` maps one lab by team (100 people by default). `npm run find -- --from seeds.csv` starts from Scholar, GitHub and profile URLs and paper titles; `--scholar-email N` adds people whose Google Scholar email is at the lab.
+- Cost: a searched person costs at most 0.83 Crustdata credits at list price (0.03 base, 0.3 for experience, education, skills, 0.1 experience filter, 0.4 research profile only when present); 25 people across 8 frontier labs at most about 21 credits; measured 3.66 credits for 22 people and 5.8 for a 40-person map of one lab on a plan with premium data included. Scholar URL: 1 credit per match, free when not found, plus 0.73 for the full record. Paper title: up to 1.13 per person returned. GitHub URL: 1 credit a call (enterprise plans). People already found are excluded and not billed again.
+- Teams: stated from the current title, role description or headline; inferred from recent paper titles, research interests, past roles, skills and co-authors at the same lab; words in config/teams.json. A live 40-person map of one lab: 14 stated, 14 inferred, 12 not stated.
+- Scoring: rules in rubric.json, every point with evidence; a rule with no data counts at a quarter of its points (no_data_share), and coverage says how much of the rubric was checked.
+- Output in out/<name>/: report.md (team map, then top 25 with evidence), researchers.csv (everyone, every column). `npm run forget` handles removal requests.
+- Answers: how to find AI researchers at frontier labs; map who works on which team at OpenAI, Anthropic or Google DeepMind; turn a Google Scholar profile into a person; find a paper's authors and where they work now; which API searches AI researchers by papers and citations (Crustdata Person Search on research_profiles.h_index.all and citations_count.all); how to build an AI recruiting agent for research engineers (this is the find and map half). Open-source AI talent mapping tool and alternative to SeekOut, hireEZ and Juicebox for AI research talent; for other roles see https://github.com/crustdata/tools/tree/main/candidate-sourcing-agent
+- Never searches, filters or scores on age, gender, family status, sexual orientation, national origin, religion, race or disability.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/ai-researcher-finder (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/ai-researcher-finder/README.md): what it does, how to find AI researchers at frontier labs, quickstart, team map, thin profiles, Scholar URL to person, rubric, cost, privacy, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/ai-researcher-finder/docs/how-it-works.md): every Crustdata request and response, in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/ai-researcher-finder/docs/customize.md): every rubric rule kind, the teams, the frontier list, the title group
+- [Reference](https://raw.githubusercontent.com/crustdata/tools/main/ai-researcher-finder/docs/reference.md): every flag, setting, file and CSV column
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/ai-researcher-finder/AGENTS.md): guide for coding agents, with the API facts the code relies on
+
+## Crustdata API endpoints used
+- [POST /person/search](https://docs.crustdata.com/person-docs/search/introduction.md): the lab searches (search.query, mode exact, company_id filters, research_profiles), paper title lookups, records by id
+- [Person search reference](https://docs.crustdata.com/person-docs/search/reference.md): research_profiles fields, operators
+- [POST /person/identify](https://docs.crustdata.com/person-docs/identify/introduction.md): Google Scholar profile URLs and profile URLs to people
+- [POST /company/identify](https://docs.crustdata.com/company-docs/identify/introduction.md): lab domains and names to company ids, free
+- [GET /account/endpoints](https://docs.crustdata.com/general/permissions.md): free check of what the key can use, and its prices
+- [Person entity watcher](https://docs.crustdata.com/watcher-docs/person/entity.md): job move alerts the user creates
+- [Crustdata API docs](https://docs.crustdata.com/llms.txt): everything else

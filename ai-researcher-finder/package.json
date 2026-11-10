@@ -1,0 +1,68 @@
+{
+  "name": "ai-researcher-finder",
+  "version": "1.0.0",
+  "description": "Open-source AI talent mapping tool on the Crustdata API: find AI researchers and ML engineers at frontier labs or from Google Scholar profiles, GitHub profiles and paper titles, map their teams, score them with your rubric.",
+  "keywords": [
+    "ai researcher finder",
+    "find ai researchers",
+    "ai talent mapping",
+    "talent mapping",
+    "frontier lab recruiting",
+    "ml engineer sourcing",
+    "research scientist sourcing",
+    "technical recruiting",
+    "google scholar to profile",
+    "paper authors lookup",
+    "team mapping",
+    "org chart",
+    "candidate sourcing",
+    "semantic people search",
+    "people data api",
+    "crustdata",
+    "crustdata api",
+    "google scholar",
+    "paper authors",
+    "ai recruiting",
+    "ai recruiting agent",
+    "research engineer recruiting",
+    "seekout alternative",
+    "hireez alternative",
+    "juicebox alternative",
+    "frontier ai labs",
+    "h-index"
+  ],
+  "author": "Crustdata",
+  "homepage": "https://github.com/crustdata/tools/tree/main/ai-researcher-finder#readme",
+  "bugs": {
+    "url": "https://github.com/crustdata/tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "ai-researcher-finder"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/setup.ts",
+    "find": "tsx src/cli.ts find",
+    "map": "tsx src/cli.ts map",
+    "rescore": "tsx src/cli.ts rescore",
+    "watch-example": "tsx src/cli.ts watch-example",
+    "forget": "tsx src/cli.ts forget",
+    "replay": "tsx src/replay.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}
