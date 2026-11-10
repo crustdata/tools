@@ -1,0 +1,877 @@
+{
+  "name": "busy-week",
+  "description": "Sample fund, week of Oct 19 to Oct 26, 2026: a headcount drop with a shrinking sales team, a founder leaving, a Series A, hiring jumping at one company and stopping at another, layoff news, a CEO changing title, and a six-person company losing one person (no alert, by design). All companies and people are made up.",
+  "now": "2026-10-26T07:00:00.000Z",
+  "state": {
+    "companies": [
+      {
+        "domain": "northwind.example",
+        "name": "Northwind Robotics",
+        "companyId": 101,
+        "owner": "Priya Shah",
+        "careersUrl": "https://northwind.example/careers",
+        "hiringSource": "careers",
+        "addedAt": "2026-09-28T07:00:00.000Z",
+        "start": "48 people (+9% over 6 months), last round: seed ($3M) in Mar 2025"
+      },
+      {
+        "domain": "brightwave.example",
+        "name": "Brightwave",
+        "companyId": 102,
+        "owner": "Sam Lee",
+        "careersUrl": "https://brightwave.example/careers",
+        "hiringSource": "careers",
+        "addedAt": "2026-09-28T07:00:00.000Z",
+        "start": "22 people (+38% over 6 months), last round: seed ($3M) in Mar 2025"
+      },
+      {
+        "domain": "tallyhoo.example",
+        "name": "Tallyhoo",
+        "companyId": 103,
+        "owner": "Priya Shah",
+        "careersUrl": "https://tallyhoo.example/jobs",
+        "hiringSource": "careers",
+        "addedAt": "2026-09-28T07:00:00.000Z",
+        "start": "64 people (-3% over 6 months), last round: Series A ($15M) in Jan 2025"
+      },
+      {
+        "domain": "quillstack.example",
+        "name": "Quillstack",
+        "companyId": 104,
+        "owner": "Sam Lee",
+        "hiringSource": "none",
+        "addedAt": "2026-09-28T07:00:00.000Z",
+        "start": "35 people (+6% over 6 months), last round: seed ($4M) in Jun 2025"
+      },
+      {
+        "domain": "mossgrove.example",
+        "name": "Mossgrove",
+        "companyId": 105,
+        "owner": "Sam Lee",
+        "careersUrl": "https://mossgrove.example/careers",
+        "hiringSource": "careers",
+        "addedAt": "2026-09-28T07:00:00.000Z",
+        "start": "15 people (+15% over 6 months)"
+      },
+      {
+        "domain": "fernhill.example",
+        "name": "Fernhill Bio",
+        "companyId": 106,
+        "owner": "Priya Shah",
+        "hiringSource": "index",
+        "addedAt": "2026-09-28T07:00:00.000Z",
+        "start": "6 people, last round: pre-seed in Feb 2026"
+      }
+    ],
+    "leaders": [
+      {
+        "profileUrl": "https://www.profiles.example/in/example-dana-doe",
+        "personId": 9001,
+        "name": "Dana Doe",
+        "title": "Co-Founder & CTO",
+        "role": "founder",
+        "domain": "northwind.example"
+      },
+      {
+        "profileUrl": "https://www.profiles.example/in/example-lee-roe",
+        "personId": 9002,
+        "name": "Lee Roe",
+        "title": "CEO",
+        "role": "ceo",
+        "domain": "northwind.example"
+      },
+      {
+        "profileUrl": "https://www.profiles.example/in/example-ana-moe",
+        "personId": 9003,
+        "name": "Ana Moe",
+        "title": "Founder & CEO",
+        "role": "founder",
+        "domain": "brightwave.example"
+      },
+      {
+        "profileUrl": "https://www.profiles.example/in/example-kai-poe",
+        "personId": 9004,
+        "name": "Kai Poe",
+        "title": "Chief Executive Officer",
+        "role": "ceo",
+        "domain": "tallyhoo.example"
+      },
+      {
+        "profileUrl": "https://www.profiles.example/in/example-rafael-loe",
+        "personId": 9005,
+        "name": "Rafael Loe",
+        "title": "CEO",
+        "role": "ceo",
+        "domain": "quillstack.example"
+      },
+      {
+        "profileUrl": "https://www.profiles.example/in/example-mia-zoe",
+        "personId": 9006,
+        "name": "Mia Zoe",
+        "title": "Co-Founder",
+        "role": "founder",
+        "domain": "mossgrove.example"
+      }
+    ],
+    "refs": {
+      "northwind.example": {
+        "record": {
+          "crustdata_company_id": 101,
+          "basic_info": {
+            "name": "Northwind Robotics",
+            "primary_domain": "northwind.example",
+            "status": "active"
+          },
+          "headcount": {
+            "total": 48,
+            "by_function_timeseries": {
+              "CURRENT_FUNCTION": {
+                "ENGINEERING": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 20
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 20
+                  }
+                ],
+                "SALES": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 10
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 10
+                  }
+                ],
+                "OPERATIONS": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 6
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 6
+                  }
+                ]
+              }
+            }
+          },
+          "funding": {
+            "last_round_type": "seed",
+            "last_round_amount_usd": 3000000,
+            "last_fundraise_date": "2025-03-10",
+            "investors": [
+              "Example Ventures"
+            ]
+          },
+          "news": []
+        },
+        "recordedAt": "2026-09-28T07:00:00.000Z"
+      },
+      "brightwave.example": {
+        "record": {
+          "crustdata_company_id": 102,
+          "basic_info": {
+            "name": "Brightwave",
+            "primary_domain": "brightwave.example",
+            "status": "active"
+          },
+          "headcount": {
+            "total": 22,
+            "by_function_timeseries": {
+              "CURRENT_FUNCTION": {
+                "ENGINEERING": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 12
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 12
+                  }
+                ]
+              }
+            }
+          },
+          "funding": {
+            "last_round_type": "seed",
+            "last_round_amount_usd": 3000000,
+            "last_fundraise_date": "2025-03-10",
+            "investors": [
+              "Example Ventures"
+            ]
+          },
+          "news": []
+        },
+        "recordedAt": "2026-09-28T07:00:00.000Z"
+      },
+      "tallyhoo.example": {
+        "record": {
+          "crustdata_company_id": 103,
+          "basic_info": {
+            "name": "Tallyhoo",
+            "primary_domain": "tallyhoo.example",
+            "status": "active"
+          },
+          "headcount": {
+            "total": 64,
+            "by_function_timeseries": {
+              "CURRENT_FUNCTION": {
+                "ENGINEERING": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 30
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 30
+                  }
+                ],
+                "SALES": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 12
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 12
+                  }
+                ]
+              }
+            }
+          },
+          "funding": {
+            "last_round_type": "seed",
+            "last_round_amount_usd": 3000000,
+            "last_fundraise_date": "2025-03-10",
+            "investors": [
+              "Example Ventures"
+            ]
+          },
+          "news": []
+        },
+        "recordedAt": "2026-09-28T07:00:00.000Z"
+      },
+      "quillstack.example": {
+        "record": {
+          "crustdata_company_id": 104,
+          "basic_info": {
+            "name": "Quillstack",
+            "primary_domain": "quillstack.example",
+            "status": "active"
+          },
+          "headcount": {
+            "total": 35,
+            "by_function_timeseries": {
+              "CURRENT_FUNCTION": {
+                "ENGINEERING": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 18
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 18
+                  }
+                ]
+              }
+            }
+          },
+          "funding": {
+            "last_round_type": "seed",
+            "last_round_amount_usd": 3000000,
+            "last_fundraise_date": "2025-03-10",
+            "investors": [
+              "Example Ventures"
+            ]
+          },
+          "news": []
+        },
+        "recordedAt": "2026-09-28T07:00:00.000Z"
+      },
+      "mossgrove.example": {
+        "record": {
+          "crustdata_company_id": 105,
+          "basic_info": {
+            "name": "Mossgrove",
+            "primary_domain": "mossgrove.example",
+            "status": "active"
+          },
+          "headcount": {
+            "total": 15,
+            "by_function_timeseries": {
+              "CURRENT_FUNCTION": {
+                "ENGINEERING": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 8
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 8
+                  }
+                ]
+              }
+            }
+          },
+          "funding": {
+            "last_round_type": "seed",
+            "last_round_amount_usd": 3000000,
+            "last_fundraise_date": "2025-03-10",
+            "investors": [
+              "Example Ventures"
+            ]
+          },
+          "news": []
+        },
+        "recordedAt": "2026-09-28T07:00:00.000Z"
+      },
+      "fernhill.example": {
+        "record": {
+          "crustdata_company_id": 106,
+          "basic_info": {
+            "name": "Fernhill Bio",
+            "primary_domain": "fernhill.example",
+            "status": "active"
+          },
+          "headcount": {
+            "total": 6,
+            "by_function_timeseries": {
+              "CURRENT_FUNCTION": {
+                "RESEARCH": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 4
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 4
+                  }
+                ]
+              }
+            }
+          },
+          "funding": {
+            "last_round_type": "seed",
+            "last_round_amount_usd": 3000000,
+            "last_fundraise_date": "2025-03-10",
+            "investors": [
+              "Example Ventures"
+            ]
+          },
+          "news": []
+        },
+        "recordedAt": "2026-09-28T07:00:00.000Z"
+      }
+    },
+    "readings": [
+      {
+        "domain": "northwind.example",
+        "at": "2026-09-28T07:00:00.000Z",
+        "roles": 9
+      },
+      {
+        "domain": "northwind.example",
+        "at": "2026-10-05T07:00:00.000Z",
+        "roles": 9
+      },
+      {
+        "domain": "northwind.example",
+        "at": "2026-10-12T07:00:00.000Z",
+        "roles": 8
+      },
+      {
+        "domain": "northwind.example",
+        "at": "2026-10-19T07:00:00.000Z",
+        "roles": 9
+      },
+      {
+        "domain": "brightwave.example",
+        "at": "2026-09-28T07:00:00.000Z",
+        "roles": 6
+      },
+      {
+        "domain": "brightwave.example",
+        "at": "2026-10-05T07:00:00.000Z",
+        "roles": 7
+      },
+      {
+        "domain": "brightwave.example",
+        "at": "2026-10-12T07:00:00.000Z",
+        "roles": 6
+      },
+      {
+        "domain": "brightwave.example",
+        "at": "2026-10-19T07:00:00.000Z",
+        "roles": 9
+      },
+      {
+        "domain": "tallyhoo.example",
+        "at": "2026-09-28T07:00:00.000Z",
+        "roles": 6
+      },
+      {
+        "domain": "tallyhoo.example",
+        "at": "2026-10-05T07:00:00.000Z",
+        "roles": 5
+      },
+      {
+        "domain": "tallyhoo.example",
+        "at": "2026-10-12T07:00:00.000Z",
+        "roles": 5
+      },
+      {
+        "domain": "tallyhoo.example",
+        "at": "2026-10-19T07:00:00.000Z",
+        "roles": 0
+      },
+      {
+        "domain": "mossgrove.example",
+        "at": "2026-10-12T07:00:00.000Z",
+        "roles": 4
+      },
+      {
+        "domain": "mossgrove.example",
+        "at": "2026-10-19T07:00:00.000Z",
+        "roles": 4
+      },
+      {
+        "domain": "fernhill.example",
+        "at": "2026-10-19T07:00:00.000Z",
+        "roles": 2,
+        "source": "index"
+      }
+    ],
+    "watches": {
+      "company": 1,
+      "person": 2
+    },
+    "lastDigestAt": "2026-10-19T08:00:00.000Z",
+    "lastCheckAt": "2026-10-25T07:00:00.000Z"
+  },
+  "api": {
+    "runs": {
+      "company": [
+        {
+          "run": {
+            "id": 5001,
+            "started_at": "2026-10-26T06:00:00Z",
+            "status": "SUCCESS",
+            "new_records_count": 5,
+            "credits_deducted": 25
+          },
+          "records": [
+            {
+              "changes": [
+                {
+                  "field": "headcount.total",
+                  "type": "changed",
+                  "from": 48,
+                  "to": 41
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 101,
+                "basic_info": {
+                  "name": "Northwind Robotics",
+                  "primary_domain": "northwind.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 41,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "ENGINEERING": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 19
+                        },
+                        {
+                          "date": "2026-08-01 00:00:00",
+                          "employee_count": 19
+                        }
+                      ],
+                      "SALES": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 5
+                        },
+                        {
+                          "date": "2026-08-01 00:00:00",
+                          "employee_count": 5
+                        }
+                      ],
+                      "OPERATIONS": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 6
+                        },
+                        {
+                          "date": "2026-08-01 00:00:00",
+                          "employee_count": 6
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "funding.last_round_type",
+                  "type": "changed",
+                  "from": "seed",
+                  "to": "series_a"
+                },
+                {
+                  "field": "funding.last_fundraise_date",
+                  "type": "changed",
+                  "from": "2025-03-10",
+                  "to": "2026-10-20"
+                },
+                {
+                  "field": "funding.investors",
+                  "type": "added",
+                  "new_elements": [
+                    "Harbor Capital",
+                    "Example Growth"
+                  ]
+                },
+                {
+                  "field": "news",
+                  "type": "added",
+                  "new_elements": [
+                    {
+                      "article_title": "Brightwave raises $12M Series A to automate freight paperwork",
+                      "article_url": "https://news.example/brightwave-series-a",
+                      "article_publish_date": "2026-10-21",
+                      "article_publisher_name": "Example News"
+                    }
+                  ]
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 102,
+                "basic_info": {
+                  "name": "Brightwave",
+                  "primary_domain": "brightwave.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 24,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "ENGINEERING": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 13
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 13
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "series_a",
+                  "last_round_amount_usd": 12000000,
+                  "last_fundraise_date": "2026-10-20",
+                  "investors": [
+                    "Example Ventures",
+                    "Harbor Capital",
+                    "Example Growth"
+                  ]
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "news",
+                  "type": "added",
+                  "new_elements": [
+                    {
+                      "article_title": "Tallyhoo lays off 20% of staff as it refocuses on enterprise",
+                      "article_url": "https://news.example/tallyhoo-layoffs",
+                      "article_publish_date": "2026-10-23",
+                      "article_publisher_name": "Example News"
+                    }
+                  ]
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 103,
+                "basic_info": {
+                  "name": "Tallyhoo",
+                  "primary_domain": "tallyhoo.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 62,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "ENGINEERING": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 29
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 29
+                        }
+                      ],
+                      "SALES": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 12
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 12
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "news",
+                  "type": "added",
+                  "new_elements": [
+                    {
+                      "article_title": "Ten developer tools to watch this winter, from Quillstack to Example IDE",
+                      "article_url": "https://news.example/dev-tools-list",
+                      "article_publish_date": "2026-10-22",
+                      "article_publisher_name": "Example Weekly"
+                    }
+                  ]
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 104,
+                "basic_info": {
+                  "name": "Quillstack",
+                  "primary_domain": "quillstack.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 35,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "ENGINEERING": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 18
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 18
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "headcount.total",
+                  "type": "changed",
+                  "from": 6,
+                  "to": 5
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 106,
+                "basic_info": {
+                  "name": "Fernhill Bio",
+                  "primary_domain": "fernhill.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 5,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "RESEARCH": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 4
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 4
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            }
+          ]
+        }
+      ],
+      "person": [
+        {
+          "run": {
+            "id": 6001,
+            "started_at": "2026-10-26T06:00:00Z",
+            "status": "SUCCESS",
+            "new_records_count": 2,
+            "credits_deducted": 10
+          },
+          "records": [
+            {
+              "changes": [
+                {
+                  "field": "experience.employment_details.past",
+                  "type": "added",
+                  "new_elements": [
+                    {
+                      "title": "Co-Founder & CTO",
+                      "name": "Northwind Robotics",
+                      "crustdata_company_id": 101
+                    }
+                  ]
+                }
+              ],
+              "record": {
+                "crustdata_person_id": 9001,
+                "basic_profile": {
+                  "name": "Dana Doe",
+                  "current_title": "Founder"
+                },
+                "experience": {
+                  "employment_details": {
+                    "current": [
+                      {
+                        "title": "Founder",
+                        "name": "Stealth Startup",
+                        "crustdata_company_id": 999,
+                        "is_default": true,
+                        "start_date": "2026-10-01"
+                      }
+                    ],
+                    "past": [
+                      {
+                        "title": "Co-Founder & CTO",
+                        "name": "Northwind Robotics",
+                        "crustdata_company_id": 101,
+                        "start_date": "2021-04-01",
+                        "end_date": "2026-09-30"
+                      }
+                    ]
+                  }
+                },
+                "social_handles": {
+                  "professional_network_identifier": {
+                    "profile_url": "https://www.profiles.example/in/example-dana-doe"
+                  }
+                }
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "basic_profile.current_title",
+                  "type": "changed",
+                  "from": "CEO",
+                  "to": "Executive Chairman"
+                }
+              ],
+              "record": {
+                "crustdata_person_id": 9005,
+                "basic_profile": {
+                  "name": "Rafael Loe",
+                  "current_title": "Executive Chairman"
+                },
+                "experience": {
+                  "employment_details": {
+                    "current": [
+                      {
+                        "title": "Executive Chairman",
+                        "name": "Quillstack",
+                        "crustdata_company_id": 104,
+                        "is_default": true,
+                        "start_date": "2020-01-01"
+                      }
+                    ],
+                    "past": []
+                  }
+                },
+                "social_handles": {
+                  "professional_network_identifier": {
+                    "profile_url": "https://www.profiles.example/in/example-rafael-loe"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "pages": {
+      "https://northwind.example/careers": {
+        "roles": 8
+      },
+      "https://brightwave.example/careers": {
+        "roles": 15
+      },
+      "https://tallyhoo.example/jobs": {
+        "roles": 0
+      },
+      "https://mossgrove.example/careers": {
+        "roles": 4
+      }
+    },
+    "jobIndex": {
+      "106": 2
+    }
+  }
+}

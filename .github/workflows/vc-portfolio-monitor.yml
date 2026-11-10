@@ -1,0 +1,24 @@
+name: vc-portfolio-monitor
+
+on:
+  push:
+    paths: ["vc-portfolio-monitor/**", ".github/workflows/vc-portfolio-monitor.yml"]
+  pull_request:
+    paths: ["vc-portfolio-monitor/**", ".github/workflows/vc-portfolio-monitor.yml"]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: vc-portfolio-monitor
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22.13"
+          cache: npm
+          cache-dependency-path: vc-portfolio-monitor/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test

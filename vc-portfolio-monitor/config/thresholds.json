@@ -1,0 +1,12 @@
+{
+  "headcount_down": { "percent": 10, "people": 3, "or_people": 25 },
+  "small_company": { "below": 15, "percent": 25, "people": 2 },
+  "team_down": { "percent": 20, "people": 3, "min_team": 5 },
+  "headcount_up": { "percent": 25, "people": 5 },
+  "hiring_stopped": { "from_at_least": 3 },
+  "hiring_jump": { "times": 2, "more_roles": 5 },
+  "hiring_slowed": { "percent": 50, "fewer_roles": 5 },
+  "hiring_started": { "quiet_weeks": 4, "to_at_least": 3 },
+  "reference_days": 180,
+  "repeat_after_days": 28
+}

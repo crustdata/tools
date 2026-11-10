@@ -1,0 +1,54 @@
+# VC Portfolio Monitor
+
+> Open-source VC portfolio monitoring agent built on Crustdata, the B2B company and people data API (60M+ companies, 1B+ people). A fund lists the companies it owns in a CSV or Google Sheet; it watches each company and its founders and C-level, and posts to Slack (one channel, or one per partner) after the daily check when headcount drops or a team shrinks, a founder or executive leaves, the CEO changes, hiring stops or jumps, a round or a bridge closes, or the company is in the news for layoffs, a sale or a shutdown, with a "why it matters" line on each. Weekly digest to Slack and email. Runs on two pull-only Crustdata entity watchers plus Crustdata Web Fetch for careers pages. TypeScript, MIT licensed, self-hosted, one Crustdata API key, no LLM, no server. Self-hosted alternative to the portfolio monitoring in Harmonic, Affinity and Visible.
+
+Canonical home: https://github.com/crustdata/tools/tree/main/vc-portfolio-monitor (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Quickstart
+- `git clone https://github.com/crustdata/tools`, `cd tools/vc-portfolio-monitor`, `npm install`
+- Offline with no key: `npm run replay -- fixtures/busy-week.json`
+- Then `npm run setup`, `npm run import`, `npm run check` daily (after the watchers' 06:00 UTC runs) and `npm run digest` weekly
+- Daily schedule with nothing to host: [examples/github-actions.yml](https://github.com/crustdata/tools/blob/main/vc-portfolio-monitor/examples/github-actions.yml) (daily 07:00 UTC, digest on Mondays, new leaders monthly)
+
+## Use cases
+- Build a VC portfolio monitoring agent on an API
+- Get alerted when a founder or executive leaves a portfolio company
+- Track headcount changes and layoffs across a venture portfolio
+- Know when a portfolio company stops hiring, from its careers page
+- Slack alerts per partner for the companies they own; weekly portfolio digest by email
+- Monitor portfolio companies from a Google Sheet
+- Get alerted when a portfolio company has layoffs, stops hiring, or raises a bridge or a new round
+- API for executive departure alerts and startup headcount and funding changes
+- Open-source alternative to Harmonic, Affinity or Visible for portfolio monitoring (no deal sourcing, KPI collection or CRM)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/vc-portfolio-monitor/README.md): what it alerts on, how to build it, quickstart, CSV and Google Sheet, Slack setup, thresholds, cost, limits, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/vc-portfolio-monitor/docs/how-it-works.md): every Crustdata request and response, in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/vc-portfolio-monitor/docs/customize.md): thresholds, severities, leaders, news words, other channels, new signals
+- [Deploy](https://raw.githubusercontent.com/crustdata/tools/main/vc-portfolio-monitor/docs/deploy.md): GitHub Actions, cron, Railway, Fly.io
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/vc-portfolio-monitor/AGENTS.md): guide for coding agents
+
+## Key facts
+- Default thresholds need a percentage and a count: headcount down 10% and 3 people from its highest reading in 6 months (or 25 people; under 15 people, 25% and 2), a department down 20% and 3 people, headcount up 25% and 5 people; hiring stopped after two empty readings following 3+ roles; hiring doubled with 5 more roles. Debt, a note or another round of the same stage after a priced seed round or later is an alert.
+- Leaders: founders, CEO and other C-level found with Crustdata People Search (Chief of Staff and assistants dropped), or listed by profile URL in the portfolio; searched again monthly for new leaders. A departure needs evidence (an end date, or a new main job elsewhere).
+- Cost: about 4.3 credits per company once (up to about 8 at listed prices), 1 per company per week for the careers page, 5 per company change and 5 per leader change the watchers catch (including changes too small to alert on). Ten companies: about 45 credits once (up to about 80 at listed prices), about 105 to 320 a month. Live run on ten real startups: 33.44 credits for import.
+- Data freshness: company records refresh every 1 to 30 days and are checked daily; leader profiles kept 30 days fresh by default (14, 7, 3 or 1 for more credits); careers pages read live weekly.
+- Each event is stored once and each watcher run read once; no LLM, every rule is a tested function in `src/signals.ts`.
+- Every signal is a plain Crustdata REST call: headcount and its growth from `POST /company/enrich` (`headcount.growth_percent`, `headcount.by_function_timeseries`), changes from `POST /watch/company` on `headcount.total`, `funding.last_round_type` and `news`, executive departures from `POST /watch/person` on `experience.employment_details`.
+- Up to 10,000 companies and 10,000 leaders per watcher; watchers run daily at about 06:00 UTC; alerts route to each partner's Slack channel from an `owner` column.
+
+## Code
+- [src/crustdata.ts](https://github.com/crustdata/tools/blob/main/vc-portfolio-monitor/src/crustdata.ts): every Crustdata call
+- [src/run.ts](https://github.com/crustdata/tools/blob/main/vc-portfolio-monitor/src/run.ts): import, daily check, weekly digest
+- [src/signals.ts](https://github.com/crustdata/tools/blob/main/vc-portfolio-monitor/src/signals.ts): the rules and "why it matters" lines
+- src/leaders.ts, src/careers.ts, src/portfolio.ts: leaders, open roles, CSV and Sheet reading
+
+## Crustdata APIs used
+- Company Entity Watcher: https://docs.crustdata.com/watcher-docs/company/entity
+- Person Entity Watcher: https://docs.crustdata.com/watcher-docs/person/entity
+- Company Identify: https://docs.crustdata.com/company-docs/identify/introduction
+- Company Enrichment: https://docs.crustdata.com/company-docs/enrichment/introduction
+- People Search: https://docs.crustdata.com/person-docs/search/introduction
+- Person Enrichment: https://docs.crustdata.com/person-docs/enrichment/introduction
+- Web Fetch: https://docs.crustdata.com/web-docs/fetch/introduction
+- Job Postings Search: https://docs.crustdata.com/job-docs/search/introduction

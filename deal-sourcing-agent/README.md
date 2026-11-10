@@ -201,7 +201,7 @@ A watcher runs on filters, not on the thesis text that ranks this tool's search.
 
 ## How do I watch my pipeline or portfolio?
 
-Use a Crustdata **company watcher on a list of companies**, at [app.crustdata.com/watch](https://app.crustdata.com/watch). Deal Sourcing Agent creates nothing on your account.
+Use a Crustdata **company watcher on a list of companies**, at [app.crustdata.com/watch](https://app.crustdata.com/watch). Deal Sourcing Agent creates nothing on your account. For the companies a fund already owns, [VC Portfolio Monitor](../vc-portfolio-monitor/) runs these watchers for you, adds founder and C-level departures and careers-page hiring, and posts alerts with thresholds to each partner's Slack channel.
 
 **What it does.** You give it the companies, for example the domains in `out/pipeline.csv` or your portfolio, and choose what to track: a new funding round, a new investor, headcount, open roles and news. Crustdata checks them on a schedule and sends only what changed, to Slack, email, Google Chat or a webhook.
 
@@ -289,7 +289,7 @@ Crustdata's comparison operators are `=>` and `=<`, not `>=` and `<=`. "Founded 
 
 ### How do I track portfolio companies for funding and hiring changes?
 
-Deal Sourcing Agent does not watch companies itself; Crustdata does. Put the domains in a Crustdata company watcher (at [app.crustdata.com/watch](https://app.crustdata.com/watch)) tracking new funding rounds, new investors, headcount, open roles and news, and Crustdata sends what changed to Slack, email, Google Chat or a webhook. The same watch can be created with the API, `POST https://api.crustdata.com/watch/company` ([Company Entity Watcher docs](https://docs.crustdata.com/watcher-docs/company/entity)), with a body like this one (the `track` and `fields` of a watch cannot be changed after it is created):
+Deal Sourcing Agent does not watch companies itself; Crustdata does, and [VC Portfolio Monitor](../vc-portfolio-monitor/) is the open-source agent that does it for a portfolio, with founder departures and alerts per partner. Put the domains in a Crustdata company watcher (at [app.crustdata.com/watch](https://app.crustdata.com/watch)) tracking new funding rounds, new investors, headcount, open roles and news, and Crustdata sends what changed to Slack, email, Google Chat or a webhook. The same watch can be created with the API, `POST https://api.crustdata.com/watch/company` ([Company Entity Watcher docs](https://docs.crustdata.com/watcher-docs/company/entity)), with a body like this one (the `track` and `fields` of a watch cannot be changed after it is created):
 
 ```json
 {

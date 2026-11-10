@@ -1,0 +1,659 @@
+{
+  "name": "edge-cases",
+  "description": "Cases that must NOT alert, or alert in a particular way: a 20-person company losing 2 people, a headline with layoff words that does not name the company, an old article added late, the same article twice, a record with no roles, a board seat elsewhere, a move to an advisor title, a secondary sale, an acquisition, a company removed from the portfolio, a careers page that failed, a bot-check page, hiring starting again, and a headline trying to ping a Slack channel.",
+  "now": "2026-10-26T07:00:00.000Z",
+  "state": {
+    "companies": [
+      {
+        "domain": "alderpoint.example",
+        "name": "Alderpoint",
+        "companyId": 201,
+        "careersUrl": "https://alderpoint.example/careers",
+        "hiringSource": "careers",
+        "addedAt": "2026-08-01T07:00:00.000Z",
+        "start": "20 people"
+      },
+      {
+        "domain": "birchline.example",
+        "name": "Birchline",
+        "companyId": 202,
+        "careersUrl": "https://birchline.example/careers",
+        "hiringSource": "careers",
+        "addedAt": "2026-08-01T07:00:00.000Z",
+        "start": "40 people"
+      },
+      {
+        "domain": "cobaltfox.example",
+        "name": "Cobalt Fox",
+        "companyId": 203,
+        "careersUrl": "https://cobaltfox.example/careers",
+        "hiringSource": "careers",
+        "addedAt": "2026-08-01T07:00:00.000Z",
+        "start": "90 people"
+      },
+      {
+        "domain": "dunmore.example",
+        "name": "Dunmore",
+        "companyId": 204,
+        "hiringSource": "none",
+        "addedAt": "2026-08-01T07:00:00.000Z",
+        "start": "12 people"
+      }
+    ],
+    "leaders": [
+      {
+        "profileUrl": "https://www.profiles.example/in/example-eve-noe",
+        "personId": 9101,
+        "name": "Eve Noe",
+        "title": "Founder & CEO",
+        "role": "founder",
+        "domain": "alderpoint.example"
+      },
+      {
+        "profileUrl": "https://www.profiles.example/in/example-ian-koe",
+        "personId": 9102,
+        "name": "Ian Koe",
+        "title": "CEO",
+        "role": "ceo",
+        "domain": "birchline.example"
+      },
+      {
+        "profileUrl": "https://www.profiles.example/in/example-uma-joe",
+        "personId": 9103,
+        "name": "Uma Joe",
+        "title": "Co-Founder, COO",
+        "role": "founder",
+        "domain": "cobaltfox.example"
+      }
+    ],
+    "refs": {
+      "alderpoint.example": {
+        "record": {
+          "crustdata_company_id": 201,
+          "basic_info": {
+            "name": "Alderpoint",
+            "primary_domain": "alderpoint.example",
+            "status": "active"
+          },
+          "headcount": {
+            "total": 20,
+            "by_function_timeseries": {
+              "CURRENT_FUNCTION": {
+                "ENGINEERING": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 10
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 10
+                  }
+                ]
+              }
+            }
+          },
+          "funding": {
+            "last_round_type": "seed",
+            "last_round_amount_usd": 3000000,
+            "last_fundraise_date": "2025-03-10",
+            "investors": [
+              "Example Ventures"
+            ]
+          },
+          "news": []
+        },
+        "recordedAt": "2026-09-20T07:00:00.000Z"
+      },
+      "birchline.example": {
+        "record": {
+          "crustdata_company_id": 202,
+          "basic_info": {
+            "name": "Birchline",
+            "primary_domain": "birchline.example",
+            "status": "active"
+          },
+          "headcount": {
+            "total": 40,
+            "by_function_timeseries": {
+              "CURRENT_FUNCTION": {
+                "ENGINEERING": [
+                  {
+                    "date": "2026-05-01 00:00:00",
+                    "employee_count": 20
+                  },
+                  {
+                    "date": "2026-07-01 00:00:00",
+                    "employee_count": 20
+                  }
+                ]
+              }
+            }
+          },
+          "funding": {
+            "last_round_type": "seed",
+            "last_round_amount_usd": 3000000,
+            "last_fundraise_date": "2025-03-10",
+            "investors": [
+              "Example Ventures"
+            ]
+          },
+          "news": []
+        },
+        "recordedAt": "2026-09-20T07:00:00.000Z"
+      }
+    },
+    "readings": [
+      {
+        "domain": "alderpoint.example",
+        "at": "2026-09-21T07:00:00.000Z",
+        "roles": 0
+      },
+      {
+        "domain": "alderpoint.example",
+        "at": "2026-09-28T07:00:00.000Z",
+        "roles": 0
+      },
+      {
+        "domain": "alderpoint.example",
+        "at": "2026-10-05T07:00:00.000Z",
+        "roles": 0
+      },
+      {
+        "domain": "alderpoint.example",
+        "at": "2026-10-12T07:00:00.000Z",
+        "roles": 0
+      },
+      {
+        "domain": "alderpoint.example",
+        "at": "2026-10-19T07:00:00.000Z",
+        "roles": 0
+      },
+      {
+        "domain": "birchline.example",
+        "at": "2026-10-19T07:00:00.000Z",
+        "roles": 6
+      },
+      {
+        "domain": "cobaltfox.example",
+        "at": "2026-10-19T07:00:00.000Z",
+        "roles": 11
+      }
+    ],
+    "watches": {
+      "company": 1,
+      "person": 2
+    },
+    "lastDigestAt": "2026-10-19T08:00:00.000Z",
+    "lastCheckAt": "2026-10-25T07:00:00.000Z"
+  },
+  "api": {
+    "runs": {
+      "company": [
+        {
+          "run": {
+            "id": 7001,
+            "started_at": "2026-10-25T06:00:00Z",
+            "status": "SUCCESS",
+            "new_records_count": 3,
+            "credits_deducted": 15
+          },
+          "records": [
+            {
+              "changes": [
+                {
+                  "field": "headcount.total",
+                  "type": "changed",
+                  "from": 20,
+                  "to": 18
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 201,
+                "basic_info": {
+                  "name": "Alderpoint",
+                  "primary_domain": "alderpoint.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 18,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "ENGINEERING": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 9
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 9
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "news",
+                  "type": "added",
+                  "new_elements": [
+                    {
+                      "article_title": "Retail chain lays off 300 workers; suppliers including Birchline watch closely",
+                      "article_url": "https://news.example/retail-layoffs",
+                      "article_publish_date": "2026-10-24",
+                      "article_publisher_name": "Example News"
+                    },
+                    {
+                      "article_title": "Example Corp cuts jobs across Europe",
+                      "article_url": "https://news.example/example-corp-cuts",
+                      "article_publish_date": "2026-10-24",
+                      "article_publisher_name": "Example News"
+                    },
+                    {
+                      "article_title": "Birchline shuts down its hardware line",
+                      "article_url": "https://news.example/birchline-old",
+                      "article_publish_date": "2026-08-01",
+                      "article_publisher_name": "Example News"
+                    },
+                    {
+                      "article_title": "<!channel> Birchline named a top workplace <https://evil.example|click>",
+                      "article_url": "https://news.example/birchline-top-workplace",
+                      "article_publish_date": "2026-10-23",
+                      "article_publisher_name": "Example News"
+                    }
+                  ]
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 202,
+                "basic_info": {
+                  "name": "Birchline",
+                  "primary_domain": "birchline.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 40,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "ENGINEERING": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 20
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 20
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "funding.last_round_type",
+                  "type": "changed",
+                  "from": "series_b",
+                  "to": "secondary_market"
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 203,
+                "basic_info": {
+                  "name": "Cobalt Fox",
+                  "primary_domain": "cobaltfox.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 90,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "ENGINEERING": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 40
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 40
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "secondary_market",
+                  "last_round_amount_usd": 50000000,
+                  "last_fundraise_date": "2026-10-15"
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "headcount.total",
+                  "type": "changed",
+                  "from": 50,
+                  "to": 10
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 999,
+                "basic_info": {
+                  "name": "Removed Co",
+                  "primary_domain": "removed.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 10,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {}
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [],
+              "record": {
+                "crustdata_company_id": 201,
+                "basic_info": {
+                  "name": "Alderpoint",
+                  "primary_domain": "alderpoint.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 18,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {}
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            }
+          ]
+        },
+        {
+          "run": {
+            "id": 7002,
+            "started_at": "2026-10-26T06:00:00Z",
+            "status": "SUCCESS",
+            "new_records_count": 2,
+            "credits_deducted": 10
+          },
+          "records": [
+            {
+              "changes": [
+                {
+                  "field": "news",
+                  "type": "added",
+                  "new_elements": [
+                    {
+                      "article_title": "<!channel> Birchline named a top workplace <https://evil.example|click>",
+                      "article_url": "https://news.example/birchline-top-workplace?utm=1",
+                      "article_publish_date": "2026-10-23",
+                      "article_publisher_name": "Example News"
+                    }
+                  ]
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 202,
+                "basic_info": {
+                  "name": "Birchline",
+                  "primary_domain": "birchline.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 40,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {
+                      "ENGINEERING": [
+                        {
+                          "date": "2026-05-01 00:00:00",
+                          "employee_count": 20
+                        },
+                        {
+                          "date": "2026-07-01 00:00:00",
+                          "employee_count": 20
+                        }
+                      ]
+                    }
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "funding.acquired_by",
+                  "type": "added",
+                  "new_elements": [
+                    {
+                      "name": "Example Holdings"
+                    }
+                  ]
+                },
+                {
+                  "field": "basic_info.status",
+                  "type": "changed",
+                  "from": "active",
+                  "to": "acquired"
+                }
+              ],
+              "record": {
+                "crustdata_company_id": 204,
+                "basic_info": {
+                  "name": "Dunmore",
+                  "primary_domain": "dunmore.example",
+                  "status": "active"
+                },
+                "headcount": {
+                  "total": 12,
+                  "by_function_timeseries": {
+                    "CURRENT_FUNCTION": {}
+                  }
+                },
+                "funding": {
+                  "last_round_type": "seed",
+                  "last_round_amount_usd": 3000000,
+                  "last_fundraise_date": "2025-03-10",
+                  "investors": [
+                    "Example Ventures"
+                  ]
+                },
+                "news": []
+              }
+            }
+          ]
+        }
+      ],
+      "person": [
+        {
+          "run": {
+            "id": 8001,
+            "started_at": "2026-10-26T06:00:00Z",
+            "status": "SUCCESS",
+            "new_records_count": 3,
+            "credits_deducted": 15
+          },
+          "records": [
+            {
+              "changes": [
+                {
+                  "field": "experience.employment_details.past",
+                  "type": "added",
+                  "new_elements": []
+                }
+              ],
+              "record": {
+                "crustdata_person_id": 9101,
+                "basic_profile": {
+                  "name": "Eve Noe",
+                  "current_title": null
+                },
+                "experience": {
+                  "employment_details": {
+                    "current": [],
+                    "past": []
+                  }
+                },
+                "social_handles": {
+                  "professional_network_identifier": {
+                    "profile_url": "https://www.profiles.example/in/example-eve-noe"
+                  }
+                }
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "experience.employment_details.current",
+                  "type": "added",
+                  "new_elements": [
+                    {
+                      "title": "Board Member",
+                      "name": "Example Foundation",
+                      "crustdata_company_id": 777
+                    }
+                  ]
+                }
+              ],
+              "record": {
+                "crustdata_person_id": 99102,
+                "basic_profile": {
+                  "name": "Ian Koe"
+                },
+                "experience": {
+                  "employment_details": {
+                    "current": [
+                      {
+                        "title": "CEO",
+                        "name": "Birchline",
+                        "crustdata_company_id": 202,
+                        "is_default": true
+                      },
+                      {
+                        "title": "Board Member",
+                        "name": "Example Foundation",
+                        "crustdata_company_id": 777
+                      }
+                    ],
+                    "past": []
+                  }
+                },
+                "social_handles": {
+                  "professional_network_identifier": {
+                    "profile_url": "https://uk.profiles.example/in/Example-Ian-Koe/"
+                  }
+                }
+              }
+            },
+            {
+              "changes": [
+                {
+                  "field": "basic_profile.current_title",
+                  "type": "changed",
+                  "from": "Co-Founder, COO",
+                  "to": "Advisor"
+                }
+              ],
+              "record": {
+                "crustdata_person_id": 9103,
+                "basic_profile": {
+                  "name": "Uma Joe",
+                  "current_title": "Advisor"
+                },
+                "experience": {
+                  "employment_details": {
+                    "current": [
+                      {
+                        "title": "Advisor",
+                        "name": "Cobalt Fox",
+                        "crustdata_company_id": 203,
+                        "is_default": true
+                      }
+                    ],
+                    "past": [
+                      {
+                        "title": "Co-Founder, COO",
+                        "name": "Cobalt Fox",
+                        "crustdata_company_id": 203,
+                        "end_date": "2026-10-01"
+                      }
+                    ]
+                  }
+                },
+                "social_handles": {
+                  "professional_network_identifier": {
+                    "profile_url": "https://www.profiles.example/in/example-uma-joe"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "pages": {
+      "https://alderpoint.example/careers": {
+        "roles": 4
+      },
+      "https://birchline.example/careers": {
+        "success": false,
+        "http_status": 404
+      },
+      "https://cobaltfox.example/careers": {
+        "content": "<html><head><title>Just a moment...</title></head><body>Checking your browser before accessing the site. Please wait while we verify you are human. This may take a few seconds.</body></html>"
+      }
+    }
+  }
+}

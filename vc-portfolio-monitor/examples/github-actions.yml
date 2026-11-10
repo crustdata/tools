@@ -1,0 +1,100 @@
+# Runs the portfolio monitor on GitHub Actions, with nothing to host: a check every day, the digest on Mondays, a
+# search for new leaders on the 1st of each month. Step by step (the repo, the secrets, the first run): docs/deploy.md
+#
+# 1. Put the monitor at the root of your own PRIVATE repo:  npx degit crustdata/tools/vc-portfolio-monitor my-monitor
+# 2. Set PORTFOLIO to a Google Sheet link (a repository variable), or commit portfolio.csv.
+# 3. Copy this file to .github/workflows/portfolio-monitor.yml
+# 4. Settings > Secrets and variables > Actions:
+#    Secrets: CRUSTDATA_API_KEY, and if you want them SLACK_WEBHOOK_URL, SLACK_ROUTES, RESEND_API_KEY, DIGEST_EMAIL_FROM, DIGEST_EMAIL_TO.
+#    Variables: PORTFOLIO (Sheet link or ./portfolio.csv), FUND_NAME, and optionally LEADER_REFRESH_DAYS,
+#    HIRING_CHECK_DAYS, MAX_LEADERS_PER_COMPANY, MAX_IMPORT_CREDITS.
+# 5. Actions tab > Portfolio monitor > Run workflow, for the first import now (tick "Send the digest" to get one too).
+#
+# Every run imports first: new rows in the Sheet are added (with the cost printed in the log, refused above
+# MAX_IMPORT_CREDITS), removed rows stop being watched (refused when more than 10%, and more than 2, would go at once), and nothing is
+# spent when nothing changed. State (data/monitor.sqlite) is committed back to the repo, which is how tomorrow's run
+# knows what it already reported. Secrets are given only to the steps that call Crustdata, Slack or Resend.
+name: Portfolio monitor
+
+on:
+  schedule:
+    - cron: "0 7 * * *" # every day 07:00 UTC, after the watchers' 06:00 UTC runs
+  workflow_dispatch:
+    inputs:
+      digest:
+        description: Send the digest now
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portfolio-monitor
+  cancel-in-progress: false
+
+env:
+  PORTFOLIO: ${{ vars.PORTFOLIO }}
+  FUND_NAME: ${{ vars.FUND_NAME }}
+  LEADER_REFRESH_DAYS: ${{ vars.LEADER_REFRESH_DAYS }}
+  HIRING_CHECK_DAYS: ${{ vars.HIRING_CHECK_DAYS }}
+  MAX_LEADERS_PER_COMPANY: ${{ vars.MAX_LEADERS_PER_COMPANY }}
+  MAX_IMPORT_CREDITS: ${{ vars.MAX_IMPORT_CREDITS }}
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Import the portfolio (free when nothing changed)
+        run: npm run import -- --yes
+        env:
+          CRUSTDATA_API_KEY: ${{ secrets.CRUSTDATA_API_KEY }}
+      - name: Daily check
+        if: ${{ !cancelled() }}
+        run: npm run check
+        env:
+          CRUSTDATA_API_KEY: ${{ secrets.CRUSTDATA_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_ROUTES: ${{ secrets.SLACK_ROUTES }}
+      - name: New leaders (the 1st of each month)
+        if: ${{ !cancelled() && github.event_name == 'schedule' }}
+        run: |
+          if [ "$(date -u +%d)" = "01" ]; then npm run refresh-leaders -- --yes; else echo "Not the 1st: no leader search."; fi
+        env:
+          CRUSTDATA_API_KEY: ${{ secrets.CRUSTDATA_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          SLACK_ROUTES: ${{ secrets.SLACK_ROUTES }}
+      - name: Weekly digest (Mondays, or when asked)
+        if: ${{ !cancelled() }}
+        run: |
+          if [ "$(date -u +%u)" = "1" ] && [ "${{ github.event_name }}" = "schedule" ] || [ "${{ inputs.digest }}" = "true" ]; then npm run digest; else echo "No digest this run."; fi
+        env:
+          CRUSTDATA_API_KEY: ${{ secrets.CRUSTDATA_API_KEY }}
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          DIGEST_EMAIL_FROM: ${{ secrets.DIGEST_EMAIL_FROM }}
+          DIGEST_EMAIL_TO: ${{ secrets.DIGEST_EMAIL_TO }}
+      - name: Save state for tomorrow
+        if: always()
+        run: |
+          git config user.name "vc-portfolio-monitor"
+          git config user.email "vc-portfolio-monitor@users.noreply.github.com"
+          if [ -f data/monitor.sqlite ]; then git add -f data/monitor.sqlite; fi
+          if [ -d digests ]; then git add -f digests; fi
+          git commit -m "Portfolio monitor $(date -u +%Y-%m-%d)" || { echo "Nothing to save"; exit 0; }
+          # Someone may have pushed while this ran. If the two cannot be combined, this run's state goes to its own
+          # branch, so neither side is lost.
+          if ! git pull --rebase; then
+            git rebase --abort || true
+            git push origin "HEAD:refs/heads/monitor-state-$(date -u +%Y%m%d-%H%M)"
+            echo "Could not combine this run's state with new commits; it was pushed to a monitor-state branch. Merge it into main." >&2
+            exit 1
+          fi
+          git push
