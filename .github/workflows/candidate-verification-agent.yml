@@ -1,0 +1,32 @@
+name: candidate-verification-agent
+
+on:
+  push:
+    paths: ["candidate-verification-agent/**", ".github/workflows/candidate-verification-agent.yml"]
+  pull_request:
+    paths: ["candidate-verification-agent/**", ".github/workflows/candidate-verification-agent.yml"]
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: ["22.13", "24"]
+    defaults:
+      run:
+        working-directory: candidate-verification-agent
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+          cache: npm
+          cache-dependency-path: candidate-verification-agent/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run replay -- fixtures/mixed-list.json
+      - run: npm run replay -- fixtures/quick-screen.json

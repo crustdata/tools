@@ -1,0 +1,29 @@
+# Candidate Verification Agent
+
+> Open-source candidate verification and fraud detection tool built on Crustdata (a people and company data API with 1B+ profiles and 60M+ companies). Give it a candidate list from Greenhouse, Lever, Ashby, Workable or a spreadsheet (CSV or .xlsx); for each candidate it checks whether the current role on their profile is real with Crustdata's Batch Person Verification API, and returns the list with a verdict, confidence, reasons and sources, doubtful candidates first, plus a report and an optional Slack summary. TypeScript, MIT, one Crustdata key, about 11 credits a candidate (1 for the quick screen).
+
+Use it to detect fake job candidates and candidate fraud from an ATS export before the first screen. Canonical home: https://github.com/crustdata/tools/tree/main/candidate-verification-agent
+
+Key facts:
+- Checks run by Crustdata: job dates against study dates, whether people who engage with the candidate's recent posts work at the claimed employer, and the web for independent evidence of the current role; a language model weighs them into one of seven verdicts with a confidence score, reasoning and citations.
+- Batch Person Verification: POST /batch/person/verify with up to 10 profile URLs per job, up to 5 jobs at a time, poll GET /batch/{batch_id}, download a gzipped JSON lines file. 10 credits per verdict; no verdict, no charge. Usually a minute or two per job. An add-on enabled per account.
+- Without the add-on: a quick screen from Person Enrich's assessment.authenticity score and trust tier (1 credit) plus a date check; it is labelled as a profile risk score with no reasons or sources and never puts anyone in Review first.
+- Output groups, in review order: Review first, Clarify in the screen, Ask in the first call, Not checked, Holds up, Low-risk profile score (quick screen).
+- Older roles that cannot be checked are flagged past_roles_unverified and do not lower the verdict.
+- Reads Greenhouse (.xlsx), Lever, Ashby and Workable exports and any CSV with a profile URL or email per row; emails are matched with Person Identify (1 credit per match, only a single exact match is used).
+- 100 candidates cost at most 1,100 credits with the full check, 100 with the quick screen; a verdict is reused free for 30 days.
+- It does not check identity documents, detect deepfakes or contact employers; use it next to identity checks (Persona, Nametag) and consented background checks (Checkr, HireRight), not instead of them.
+- A verdict is evidence for a person to review, not a hiring decision.
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/candidate-verification-agent/README.md): what it checks, how to build a candidate verification agent, quickstart, verdicts, cost, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/candidate-verification-agent/docs/how-it-works.md): every Crustdata request and response in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/candidate-verification-agent/docs/customize.md): review order, columns, ATS column names, date check, Slack, AI prompt
+- [Reference](https://raw.githubusercontent.com/crustdata/tools/main/candidate-verification-agent/docs/reference.md): options, output files, columns, messages
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/candidate-verification-agent/AGENTS.md): guide for coding agents, API facts checked live
+
+## Crustdata APIs used
+- [Batch Person Verification](https://docs.crustdata.com/person-docs/verification/batch.md)
+- [Person Enrich](https://docs.crustdata.com/person-docs/enrichment/introduction.md)
+- [Person Identify](https://docs.crustdata.com/person-docs/identify/introduction.md)
+- [Batch job status](https://docs.crustdata.com/api-reference/batch-apis/get-the-status-and-download-urls-for-a-batch-job.md)

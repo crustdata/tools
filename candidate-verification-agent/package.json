@@ -1,0 +1,67 @@
+{
+  "name": "candidate-verification-agent",
+  "version": "1.0.0",
+  "description": "Open-source candidate verification and fraud detection agent built on Crustdata (1B+ profiles and 60M+ companies): reads a Greenhouse, Lever, Ashby or Workable export, checks whether each candidate's current role is real with Crustdata's Batch Person Verification API, and returns verdicts, reasons and sources, doubtful candidates first. TypeScript, MIT.",
+  "keywords": [
+    "candidate verification",
+    "candidate fraud detection",
+    "fake candidate detection",
+    "fake job applicants",
+    "employment verification",
+    "work history verification",
+    "resume verification",
+    "recruiting fraud",
+    "hiring fraud",
+    "ai recruiting agent",
+    "recruiting automation",
+    "greenhouse",
+    "lever",
+    "ashby",
+    "workable",
+    "crustdata",
+    "crustdata api",
+    "people data api",
+    "person verification api",
+    "fake candidates",
+    "candidate screening",
+    "remote hiring fraud",
+    "work history verification api",
+    "batch person verification",
+    "ats export",
+    "cli",
+    "typescript"
+  ],
+  "author": "Crustdata",
+  "homepage": "https://github.com/crustdata/tools/tree/main/candidate-verification-agent#readme",
+  "bugs": {
+    "url": "https://github.com/crustdata/tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "candidate-verification-agent"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/setup.ts",
+    "verify": "tsx src/cli.ts verify",
+    "test-slack": "tsx src/cli.ts test-slack",
+    "forget": "tsx src/cli.ts forget",
+    "purge": "tsx src/cli.ts purge",
+    "replay": "tsx src/replay.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}

@@ -1,0 +1,602 @@
+{
+ "description": "an Ashby export of 11 rows: every verdict, an email-only row, a row with nothing to check and a duplicate",
+ "input": "examples/ashby-export.csv",
+ "argv": [],
+ "people": {
+  "https://www.linkedin.com/in/example-priya-example": {
+   "crustdata_person_id": 9001,
+   "basic_profile": {
+    "name": "Priya Example",
+    "current_title": "Senior Software Engineer",
+    "headline": "Senior Software Engineer at Northwind Analytics",
+    "location": {
+     "full_location": "Austin, Texas, United States",
+     "raw": "Austin, Texas, United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Senior Software Engineer",
+       "name": "Northwind Analytics",
+       "start_date": "2022-03-01T00:00:00+00:00",
+       "end_date": null,
+       "employment_type": "",
+       "is_default": true,
+       "company_website_domain": "northwind.example"
+      }
+     ],
+     "past": [
+      {
+       "title": "Software Engineer",
+       "name": "Globex Robotics",
+       "start_date": "2018-07-01T00:00:00+00:00",
+       "end_date": "2022-02-01T00:00:00+00:00",
+       "employment_type": "",
+       "is_default": false,
+       "company_website_domain": "globex.example"
+      }
+     ]
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "University of Example",
+      "degree": "Bachelor of Science",
+      "field_of_study": "Computer Science",
+      "start_year": 2014,
+      "end_year": 2018
+     }
+    ]
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://www.linkedin.com/in/priya-example"
+    }
+   },
+   "assessment": {
+    "authenticity": {
+     "verdict": "clearly_genuine",
+     "tier": 0
+    }
+   }
+  },
+  "https://www.linkedin.com/in/example-marcus-sample": {
+   "crustdata_person_id": 9002,
+   "basic_profile": {
+    "name": "Marcus Sample",
+    "current_title": "Backend Engineer",
+    "headline": "Backend Engineer at Initech",
+    "location": {
+     "full_location": "Chicago, Illinois, United States",
+     "raw": "Chicago, Illinois, United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Backend Engineer",
+       "name": "Initech",
+       "start_date": "2021-01-01T00:00:00+00:00",
+       "end_date": null,
+       "employment_type": "",
+       "is_default": true,
+       "company_website_domain": "initech.example"
+      }
+     ],
+     "past": [
+      {
+       "title": "Developer",
+       "name": "Tiny Agency Example",
+       "start_date": "2017-05-01T00:00:00+00:00",
+       "end_date": "2020-12-01T00:00:00+00:00",
+       "employment_type": "",
+       "is_default": false,
+       "company_website_domain": null
+      },
+      {
+       "title": "Junior Developer",
+       "name": "Small Shop Example",
+       "start_date": "2015-06-01T00:00:00+00:00",
+       "end_date": "2017-04-01T00:00:00+00:00",
+       "employment_type": "",
+       "is_default": false,
+       "company_website_domain": null
+      }
+     ]
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "State College Example",
+      "degree": "Bachelor of Arts",
+      "field_of_study": "Mathematics",
+      "start_year": 2011,
+      "end_year": 2015
+     }
+    ]
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://www.linkedin.com/in/marcus-sample"
+    }
+   },
+   "assessment": {
+    "authenticity": {
+     "verdict": "probably_genuine",
+     "tier": 2
+    }
+   }
+  },
+  "https://www.linkedin.com/in/example-jordan-placeholder": {
+   "crustdata_person_id": 9003,
+   "basic_profile": {
+    "name": "Jordan Placeholder",
+    "current_title": "Data Engineer",
+    "headline": "Data Engineer at Contoso Freight",
+    "location": {
+     "full_location": "Remote",
+     "raw": "Remote"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Data Engineer",
+       "name": "Contoso Freight",
+       "start_date": "2023-09-01T00:00:00+00:00",
+       "end_date": null,
+       "employment_type": "",
+       "is_default": true,
+       "company_website_domain": null
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://www.linkedin.com/in/jordan-placeholder"
+    }
+   },
+   "assessment": {
+    "authenticity": {
+     "verdict": "cannot_verify",
+     "tier": 5
+    }
+   }
+  },
+  "https://www.linkedin.com/in/example-alex-fakename": {
+   "crustdata_person_id": 9004,
+   "basic_profile": {
+    "name": "Alex Fakename",
+    "current_title": "Principal Engineer",
+    "headline": "Principal Engineer at Umbrella Cloud",
+    "location": {
+     "full_location": "Remote",
+     "raw": "Remote"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Principal Engineer",
+       "name": "Umbrella Cloud",
+       "start_date": "2020-01-01T00:00:00+00:00",
+       "end_date": null,
+       "employment_type": "Full-time",
+       "is_default": true,
+       "company_website_domain": "umbrella.example"
+      }
+     ],
+     "past": [
+      {
+       "title": "Senior Engineer",
+       "name": "Hooli Example",
+       "start_date": "2018-01-01T00:00:00+00:00",
+       "end_date": "2019-12-01T00:00:00+00:00",
+       "employment_type": "Full-time",
+       "is_default": false,
+       "company_website_domain": null
+      }
+     ]
+    }
+   },
+   "education": {
+    "schools": [
+     {
+      "school": "Example Institute of Technology",
+      "degree": "Master of Science",
+      "field_of_study": "Computer Science",
+      "start_year": 2017,
+      "end_year": 2019
+     }
+    ]
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://www.linkedin.com/in/alex-fakename"
+    }
+   },
+   "assessment": {
+    "authenticity": {
+     "verdict": "probably_fabricated",
+     "tier": 7
+    }
+   }
+  },
+  "https://www.linkedin.com/in/example-sam-testcase": {
+   "crustdata_person_id": 9005,
+   "basic_profile": {
+    "name": "Sam Testcase",
+    "current_title": "Director of Engineering",
+    "headline": "Director of Engineering at Globex Robotics",
+    "location": {
+     "full_location": "Remote",
+     "raw": "Remote"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Director of Engineering",
+       "name": "Globex Robotics",
+       "start_date": "2019-06-01T00:00:00+00:00",
+       "end_date": null,
+       "employment_type": "",
+       "is_default": true,
+       "company_website_domain": "globex.example"
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://www.linkedin.com/in/sam-testcase"
+    }
+   },
+   "assessment": {
+    "authenticity": {
+     "verdict": "clearly_fabricated",
+     "tier": 9
+    }
+   }
+  },
+  "https://www.linkedin.com/in/example-taylor-demo": {
+   "crustdata_person_id": 9006,
+   "basic_profile": {
+    "name": "Taylor Demo",
+    "current_title": "VP Engineering",
+    "headline": "VP Engineering at Vandelay Payments",
+    "location": {
+     "full_location": "New York, New York, United States",
+     "raw": "New York, New York, United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "VP Engineering",
+       "name": "Vandelay Payments",
+       "start_date": "2022-01-01T00:00:00+00:00",
+       "end_date": null,
+       "employment_type": "",
+       "is_default": true,
+       "company_website_domain": "vandelay.example"
+      }
+     ],
+     "past": [
+      {
+       "title": "Engineering Manager",
+       "name": "Initech",
+       "start_date": "2016-01-01T00:00:00+00:00",
+       "end_date": "2021-12-01T00:00:00+00:00",
+       "employment_type": "",
+       "is_default": false,
+       "company_website_domain": null
+      }
+     ]
+    }
+   },
+   "education": {
+    "schools": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://www.linkedin.com/in/taylor-demo"
+    }
+   },
+   "assessment": {
+    "authenticity": {
+     "verdict": "probably_genuine",
+     "tier": 3
+    }
+   }
+  },
+  "https://www.linkedin.com/in/example-acme-talent-group": {
+   "crustdata_person_id": 9007,
+   "basic_profile": {
+    "name": "Acme Talent Group",
+    "current_title": "Recruiting",
+    "location": null
+   },
+   "experience": {
+    "employment_details": {
+     "current": [],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": []
+   },
+   "assessment": {
+    "authenticity": {
+     "verdict": "cannot_verify",
+     "tier": 8
+    }
+   }
+  },
+  "https://www.linkedin.com/in/example-casey-emailonly": {
+   "crustdata_person_id": 9009,
+   "basic_profile": {
+    "name": "Casey Emailonly",
+    "current_title": "Software Engineer II",
+    "headline": "Software Engineer II at Northwind Analytics",
+    "location": {
+     "full_location": "Denver, Colorado, United States",
+     "raw": "Denver, Colorado, United States"
+    }
+   },
+   "experience": {
+    "employment_details": {
+     "current": [
+      {
+       "title": "Software Engineer II",
+       "name": "Northwind Analytics",
+       "start_date": "2023-02-01T00:00:00+00:00",
+       "end_date": null,
+       "employment_type": "",
+       "is_default": true,
+       "company_website_domain": "northwind.example"
+      }
+     ],
+     "past": []
+    }
+   },
+   "education": {
+    "schools": []
+   },
+   "social_handles": {
+    "professional_network_identifier": {
+     "profile_url": "https://www.linkedin.com/in/casey-emailonly"
+    }
+   },
+   "assessment": {
+    "authenticity": {
+     "verdict": "probably_genuine",
+     "tier": 1
+    }
+   }
+  }
+ },
+ "identify": {
+  "casey.emailonly@example.com": {
+   "match_type": "email",
+   "match_status": "matched",
+   "matches": [
+    {
+     "confidence_score": 1.0,
+     "person_data": {
+      "crustdata_person_id": 9009,
+      "basic_profile": {
+       "name": "Casey Emailonly"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-casey-emailonly"
+       }
+      }
+     }
+    }
+   ]
+  }
+ },
+ "verify": {
+  "https://www.linkedin.com/in/example-priya-example": {
+   "verdict": "clearly_genuine",
+   "confidence": 0.92,
+   "reasoning": "The current Senior Software Engineer role at Northwind Analytics is confirmed by the company's own engineering blog, which lists the candidate as an author in 2024, and by a conference talk page naming the same role. Eleven coworkers at Northwind Analytics engaged with recent posts.",
+   "flags": [],
+   "coverage": {
+    "social_ran": true,
+    "posts_fetched": 3,
+    "posts_checked": 3,
+    "engagers_seen": 140,
+    "engagers_resolved": 131,
+    "coworker_hits": 11,
+    "timeline_flags": 0,
+    "flags": []
+   },
+   "citations": [
+    {
+     "url": "https://northwind.example/blog/authors/priya",
+     "title": "Engineering blog authors | Northwind Analytics",
+     "cited_text": "Priya Example, Senior Software Engineer"
+    },
+    {
+     "url": "https://conf.example/2025/speakers",
+     "title": "ExampleConf 2025 speakers",
+     "cited_text": "Priya Example (Northwind Analytics)"
+    }
+   ]
+  },
+  "https://www.linkedin.com/in/example-marcus-sample": {
+   "verdict": "probably_genuine",
+   "confidence": 0.66,
+   "reasoning": "The current Backend Engineer role at Initech is supported by engagement from four people who work at Initech on two recent posts. No independent web source names the role. The two earlier roles at small companies have no evidence either way, which is expected for low-visibility positions and does not lower the assessment.",
+   "flags": [
+    "past_roles_unverified"
+   ],
+   "coverage": {
+    "social_ran": true,
+    "posts_fetched": 2,
+    "posts_checked": 2,
+    "engagers_seen": 61,
+    "engagers_resolved": 58,
+    "coworker_hits": 4,
+    "timeline_flags": 0,
+    "flags": []
+   },
+   "citations": []
+  },
+  "https://www.linkedin.com/in/example-jordan-placeholder": {
+   "verdict": "cannot_verify",
+   "confidence": 0.4,
+   "reasoning": "No independent source mentions the candidate or the Data Engineer role at Contoso Freight, and no recent posts were available to check who engages with them. This is common for people with little public footprint and is not evidence of fabrication.",
+   "flags": [
+    "posts_unavailable"
+   ],
+   "coverage": {
+    "social_ran": false,
+    "posts_fetched": 0,
+    "posts_checked": 0,
+    "engagers_seen": 0,
+    "engagers_resolved": 0,
+    "coworker_hits": 0,
+    "timeline_flags": 0,
+    "flags": [
+     "posts_unavailable"
+    ]
+   },
+   "citations": []
+  },
+  "https://www.linkedin.com/in/example-alex-fakename": {
+   "verdict": "probably_fabricated",
+   "confidence": 0.3,
+   "reasoning": "A Principal Engineer at a company the size of Umbrella Cloud would usually leave a public trace (talks, code, team pages, coworker engagement), and none was found. Of 80 identified people who engaged with recent posts, none work at Umbrella Cloud. The full-time Senior Engineer role at Hooli Example overlaps the full-time Master's programme by about 23 months.",
+   "flags": [
+    "timeline_overlap_full_time_study"
+   ],
+   "coverage": {
+    "social_ran": true,
+    "posts_fetched": 3,
+    "posts_checked": 3,
+    "engagers_seen": 85,
+    "engagers_resolved": 80,
+    "coworker_hits": 0,
+    "timeline_flags": 1,
+    "flags": []
+   },
+   "citations": [
+    {
+     "url": "https://umbrella.example/about/team",
+     "title": "Our team | Umbrella Cloud",
+     "cited_text": "Engineering leadership: (the candidate is not listed)"
+    }
+   ]
+  },
+  "https://www.linkedin.com/in/example-sam-testcase": {
+   "verdict": "clearly_fabricated",
+   "confidence": 0.1,
+   "reasoning": "Globex Robotics publicly lists its Director of Engineering as a different person, in the role since 2019, and a 2025 news article quotes that person in the role. The profile's claim cannot both be true.",
+   "flags": [],
+   "coverage": {
+    "social_ran": true,
+    "posts_fetched": 1,
+    "posts_checked": 1,
+    "engagers_seen": 12,
+    "engagers_resolved": 10,
+    "coworker_hits": 0,
+    "timeline_flags": 0,
+    "flags": []
+   },
+   "citations": [
+    {
+     "url": "https://globex.example/leadership",
+     "title": "Leadership | Globex Robotics",
+     "cited_text": "Director of Engineering: Dana Otherperson"
+    },
+    {
+     "url": "https://news.example/2025/globex-robotics-expands",
+     "title": "Globex Robotics expands its engineering team",
+     "cited_text": "said Dana Otherperson, Director of Engineering"
+    }
+   ]
+  },
+  "https://www.linkedin.com/in/example-taylor-demo": {
+   "verdict": "reclassified_employment",
+   "confidence": 0.55,
+   "reasoning": "Vandelay Payments lists the candidate on its advisors page, not as an employee, and a press release from 2022 describes the role as an advisory board seat. The connection to the company is real, but not the VP Engineering role on the profile.",
+   "flags": [],
+   "coverage": {
+    "social_ran": true,
+    "posts_fetched": 2,
+    "posts_checked": 2,
+    "engagers_seen": 40,
+    "engagers_resolved": 37,
+    "coworker_hits": 2,
+    "timeline_flags": 0,
+    "flags": []
+   },
+   "citations": [
+    {
+     "url": "https://vandelay.example/advisors",
+     "title": "Advisors | Vandelay Payments",
+     "cited_text": "Taylor Demo, Advisor"
+    }
+   ]
+  },
+  "https://www.linkedin.com/in/example-acme-talent-group": {
+   "verdict": "non_person",
+   "confidence": 0.95,
+   "reasoning": "The profile belongs to a recruiting agency, not a person: the name is a company name and there is no individual work history.",
+   "flags": [],
+   "coverage": {
+    "social_ran": false,
+    "posts_fetched": 0,
+    "posts_checked": 0,
+    "engagers_seen": 0,
+    "engagers_resolved": 0,
+    "coworker_hits": 0,
+    "timeline_flags": 0,
+    "flags": [
+     "posts_unavailable"
+    ]
+   },
+   "citations": []
+  },
+  "https://www.linkedin.com/in/example-casey-emailonly": {
+   "verdict": "probably_genuine",
+   "confidence": 0.7,
+   "reasoning": "Six people who work at Northwind Analytics engaged with the candidate's recent posts, which supports the current Software Engineer II role. No independent page names the role.",
+   "flags": [],
+   "coverage": {
+    "social_ran": true,
+    "posts_fetched": 2,
+    "posts_checked": 2,
+    "engagers_seen": 52,
+    "engagers_resolved": 50,
+    "coworker_hits": 6,
+    "timeline_flags": 0,
+    "flags": []
+   },
+   "citations": []
+  }
+ },
+ "polls": 2
+}
