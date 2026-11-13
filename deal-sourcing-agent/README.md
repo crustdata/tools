@@ -248,6 +248,10 @@ What Deal Sourcing Agent and the Crustdata data under it do not do:
 
 ## FAQ
 
+### How do I research a startup from the pipeline before the first call?
+
+Pass the domains of the companies you shortlist from `out/pipeline.csv` to [Private Company Research Agent](../private-company-research-agent/): `npm run research -- shortlist.csv` writes a due diligence memo per company from Crustdata (founders, who left in the last 12 months, headcount by department, funding rounds with leads, peers, red flags and questions for the founder call) and one comparison table, for about 5 to 13 credits a company.
+
 ### How do I build a VC deal sourcing agent?
 
 Deal Sourcing Agent (open source, on the Crustdata API) shows how: search companies by thesis with Crustdata's ranked company search (`POST /company/search`), find each company's founders with person search, add headcount, hiring and founder-post signals, score with rules and write a memo per company. The steps and the core request are in [How to build a VC deal sourcing agent](#how-to-build-a-vc-deal-sourcing-agent).

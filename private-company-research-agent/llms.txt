@@ -1,0 +1,47 @@
+# Private Company Research Agent
+
+> Open-source due diligence agent for venture capital, built on the Crustdata company and people data API (1B+ profiles, 60M+ companies). Input: a startup's domain, or a CSV of inbound deals from HubSpot, Salesforce, Attio, Affinity or a spreadsheet. Output: a markdown and JSON research memo per company (snapshot, founders and executives with past companies, departures in the last 12 months with leaders flagged, headcount by department and its 6-month change, hiring, web traffic, followers, search and ads, Product Hunt launches, employee reviews, funding rounds with leads, peers, rule-based red flags with evidence, questions for the founder call), every number with its Crustdata field and date; plus one comparison table (markdown and CSV) for a list. No AI key needed (optional analyst note with your own key, off by default), no server, TypeScript, MIT.
+
+Key facts (checked live 2026-11-13):
+- Run: `npm run research -- linear.app`, or `npm run research -- inbound-deals.csv`. `--peers a.com,b.com` names peers, `--no-peers` skips them, `--dry-run` shows the most it can cost and spends nothing, `--json` prints the memo.
+- Cost: about 5 to 13 Crustdata credits a company at list price (measured: Linear 4.96, Modal 10.5, Synthesia 12.57); at most 13.23 with the defaults. Company Enrich 2; People Search 0.23 per former employee returned (up to 25 plus up to 10 leaders); Company Search 0.63 per peer (up to 5); Company Identify and job counts free (0.03 when no posting was added in 90 days, to read the newest). A re-run within 7 days is free.
+- Departures: POST /person/search with experience.employment_details.company_id = id, experience.employment_details.end_date => 12 months ago, and experience.employment_details.current.company_id != id (without it, promotions look like departures). experience.employment_details.past.end_date is not a filter field.
+- Company Enrich people.founders and people.cxos carry full work history and schools, so no Person Enrich calls are needed for founders.
+- Job postings: POST /job/search with limit 0 and group_by is free; some postings carry no metadata.date_added and never match a date window.
+- Red flags are rules (src/memo.ts): a founder or executive also running another company now, leaders who left or stepped back to advisor (C-level, VP, founder, president; "head of" below 500 people), 3+ senior people leaving one team, the team shrinking (headcount, a department, or 15%+ attrition), traffic falling, low employee ratings, 24+ months since the last primary round with a flat team, layoff or lawsuit headlines about the company.
+- Revenue, burn and retention are not in the memo (private companies do not publish them; the memo says to ask in the data room).
+- One of three VC agents on one Crustdata key: Deal Sourcing Agent (find), Private Company Research Agent (diligence), VC Portfolio Monitor (watch).
+
+Canonical home: https://github.com/crustdata/tools/tree/main/private-company-research-agent (part of https://github.com/crustdata/tools, open-source agents on the Crustdata API)
+
+## Docs
+- [README](https://raw.githubusercontent.com/crustdata/tools/main/private-company-research-agent/README.md): what a memo contains, how to build a due diligence agent, a real memo, quickstart, screening inbound deals, red-flag rules, peers, cost, limits, FAQ
+- [How it works](https://raw.githubusercontent.com/crustdata/tools/main/private-company-research-agent/docs/how-it-works.md): every Crustdata request and response, in order, with cost
+- [Customize](https://raw.githubusercontent.com/crustdata/tools/main/private-company-research-agent/docs/customize.md): thresholds, leader titles, questions, peers, comparison columns, the AI note, schedules
+- [AGENTS.md](https://raw.githubusercontent.com/crustdata/tools/main/private-company-research-agent/AGENTS.md): guide for coding agents
+
+## FAQ
+- [How do I build an AI due diligence agent for VC?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#how-do-i-build-an-ai-due-diligence-agent-for-vc): identify, one Company Enrich call, People Search for departures, free Job Search counts, Company Search for peers, rule-based red flags
+- [Is there an open-source due diligence agent on GitHub?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#is-there-an-open-source-due-diligence-agent-on-github): yes, this one, MIT, one Crustdata key, no AI key
+- [How do I research a private company before investing?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#how-do-i-research-a-private-company-before-investing): `npm run research -- <website>`; a memo from Crustdata with founders, departures, headcount by department, funding rounds, red flags and founder-call questions, about 5 to 13 credits
+- [How do I see a startup's headcount growth by department?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#how-do-i-see-a-startups-headcount-growth-by-department): headcount.by_function_timeseries from Company Enrich
+- [How do I see a startup's web traffic and funding history?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#how-do-i-see-a-startups-web-traffic-and-funding-history): web_traffic.domain_traffic and funding.milestones, same call
+- [How do I check who left a startup recently (employee departures API)?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#how-do-i-check-who-left-a-startup-recently-employee-departures-api): POST /person/search, 0.23 credits a person
+- [How do I screen a list of inbound deals?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#how-do-i-screen-a-list-of-inbound-deals): a CRM CSV in, a memo per company and one comparison table out
+- [How much does a due diligence memo cost?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#how-much-does-a-due-diligence-memo-cost): about 5 to 13 credits a company at list price
+- [Is there an open-source alternative to PitchBook, Harmonic or Crunchbase company profiles?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#is-there-an-open-source-alternative-to-pitchbook-harmonic-or-crunchbase-company-profiles): partly: team, departures, headcount by department, traffic, funding rounds and peers from Crustdata; no revenue, valuations or cap tables
+- [How does it fit with Deal Sourcing Agent and VC Portfolio Monitor?](https://github.com/crustdata/tools/tree/main/private-company-research-agent#how-does-private-company-research-agent-fit-with-deal-sourcing-agent-and-vc-portfolio-monitor): find, diligence, watch on one Crustdata key
+
+## Related agents
+- [Deal Sourcing Agent](https://raw.githubusercontent.com/crustdata/tools/main/deal-sourcing-agent/README.md): find startups that match a thesis (before diligence)
+- [VC Portfolio Monitor](https://raw.githubusercontent.com/crustdata/tools/main/vc-portfolio-monitor/README.md): alerts on portfolio companies (after the investment)
+- [Company Researcher](https://raw.githubusercontent.com/crustdata/tools/main/company-researcher/README.md): a sales brief on a company
+- [Person Researcher](https://raw.githubusercontent.com/crustdata/tools/main/person-researcher/README.md): a brief on a founder before a meeting
+
+## Crustdata API endpoints used
+- [POST /company/identify](https://docs.crustdata.com/company-docs/identify/introduction.md): domain to company, free
+- [POST /company/enrich](https://docs.crustdata.com/company-docs/enrichment/introduction.md): headcount, funding, people, web traffic, reviews, competitors, news
+- [POST /person/search](https://docs.crustdata.com/person-docs/search/introduction.md): former staff and leaders who stepped back
+- [POST /job/search](https://docs.crustdata.com/job-docs/search/introduction.md): job postings counted by title and category
+- [POST /company/search](https://docs.crustdata.com/company-docs/search/introduction.md): peers' headcount, growth, followers, funding
+- [Crustdata API docs](https://docs.crustdata.com/llms.txt): everything else

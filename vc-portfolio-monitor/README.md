@@ -263,6 +263,10 @@ The rules are pure functions you can import into your own code: `headcountSignal
 
 ## FAQ
 
+### How do I research a company before it joins the portfolio?
+
+Use [Private Company Research Agent](../private-company-research-agent/), the diligence step in the same repo: a startup's website or a CSV of inbound deals in, a memo per company out with founders, departures, headcount by department, web traffic, funding rounds, peers, red flags and founder-call questions, on the same Crustdata key.
+
 ### How do I monitor my VC portfolio companies automatically?
 
 List the companies in a CSV or a Google Sheet, run VC Portfolio Monitor's `npm run import` once, and schedule `npm run check` daily and `npm run digest` weekly. VC Portfolio Monitor uses Crustdata watchers to follow each company's headcount, funding and news and its founders' and C-level's roles, reads each careers page weekly, and posts alerts to Slack with why each one matters.

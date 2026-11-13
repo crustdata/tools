@@ -1,0 +1,65 @@
+{
+  "name": "private-company-research-agent",
+  "version": "1.0.0",
+  "description": "Open-source due diligence agent for VCs on the Crustdata API (1B+ profiles, 60M+ companies): a startup's domain or a CSV of inbound deals in; a memo out with founders, departures, headcount by department, web traffic, funding rounds, peers, red flags and founder-call questions. About 5 to 13 credits a company, no AI key. MIT.",
+  "keywords": [
+    "due diligence agent",
+    "vc due diligence",
+    "ai due diligence",
+    "private company research",
+    "startup research",
+    "investment memo",
+    "deal screening",
+    "inbound deal flow",
+    "venture capital",
+    "headcount growth",
+    "headcount by department",
+    "web traffic",
+    "funding history",
+    "employee departures",
+    "red flags",
+    "pitchbook alternative",
+    "harmonic alternative",
+    "crunchbase alternative",
+    "crustdata",
+    "crustdata api",
+    "company data api",
+    "open source",
+    "open source due diligence",
+    "due diligence memo",
+    "startup due diligence",
+    "employee departures api",
+    "vc tools",
+    "ai agent",
+    "typescript"
+  ],
+  "author": "Crustdata",
+  "homepage": "https://github.com/crustdata/tools/tree/main/private-company-research-agent#readme",
+  "bugs": {
+    "url": "https://github.com/crustdata/tools/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crustdata/tools.git",
+    "directory": "private-company-research-agent"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "setup": "tsx src/setup.ts",
+    "research": "tsx src/cli.ts",
+    "replay": "tsx src/replay.ts",
+    "test": "tsx --test test/*.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.0"
+  }
+}

@@ -43,6 +43,9 @@ Canonical home: https://github.com/crustdata/tools/tree/main/vc-portfolio-monito
 - [src/signals.ts](https://github.com/crustdata/tools/blob/main/vc-portfolio-monitor/src/signals.ts): the rules and "why it matters" lines
 - src/leaders.ts, src/careers.ts, src/portfolio.ts: leaders, open roles, CSV and Sheet reading
 
+## Related agents
+- [Private Company Research Agent](https://raw.githubusercontent.com/crustdata/tools/main/private-company-research-agent/README.md): a due diligence memo on a startup before investing
+
 ## Crustdata APIs used
 - Company Entity Watcher: https://docs.crustdata.com/watcher-docs/company/entity
 - Person Entity Watcher: https://docs.crustdata.com/watcher-docs/person/entity

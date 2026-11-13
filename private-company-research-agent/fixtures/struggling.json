@@ -1,0 +1,2234 @@
+{
+ "description": "Ledgerlane, a made-up fintech in trouble: headcount and Sales shrinking, traffic falling, low reviews, layoff and lawsuit news, 30 months since its last round",
+ "argv": [
+  "ledgerlane.example",
+  "--no-peers"
+ ],
+ "now": "2026-11-13T12:00:00.000Z",
+ "companies": [
+  {
+   "crustdata_company_id": 9000001,
+   "basic_info": {
+    "name": "Quillnote",
+    "primary_domain": "quillnote.example",
+    "all_domains": [
+     "quillnote.example",
+     "quillnote-app.example"
+    ],
+    "website": "https://quillnote.example",
+    "professional_network_url": "https://www.linkedin.com/company/example-quillnote",
+    "description": "Meeting notes that write themselves, for sales teams.",
+    "company_type": "Privately Held",
+    "status": "active",
+    "year_founded": 2023,
+    "employee_count_range": "11-50",
+    "industries": [
+     "Software Development"
+    ]
+   },
+   "headcount": {
+    "total": 94,
+    "largest_headcount_country": "USA",
+    "timeseries": [
+     {
+      "date": "2024-02-01",
+      "employee_count": 3
+     },
+     {
+      "date": "2024-03-01",
+      "employee_count": 3
+     },
+     {
+      "date": "2024-04-01",
+      "employee_count": 4
+     },
+     {
+      "date": "2024-05-01",
+      "employee_count": 5
+     },
+     {
+      "date": "2024-06-01",
+      "employee_count": 6
+     },
+     {
+      "date": "2024-07-01",
+      "employee_count": 8
+     },
+     {
+      "date": "2024-08-01",
+      "employee_count": 9
+     },
+     {
+      "date": "2024-09-01",
+      "employee_count": 11
+     },
+     {
+      "date": "2024-10-01",
+      "employee_count": 12
+     },
+     {
+      "date": "2024-11-01",
+      "employee_count": 14
+     },
+     {
+      "date": "2024-12-01",
+      "employee_count": 16
+     },
+     {
+      "date": "2025-01-01",
+      "employee_count": 18
+     },
+     {
+      "date": "2025-02-01",
+      "employee_count": 20
+     },
+     {
+      "date": "2025-03-01",
+      "employee_count": 22
+     },
+     {
+      "date": "2025-04-01",
+      "employee_count": 25
+     },
+     {
+      "date": "2025-05-01",
+      "employee_count": 28
+     },
+     {
+      "date": "2025-06-01",
+      "employee_count": 31
+     },
+     {
+      "date": "2025-07-01",
+      "employee_count": 34
+     },
+     {
+      "date": "2025-08-01",
+      "employee_count": 36
+     },
+     {
+      "date": "2025-09-01",
+      "employee_count": 40
+     },
+     {
+      "date": "2025-10-01",
+      "employee_count": 44
+     },
+     {
+      "date": "2025-11-01",
+      "employee_count": 48
+     },
+     {
+      "date": "2025-12-01",
+      "employee_count": 52
+     },
+     {
+      "date": "2026-01-01",
+      "employee_count": 55
+     },
+     {
+      "date": "2026-02-01",
+      "employee_count": 58
+     },
+     {
+      "date": "2026-03-01",
+      "employee_count": 62
+     },
+     {
+      "date": "2026-04-01",
+      "employee_count": 66
+     },
+     {
+      "date": "2026-05-01",
+      "employee_count": 70
+     },
+     {
+      "date": "2026-06-01",
+      "employee_count": 74
+     },
+     {
+      "date": "2026-07-01",
+      "employee_count": 78
+     },
+     {
+      "date": "2026-08-01",
+      "employee_count": 82
+     },
+     {
+      "date": "2026-09-01",
+      "employee_count": 86
+     },
+     {
+      "date": "2026-10-01",
+      "employee_count": 90
+     },
+     {
+      "date": "2026-11-01",
+      "employee_count": 94
+     }
+    ],
+    "growth_percent": {
+     "mom": 4.4,
+     "qoq": 13.3,
+     "six_months": 27.0,
+     "yoy": 74.1,
+     "two_years": 2250.0
+    },
+    "growth_absolute": {
+     "mom": 4,
+     "qoq": 11,
+     "six_months": 20,
+     "yoy": 40,
+     "two_years": 90
+    },
+    "by_role_absolute": {
+     "Engineering": 30,
+     "Sales": 18,
+     "Marketing": 8,
+     "Operations": 6,
+     "Customer Success and Support": 7
+    },
+    "by_role_percent": {
+     "Engineering": 31.9,
+     "Sales": 19.1,
+     "Marketing": 8.5,
+     "Operations": 6.4,
+     "Customer Success and Support": 7.4
+    },
+    "by_region_absolute": {
+     "United States": 61,
+     "California, United States": 40,
+     "San Francisco Bay Area": 38,
+     "Canada": 12,
+     "Ontario, Canada": 11,
+     "Germany": 6,
+     "Greater Berlin Area": 5
+    },
+    "by_function_timeseries": {
+     "CURRENT_FUNCTION": {
+      "Engineering": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 22
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 23
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 25
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 26
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 27
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 28
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 30
+       }
+      ],
+      "Sales": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 6
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 8
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 10
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 12
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 14
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 16
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 18
+       }
+      ],
+      "Marketing": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 5
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 5
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 6
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 6
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 7
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 8
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 8
+       }
+      ],
+      "Operations": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 5
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 5
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 5
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 6
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 6
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 6
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 6
+       }
+      ],
+      "Customer Success and Support": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 4
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 4
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 5
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 5
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 6
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 7
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 7
+       }
+      ]
+     }
+    }
+   },
+   "funding": {
+    "total_investment_usd": 38500000.0,
+    "last_round_amount_usd": 30000000.0,
+    "last_fundraise_date": "2026-04-14",
+    "last_round_type": "series_b",
+    "num_funding_rounds": 3,
+    "milestones": [
+     {
+      "date": "2026-04-14",
+      "funding_date": "2026-04-14",
+      "amount_usd": 30000000.0,
+      "round_type": "series_b",
+      "investors": "Harbor Light Ventures, Example Capital, Northfield Partners",
+      "lead_investors": "Harbor Light Ventures"
+     },
+     {
+      "date": "2025-03-02",
+      "funding_date": "2025-03-02",
+      "amount_usd": 7000000.0,
+      "round_type": "series_a",
+      "investors": "Example Capital, Northfield Partners, Pat Angelo",
+      "lead_investors": "Example Capital"
+     },
+     {
+      "date": "2023-09-10",
+      "funding_date": "2023-09-10",
+      "amount_usd": 1500000.0,
+      "round_type": "seed",
+      "investors": "Northfield Partners, Pat Angelo, Sam Seedling",
+      "lead_investors": "Northfield Partners"
+     }
+    ],
+    "investors_detailed": [
+     {
+      "name": "Harbor Light Ventures",
+      "type": "organization"
+     },
+     {
+      "name": "Example Capital",
+      "type": "organization"
+     },
+     {
+      "name": "Northfield Partners",
+      "type": "organization"
+     },
+     {
+      "name": "Pat Angelo",
+      "type": "person"
+     },
+     {
+      "name": "Sam Seedling",
+      "type": "person"
+     }
+    ],
+    "acquired_by": []
+   },
+   "followers": {
+    "count": 21400,
+    "qoq_percent": 22.5,
+    "six_months_growth_percent": 61.0,
+    "yoy_percent": 140.2,
+    "timeseries": [
+     {
+      "date": "2026-10-05",
+      "follower_count": 20100
+     },
+     {
+      "date": "2026-11-02",
+      "follower_count": 21400
+     }
+    ]
+   },
+   "web_traffic": {
+    "domain_traffic": {
+     "quillnote.example": {
+      "domain": "quillnote.example",
+      "monthly_visitors": 412000.0,
+      "mom_pct": 9.1,
+      "qoq_pct": 28.4,
+      "source_search_pct": 41.2,
+      "source_direct_pct": 33.0,
+      "source_social_pct": 9.5,
+      "source_paid_referral_pct": 4.1,
+      "source_referral_pct": 12.2,
+      "monthly_visitors_timeseries": [
+       {
+        "date": "2026-03-01T00:00:00+00:00",
+        "monthly_visitors": 250000
+       },
+       {
+        "date": "2026-04-01T00:00:00+00:00",
+        "monthly_visitors": 268000
+       },
+       {
+        "date": "2026-05-01T00:00:00+00:00",
+        "monthly_visitors": 290000
+       },
+       {
+        "date": "2026-06-01T00:00:00+00:00",
+        "monthly_visitors": 321000
+       },
+       {
+        "date": "2026-07-01T00:00:00+00:00",
+        "monthly_visitors": 350000
+       },
+       {
+        "date": "2026-08-01T00:00:00+00:00",
+        "monthly_visitors": 377000
+       },
+       {
+        "date": "2026-09-01T00:00:00+00:00",
+        "monthly_visitors": 412000
+       }
+      ]
+     },
+     "quillnote-app.example": {
+      "domain": "quillnote-app.example",
+      "monthly_visitors": 1200.0,
+      "mom_pct": -3.0,
+      "qoq_pct": 1.0,
+      "monthly_visitors_timeseries": []
+     }
+    }
+   },
+   "seo": {
+    "total_organic_results": 900,
+    "monthly_google_ads_budget": 18500.0,
+    "monthly_paid_clicks": 9400,
+    "monthly_organic_clicks": 2100,
+    "gained_ranked_seo_keywords": 84,
+    "lost_ranked_seo_keywords": 12
+   },
+   "competitors": {
+    "paid_seo": [
+     "tallyminutes.example",
+     " lookalike-blog.example",
+     " quillmotion.example"
+    ],
+    "organic_seo": [
+     " recapr.example",
+     " notfound-zzz.example",
+     " quillnote.example"
+    ]
+   },
+   "employee_reviews": {
+    "overall_rating": {
+     "rating": 4.6,
+     "total_count": 14
+    },
+    "senior_management_rating": 4.4,
+    "business_outlook_rating": 0.86,
+    "recommend_to_friend_rating": 0.9
+   },
+   "people": {
+    "founders": [
+     {
+      "crustdata_person_id": 7000001,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Avery Quill",
+       "current_title": "Co-founder & CEO"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-avery-quill"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000001"
+          ],
+          "employee_title": "Co-founder & CEO",
+          "employee_start_date": "2023-03-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": [
+         {
+          "employer_name": "Earlier Startup Example",
+          "employer_company_id": [
+           "1"
+          ],
+          "employee_title": "Co-founder",
+          "employee_start_date": "2018-01-01T00:00:00.000Z",
+          "employee_end_date": "2022-06-01T00:00:00.000Z"
+         },
+         {
+          "employer_name": "Big Software Example",
+          "employer_company_id": [
+           "1"
+          ],
+          "employee_title": "Product Manager",
+          "employee_start_date": "2014-06-01T00:00:00.000Z",
+          "employee_end_date": "2017-12-01T00:00:00.000Z"
+         }
+        ]
+       }
+      },
+      "education": {
+       "schools": [
+        {
+         "school": "Example State University"
+        }
+       ]
+      }
+     },
+     {
+      "crustdata_person_id": 7000004,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Sam Sidequest",
+       "current_title": "Co-founder"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-sam-sidequest"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000001"
+          ],
+          "employee_title": "Co-founder",
+          "employee_start_date": "2023-03-01T00:00:00.000Z",
+          "employee_end_date": null
+         },
+         {
+          "employer_name": "Sidequest AI Example",
+          "employer_company_id": [
+           "7777777"
+          ],
+          "employee_title": "Founder & CEO",
+          "employee_start_date": "2025-05-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": [
+         {
+          "employer_name": "Overlap Labs Example",
+          "employer_company_id": [
+           "1"
+          ],
+          "employee_title": "Co-founder",
+          "employee_start_date": "2022-09-01T00:00:00.000Z",
+          "employee_end_date": "2024-01-01T00:00:00.000Z"
+         }
+        ]
+       }
+      },
+      "education": {
+       "schools": []
+      }
+     }
+    ],
+    "cxos": [
+     {
+      "crustdata_person_id": 7000002,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Rowan Ledger",
+       "current_title": "CTO"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-rowan-ledger"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000001"
+          ],
+          "employee_title": "CTO",
+          "employee_start_date": "2026-06-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": [
+         {
+          "employer_name": "Cloud Example Inc",
+          "employer_company_id": [
+           "1"
+          ],
+          "employee_title": "Director of Engineering",
+          "employee_start_date": "2019-02-01T00:00:00.000Z",
+          "employee_end_date": "2026-05-01T00:00:00.000Z"
+         },
+         {
+          "employer_name": "Search Example",
+          "employer_company_id": [
+           "1"
+          ],
+          "employee_title": "Senior Engineer",
+          "employee_start_date": "2013-01-01T00:00:00.000Z",
+          "employee_end_date": "2019-01-01T00:00:00.000Z"
+         }
+        ]
+       }
+      },
+      "education": {
+       "schools": [
+        {
+         "school": "Example Institute of Technology"
+        }
+       ]
+      }
+     },
+     {
+      "crustdata_person_id": 7000001,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Avery Quill",
+       "current_title": "Co-founder & CEO"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-avery-quill"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000001"
+          ],
+          "employee_title": "Co-founder & CEO",
+          "employee_start_date": "2023-03-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": []
+       }
+      },
+      "education": {
+       "schools": []
+      }
+     },
+     {
+      "crustdata_person_id": 7000005,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Exec Assistant Example",
+       "current_title": "Executive Assistant to the CEO"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-exec-assistant-example"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000001"
+          ],
+          "employee_title": "Executive Assistant to the CEO",
+          "employee_start_date": "2025-01-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": []
+       }
+      },
+      "education": {
+       "schools": []
+      }
+     }
+    ],
+    "decision_makers": [
+     {
+      "crustdata_person_id": 7000003,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Jordan Fieldnote",
+       "current_title": "Head of Sales"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-jordan-fieldnote"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000001"
+          ],
+          "employee_title": "Head of Sales",
+          "employee_start_date": "2025-05-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": [
+         {
+          "employer_name": "CRM Example",
+          "employer_company_id": [
+           "1"
+          ],
+          "employee_title": "Sales Director",
+          "employee_start_date": "2019-01-01T00:00:00.000Z",
+          "employee_end_date": "2025-04-01T00:00:00.000Z"
+         }
+        ]
+       }
+      },
+      "education": {
+       "schools": []
+      }
+     },
+     {
+      "crustdata_person_id": 7000002,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Rowan Ledger",
+       "current_title": "CTO"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-rowan-ledger"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000001"
+          ],
+          "employee_title": "CTO",
+          "employee_start_date": "2026-06-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": []
+       }
+      },
+      "education": {
+       "schools": []
+      }
+     }
+    ]
+   },
+   "news": [
+    {
+     "article_url": "https://news.example/quillnote-series-b",
+     "article_title": "Quillnote raises $30M Series B to automate sales call notes",
+     "article_publisher_name": "Example Wire",
+     "article_publish_date": "2026-04-15",
+     "confidence_score": 0.95
+    },
+    {
+     "article_url": "https://news.example/quillnote-crm",
+     "article_title": "Quillnote adds CRM sync for sales teams",
+     "article_publisher_name": "Example Tech",
+     "article_publish_date": "2026-10-20",
+     "confidence_score": 0.95
+    },
+    {
+     "article_url": "https://news.example/quillnote-crm-2",
+     "article_title": "Quillnote adds CRM sync for sales teams",
+     "article_publisher_name": "Example Daily",
+     "article_publish_date": "2026-10-19",
+     "confidence_score": 0.95
+    },
+    {
+     "article_url": "https://news.example/other-layoffs",
+     "article_title": "Big Software Example lays off 500 as notes apps rise",
+     "article_publisher_name": "Example Wire",
+     "article_publish_date": "2026-09-01",
+     "confidence_score": 0.95
+    },
+    {
+     "article_url": "https://news.example/quill-tv",
+     "article_title": "Quillnote TV networks lay off staff",
+     "article_publisher_name": "Example TV",
+     "article_publish_date": "2026-10-01",
+     "confidence_score": 0.8
+    }
+   ],
+   "public_launches": {
+    "producthunt_url": "https://www.producthunt.com/products/example-quillnote",
+    "rating": 4.8,
+    "num_upvotes": 640,
+    "num_reviews": 31,
+    "launches": [
+     {
+      "name": "Quillnote",
+      "launched_at": 1715000000,
+      "num_upvotes": 400,
+      "day_rank": 3
+     },
+     {
+      "name": "Quillnote for CRM",
+      "launched_at": 1760000000,
+      "num_upvotes": 240,
+      "day_rank": 5
+     }
+    ]
+   },
+   "taxonomy": {
+    "categories": [
+     "Artificial Intelligence (AI)",
+     "Sales",
+     "SaaS"
+    ]
+   },
+   "locations": {
+    "city": "San Francisco",
+    "state": "California",
+    "country": "USA"
+   }
+  },
+  {
+   "crustdata_company_id": 9000002,
+   "basic_info": {
+    "name": "Ledgerlane",
+    "primary_domain": "ledgerlane.example",
+    "all_domains": [
+     "ledgerlane.example"
+    ],
+    "website": "https://www.ledgerlane.example/",
+    "professional_network_url": "https://www.linkedin.com/company/example-ledgerlane",
+    "description": "Spend management for mid-size companies.",
+    "company_type": "Privately Held",
+    "status": "active",
+    "year_founded": 2020,
+    "employee_count_range": "51-200",
+    "industries": [
+     "Financial Services"
+    ]
+   },
+   "headcount": {
+    "total": 121,
+    "timeseries": [
+     {
+      "date": "2024-11-01",
+      "employee_count": 60
+     },
+     {
+      "date": "2024-12-01",
+      "employee_count": 70
+     },
+     {
+      "date": "2025-01-01",
+      "employee_count": 80
+     },
+     {
+      "date": "2025-02-01",
+      "employee_count": 92
+     },
+     {
+      "date": "2025-03-01",
+      "employee_count": 104
+     },
+     {
+      "date": "2025-04-01",
+      "employee_count": 116
+     },
+     {
+      "date": "2025-05-01",
+      "employee_count": 128
+     },
+     {
+      "date": "2025-06-01",
+      "employee_count": 136
+     },
+     {
+      "date": "2025-07-01",
+      "employee_count": 140
+     },
+     {
+      "date": "2025-08-01",
+      "employee_count": 142
+     },
+     {
+      "date": "2025-09-01",
+      "employee_count": 144
+     },
+     {
+      "date": "2025-10-01",
+      "employee_count": 145
+     },
+     {
+      "date": "2025-11-01",
+      "employee_count": 146
+     },
+     {
+      "date": "2025-12-01",
+      "employee_count": 146
+     },
+     {
+      "date": "2026-01-01",
+      "employee_count": 145
+     },
+     {
+      "date": "2026-02-01",
+      "employee_count": 144
+     },
+     {
+      "date": "2026-03-01",
+      "employee_count": 143
+     },
+     {
+      "date": "2026-04-01",
+      "employee_count": 142
+     },
+     {
+      "date": "2026-05-01",
+      "employee_count": 141
+     },
+     {
+      "date": "2026-06-01",
+      "employee_count": 140
+     },
+     {
+      "date": "2026-07-01",
+      "employee_count": 139
+     },
+     {
+      "date": "2026-08-01",
+      "employee_count": 136
+     },
+     {
+      "date": "2026-09-01",
+      "employee_count": 133
+     },
+     {
+      "date": "2026-10-01",
+      "employee_count": 128
+     },
+     {
+      "date": "2026-11-01",
+      "employee_count": 121
+     }
+    ],
+    "growth_percent": {
+     "mom": -5.5,
+     "qoq": -9.0,
+     "six_months": -14.2,
+     "yoy": -16.6,
+     "two_years": 101.7
+    },
+    "growth_absolute": {
+     "mom": -7,
+     "qoq": -12,
+     "six_months": -20,
+     "yoy": -24,
+     "two_years": 61
+    },
+    "by_role_percent": {
+     "Engineering": 28.1
+    },
+    "by_region_absolute": {
+     "United States": 70,
+     "New York, NY": 50,
+     "India": 30,
+     "Karnataka, India": 28
+    },
+    "by_function_timeseries": {
+     "CURRENT_FUNCTION": {
+      "Engineering": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 36
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 36
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 35
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 35
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 34
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 34
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 34
+       }
+      ],
+      "Sales": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 20
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 19
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 17
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 15
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 14
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 13
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 12
+       }
+      ],
+      "Customer Success and Support": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 14
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 14
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 14
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 13
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 13
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 13
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 13
+       }
+      ],
+      "Marketing": [
+       {
+        "date": "2026-02-01 00:00:00",
+        "employee_count": 9
+       },
+       {
+        "date": "2026-03-01 00:00:00",
+        "employee_count": 9
+       },
+       {
+        "date": "2026-04-01 00:00:00",
+        "employee_count": 8
+       },
+       {
+        "date": "2026-05-01 00:00:00",
+        "employee_count": 8
+       },
+       {
+        "date": "2026-06-01 00:00:00",
+        "employee_count": 8
+       },
+       {
+        "date": "2026-07-01 00:00:00",
+        "employee_count": 7
+       },
+       {
+        "date": "2026-08-01 00:00:00",
+        "employee_count": 7
+       }
+      ]
+     }
+    }
+   },
+   "funding": {
+    "total_investment_usd": 41000000.0,
+    "last_round_amount_usd": 28000000.0,
+    "last_fundraise_date": "2024-05-02",
+    "last_round_type": "series_b",
+    "num_funding_rounds": 3,
+    "milestones": [
+     {
+      "date": "2024-05-02",
+      "amount_usd": 28000000.0,
+      "round_type": "series_b",
+      "investors": "Crosswind Example Fund, Bayline Capital",
+      "lead_investors": "Crosswind Example Fund"
+     },
+     {
+      "date": "2022-08-11",
+      "amount_usd": 10000000.0,
+      "round_type": "series_a",
+      "investors": "Bayline Capital",
+      "lead_investors": "Bayline Capital"
+     },
+     {
+      "date": "2021-01-15",
+      "amount_usd": 3000000.0,
+      "round_type": "seed",
+      "investors": "Morgan Example, Bayline Capital",
+      "lead_investors": null
+     }
+    ],
+    "investors_detailed": [
+     {
+      "name": "Crosswind Example Fund",
+      "type": "organization"
+     },
+     {
+      "name": "Bayline Capital",
+      "type": "organization"
+     },
+     {
+      "name": "Morgan Example",
+      "type": "person"
+     }
+    ]
+   },
+   "followers": {
+    "count": 9100,
+    "qoq_percent": -1.2,
+    "six_months_growth_percent": -0.5,
+    "yoy_percent": 3.0,
+    "timeseries": [
+     {
+      "date": "2026-11-02",
+      "follower_count": 9100
+     }
+    ]
+   },
+   "web_traffic": {
+    "domain_traffic": {
+     "ledgerlane.example": {
+      "domain": "ledgerlane.example",
+      "monthly_visitors": 58000.0,
+      "mom_pct": -12.0,
+      "qoq_pct": -35.5,
+      "monthly_visitors_timeseries": [
+       {
+        "date": "2026-03-01T00:00:00+00:00",
+        "monthly_visitors": 101000
+       },
+       {
+        "date": "2026-04-01T00:00:00+00:00",
+        "monthly_visitors": 99000
+       },
+       {
+        "date": "2026-05-01T00:00:00+00:00",
+        "monthly_visitors": 96000
+       },
+       {
+        "date": "2026-06-01T00:00:00+00:00",
+        "monthly_visitors": 90000
+       },
+       {
+        "date": "2026-07-01T00:00:00+00:00",
+        "monthly_visitors": 78000
+       },
+       {
+        "date": "2026-08-01T00:00:00+00:00",
+        "monthly_visitors": 66000
+       },
+       {
+        "date": "2026-09-01T00:00:00+00:00",
+        "monthly_visitors": 58000
+       }
+      ]
+     }
+    }
+   },
+   "seo": {
+    "monthly_google_ads_budget": 4200.0,
+    "monthly_paid_clicks": 900,
+    "monthly_organic_clicks": 3100,
+    "gained_ranked_seo_keywords": 10,
+    "lost_ranked_seo_keywords": 140
+   },
+   "competitors": {
+    "paid_seo": [],
+    "organic_seo": []
+   },
+   "employee_reviews": {
+    "overall_rating": {
+     "rating": 3.1,
+     "total_count": 24
+    },
+    "senior_management_rating": 2.6,
+    "business_outlook_rating": 0.38,
+    "recommend_to_friend_rating": 0.45
+   },
+   "people": {
+    "founders": [
+     {
+      "crustdata_person_id": 7000101,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Casey Ledger",
+       "current_title": "Founder & CEO"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-casey-ledger"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000002"
+          ],
+          "employee_title": "Founder & CEO",
+          "employee_start_date": "2020-02-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": [
+         {
+          "employer_name": "Bank Example",
+          "employer_company_id": [
+           "1"
+          ],
+          "employee_title": "VP Finance",
+          "employee_start_date": "2012-01-01T00:00:00.000Z",
+          "employee_end_date": "2020-01-01T00:00:00.000Z"
+         }
+        ]
+       }
+      },
+      "education": {
+       "schools": [
+        {
+         "school": "Example Business School"
+        }
+       ]
+      }
+     }
+    ],
+    "cxos": [
+     {
+      "crustdata_person_id": 7000102,
+      "updated_at": "2026-10-20T10:00:00Z",
+      "basic_profile": {
+       "name": "Dana Example",
+       "current_title": "CFO"
+      },
+      "social_handles": {
+       "professional_network_identifier": {
+        "profile_url": "https://www.linkedin.com/in/example-dana-example"
+       }
+      },
+      "experience": {
+       "employment_details": {
+        "current": [
+         {
+          "employer_name": null,
+          "employer_company_id": [
+           "9000002"
+          ],
+          "employee_title": "CFO",
+          "employee_start_date": "2023-01-01T00:00:00.000Z",
+          "employee_end_date": null
+         }
+        ],
+        "past": [
+         {
+          "employer_name": "Payments Example",
+          "employer_company_id": [
+           "1"
+          ],
+          "employee_title": "Controller",
+          "employee_start_date": "2016-01-01T00:00:00.000Z",
+          "employee_end_date": "2022-12-01T00:00:00.000Z"
+         }
+        ]
+       }
+      },
+      "education": {
+       "schools": []
+      }
+     }
+    ],
+    "decision_makers": []
+   },
+   "news": [
+    {
+     "article_url": "https://news.example/ledgerlane-layoffs",
+     "article_title": "Ledgerlane lays off 15% of staff as growth slows",
+     "article_publisher_name": "Example Wire",
+     "article_publish_date": "2026-09-30",
+     "confidence_score": 0.95
+    },
+    {
+     "article_url": "https://news.example/ledgerlane-suit",
+     "article_title": "Former customer sues Ledgerlane over billing errors",
+     "article_publisher_name": "Example Legal",
+     "article_publish_date": "2026-06-12",
+     "confidence_score": 0.95
+    },
+    {
+     "article_url": "https://news.example/old",
+     "article_title": "Ledgerlane raises $28M Series B",
+     "article_publisher_name": "Example Wire",
+     "article_publish_date": "2024-05-03",
+     "confidence_score": 0.95
+    }
+   ],
+   "taxonomy": {
+    "categories": [
+     "FinTech",
+     "SaaS"
+    ]
+   },
+   "locations": {
+    "city": "New York",
+    "state": "New York",
+    "country": "USA"
+   }
+  },
+  {
+   "crustdata_company_id": 9000003,
+   "basic_info": {
+    "name": "Sproutkit",
+    "primary_domain": "sproutkit.example",
+    "all_domains": [
+     "sproutkit.example"
+    ],
+    "website": "https://sproutkit.example",
+    "description": null,
+    "year_founded": 2025,
+    "employee_count_range": "2-10"
+   },
+   "headcount": {
+    "total": 6,
+    "timeseries": [
+     {
+      "date": "2026-06-01",
+      "employee_count": 3
+     },
+     {
+      "date": "2026-07-01",
+      "employee_count": 4
+     },
+     {
+      "date": "2026-08-01",
+      "employee_count": 4
+     },
+     {
+      "date": "2026-09-01",
+      "employee_count": 5
+     },
+     {
+      "date": "2026-10-01",
+      "employee_count": 5
+     },
+     {
+      "date": "2026-11-01",
+      "employee_count": 6
+     }
+    ],
+    "growth_percent": {
+     "mom": 20.0,
+     "qoq": 50.0
+    },
+    "growth_absolute": {
+     "mom": 1,
+     "qoq": 2
+    }
+   },
+   "funding": null,
+   "followers": null,
+   "web_traffic": null,
+   "seo": null,
+   "competitors": null,
+   "employee_reviews": null,
+   "people": {
+    "founders": [],
+    "cxos": [],
+    "decision_makers": []
+   },
+   "news": [],
+   "public_launches": null,
+   "taxonomy": {
+    "categories": []
+   },
+   "locations": {
+    "country": "GBR"
+   }
+  },
+  {
+   "crustdata_company_id": 9000011,
+   "basic_info": {
+    "name": "Tally Minutes",
+    "primary_domain": "tallyminutes.example",
+    "all_domains": [
+     "tallyminutes.example"
+    ],
+    "year_founded": 2020,
+    "industries": [
+     "Software Development"
+    ],
+    "company_type": "Privately Held"
+   },
+   "headcount": {
+    "total": 80,
+    "growth_percent": {
+     "mom": 1.0,
+     "qoq": 2.0,
+     "six_months": 10.0,
+     "yoy": 21.5
+    },
+    "growth_absolute": {
+     "mom": 1,
+     "qoq": 2,
+     "six_months": 4,
+     "yoy": 8
+    }
+   },
+   "funding": {
+    "total_investment_usd": 52000000.0,
+    "last_fundraise_date": "2025-01-20",
+    "last_round_type": "series_b"
+   },
+   "followers": {
+    "count": 30500
+   }
+  },
+  {
+   "crustdata_company_id": 9000012,
+   "basic_info": {
+    "name": "Recapr",
+    "primary_domain": "recapr.example",
+    "all_domains": [
+     "recapr.example"
+    ],
+    "year_founded": 2020,
+    "industries": [
+     "Software Development"
+    ],
+    "company_type": "Privately Held"
+   },
+   "headcount": {
+    "total": 45,
+    "growth_percent": {
+     "mom": 1.0,
+     "qoq": 2.0,
+     "six_months": 4.0,
+     "yoy": 9.0
+    },
+    "growth_absolute": {
+     "mom": 1,
+     "qoq": 2,
+     "six_months": 4,
+     "yoy": 8
+    }
+   },
+   "funding": {
+    "total_investment_usd": 12000000.0,
+    "last_fundraise_date": "2024-07-01",
+    "last_round_type": "series_a"
+   },
+   "followers": {
+    "count": 8800
+   }
+  },
+  {
+   "crustdata_company_id": 9000013,
+   "basic_info": {
+    "name": "Lookalike Blog",
+    "primary_domain": "lookalike-blog.example",
+    "all_domains": [
+     "lookalike-blog.example"
+    ],
+    "year_founded": 2020,
+    "industries": [
+     "Software Development"
+    ],
+    "company_type": "Privately Held"
+   },
+   "headcount": {
+    "total": 3,
+    "growth_percent": {
+     "mom": 1.0,
+     "qoq": 2.0,
+     "six_months": 0.0,
+     "yoy": 0.0
+    },
+    "growth_absolute": {
+     "mom": 1,
+     "qoq": 2,
+     "six_months": 4,
+     "yoy": 8
+    }
+   },
+   "funding": {
+    "total_investment_usd": null,
+    "last_fundraise_date": null,
+    "last_round_type": null
+   },
+   "followers": {
+    "count": 40
+   }
+  },
+  {
+   "crustdata_company_id": 9000014,
+   "basic_info": {
+    "name": "Quill Motion Systems",
+    "primary_domain": "quillmotion.example",
+    "all_domains": [
+     "quillmotion.example"
+    ],
+    "year_founded": 2020,
+    "industries": [
+     "Machinery Manufacturing"
+    ],
+    "company_type": "Public Company"
+   },
+   "headcount": {
+    "total": 300,
+    "growth_percent": {
+     "mom": 1.0,
+     "qoq": 2.0,
+     "six_months": 1.0,
+     "yoy": 2.0
+    },
+    "growth_absolute": {
+     "mom": 1,
+     "qoq": 2,
+     "six_months": 4,
+     "yoy": 8
+    }
+   },
+   "funding": {
+    "total_investment_usd": null,
+    "last_fundraise_date": null,
+    "last_round_type": null
+   },
+   "followers": {
+    "count": 5000
+   }
+  }
+ ],
+ "lookalikes": {
+  "quillnotes.example": 9000002
+ },
+ "departures": {
+  "9000001": {
+   "total": 6,
+   "people": [
+    {
+     "crustdata_person_id": 7100001,
+     "basic_profile": {
+      "name": "Morgan Pipeline",
+      "current_title": "CRO"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-morgan-pipeline"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Tally Minutes",
+         "title": "CRO",
+         "start_date": "2026-06-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "CXO",
+         "crustdata_company_id": 9000011
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "VP of Sales",
+         "start_date": "2024-06-01T00:00:00",
+         "end_date": "2026-07-01T00:00:00",
+         "seniority_level": "Vice President",
+         "crustdata_company_id": 9000001
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7100002,
+     "basic_profile": {
+      "name": "Riley Example",
+      "current_title": "Account Executive"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-riley-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Recapr",
+         "title": "Account Executive",
+         "start_date": "2026-06-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "Entry Level",
+         "crustdata_company_id": 9000012
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Account Executive",
+         "start_date": "2025-01-01T00:00:00",
+         "end_date": "2026-09-01T00:00:00",
+         "seniority_level": "Entry Level",
+         "crustdata_company_id": 9000001
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7100003,
+     "basic_profile": {
+      "name": "Sky Intern",
+      "current_title": null
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-sky-intern"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Growth Intern",
+         "start_date": "2026-01-01T00:00:00",
+         "end_date": "2026-06-01T00:00:00",
+         "seniority_level": "In Training",
+         "crustdata_company_id": 9000001
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7100004,
+     "basic_profile": {
+      "name": "Taylor Example",
+      "current_title": "Software Engineer"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-taylor-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Cloud Example Inc",
+         "title": "Software Engineer",
+         "start_date": "2026-06-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "Entry Level",
+         "crustdata_company_id": 5555
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Software Engineer",
+         "start_date": "2024-03-01T00:00:00",
+         "end_date": "2026-02-01T00:00:00",
+         "seniority_level": "Entry Level",
+         "crustdata_company_id": 9000001
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "9000002": {
+   "total": 28,
+   "people": [
+    {
+     "crustdata_person_id": 7200001,
+     "basic_profile": {
+      "name": "Jamie Example",
+      "current_title": null
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-jamie-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Head of Sales",
+         "start_date": "2022-01-01T00:00:00",
+         "end_date": "2026-08-01T00:00:00",
+         "seniority_level": "Director",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7200002,
+     "basic_profile": {
+      "name": "Quinn Example",
+      "current_title": "CTO"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-quinn-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Other Startup Example",
+         "title": "CTO",
+         "start_date": "2026-06-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "CXO",
+         "crustdata_company_id": 6666
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "VP Engineering",
+         "start_date": "2021-05-01T00:00:00",
+         "end_date": "2026-03-01T00:00:00",
+         "seniority_level": "Vice President",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7200003,
+     "basic_profile": {
+      "name": "Alex Example",
+      "current_title": "Account Executive"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-alex-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Payments Example",
+         "title": "Account Executive",
+         "start_date": "2026-06-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "Entry Level",
+         "crustdata_company_id": 7777
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Account Executive",
+         "start_date": "2023-01-01T00:00:00",
+         "end_date": "2026-10-01T00:00:00",
+         "seniority_level": "Entry Level",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7200004,
+     "basic_profile": {
+      "name": "Robin Example",
+      "current_title": null
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-robin-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Regional Sales Director",
+         "start_date": "2022-03-01T00:00:00",
+         "end_date": "2026-05-01T00:00:00",
+         "seniority_level": "Director",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7200005,
+     "basic_profile": {
+      "name": "Kim Example",
+      "current_title": null
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-kim-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Director of Strategic Accounts",
+         "start_date": "2022-06-01T00:00:00",
+         "end_date": "2026-04-01T00:00:00",
+         "seniority_level": "Director",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7200006,
+     "basic_profile": {
+      "name": "Pat Intern",
+      "current_title": null
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-pat-intern"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Finance Intern",
+         "start_date": "2026-01-01T00:00:00",
+         "end_date": "2026-06-01T00:00:00",
+         "seniority_level": "In Training",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7200007,
+     "basic_profile": {
+      "name": "Lee Contract",
+      "current_title": null
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-lee-contract"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Recruiter (via Example Agency)",
+         "start_date": "2025-06-01T00:00:00",
+         "end_date": "2026-02-01T00:00:00",
+         "seniority_level": "Senior",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    }
+   ]
+  }
+ },
+ "senior": {
+  "9000001": {
+   "total": 3,
+   "people": [
+    {
+     "crustdata_person_id": 7100001,
+     "basic_profile": {
+      "name": "Morgan Pipeline",
+      "current_title": "CRO"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-morgan-pipeline"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Tally Minutes",
+         "title": "CRO",
+         "start_date": "2026-06-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "CXO",
+         "crustdata_company_id": 9000011
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "VP of Sales",
+         "start_date": "2024-06-01T00:00:00",
+         "end_date": "2026-07-01T00:00:00",
+         "seniority_level": "Vice President",
+         "crustdata_company_id": 9000001
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7100010,
+     "basic_profile": {
+      "name": "Blake Founder",
+      "current_title": "Technical Advisor"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-blake-founder"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Company",
+         "title": "Technical Advisor",
+         "start_date": "2026-05-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "Entry Level",
+         "crustdata_company_id": 9000001
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Chief Technology Officer",
+         "start_date": "2023-03-01T00:00:00",
+         "end_date": "2026-05-01T00:00:00",
+         "seniority_level": "CXO",
+         "crustdata_company_id": 9000001
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7100011,
+     "basic_profile": {
+      "name": "Drew Promoted",
+      "current_title": "VP of Product"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-drew-promoted"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Company",
+         "title": "VP of Product",
+         "start_date": "2026-04-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "Vice President",
+         "crustdata_company_id": 9000001
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Director of Product",
+         "start_date": "2024-01-01T00:00:00",
+         "end_date": "2026-04-01T00:00:00",
+         "seniority_level": "Director",
+         "crustdata_company_id": 9000001
+        }
+       ]
+      }
+     }
+    }
+   ]
+  },
+  "9000002": {
+   "total": 2,
+   "people": [
+    {
+     "crustdata_person_id": 7200001,
+     "basic_profile": {
+      "name": "Jamie Example",
+      "current_title": null
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-jamie-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [],
+       "past": [
+        {
+         "name": "Company",
+         "title": "Head of Sales",
+         "start_date": "2022-01-01T00:00:00",
+         "end_date": "2026-08-01T00:00:00",
+         "seniority_level": "Director",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    },
+    {
+     "crustdata_person_id": 7200002,
+     "basic_profile": {
+      "name": "Quinn Example",
+      "current_title": "CTO"
+     },
+     "social_handles": {
+      "professional_network_identifier": {
+       "profile_url": "https://www.linkedin.com/in/example-quinn-example"
+      }
+     },
+     "experience": {
+      "employment_details": {
+       "current": [
+        {
+         "name": "Other Startup Example",
+         "title": "CTO",
+         "start_date": "2026-06-01T00:00:00",
+         "end_date": null,
+         "seniority_level": "CXO",
+         "crustdata_company_id": 6666
+        }
+       ],
+       "past": [
+        {
+         "name": "Company",
+         "title": "VP Engineering",
+         "start_date": "2021-05-01T00:00:00",
+         "end_date": "2026-03-01T00:00:00",
+         "seniority_level": "Vice President",
+         "crustdata_company_id": 9000002
+        }
+       ]
+      }
+     }
+    }
+   ]
+  }
+ },
+ "jobs": {
+  "9000001": {
+   "total": 9,
+   "titles": [
+    {
+     "title": "Account Executive",
+     "count": 3
+    },
+    {
+     "title": "Account Executive ",
+     "count": 1
+    },
+    {
+     "title": "Senior Backend Engineer",
+     "count": 2
+    },
+    {
+     "title": "Join our Talent Pool",
+     "count": 1
+    },
+    {
+     "title": "Solutions Engineer",
+     "count": 1
+    },
+    {
+     "title": "Product Designer",
+     "count": 1
+    }
+   ],
+   "categories": [
+    {
+     "category": "Business",
+     "count": 5
+    },
+    {
+     "category": "Tech",
+     "count": 4
+    }
+   ]
+  },
+  "9000002": {
+   "total": 1,
+   "titles": [
+    {
+     "title": "Collections Specialist",
+     "count": 1
+    }
+   ],
+   "categories": [
+    {
+     "category": "Operations",
+     "count": 1
+    }
+   ]
+  },
+  "9000003": {
+   "total": 0,
+   "titles": [],
+   "categories": [],
+   "newest": null
+  }
+ }
+}

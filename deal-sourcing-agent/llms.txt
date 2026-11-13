@@ -28,6 +28,9 @@ Canonical home: https://github.com/crustdata/tools/tree/main/deal-sourcing-agent
 - [How much does a Deal Sourcing Agent run cost?](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#how-much-does-a-deal-sourcing-agent-run-cost): about 21 credits for 10 companies, 90 for 50, 1,700 for 1,000 at list price
 - [Quickstart](https://github.com/crustdata/tools/tree/main/deal-sourcing-agent#quickstart-how-do-i-run-it): git clone https://github.com/crustdata/tools, cd tools/deal-sourcing-agent, npm install, npm run setup, npm run source -- --thesis "..."; npm run replay -- fixtures/seed-pipeline.json runs offline with no key
 
+## Related agents
+- [Private Company Research Agent](https://raw.githubusercontent.com/crustdata/tools/main/private-company-research-agent/README.md): a due diligence memo on a startup before investing
+
 ## Crustdata API endpoints used
 - [Company Search](https://docs.crustdata.com/company-docs/search/introduction): POST /company/search, hybrid ranked search on the thesis with hard filters for stage, founding year, size, place, growth and investors
 - [Company Autocomplete](https://docs.crustdata.com/company-docs/autocomplete/introduction): POST /company/search/autocomplete, free validation of filter values
